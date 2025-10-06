@@ -1,0 +1,2139 @@
+
+ 
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>
+		Welcome to TDMS --- Lenovo Test&Defect Management System
+		</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+	</head>
+	<script  language=javascript src="/tdms/js/common/dialog.js"></script>
+
+	<link href="/tdms/css/system/layout.css" rel="stylesheet" type="text/css" />
+<link href="/tdms/css/system/content.css" rel="stylesheet" type="text/css" />
+	
+	<body>
+	<table class="layout_table" style="height:100%">
+		<tr>
+			<td>
+				
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+  <head>
+    <base href="https://tdms.lenovo.com:443/tdms/"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=8; IE=7; IE=EDGE" />
+    <meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="expires" content="0">
+    <style type="text/css">
+    .quicklinkmenu {
+	    font-size: 0.9em;
+	    /* position: absolute;
+	    right:170px;
+	    top: 4px; */
+	    z-index: 10;
+	    display:inline-block;
+	}
+	ul.linkmenu {
+/* 	    float: left; */
+	    list-style: none outside none;
+	    margin: 0 1px 0 0;
+	    padding: 0;
+/*  	    width: 60px;  */
+	    
+	}
+	ul.linkmenu a {
+	    color: #FFFFFF;
+	    text-decoration: none;
+	}
+	ul.linkmenu li.linklist {
+/* 	    float: left; */
+/* 	    width: 250px; */
+	}
+	ul.linkmenu li.linklist a.linkcategory {
+	    background: none repeat scroll 0 0 transparent;
+	    color: #ffffff;
+ 	    display: block; 
+	   	font-family: Verdana, sans-serif; 
+	   	font-size:11px;
+/* 	    position: relative; */
+ 	    width: 40px;  
+	    z-index: 50;
+	    margin-top:0px;
+	}
+
+	ul.sublinkmenu {
+	    background-position: left top;
+	    background-repeat: no-repeat;
+	    font-size:11px;
+/* 	    float: left; */
+	    list-style: none outside none;
+	    margin: 0px 0 0 -14px;
+	    padding: 0px 0px; 
+	    position: absolute;
+	    width: 42px;  
+	    display: block;
+	}
+
+	ul.sublinkmenu li a {
+	    background: none repeat scroll 0 0 #6699CC;
+	    clear: left;
+	    float: left;
+	    padding: 4px 12px 0 6px;
+	 	width: 35px; 
+	}
+	ul.sublinkmenu a:hover, ul.sublinkmenu a:focus, ul.sublinkmenu a:active {
+	    background: none repeat scroll 0 0 #003366;
+	    margin-right: 1px;
+	}
+	ul.sublinkmenu li a span {
+	    color: #FFFFFF;
+/* 	    float: left; */
+	    padding-left: 8px;
+	}
+	li ul li span{
+		display:none;
+	}
+	li ul li:hover span{
+		display:block;
+		color: #FFFFFF;
+	}
+	ul li:hover ul li span{
+		display:block;
+	}
+	#logo_version {
+		position: relative;
+		top: 2px;
+		font-size: 22px;
+		font-style: italic;
+		color:#2e4e67;
+		font-weight: 900;
+	}
+    </style>
+  </head>
+  <link href="/tdms/css/system/jquery-ui.css" rel="stylesheet" type="text/css" />
+<link href="/tdms/css/menu/systemmenu.css" rel="stylesheet" type="text/css" />
+<link href="/tdms/css/system/common.css" rel="stylesheet" type="text/css" />
+<script  language=javascript src="/tdms/js/system/jquery.js"></script>
+<script  language=javascript src="/tdms/js/system/jquery-ui.js"></script>
+<script  language=javascript src="/tdms/js/common/dojo.js"></script>
+<script  language=javascript src="/tdms/js/common/init.js"></script>
+<script  language=javascript src="/tdms/js/common/common.js"></script>
+<script  language=javascript src="/tdms/js/common/utils.js"></script>
+<script  language=javascript src="/tdms/js/menu/systemmenu.js"></script>
+
+  
+  <body> 
+  <script>
+  $(function(){
+	  $(".quicklinkmenu").hover(function(){
+		  var $this = $(this);
+			var left = $this.offset().left;
+			var top = $this.offset().top + $this.height();
+			console.log(left + ":" + top + $(".sublinkmenu").css("position"));
+			$(".sublinkmenu").css("left" , left).css("top",top);
+	  });
+  });
+  </script>
+  
+				
+<form id="systemMenuForm" name="systemMenuForm" onsubmit="return true;" action="/tdms/homeAction.do" method="post">	
+    <table class="banner_frame" border=0>
+		<tr>
+			<td rowspan=3 class="system_banner">
+				<table class="banner_logo_table" border=0 >
+					<tr>
+						<td rowspan=4 class="logo_big" style="line-height:25px;">
+						 <img src="https://tdms.lenovo.com:443/tdms/images/lenovo_logo.png"/>
+						</td>
+						<td>	
+						</td>
+					</tr>
+					<tr><td class="logo_small">&nbsp;</td></tr>
+					<tr>
+						<!-- <td class="logo_small">&nbsp;&nbsp;Recommended Internet Browser is IE11.</td> -->
+						<td><div id="logo_version"></div></td>
+					</tr>
+					<tr>
+						<td  class="logo_small">
+						  &nbsp;
+						</td>
+					</tr>	
+				</table>
+			</td>
+			<td class="menu_top">
+				Welcome milly_gu@compal.com
+				<font color="#cccccc" style="font-weight:300">|</font>	 
+				<a class="menu_top_link" href="javascript:FxRefresh();FxPageSubmit('systemMenuForm','/tdms/homeAction','','sysPageId=page_common_home');"><img src="https://tdms.lenovo.com:443/tdms//images/home.png" class="icon_menu_top" alt="Home"/>Home</a>
+				<font color="#cccccc" style="font-weight:300">|</font> 	
+				<a class="menu_top_link" href="https://ipgpassport.lenovo.com/admin/toEditMyselfInfo.action"><img src="https://tdms.lenovo.com:443/tdms//images/personal_setting.png" class="icon_menu_top" alt="Personal setting"/>My Information</a>
+				<font color="#cccccc" style="font-weight:300">|</font>
+				<div class="quicklinkmenu">
+	 			<ul class="linkmenu">
+					<li class="linklist">
+						<a class="linkcategory" href="#" ><u>More</u> <small>▼</small></a>
+						<ul class="sublinkmenu">
+							<!--  <li><a href="http://ipgkms.lenovo.com"><span>KMS</span></a></li>-->
+							<li><a href="https://ngspms.lenovo.com/spms"><span>SPMS</span></a></li>
+							<li><a href="https://ipgpms.lenovo.com"><span>PMS</span></a></li>
+							<li><a href="https://mms.lenovo.com/index.aspx"><span>MMS</span></a></li>
+							<li><a href="https://ipgbi.lenovo.com/ims/"><span>IMS</span></a></li>
+						</ul>
+					</li>
+				</ul>
+			 	</div>
+				<font color="#cccccc" style="font-weight:300">|</font>	
+				<a class="menu_top_link" href="javascript:FxShowFreeWindow('manual/TDMS_User_Guide.html',1000,600);"><img src="https://tdms.lenovo.com:443/tdms//images/help.png" class="icon_menu_top" alt="Help"/>Help</a>
+				<font color="#cccccc" style="font-weight:300">|</font> 				
+				<a class="menu_top_link" href="javascript:top.location='https://tdms.lenovo.com:443/tdms/signoutAction!signout.do'"><img src="https://tdms.lenovo.com:443/tdms//images/sign_out.png" class="icon_menu_top" alt="Sign out"/>Log out</a>
+			</td> 
+		</tr>
+		<tr>
+			<td class="menu_blank">
+ 
+				<input type="hidden" id="showTab" value="menu_system_project,menu_system_defect,menu_system_test,menu_system_limitation,menu_system_Deviation,menu_system_dashboard" />
+				<input type="hidden" id="showSub" value="project_subsystem,defect_subsystem,test_subsystem,limitation_subsystem,deviation_subsystem,dashboard_subsystem" />
+				<input type="hidden" id="showMenu" value="project_menu_searchproject;defect_menu_myproject,defect_menu_quicksearch,defect_menu_myfavorite;test_menu_testcaselibrary,test_menu_managetestplan,test_menu_executetestplan;limitation_menu_limitationforapply,limitation_menu_limitationforapprove,limitation_menu_mylist,limitation_menu_finished;deviation_menu_deviationforapply,deviation_menu_mylist,deviation_menu_finished;menu_system_dashboard" />
+				<input type="hidden" id="curTab" name="curTab" value="menu_system_test"/>
+				<input type="hidden" id="curMenu" name="curMenu" value="test_menu_testcaselibrary"/>
+			</td>			
+		</tr>
+					 
+		<tr>
+			<td style="text-align:right;padding-right:0px">				
+				<table id = "tabTable" class="menu_system">
+					<tr>	
+						<td id="menu_system_dashboard" onclick="FxChangeMenuSystem(this);FxClickTab(this)" onmouseover="FxMouseOverMenuSystem(this)" onmouseout="FxMouseOutMenuSystem(this)" class="menu_system_inactive" style="display:none">My Page</td>
+						<td id="menu_system_admin" onclick="FxChangeMenuSystem(this);FxClickTab(this)" onmouseover="FxMouseOverMenuSystem(this)" onmouseout="FxMouseOutMenuSystem(this)" class="menu_system_inactive" style="display:none">Admin</td>
+						<td id="menu_system_project" onclick="FxChangeMenuSystem(this);FxClickTab(this)" onmouseover="FxMouseOverMenuSystem(this)" onmouseout="FxMouseOutMenuSystem(this)" class="menu_system_inactive" style="display:none">Project</td>
+						<td id="menu_system_test" onclick="FxChangeMenuSystem(this);FxClickTab(this)" onmouseover="FxMouseOverMenuSystem(this)" onmouseout="FxMouseOutMenuSystem(this)" class="menu_system_inactive" style="display:none">Test</td>
+						<td id="menu_system_defect" onclick="FxChangeMenuSystem(this);FxClickTab(this)" onmouseover="FxMouseOverMenuSystem(this)" onmouseout="FxMouseOutMenuSystem(this)" class="menu_system_inactive" style="display:none">Defect</td>
+						<td id="menu_system_limitation" onclick="FxChangeMenuSystem(this);FxClickTab(this)" onmouseover="FxMouseOverMenuSystem(this)" onmouseout="FxMouseOutMenuSystem(this)" class="menu_system_inactive" style="display:none">Limitation</td>
+						<td id="menu_system_Deviation" onclick="FxChangeMenuSystem(this);FxClickTab(this)" onmouseover="FxMouseOverMenuSystem(this)" onmouseout="FxMouseOutMenuSystem(this)" class="menu_system_inactive" style="display:none">Deviation</td>												
+					</tr>
+				</table>				
+			</td>
+		</tr>
+	</table>
+	
+	<!-- Module Menu -->
+	<table id="defect_subsystem" class="menu_module" style="display:none">
+		<tr>
+			
+			<td id="defect_menu_myproject" onclick="FxChangeMenuModule(this);FxClickMenu(this)" onmouseover="FxMouseOverMenuModule(this)" onmouseout="FxMouseOutMenuModule(this)" class="menu_module_inactive"  style="display:none">My project</td>
+			<td id="defect_menu_myfavorite" onclick="FxChangeMenuModule(this);FxClickMenu(this)" onmouseover="FxMouseOverMenuModule(this)" onmouseout="FxMouseOutMenuModule(this)" class="menu_module_inactive"  style="display:none;width:135px">My Favorite Defects</td>
+			<td id="defect_menu_mysearch" onclick="FxChangeMenuModule(this);FxClickMenu(this)" onmouseover="FxMouseOverMenuModule(this)" onmouseout="FxMouseOutMenuModule(this)" class="menu_module_inactive"  style="display:none;width:135px">Search in projects</td>
+			<td id="defect_menu_sharedefect" onclick="FxChangeMenuModule(this);FxClickMenu(this)" onmouseover="FxMouseOverMenuModule(this)" onmouseout="FxMouseOutMenuModule(this)" class="menu_module_inactive"  style="display:none">Share pool</td>
+			<td id="defect_menu_statistics" onclick="FxChangeMenuModule(this);FxClickMenu(this)" onmouseover="FxMouseOverMenuModule(this)" onmouseout="FxMouseOutMenuModule(this)" class="menu_module_inactive"  style="display:none">Statistics</td>
+			<td id="defect_menu_coordinator_releaseinfo" onclick="FxChangeMenuModule(this);FxClickMenu(this)" onmouseover="FxMouseOverMenuModule(this)" onmouseout="FxMouseOutMenuModule(this)" class="menu_module_inactive"  style="display:none">Release info</td>
+			<td id="defect_menu_quicksearch" class="menu_module_quick_search" style="display:none">
+			</td>
+			<td  class="menu_module_quick_search">				
+				<div style="width:20%;font-weight:normal;font-size:12px;font-weight:700;font-style:oblique;">
+					<div style="float:right">
+						Quick search
+						<input type="text" onfocus="FxChangeQuickSearch2Active(this)" id="quicksearchdefect" onblur="FxChangeQuickSearch2Inactive(this)" class="quicksearch_inactive" value="Input Defect ID" style="height:15px;background-color:#fcefc5;"/>
+						<input type="text" style="display:none;" />
+						<a id="a_quciksearch" href="javascript:quickSearch()"><img src="https://tdms.lenovo.com:443/tdms//images/quick_search.png" class="icon_quick_search" alt="Quick search"/></a>
+					</div>
+				</div>
+			</td>
+		</tr>
+	</table>
+	
+	<!-- Module Menu -->
+	<table id="project_subsystem" class="menu_module" style="display:none">
+		<tr>
+			
+			<td id="project_menu_searchproject" onclick="FxChangeMenuModule2(this);FxClickMenu(this)" onmouseover="FxMouseOverMenuModule(this)" onmouseout="FxMouseOutMenuModule(this)" class="menu_module_inactive"  style="display:none">Browse project</td>
+			<td id="project_menu_statistics" onclick="FxChangeMenuModule2(this);FxClickMenu(this)" onmouseover="FxMouseOverMenuModule(this)" onmouseout="FxMouseOutMenuModule(this)" class="menu_module_inactive"  style="display:none">Statistics</td>			
+			<td id="project_menu_workloadingexport" onclick="FxChangeMenuModule2(this);FxClickMenu(this)" onmouseover="FxMouseOverMenuModule(this)" onmouseout="FxMouseOutMenuModule(this)" class="menu_module_inactive"  style="display:none">Workload Tracking</td>
+			<td id="project_menu_aitracking" onclick="FxChangeMenuModule2(this);FxClickMenu(this)" onmouseover="FxMouseOverMenuModule(this)" onmouseout="FxMouseOutMenuModule(this)" class="menu_module_inactive"  style="display:none">AI Tracking</td>								
+			<td  class="menu_module_quick_search">						
+			</td>
+		</tr>
+	</table>
+	
+	<!-- Module Menu -->
+	<table id="admin_subsystem" class="menu_module" style="display:none">
+		<tr>
+			<td id="admin_menu_user" onclick="window.open('https://ipgpassport.lenovo.com/admin/listUser.action');" onmouseover="FxMouseOverMenuModule(this)" onmouseout="FxMouseOutMenuModule(this)" class="menu_module_inactive"  style="display:none">User</td>
+			<td id="admin_menu_department" onclick="FxChangeMenuModule3(this);FxClickMenu(this)" onmouseover="FxMouseOverMenuModule(this)" onmouseout="FxMouseOutMenuModule(this)" class="menu_module_inactive"  style="display:none">Department</td>
+			<td id="admin_menu_role" onclick="FxChangeMenuModule3(this);FxClickMenu(this)" onmouseover="FxMouseOverMenuModule(this)" onmouseout="FxMouseOutMenuModule(this)" class="menu_module_inactive"  style="display:none">Role</td>
+			<td id="admin_menu_workflow" onclick="FxChangeMenuModule3(this);FxClickMenu(this)" onmouseover="FxMouseOverMenuModule(this)" onmouseout="FxMouseOutMenuModule(this)" class="menu_module_inactive"  style="display:none">Workflow</td>
+			<td id="admin_menu_datasync" onclick="FxChangeMenuModule3(this);FxClickMenu(this)" onmouseover="FxMouseOverMenuModule(this)" onmouseout="FxMouseOutMenuModule(this)" class="menu_module_inactive"  style="display:none">Data Sync</td>
+			<td id="admin_menu_systemconst" onclick="FxChangeMenuModule3(this);FxClickMenu(this)" onmouseover="FxMouseOverMenuModule(this)" onmouseout="FxMouseOutMenuModule(this)" class="menu_module_inactive"  style="display:none">System const</td>
+			<td id="admin_menu_systeminfo"  onclick="FxChangeMenuModule3(this);FxClickMenu(this)" onmouseover="FxMouseOverMenuModule(this)" onmouseout="FxMouseOutMenuModule(this)" class="menu_module_inactive"  style="display:none">System information</td>
+			<!-- <td id="admin_menu_uploadavl" onclick="FxChangeMenuModule3(this);FxClickMenu(this)" onmouseover="FxMouseOverMenuModule(this)" onmouseout="FxMouseOutMenuModule(this)" class="menu_module_inactive">Upload AVL</td> -->
+			<td  class="menu_module_quick_search">				
+			</td>
+		</tr>
+	</table>
+	
+	<!-- baizhg modify start -->
+	<!-- Module Menu -->
+	<table id="test_subsystem" class="menu_module" style="display:none">
+		<tr>
+			
+			<td id="test_menu_feature" onclick="FxChangeMenuModule4(this);FxClickMenu(this)" onmouseover="FxMouseOverMenuModule(this)" onmouseout="FxMouseOutMenuModule(this)" class="menu_module_inactive" style = "width:150px;display:none" >Feature</td>
+			<td id="test_menu_testcaselibrary" onclick="FxChangeMenuModule4(this);FxClickMenu(this)" onmouseover="FxMouseOverMenuModule(this)" onmouseout="FxMouseOutMenuModule(this)" class="menu_module_inactive" style = "width:150px;display:none" >Test case DB</td>
+			<td id="test_menu_mvp" onclick="FxChangeMenuModule4(this);FxClickMenu(this)" onmouseover="FxMouseOverMenuModule(this)" onmouseout="FxMouseOutMenuModule(this)" class="menu_module_inactive" style = "width:150px;display:none" >MVP</td>
+			<td id="test_menu_managetestplan" onclick="FxChangeMenuModule4(this);FxClickMenu(this)" onmouseover="FxMouseOverMenuModule(this)" onmouseout="FxMouseOutMenuModule(this)" class="menu_module_inactive"  style = "width:150px;display:none">Manage test plan</td>
+			<td id="test_menu_executetestplan" onclick="FxChangeMenuModule4(this);FxClickMenu(this)" onmouseover="FxMouseOverMenuModule(this)" onmouseout="FxMouseOutMenuModule(this)" class="menu_module_inactive"  style = "width:150px;display:none">Test execution</td>
+			<td id="test_menu_testtools" onclick="FxChangeMenuModule4(this);FxClickMenu(this)" onmouseover="FxMouseOverMenuModule(this)" onmouseout="FxMouseOutMenuModule(this)" class="menu_module_inactive"  style = "width:150px;display:none">Test tool library</td>
+			<!-- <td id="test_menu_report" onclick="FxChangeMenuModule4(this);FxClickMenu(this)" onmouseover="FxMouseOverMenuModule(this)" onmouseout="FxMouseOutMenuModule(this)" class="menu_module_inactive" style = "width:150px;display:none">Report</td> -->
+			<td  class="menu_module_quick_search">				
+			</td>
+		</tr>
+	</table>
+	
+	<!-- Module Menu -->
+	<table id="limitation_subsystem" class="menu_module" style="display:none">
+		<tr>
+			<td id="limitation_menu_limitationforapply" onclick="FxChangeMenuModule5(this);FxClickMenu(this)" onmouseover="FxMouseOverMenuModule(this)" onmouseout="FxMouseOutMenuModule(this)" class="menu_module_inactive"  style = "width:170px;display:none">Apply limitation<br /></td>
+			<td id="limitation_menu_limitationforapprove" onclick="FxChangeMenuModule5(this);FxClickMenu(this)" onmouseover="FxMouseOverMenuModule(this)" onmouseout="FxMouseOutMenuModule(this)" class="menu_module_inactive"  style = "width:170px;display:none">Approve limitation<br /></td>
+			<td id="limitation_menu_mylist" onclick="FxChangeMenuModule5(this);FxClickMenu(this)" onmouseover="FxMouseOverMenuModule(this)" onmouseout="FxMouseOutMenuModule(this)" class="menu_module_inactive" style="width:200px;display:none">Limitation under process<br /></td>
+			<td id="limitation_menu_finished" onclick="FxChangeMenuModule5(this);FxClickMenu(this)" onmouseover="FxMouseOverMenuModule(this)" onmouseout="FxMouseOutMenuModule(this)" class="menu_module_inactive" style="width:170px;display:none">Limitation list<br /></td>
+			<td  class="menu_module_quick_search">			
+			<br /></td>
+		</tr>
+	</table>
+	
+	<!-- Module Menu -->
+	<table id="deviation_subsystem" class="menu_module" style="display:none">
+		<tr>
+			<td id="deviation_menu_deviationforapply" onclick="FxChangeMenuModule6(this);FxClickMenu(this)" onmouseover="FxMouseOverMenuModule(this)" onmouseout="FxMouseOutMenuModule(this)" class="menu_module_inactive"  style = "width:170px;display:none">Apply deviation<br /></td>
+			<td id="deviation_menu_deviationforapprove" onclick="FxChangeMenuModule6(this);FxClickMenu(this)" onmouseover="FxMouseOverMenuModule(this)" onmouseout="FxMouseOutMenuModule(this)" class="menu_module_inactive"  style = "width:170px;display:none">Approve deviation<br /></td>
+			<td id="deviation_menu_mylist" onclick="FxChangeMenuModule6(this);FxClickMenu(this)" onmouseover="FxMouseOverMenuModule(this)" onmouseout="FxMouseOutMenuModule(this)" class="menu_module_inactive" style="width:200px;display:none">Deviation under process<br /></td>
+			<td id="deviation_menu_finished" onclick="FxChangeMenuModule6(this);FxClickMenu(this)" onmouseover="FxMouseOverMenuModule(this)" onmouseout="FxMouseOutMenuModule(this)" class="menu_module_inactive" style="width:170px;display:none">Deviation list<br /></td>
+			<td  class="menu_module_quick_search">			
+			<br /></td>
+		</tr>
+	</table>
+	
+	<table id="dashboard_subsystem" class="menu_module" style="display:none">
+		<tr>
+			<td id="dashboard_menu" style="width:170px;display:none">&nbsp;<br /></td>
+			<td class="menu_module_quick_search"><br /></td>
+		</tr>
+	</table>
+</form>
+
+
+
+
+    
+    <script language="javaScript">
+		FxRefresh();
+    </script>
+  </body>
+
+</html>
+		
+			</td>
+		</tr>
+		<tr>
+			<td class="content" style="vertical-align:top;padding-top:0px;">
+					
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+<title>Caselibary</title>
+<link href="/tdms/css/system/common.css" rel="stylesheet" type="text/css" />
+<link href="/tdms/css/system/content.css" rel="stylesheet" type="text/css" />
+<link href="/tdms/css/system/xtree.css" rel="stylesheet" type="text/css" />
+<script  language=javascript src="/tdms/js/common/dojo.js"></script>
+<script  language=javascript src="/tdms/js/common/common.js"></script>
+<script  language=javascript src="/tdms/js/common/utils.js"></script>
+<script  language=javascript src="/tdms/js/common/validate.js"></script>
+<script  language=javascript src="/tdms/js/
+		system/global.js"></script>
+<script  language=javascript src="/tdms/js/module/casemgt/categorymgt.js"></script>
+<script  language=javascript src="/tdms/js/system/xtree/xtree.js"></script>
+<script  language=javascript src="/tdms/js/
+		module/casemgt/testcasedb.js"></script>
+<script  language=javascript src="/tdms/js/module/casemgt/testcasesearch.js"></script>
+
+	<style type="text/css">
+		table.even-odd-table tbody tr:nth-child(even) {background: #ffffff}
+		table.even-odd-table tbody tr:nth-child(odd) {background: #eeeeee}
+		table.case-category-table{
+			margin-left: 0;
+			width: 100%;
+		}
+		div.treeContainer{
+			width: 24%; 
+			float: left;
+		}
+		div.contentContainer{
+			width: 75%; 
+			float: left;
+		}
+		div.treeStyle{ 			
+			font-size: 12px;
+			font-family: verdana, sans-serif;
+			font-weight: 700;
+			color:black;
+			word-wrap: normal;
+		}
+		a.no-permission {
+			color: gray;
+		}
+		a.no-permission:hover { 
+			color: gray;
+			text-decoration:none;
+		}
+	</style>
+</head>
+<script type="text/javascript">
+
+	$(document).ready(function() { 
+		document.oncontextmenu = function(){
+			return false;
+		}
+		
+		document.onselectstart = function(){
+			return false;
+		}
+		
+		document.onkeydown = function(){
+			if((event.ctrlKey) &&  window.event.keyCode == 67){
+				return false;
+			}
+		}
+		showInofs();
+	});
+
+	function doImportCase(){
+		var upfile_obj = document.getElementById("file_uploadfile");
+		document.importCaseForm.action = "testCaseAction!importCaseFromExcel.do?"+"sysPageId=page_test_caselibrary_view";
+		document.importCaseForm.submit();
+	}
+	function doUploadAtachment(){
+		document.importCaseForm.action = "testCaseAction!uploadCaseAttachmentFromTP.do?"+"sysPageId=page_test_caselibrary_view";
+		document.importCaseForm.submit();
+	}
+	function checkUser(){
+
+	}
+</script>
+<body onload="checkUser();">
+	<div id="monoabc" style="width:100%;height:1000%;position:absolute;top:0;left:0;background:#fff">
+	</div>
+			<noscript> 
+			<iframe scr="*.htm"></iframe��? 
+		</noscript>
+	
+	<form name="viewCaseLibaryForm" id="viewCaseForm">
+		<input type="hidden" name="oper" value="" id="oper"/>
+		<input type="hidden" name="caseType" value="" id="caseType"/>
+		<input type="hidden" name="cid" value="" id="cid"/>
+		<input type="hidden" name="cname" value="" id="cname"/>
+		<input type="hidden" name="caseId" value="" id="caseId"/>
+		<input type="hidden" name="currentCategoryRole" value="4" id="currentCategoryRole"/>
+		<input type="hidden" name="entry" value="0" id="entry"/>
+	</form>
+	<table class="content_navigation" border="0">
+		<tbody>
+			<tr>
+				<td>
+					View case library
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+				
+<form id="importCaseForm" name="importCaseForm" onsubmit="return true;" action="/tdms/caseMgtAction.do" method="post" enctype="multipart/form-data">
+		<div align="right" id="uploadThinkPadCase" style="display: none;">
+			<table >
+				<tr>
+					<td>
+						<input type="file" name="upload" value="" id="file_uploadfile"  style="width:160px" contentEditable="false" />
+						<img class="icon_menu_function" src="images/upload.png" onclick="doImportCase();" title="upload case" />
+						<font style="font-weight: 300;" color="#cccccc">|</font>
+						<img class="icon_menu_function" src="images/upload_att.png" onclick="doUploadAtachment();" title="upload attachment" />
+					</td>
+					<td></td><td></td>
+				</tr>
+		<!--<input type="button" value="Upload Case" class="btn" style="width:140px" onclick="doImportCase();" />
+			<input type="button" value="Upload Attachment" class="btn" style="width:140px" onclick="doUploadAtachment();" /> -->
+			</table>
+		</div>
+	</form>
+
+
+
+
+	<form id="testcasedbMainForm">
+		<input type="hidden" id="cur_url" name="cur_url" value="https://tdms.lenovo.com:443/tdms/">
+		<input type="hidden" name="pageType" value="viewCase" id="pageType"/>
+		<input type="hidden" name="categoryId" value="2309" id="categoryId"/>
+		<input type="hidden" name="" value="4" id="request"/>
+		<table class="content_functionMenu" border="0">
+			<tbody>
+				<tr>
+					
+						<td>
+							
+							
+							
+								<a class="menu_function_link case-view" id="searchCaseBtn" href="#">
+									<img class="icon_menu_function" src="images/ppacheck.png" />
+									Search case
+								</a>
+								<font style="font-weight: 300;" color="#cccccc">|</font>
+							
+							
+							
+							
+							
+						</td>
+					
+					
+				</tr>
+			</tbody>
+		</table>
+
+		<div>
+			<div class="treeContainer treeStyle">
+				<div id='category-tree'></div><script type='text/javascript'>var tree=new WebFXTree('Case library','cid=1&cname=Case%20library&pid=null&lv=0&r=0');var t36=new WebFXTreeItem('Lenovo SW Test Case 2022 New Architecture','cid=36&cname=Lenovo%20SW%20Test%20Case%202022%20New%20Architecture&pid=1&lv=1&r=4');tree.add(t36);var t1134=new WebFXTreeItem('Smart Feature','cid=1134&cname=Smart%20Feature&pid=36&lv=2&r=4');t36.add(t1134);var t1141=new WebFXTreeItem('SFA001_Vantage','cid=1141&cname=SFA001_Vantage&pid=1134&lv=3&r=4');t1134.add(t1141);var t1734=new WebFXTreeItem('New UI test case(Only for Vantage2403 and later)','cid=1734&cname=New%20UI%20test%20case%28Only%20for%20Vantage2403%20and%20later%29&pid=1141&lv=4&r=4');t1141.add(t1734);var t1143=new WebFXTreeItem('SFA002_PC Manager','cid=1143&cname=SFA002_PC%20Manager&pid=1134&lv=3&r=4');t1134.add(t1143);var t2630=new WebFXTreeItem('New UI test case(Only for PCM 2510 and later)','cid=2630&cname=New%20UI%20test%20case%28Only%20for%20PCM%202510%20and%20later%29&pid=1143&lv=4&r=4');t1143.add(t2630);var t1144=new WebFXTreeItem('SFA003_Smart Engine','cid=1144&cname=SFA003_Smart%20Engine&pid=1134&lv=3&r=4');t1134.add(t1144);var t1148=new WebFXTreeItem('SFA004_Legion Zone','cid=1148&cname=SFA004_Legion%20Zone&pid=1134&lv=3&r=4');t1134.add(t1148);var t1150=new WebFXTreeItem('SFA005_Fn+Q','cid=1150&cname=SFA005_Fn%2BQ&pid=1134&lv=3&r=4');t1134.add(t1150);var t1151=new WebFXTreeItem('SFA006_ITS','cid=1151&cname=SFA006_ITS&pid=1134&lv=3&r=4');t1134.add(t1151);var t1152=new WebFXTreeItem('SFA007_Lenovo Human Presence Detection','cid=1152&cname=SFA007_Lenovo%20Human%20Presence%20Detection&pid=1134&lv=3&r=4');t1134.add(t1152);var t1153=new WebFXTreeItem('SFA008_Smart feature Interface check','cid=1153&cname=SFA008_Smart%20feature%20Interface%20check&pid=1134&lv=3&r=4');t1134.add(t1153);var t1154=new WebFXTreeItem('SFA009_Super resolution','cid=1154&cname=SFA009_Super%20resolution&pid=1134&lv=3&r=4');t1134.add(t1154);var t1155=new WebFXTreeItem('SFA010_Adaptive Color Temperature','cid=1155&cname=SFA010_Adaptive%20Color%20Temperature&pid=1134&lv=3&r=4');t1134.add(t1155);var t1156=new WebFXTreeItem('SFA011_Adaptive Brightness','cid=1156&cname=SFA011_Adaptive%20Brightness&pid=1134&lv=3&r=4');t1134.add(t1156);var t1157=new WebFXTreeItem('SFA012_Adaptive Contrast','cid=1157&cname=SFA012_Adaptive%20Contrast&pid=1134&lv=3&r=4');t1134.add(t1157);var t1158=new WebFXTreeItem('SFA013_Smart Noise Cancelling','cid=1158&cname=SFA013_Smart%20Noise%20Cancelling&pid=1134&lv=3&r=4');t1134.add(t1158);var t1159=new WebFXTreeItem('SFA014_Nahimic Sound Effect','cid=1159&cname=SFA014_Nahimic%20Sound%20Effect&pid=1134&lv=3&r=4');t1134.add(t1159);var t1160=new WebFXTreeItem('SFA015_Smart Wireless','cid=1160&cname=SFA015_Smart%20Wireless&pid=1134&lv=3&r=4');t1134.add(t1160);var t1165=new WebFXTreeItem('SFA019_Self-Healing','cid=1165&cname=SFA019_Self-Healing&pid=1134&lv=3&r=4');t1134.add(t1165);var t1166=new WebFXTreeItem('SFA020_Intel Unison','cid=1166&cname=SFA020_Intel%20Unison&pid=1134&lv=3&r=4');t1134.add(t1166);var t1167=new WebFXTreeItem('SFA021_Natural File Guard','cid=1167&cname=SFA021_Natural%20File%20Guard&pid=1134&lv=3&r=4');t1134.add(t1167);var t1168=new WebFXTreeItem('SFA022_Smart Note','cid=1168&cname=SFA022_Smart%20Note&pid=1134&lv=3&r=4');t1134.add(t1168);var t1169=new WebFXTreeItem('SFA023_Intel Connectivity Performance Suite','cid=1169&cname=SFA023_Intel%20Connectivity%20Performance%20Suite&pid=1134&lv=3&r=4');t1134.add(t1169);var t1170=new WebFXTreeItem('SFA024_Lenovo Hotkeys','cid=1170&cname=SFA024_Lenovo%20Hotkeys&pid=1134&lv=3&r=4');t1134.add(t1170);var t1171=new WebFXTreeItem('SFA025_Creator Center','cid=1171&cname=SFA025_Creator%20Center&pid=1134&lv=3&r=4');t1134.add(t1171);var t1172=new WebFXTreeItem('SFA026_E-Course Voice','cid=1172&cname=SFA026_E-Course%20Voice&pid=1134&lv=3&r=4');t1134.add(t1172);var t1173=new WebFXTreeItem('SFA027_Smart Battery','cid=1173&cname=SFA027_Smart%20Battery&pid=1134&lv=3&r=4');t1134.add(t1173);var t1175=new WebFXTreeItem('SFA029_Flip to Start','cid=1175&cname=SFA029_Flip%20to%20Start&pid=1134&lv=3&r=4');t1134.add(t1175);var t1176=new WebFXTreeItem('SFA030_Lenovo Aware','cid=1176&cname=SFA030_Lenovo%20Aware&pid=1134&lv=3&r=4');t1134.add(t1176);var t1177=new WebFXTreeItem('SFA031_Eye Care Mode','cid=1177&cname=SFA031_Eye%20Care%20Mode&pid=1134&lv=3&r=4');t1134.add(t1177);var t1178=new WebFXTreeItem('SFA032_Smart Gesture','cid=1178&cname=SFA032_Smart%20Gesture&pid=1134&lv=3&r=4');t1134.add(t1178);var t1179=new WebFXTreeItem('SFA033_Adaptive Keyboard backlight','cid=1179&cname=SFA033_Adaptive%20Keyboard%20backlight&pid=1134&lv=3&r=4');t1134.add(t1179);var t1180=new WebFXTreeItem('SFA034_Smart Appearance','cid=1180&cname=SFA034_Smart%20Appearance&pid=1134&lv=3&r=4');t1134.add(t1180);var t1181=new WebFXTreeItem('SFA035_Tobii','cid=1181&cname=SFA035_Tobii&pid=1134&lv=3&r=4');t1134.add(t1181);var t1182=new WebFXTreeItem('SFA036_Glance','cid=1182&cname=SFA036_Glance&pid=1134&lv=3&r=4');t1134.add(t1182);var t1183=new WebFXTreeItem('SFA037_Lenovo Voice & AI meeting manager','cid=1183&cname=SFA037_Lenovo%20Voice%20%26%20AI%20meeting%20manager&pid=1134&lv=3&r=4');t1134.add(t1183);var t1184=new WebFXTreeItem('SFA038_Alexa','cid=1184&cname=SFA038_Alexa&pid=1134&lv=3&r=4');t1134.add(t1184);var t1192=new WebFXTreeItem('SFA039_Adaptive Refresh Rate','cid=1192&cname=SFA039_Adaptive%20Refresh%20Rate&pid=1134&lv=3&r=4');t1134.add(t1192);var t1200=new WebFXTreeItem('SFA040_Voice ID_Wake up(AI Chip)','cid=1200&cname=SFA040_Voice%20ID_Wake%20up%28AI%20Chip%29&pid=1134&lv=3&r=4');t1134.add(t1200);var t1254=new WebFXTreeItem('SFA041_Legion Arena','cid=1254&cname=SFA041_Legion%20Arena&pid=1134&lv=3&r=4');t1134.add(t1254);var t1318=new WebFXTreeItem('SFA042_Dispatcher','cid=1318&cname=SFA042_Dispatcher&pid=1134&lv=3&r=4');t1134.add(t1318);var t1336=new WebFXTreeItem('SFA043_Adaptive Performance','cid=1336&cname=SFA043_Adaptive%20Performance&pid=1134&lv=3&r=4');t1134.add(t1336);var t1338=new WebFXTreeItem('SFA044_Smart Key','cid=1338&cname=SFA044_Smart%20Key&pid=1134&lv=3&r=4');t1134.add(t1338);var t1340=new WebFXTreeItem('SFA045_Geek Mode','cid=1340&cname=SFA045_Geek%20Mode&pid=1134&lv=3&r=4');t1134.add(t1340);var t1341=new WebFXTreeItem('SFA046_GPU OC_Non Gaming','cid=1341&cname=SFA046_GPU%20OC_Non%20Gaming&pid=1134&lv=3&r=4');t1134.add(t1341);var t1342=new WebFXTreeItem('SFA047_UMA Only mode','cid=1342&cname=SFA047_UMA%20Only%20mode&pid=1134&lv=3&r=4');t1134.add(t1342);var t1445=new WebFXTreeItem('SFA048_Lenovo Snap(OCR)','cid=1445&cname=SFA048_Lenovo%20Snap%28OCR%29&pid=1134&lv=3&r=4');t1134.add(t1445);var t1469=new WebFXTreeItem('SFA049_Lenovo Smart Meeting','cid=1469&cname=SFA049_Lenovo%20Smart%20Meeting&pid=1134&lv=3&r=4');t1134.add(t1469);var t1505=new WebFXTreeItem('SFA051_Better Together','cid=1505&cname=SFA051_Better%20Together&pid=1134&lv=3&r=4');t1134.add(t1505);var t1586=new WebFXTreeItem('SFA053_Hardware parameter check within App','cid=1586&cname=SFA053_Hardware%20parameter%20check%20within%20App&pid=1134&lv=3&r=4');t1134.add(t1586);var t1587=new WebFXTreeItem('SFA054_Smart FPS','cid=1587&cname=SFA054_Smart%20FPS&pid=1134&lv=3&r=4');t1134.add(t1587);var t1594=new WebFXTreeItem('SFA055_Hybird','cid=1594&cname=SFA055_Hybird&pid=1134&lv=3&r=4');t1134.add(t1594);var t1608=new WebFXTreeItem('SFA056_Lenovo AvatarMaster','cid=1608&cname=SFA056_Lenovo%20AvatarMaster&pid=1134&lv=3&r=4');t1134.add(t1608);var t1637=new WebFXTreeItem('SFA057_Baiying One','cid=1637&cname=SFA057_Baiying%20One&pid=1134&lv=3&r=4');t1134.add(t1637);var t1639=new WebFXTreeItem('SFA052_Adaptive Dimming','cid=1639&cname=SFA052_Adaptive%20Dimming&pid=1134&lv=3&r=4');t1134.add(t1639);var t1735=new WebFXTreeItem('SFA059_AI Now ( PRC 联想小天商用版 for TB 13X Only)','cid=1735&cname=SFA059_AI%20Now%20%28%20PRC%20%E8%81%94%E6%83%B3%E5%B0%8F%E5%A4%A9%E5%95%86%E7%94%A8%E7%89%88%20for%20TB%2013X%20Only%29&pid=1134&lv=3&r=4');t1134.add(t1735);var t1804=new WebFXTreeItem('SFA061_Smart Connect','cid=1804&cname=SFA061_Smart%20Connect&pid=1134&lv=3&r=4');t1134.add(t1804);var t1951=new WebFXTreeItem('SFA062_Motion Estimate and Motion Compensation','cid=1951&cname=SFA062_Motion%20Estimate%20and%20Motion%20Compensation&pid=1134&lv=3&r=4');t1134.add(t1951);var t2193=new WebFXTreeItem('SFA064_Legion Space for Notebook','cid=2193&cname=SFA064_Legion%20Space%20for%20Notebook&pid=1134&lv=3&r=4');t1134.add(t2193);var t2211=new WebFXTreeItem('SFA065_Lenovo Hybrid Workspace(联想云电脑)','cid=2211&cname=SFA065_Lenovo%20Hybrid%20Workspace%28%E8%81%94%E6%83%B3%E4%BA%91%E7%94%B5%E8%84%91%29&pid=1134&lv=3&r=4');t1134.add(t2211);var t2240=new WebFXTreeItem('SFA067_Turbo SSD','cid=2240&cname=SFA067_Turbo%20SSD&pid=1134&lv=3&r=4');t1134.add(t2240);var t2605=new WebFXTreeItem('SFA070_AI Turbo','cid=2605&cname=SFA070_AI%20Turbo&pid=1134&lv=3&r=4');t1134.add(t2605);var t1145=new WebFXTreeItem('Performance','cid=1145&cname=Performance&pid=36&lv=2&r=4');t36.add(t1145);var t1292=new WebFXTreeItem('Auto Performance','cid=1292&cname=Auto%20Performance&pid=1145&lv=3&r=4');t1145.add(t1292);var t1589=new WebFXTreeItem('NPI Performance Auto Test','cid=1589&cname=NPI%20Performance%20Auto%20Test&pid=1145&lv=3&r=4');t1145.add(t1589);var t1994=new WebFXTreeItem('Sustaining','cid=1994&cname=Sustaining&pid=1145&lv=3&r=4');t1145.add(t1994);var t1195=new WebFXTreeItem('User scenario ','cid=1195&cname=User%20scenario%20&pid=36&lv=2&r=4');t36.add(t1195);var t1215=new WebFXTreeItem('USA001.Work（Cancel）','cid=1215&cname=USA001.Work%EF%BC%88Cancel%EF%BC%89&pid=1195&lv=3&r=4');t1195.add(t1215);var t1216=new WebFXTreeItem('USA002.Communication(Cancel)','cid=1216&cname=USA002.Communication%28Cancel%29&pid=1195&lv=3&r=4');t1195.add(t1216);var t1217=new WebFXTreeItem('USA003.Browser(Cancel)','cid=1217&cname=USA003.Browser%28Cancel%29&pid=1195&lv=3&r=4');t1195.add(t1217);var t1218=new WebFXTreeItem('USA004.DCC(Cancel)','cid=1218&cname=USA004.DCC%28Cancel%29&pid=1195&lv=3&r=4');t1195.add(t1218);var t1219=new WebFXTreeItem('USA005.Game','cid=1219&cname=USA005.Game&pid=1195&lv=3&r=4');t1195.add(t1219);var t1220=new WebFXTreeItem('USA006.Education(Cancel)','cid=1220&cname=USA006.Education%28Cancel%29&pid=1195&lv=3&r=4');t1195.add(t1220);var t1221=new WebFXTreeItem('USA007.Multimedia(Cancel)','cid=1221&cname=USA007.Multimedia%28Cancel%29&pid=1195&lv=3&r=4');t1195.add(t1221);var t1222=new WebFXTreeItem('USA008.System operation(Cancel)','cid=1222&cname=USA008.System%20operation%28Cancel%29&pid=1195&lv=3&r=4');t1195.add(t1222);var t1196=new WebFXTreeItem('Stability ','cid=1196&cname=Stability%20&pid=36&lv=2&r=4');t36.add(t1196);var t1197=new WebFXTreeItem('Compatibility','cid=1197&cname=Compatibility&pid=36&lv=2&r=4');t36.add(t1197);var t1209=new WebFXTreeItem('IOA001.USB Type A ','cid=1209&cname=IOA001.USB%20Type%20A%20&pid=1197&lv=3&r=4');t1197.add(t1209);var t1210=new WebFXTreeItem('IOA002.USB Type C','cid=1210&cname=IOA002.USB%20Type%20C&pid=1197&lv=3&r=4');t1197.add(t1210);var t1211=new WebFXTreeItem('IOA003.LAN','cid=1211&cname=IOA003.LAN&pid=1197&lv=3&r=4');t1197.add(t1211);var t1212=new WebFXTreeItem('IOA004.TBT','cid=1212&cname=IOA004.TBT&pid=1197&lv=3&r=4');t1197.add(t1212);var t1213=new WebFXTreeItem('IOA005.Audio Jack','cid=1213&cname=IOA005.Audio%20Jack&pid=1197&lv=3&r=4');t1197.add(t1213);var t1214=new WebFXTreeItem('IOA006.Monitor(VGA/HDMI/DP/Type-c)','cid=1214&cname=IOA006.Monitor%28VGA%2FHDMI%2FDP%2FType-c%29&pid=1197&lv=3&r=4');t1197.add(t1214);var t1198=new WebFXTreeItem('Function case','cid=1198&cname=Function%20case&pid=36&lv=2&r=4');t36.add(t1198);var t1199=new WebFXTreeItem('Basic function','cid=1199&cname=Basic%20function&pid=1198&lv=3&r=4');t1198.add(t1199);var t1201=new WebFXTreeItem('Storage & Memory','cid=1201&cname=Storage%20%26%20Memory&pid=1198&lv=3&r=4');t1198.add(t1201);var t1202=new WebFXTreeItem('Preload & OS','cid=1202&cname=Preload%20%26%20OS&pid=1198&lv=3&r=4');t1198.add(t1202);var t1203=new WebFXTreeItem('Interaction','cid=1203&cname=Interaction&pid=1198&lv=3&r=4');t1198.add(t1203);var t1204=new WebFXTreeItem('Applications','cid=1204&cname=Applications&pid=1198&lv=3&r=4');t1198.add(t1204);var t1207=new WebFXTreeItem('CPU & GPU','cid=1207&cname=CPU%20%26%20GPU&pid=1198&lv=3&r=4');t1198.add(t1207);var t1208=new WebFXTreeItem('Connectivity','cid=1208&cname=Connectivity&pid=1198&lv=3&r=4');t1198.add(t1208);var t1206=new WebFXTreeItem('Accessories for full function','cid=1206&cname=Accessories%20for%20full%20function&pid=36&lv=2&r=4');t36.add(t1206);var t1224=new WebFXTreeItem('WigigDock(Cancel)','cid=1224&cname=WigigDock%28Cancel%29&pid=1206&lv=3&r=4');t1206.add(t1224);var t1226=new WebFXTreeItem('USB-C Dock','cid=1226&cname=USB-C%20Dock&pid=1206&lv=3&r=4');t1206.add(t1226);var t1227=new WebFXTreeItem('Thunderbolt Dock','cid=1227&cname=Thunderbolt%20Dock&pid=1206&lv=3&r=4');t1206.add(t1227);var t1229=new WebFXTreeItem('Hybrid Dock','cid=1229&cname=Hybrid%20Dock&pid=1206&lv=3&r=4');t1206.add(t1229);var t1230=new WebFXTreeItem('Power USB-C Travel Hub&USB Mini Dock&Dual display Dock','cid=1230&cname=Power%20USB-C%20Travel%20Hub%26USB%20Mini%20Dock%26Dual%20display%20Dock&pid=1206&lv=3&r=4');t1206.add(t1230);var t1233=new WebFXTreeItem('Lenovo 3-in-1 Hub(Cancel)','cid=1233&cname=Lenovo%203-in-1%20Hub%28Cancel%29&pid=1206&lv=3&r=4');t1206.add(t1233);var t1234=new WebFXTreeItem('USB-C Travel Hub Gen2','cid=1234&cname=USB-C%20Travel%20Hub%20Gen2&pid=1206&lv=3&r=4');t1206.add(t1234);var t1235=new WebFXTreeItem('Lenovo USB-C 3-in-1/7-in-1 Hub/USB-C to 4 USB-A hub/Slim travel Dock ','cid=1235&cname=Lenovo%20USB-C%203-in-1%2F7-in-1%20Hub%2FUSB-C%20to%204%20USB-A%20hub%2FSlim%20travel%20Dock%20&pid=1206&lv=3&r=4');t1206.add(t1235);var t1253=new WebFXTreeItem('Folio Case（Remove）','cid=1253&cname=Folio%20Case%EF%BC%88Remove%EF%BC%89&pid=1206&lv=3&r=4');t1206.add(t1253);var t1444=new WebFXTreeItem('Wifi Dock','cid=1444&cname=Wifi%20Dock&pid=1206&lv=3&r=4');t1206.add(t1444);var t1779=new WebFXTreeItem('TWS earphone','cid=1779&cname=TWS%20earphone&pid=1206&lv=3&r=4');t1206.add(t1779);var t2183=new WebFXTreeItem('Lenovo 4-in-1 Hub','cid=2183&cname=Lenovo%204-in-1%20Hub&pid=1206&lv=3&r=4');t1206.add(t2183);var t2189=new WebFXTreeItem('D NPU','cid=2189&cname=D%20NPU&pid=1206&lv=3&r=4');t1206.add(t2189);var t2581=new WebFXTreeItem('Lenovo GaN Dock','cid=2581&cname=Lenovo%20GaN%20Dock&pid=1206&lv=3&r=4');t1206.add(t2581);var t2597=new WebFXTreeItem('Magic Bay','cid=2597&cname=Magic%20Bay&pid=1206&lv=3&r=4');t1206.add(t2597);var t1223=new WebFXTreeItem('Accessories for compatibility','cid=1223&cname=Accessories%20for%20compatibility&pid=36&lv=2&r=4');t36.add(t1223);var t1236=new WebFXTreeItem('Non-Windows','cid=1236&cname=Non-Windows&pid=36&lv=2&r=4');t36.add(t1236);var t1304=new WebFXTreeItem('Customized Function&Feature','cid=1304&cname=Customized%20Function%26Feature&pid=36&lv=2&r=4');t36.add(t1304);var t1319=new WebFXTreeItem('Basic Function','cid=1319&cname=Basic%20Function&pid=1304&lv=3&r=4');t1304.add(t1319);var t1321=new WebFXTreeItem('Storage&Memory','cid=1321&cname=Storage%26Memory&pid=1304&lv=3&r=4');t1304.add(t1321);var t1322=new WebFXTreeItem('Preload&OS','cid=1322&cname=Preload%26OS&pid=1304&lv=3&r=4');t1304.add(t1322);var t1323=new WebFXTreeItem('Interaction','cid=1323&cname=Interaction&pid=1304&lv=3&r=4');t1304.add(t1323);var t1324=new WebFXTreeItem('Connectivity','cid=1324&cname=Connectivity&pid=1304&lv=3&r=4');t1304.add(t1324);var t1325=new WebFXTreeItem('Accessories for full function','cid=1325&cname=Accessories%20for%20full%20function&pid=1304&lv=3&r=4');t1304.add(t1325);var t1327=new WebFXTreeItem('USB Dock ','cid=1327&cname=USB%20Dock%20&pid=1325&lv=4&r=4');t1325.add(t1327);var t1329=new WebFXTreeItem('BT Folio Case','cid=1329&cname=BT%20Folio%20Case&pid=1325&lv=4&r=4');t1325.add(t1329);var t1330=new WebFXTreeItem('Folio Case','cid=1330&cname=Folio%20Case&pid=1325&lv=4&r=4');t1325.add(t1330);var t1653=new WebFXTreeItem('OcuLink Dock','cid=1653&cname=OcuLink%20Dock&pid=1325&lv=4&r=4');t1325.add(t1653);var t1326=new WebFXTreeItem('Accessories for compatibility','cid=1326&cname=Accessories%20for%20compatibility&pid=1304&lv=3&r=4');t1304.add(t1326);var t1356=new WebFXTreeItem('Smart feature','cid=1356&cname=Smart%20feature&pid=1304&lv=3&r=4');t1304.add(t1356);var t1357=new WebFXTreeItem('Yogabook solution','cid=1357&cname=Yogabook%20solution&pid=1356&lv=4&r=4');t1356.add(t1357);var t1473=new WebFXTreeItem('Flip to start','cid=1473&cname=Flip%20to%20start&pid=1356&lv=4&r=4');t1356.add(t1473);var t1593=new WebFXTreeItem('Display plus','cid=1593&cname=Display%20plus&pid=1356&lv=4&r=4');t1356.add(t1593);var t1659=new WebFXTreeItem('Legion go(Cancel)','cid=1659&cname=Legion%20go%28Cancel%29&pid=1356&lv=4&r=4');t1356.add(t1659);var t1733=new WebFXTreeItem('Ready For Assistant(Cancel)','cid=1733&cname=Ready%20For%20Assistant%28Cancel%29&pid=1356&lv=4&r=4');t1356.add(t1733);var t1996=new WebFXTreeItem('Smart storage','cid=1996&cname=Smart%20storage&pid=1356&lv=4&r=4');t1356.add(t1996);var t2227=new WebFXTreeItem('Legion Zshell(3D app)','cid=2227&cname=Legion%20Zshell%283D%20app%29&pid=1356&lv=4&r=4');t1356.add(t2227);var t2604=new WebFXTreeItem('Magicenter','cid=2604&cname=Magicenter&pid=1356&lv=4&r=4');t1356.add(t2604);var t1471=new WebFXTreeItem('Applications','cid=1471&cname=Applications&pid=1304&lv=3&r=4');t1304.add(t1471);var t1472=new WebFXTreeItem('Thinkbook plus Gen4 color Eink','cid=1472&cname=Thinkbook%20plus%20Gen4%20color%20Eink&pid=1471&lv=4&r=4');t1471.add(t1472);var t1979=new WebFXTreeItem('3rd part App','cid=1979&cname=3rd%20part%20App&pid=1471&lv=4&r=4');t1471.add(t1979);var t1991=new WebFXTreeItem('K12 Apps','cid=1991&cname=K12%20Apps&pid=1471&lv=4&r=4');t1471.add(t1991);var t1503=new WebFXTreeItem('Performance','cid=1503&cname=Performance&pid=1304&lv=3&r=4');t1304.add(t1503);var t1504=new WebFXTreeItem('YogaBook Solution','cid=1504&cname=YogaBook%20Solution&pid=1503&lv=4&r=4');t1503.add(t1504);var t1995=new WebFXTreeItem('Thinkbook Plus','cid=1995&cname=Thinkbook%20Plus&pid=1503&lv=4&r=4');t1503.add(t1995);var t1632=new WebFXTreeItem('D NPU','cid=1632&cname=D%20NPU&pid=1304&lv=3&r=4');t1304.add(t1632);var t1977=new WebFXTreeItem('LegionGo Only','cid=1977&cname=LegionGo%20Only&pid=36&lv=2&r=4');t36.add(t1977);var t1978=new WebFXTreeItem('WOA Only','cid=1978&cname=WOA%20Only&pid=36&lv=2&r=4');t36.add(t1978);var t1980=new WebFXTreeItem('Lenovo AI Feature','cid=1980&cname=Lenovo%20AI%20Feature&pid=36&lv=2&r=4');t36.add(t1980);var t1981=new WebFXTreeItem('LAA001_XiaoTian','cid=1981&cname=LAA001_XiaoTian&pid=1980&lv=3&r=4');t1980.add(t1981);var t1982=new WebFXTreeItem('LAA002_AI Now','cid=1982&cname=LAA002_AI%20Now&pid=1980&lv=3&r=4');t1980.add(t1982);var t1983=new WebFXTreeItem('LAA003_Creator Zone','cid=1983&cname=LAA003_Creator%20Zone&pid=1980&lv=3&r=4');t1980.add(t1983);var t1984=new WebFXTreeItem('LAA004_Learning Zone','cid=1984&cname=LAA004_Learning%20Zone&pid=1980&lv=3&r=4');t1980.add(t1984);var t2192=new WebFXTreeItem('LAA005_Gaming Zone SDK','cid=2192&cname=LAA005_Gaming%20Zone%20SDK&pid=1980&lv=3&r=4');t1980.add(t2192);var t2587=new WebFXTreeItem('LAA007_Immersive AI (FlickLift)','cid=2587&cname=LAA007_Immersive%20AI%20%28FlickLift%29&pid=1980&lv=3&r=4');t1980.add(t2587);var t1786=new WebFXTreeItem('Lenovo SW Test Case 2025 Architecture','cid=1786&cname=Lenovo%20SW%20Test%20Case%202025%20Architecture&pid=1&lv=1&r=4');tree.add(t1786);var t2287=new WebFXTreeItem('Core Function','cid=2287&cname=Core%20Function&pid=1786&lv=2&r=4');t1786.add(t2287);var t2290=new WebFXTreeItem('System Test','cid=2290&cname=System%20Test&pid=2287&lv=3&r=4');t2287.add(t2290);var t2297=new WebFXTreeItem('Platform','cid=2297&cname=Platform&pid=2290&lv=4&r=4');t2290.add(t2297);var t2298=new WebFXTreeItem('Subsystem','cid=2298&cname=Subsystem&pid=2290&lv=4&r=4');t2290.add(t2298);var t2299=new WebFXTreeItem('Stability','cid=2299&cname=Stability&pid=2290&lv=4&r=4');t2290.add(t2299);var t2300=new WebFXTreeItem('Performance','cid=2300&cname=Performance&pid=2290&lv=4&r=4');t2290.add(t2300);var t2312=new WebFXTreeItem('HLK','cid=2312&cname=HLK&pid=2290&lv=4&r=4');t2290.add(t2312);var t2373=new WebFXTreeItem('User Scenario','cid=2373&cname=User%20Scenario&pid=2290&lv=4&r=4');t2290.add(t2373);var t2291=new WebFXTreeItem('Segment Feature Test','cid=2291&cname=Segment%20Feature%20Test&pid=2287&lv=3&r=4');t2287.add(t2291);var t2292=new WebFXTreeItem('Gaming Feature','cid=2292&cname=Gaming%20Feature&pid=2291&lv=4&r=4');t2291.add(t2292);var t2343=new WebFXTreeItem('Over Driver','cid=2343&cname=Over%20Driver&pid=2292&lv=6&r=4');t2292.add(t2343);var t2362=new WebFXTreeItem('Force Sensor Keyboard','cid=2362&cname=Force%20Sensor%20Keyboard&pid=2292&lv=6&r=4');t2292.add(t2362);var t2368=new WebFXTreeItem('Adaptive Refresh Rate','cid=2368&cname=Adaptive%20Refresh%20Rate&pid=2292&lv=6&r=4');t2292.add(t2368);var t2404=new WebFXTreeItem('Lenovo AI_Gaming Zone SDK','cid=2404&cname=Lenovo%20AI_Gaming%20Zone%20SDK&pid=2292&lv=6&r=4');t2292.add(t2404);var t2535=new WebFXTreeItem('Legion Zone','cid=2535&cname=Legion%20Zone&pid=2292&lv=6&r=4');t2292.add(t2535);var t2536=new WebFXTreeItem('FN+Q','cid=2536&cname=FN%2BQ&pid=2292&lv=6&r=4');t2292.add(t2536);var t2537=new WebFXTreeItem('Legion Space','cid=2537&cname=Legion%20Space&pid=2292&lv=6&r=4');t2292.add(t2537);var t2558=new WebFXTreeItem('BIOS related','cid=2558&cname=BIOS%20related&pid=2292&lv=6&r=4');t2292.add(t2558);var t2572=new WebFXTreeItem('Legion Go','cid=2572&cname=Legion%20Go&pid=2292&lv=6&r=4');t2292.add(t2572);var t2381=new WebFXTreeItem('Yoga&Idea Feature','cid=2381&cname=Yoga%26Idea%20Feature&pid=2291&lv=4&r=4');t2291.add(t2381);var t2474=new WebFXTreeItem('BIOS related','cid=2474&cname=BIOS%20related&pid=2381&lv=6&r=4');t2381.add(t2474);var t2475=new WebFXTreeItem('Smart Note 2.0&3.0','cid=2475&cname=Smart%20Note%202.0%263.0&pid=2381&lv=6&r=4');t2381.add(t2475);var t2476=new WebFXTreeItem('Yoga Mode Control(YMC3.0)','cid=2476&cname=Yoga%20Mode%20Control%28YMC3.0%29&pid=2381&lv=6&r=4');t2381.add(t2476);var t2571=new WebFXTreeItem('YogaBook solutions','cid=2571&cname=YogaBook%20solutions&pid=2381&lv=6&r=4');t2381.add(t2571);var t2382=new WebFXTreeItem('SMB Feature','cid=2382&cname=SMB%20Feature&pid=2291&lv=4&r=4');t2291.add(t2382);var t2615=new WebFXTreeItem('Commercial Vantage','cid=2615&cname=Commercial%20Vantage&pid=2382&lv=5&r=4');t2382.add(t2615);var t2618=new WebFXTreeItem('Oculink dock','cid=2618&cname=Oculink%20dock&pid=2382&lv=5&r=4');t2382.add(t2618);var t2384=new WebFXTreeItem('Better Together','cid=2384&cname=Better%20Together&pid=2382&lv=6&r=4');t2382.add(t2384);var t2386=new WebFXTreeItem('Lenovo Baiying One','cid=2386&cname=Lenovo%20Baiying%20One&pid=2382&lv=6&r=4');t2382.add(t2386);var t2461=new WebFXTreeItem('Thinkbook plus Gen6 unique','cid=2461&cname=Thinkbook%20plus%20Gen6%20unique&pid=2382&lv=6&r=4');t2382.add(t2461);var t2470=new WebFXTreeItem('Smart Note 1.0','cid=2470&cname=Smart%20Note%201.0&pid=2382&lv=6&r=4');t2382.add(t2470);var t2471=new WebFXTreeItem('PC Manger Smart Feature','cid=2471&cname=PC%20Manger%20Smart%20Feature&pid=2382&lv=6&r=4');t2382.add(t2471);var t2472=new WebFXTreeItem('Lenovo Smart Meeting','cid=2472&cname=Lenovo%20Smart%20Meeting&pid=2382&lv=6&r=4');t2382.add(t2472);var t2473=new WebFXTreeItem('BIOS related','cid=2473&cname=BIOS%20related&pid=2382&lv=6&r=4');t2382.add(t2473);var t2387=new WebFXTreeItem('Lenovo Smart Feature Common','cid=2387&cname=Lenovo%20Smart%20Feature%20Common&pid=2291&lv=4&r=4');t2291.add(t2387);var t2588=new WebFXTreeItem('Lenovo AI_Immersive AI','cid=2588&cname=Lenovo%20AI_Immersive%20AI&pid=2387&lv=5&r=4');t2387.add(t2588);var t2598=new WebFXTreeItem('Lenovo AI_AI Scheduler','cid=2598&cname=Lenovo%20AI_AI%20Scheduler&pid=2387&lv=5&r=4');t2387.add(t2598);var t2621=new WebFXTreeItem('AI turbo','cid=2621&cname=AI%20turbo&pid=2387&lv=5&r=4');t2387.add(t2621);var t2389=new WebFXTreeItem('Lenovo PC Manger','cid=2389&cname=Lenovo%20PC%20Manger&pid=2387&lv=6&r=4');t2387.add(t2389);var t2390=new WebFXTreeItem('Lenovo Vantage','cid=2390&cname=Lenovo%20Vantage&pid=2387&lv=6&r=4');t2387.add(t2390);var t2391=new WebFXTreeItem('Lenovo AI_Learning Zone','cid=2391&cname=Lenovo%20AI_Learning%20Zone&pid=2387&lv=6&r=4');t2387.add(t2391);var t2392=new WebFXTreeItem('Lenovo AI_XiaoTian','cid=2392&cname=Lenovo%20AI_XiaoTian&pid=2387&lv=6&r=4');t2387.add(t2392);var t2393=new WebFXTreeItem('Lenovo AI_AI Now','cid=2393&cname=Lenovo%20AI_AI%20Now&pid=2387&lv=6&r=4');t2387.add(t2393);var t2394=new WebFXTreeItem('Lenovo AI_Creator Zone','cid=2394&cname=Lenovo%20AI_Creator%20Zone&pid=2387&lv=6&r=4');t2387.add(t2394);var t2397=new WebFXTreeItem('Lenovo Smart Meeting','cid=2397&cname=Lenovo%20Smart%20Meeting&pid=2387&lv=6&r=4');t2387.add(t2397);var t2406=new WebFXTreeItem('Lenovo Feature Interface Check','cid=2406&cname=Lenovo%20Feature%20Interface%20Check&pid=2387&lv=6&r=4');t2387.add(t2406);var t2407=new WebFXTreeItem('Lenovo Hardware parameter check within APP','cid=2407&cname=Lenovo%20Hardware%20parameter%20check%20within%20APP&pid=2387&lv=6&r=4');t2387.add(t2407);var t2408=new WebFXTreeItem('Lenovo Human Presence Detection','cid=2408&cname=Lenovo%20Human%20Presence%20Detection&pid=2387&lv=6&r=4');t2387.add(t2408);var t2409=new WebFXTreeItem('Dispatcher','cid=2409&cname=Dispatcher&pid=2387&lv=6&r=4');t2387.add(t2409);var t2410=new WebFXTreeItem('ITS','cid=2410&cname=ITS&pid=2387&lv=6&r=4');t2387.add(t2410);var t2411=new WebFXTreeItem('Smart Connect','cid=2411&cname=Smart%20Connect&pid=2387&lv=6&r=4');t2387.add(t2411);var t2412=new WebFXTreeItem('Dynamic Refresh Rate(DRR)','cid=2412&cname=Dynamic%20Refresh%20Rate%28DRR%29&pid=2387&lv=6&r=4');t2387.add(t2412);var t2414=new WebFXTreeItem('Adaptive Color Temperature','cid=2414&cname=Adaptive%20Color%20Temperature&pid=2387&lv=6&r=4');t2387.add(t2414);var t2415=new WebFXTreeItem('Adaptive Dimming','cid=2415&cname=Adaptive%20Dimming&pid=2387&lv=6&r=4');t2387.add(t2415);var t2416=new WebFXTreeItem('Eyecare Mode','cid=2416&cname=Eyecare%20Mode&pid=2387&lv=6&r=4');t2387.add(t2416);var t2417=new WebFXTreeItem('Smart Key','cid=2417&cname=Smart%20Key&pid=2387&lv=6&r=4');t2387.add(t2417);var t2418=new WebFXTreeItem('Folio Case','cid=2418&cname=Folio%20Case&pid=2387&lv=6&r=4');t2387.add(t2418);var t2419=new WebFXTreeItem('Multi mode(G-sensor)','cid=2419&cname=Multi%20mode%28G-sensor%29&pid=2387&lv=6&r=4');t2387.add(t2419);var t2420=new WebFXTreeItem('Smart Gesture','cid=2420&cname=Smart%20Gesture&pid=2387&lv=6&r=4');t2387.add(t2420);var t2421=new WebFXTreeItem('UMA Only Mode','cid=2421&cname=UMA%20Only%20Mode&pid=2387&lv=6&r=4');t2387.add(t2421);var t2422=new WebFXTreeItem('GPU OC','cid=2422&cname=GPU%20OC&pid=2387&lv=6&r=4');t2387.add(t2422);var t2423=new WebFXTreeItem('Geek Mode','cid=2423&cname=Geek%20Mode&pid=2387&lv=6&r=4');t2387.add(t2423);var t2424=new WebFXTreeItem('Edge Luminace Profile(ELP)','cid=2424&cname=Edge%20Luminace%20Profile%28ELP%29&pid=2387&lv=6&r=4');t2387.add(t2424);var t2425=new WebFXTreeItem('Auto Color Management','cid=2425&cname=Auto%20Color%20Management&pid=2387&lv=6&r=4');t2387.add(t2425);var t2426=new WebFXTreeItem('Super Resolution','cid=2426&cname=Super%20Resolution&pid=2387&lv=6&r=4');t2387.add(t2426);var t2427=new WebFXTreeItem('Adaptive Refresh Rate','cid=2427&cname=Adaptive%20Refresh%20Rate&pid=2387&lv=6&r=4');t2387.add(t2427);var t2467=new WebFXTreeItem('Smart Wireless','cid=2467&cname=Smart%20Wireless&pid=2387&lv=6&r=4');t2387.add(t2467);var t2578=new WebFXTreeItem('Turbo SSD','cid=2578&cname=Turbo%20SSD&pid=2387&lv=6&r=4');t2387.add(t2578);var t2505=new WebFXTreeItem('Unique Feature Test','cid=2505&cname=Unique%20Feature%20Test&pid=2287&lv=3&r=4');t2287.add(t2505);var t2507=new WebFXTreeItem('Adaptive Performance','cid=2507&cname=Adaptive%20Performance&pid=2505&lv=4&r=4');t2505.add(t2507);var t2508=new WebFXTreeItem('WWAN','cid=2508&cname=WWAN&pid=2505&lv=4&r=4');t2505.add(t2508);var t2509=new WebFXTreeItem('GPS','cid=2509&cname=GPS&pid=2505&lv=4&r=4');t2505.add(t2509);var t2510=new WebFXTreeItem('NFC','cid=2510&cname=NFC&pid=2505&lv=4&r=4');t2505.add(t2510);var t2511=new WebFXTreeItem('Rear Camera','cid=2511&cname=Rear%20Camera&pid=2505&lv=4&r=4');t2505.add(t2511);var t2512=new WebFXTreeItem('DG2','cid=2512&cname=DG2&pid=2505&lv=4&r=4');t2505.add(t2512);var t2513=new WebFXTreeItem('Intergrated Earbuds','cid=2513&cname=Intergrated%20Earbuds&pid=2505&lv=4&r=4');t2505.add(t2513);var t2514=new WebFXTreeItem('D NPU','cid=2514&cname=D%20NPU&pid=2505&lv=4&r=4');t2505.add(t2514);var t2515=new WebFXTreeItem('Onekey Recovery','cid=2515&cname=Onekey%20Recovery&pid=2505&lv=4&r=4');t2505.add(t2515);var t2516=new WebFXTreeItem('Media Card','cid=2516&cname=Media%20Card&pid=2505&lv=4&r=4');t2505.add(t2516);var t2517=new WebFXTreeItem('P sensor','cid=2517&cname=P%20sensor&pid=2505&lv=4&r=4');t2505.add(t2517);var t2518=new WebFXTreeItem('Flip to start w/ hall sensor+TOF sensor solution','cid=2518&cname=Flip%20to%20start%20w%2F%20hall%20sensor%2BTOF%20sensor%20solution&pid=2505&lv=4&r=4');t2505.add(t2518);var t2613=new WebFXTreeItem('Fuji only','cid=2613&cname=Fuji%20only&pid=2505&lv=4&r=4');t2505.add(t2613);var t2622=new WebFXTreeItem('Magicenter','cid=2622&cname=Magicenter&pid=2505&lv=4&r=4');t2505.add(t2622);var t2624=new WebFXTreeItem('Lenovo 3D studio test case','cid=2624&cname=Lenovo%203D%20studio%20test%20case&pid=2505&lv=4&r=4');t2505.add(t2624);var t2288=new WebFXTreeItem('Enhanced Function','cid=2288&cname=Enhanced%20Function&pid=1786&lv=2&r=4');t1786.add(t2288);var t2301=new WebFXTreeItem('System Test','cid=2301&cname=System%20Test&pid=2288&lv=3&r=4');t2288.add(t2301);var t2308=new WebFXTreeItem('Platform','cid=2308&cname=Platform&pid=2301&lv=4&r=4');t2301.add(t2308);var t2309=new WebFXTreeItem('Subsystem','cid=2309&cname=Subsystem&pid=2301&lv=4&r=4');t2301.add(t2309);var t2310=new WebFXTreeItem('Stability','cid=2310&cname=Stability&pid=2301&lv=4&r=4');t2301.add(t2310);var t2311=new WebFXTreeItem('Performance','cid=2311&cname=Performance&pid=2301&lv=4&r=4');t2301.add(t2311);var t2313=new WebFXTreeItem('HLK','cid=2313&cname=HLK&pid=2301&lv=4&r=4');t2301.add(t2313);var t2314=new WebFXTreeItem('User scenario','cid=2314&cname=User%20scenario&pid=2301&lv=4&r=4');t2301.add(t2314);var t2302=new WebFXTreeItem('Segment Feature Test','cid=2302&cname=Segment%20Feature%20Test&pid=2288&lv=3&r=4');t2288.add(t2302);var t2303=new WebFXTreeItem('Gaming Feature','cid=2303&cname=Gaming%20Feature&pid=2302&lv=4&r=4');t2302.add(t2303);var t2345=new WebFXTreeItem('Legion Go','cid=2345&cname=Legion%20Go&pid=2303&lv=6&r=4');t2303.add(t2345);var t2363=new WebFXTreeItem('Force Sensor Keyboard','cid=2363&cname=Force%20Sensor%20Keyboard&pid=2303&lv=6&r=4');t2303.add(t2363);var t2477=new WebFXTreeItem('Lenovo AI_Gaming Zone SDK','cid=2477&cname=Lenovo%20AI_Gaming%20Zone%20SDK&pid=2303&lv=6&r=4');t2303.add(t2477);var t2538=new WebFXTreeItem('Legion Zone','cid=2538&cname=Legion%20Zone&pid=2303&lv=6&r=4');t2303.add(t2538);var t2539=new WebFXTreeItem('FN+Q','cid=2539&cname=FN%2BQ&pid=2303&lv=6&r=4');t2303.add(t2539);var t2540=new WebFXTreeItem('Legion Space','cid=2540&cname=Legion%20Space&pid=2303&lv=6&r=4');t2303.add(t2540);var t2569=new WebFXTreeItem('Nahimic sound effect','cid=2569&cname=Nahimic%20sound%20effect&pid=2303&lv=6&r=4');t2303.add(t2569);var t2570=new WebFXTreeItem('Legion Arena','cid=2570&cname=Legion%20Arena&pid=2303&lv=6&r=4');t2303.add(t2570);var t2428=new WebFXTreeItem('Lenovo Smart Feature Common','cid=2428&cname=Lenovo%20Smart%20Feature%20Common&pid=2302&lv=4&r=4');t2302.add(t2428);var t2589=new WebFXTreeItem('Lenovo AI_Immersive AI','cid=2589&cname=Lenovo%20AI_Immersive%20AI&pid=2428&lv=5&r=4');t2428.add(t2589);var t2620=new WebFXTreeItem('AI turbo','cid=2620&cname=AI%20turbo&pid=2428&lv=5&r=4');t2428.add(t2620);var t2626=new WebFXTreeItem('Always Adaptive Performance','cid=2626&cname=Always%20Adaptive%20Performance&pid=2428&lv=5&r=4');t2428.add(t2626);var t2429=new WebFXTreeItem('Lenovo PC Manger','cid=2429&cname=Lenovo%20PC%20Manger&pid=2428&lv=6&r=4');t2428.add(t2429);var t2431=new WebFXTreeItem('Lenovo AI_Learning Zone','cid=2431&cname=Lenovo%20AI_Learning%20Zone&pid=2428&lv=6&r=4');t2428.add(t2431);var t2432=new WebFXTreeItem('Lenovo AI_XiaoTian','cid=2432&cname=Lenovo%20AI_XiaoTian&pid=2428&lv=6&r=4');t2428.add(t2432);var t2433=new WebFXTreeItem('Lenovo AI_AI Now','cid=2433&cname=Lenovo%20AI_AI%20Now&pid=2428&lv=6&r=4');t2428.add(t2433);var t2434=new WebFXTreeItem('Lenovo AI_Creator Zone','cid=2434&cname=Lenovo%20AI_Creator%20Zone&pid=2428&lv=6&r=4');t2428.add(t2434);var t2435=new WebFXTreeItem('Lenovo Smart Meeting','cid=2435&cname=Lenovo%20Smart%20Meeting&pid=2428&lv=6&r=4');t2428.add(t2435);var t2437=new WebFXTreeItem('Lenovo Human Presence Detection','cid=2437&cname=Lenovo%20Human%20Presence%20Detection&pid=2428&lv=6&r=4');t2428.add(t2437);var t2438=new WebFXTreeItem('Dispatcher','cid=2438&cname=Dispatcher&pid=2428&lv=6&r=4');t2428.add(t2438);var t2439=new WebFXTreeItem('ITS','cid=2439&cname=ITS&pid=2428&lv=6&r=4');t2428.add(t2439);var t2440=new WebFXTreeItem('Smart Connect','cid=2440&cname=Smart%20Connect&pid=2428&lv=6&r=4');t2428.add(t2440);var t2441=new WebFXTreeItem('Adaptive Color Temperature','cid=2441&cname=Adaptive%20Color%20Temperature&pid=2428&lv=6&r=4');t2428.add(t2441);var t2443=new WebFXTreeItem('Multi mode(G-sensor)','cid=2443&cname=Multi%20mode%28G-sensor%29&pid=2428&lv=6&r=4');t2428.add(t2443);var t2444=new WebFXTreeItem('Smart Gesture','cid=2444&cname=Smart%20Gesture&pid=2428&lv=6&r=4');t2428.add(t2444);var t2445=new WebFXTreeItem('Lenovo Browser','cid=2445&cname=Lenovo%20Browser&pid=2428&lv=6&r=4');t2428.add(t2445);var t2446=new WebFXTreeItem('Lenovo APP Store','cid=2446&cname=Lenovo%20APP%20Store&pid=2428&lv=6&r=4');t2428.add(t2446);var t2447=new WebFXTreeItem('Lenovo Now','cid=2447&cname=Lenovo%20Now&pid=2428&lv=6&r=4');t2428.add(t2447);var t2448=new WebFXTreeItem('Lenovo Lefile','cid=2448&cname=Lenovo%20Lefile&pid=2428&lv=6&r=4');t2428.add(t2448);var t2449=new WebFXTreeItem('Intel Unison','cid=2449&cname=Intel%20Unison&pid=2428&lv=6&r=4');t2428.add(t2449);var t2450=new WebFXTreeItem('ICPS','cid=2450&cname=ICPS&pid=2428&lv=6&r=4');t2428.add(t2450);var t2451=new WebFXTreeItem('Smart Wireless','cid=2451&cname=Smart%20Wireless&pid=2428&lv=6&r=4');t2428.add(t2451);var t2452=new WebFXTreeItem('X-Rite','cid=2452&cname=X-Rite&pid=2428&lv=6&r=4');t2428.add(t2452);var t2453=new WebFXTreeItem('T-Con','cid=2453&cname=T-Con&pid=2428&lv=6&r=4');t2428.add(t2453);var t2454=new WebFXTreeItem('Edge Luminace Profile(ELP)','cid=2454&cname=Edge%20Luminace%20Profile%28ELP%29&pid=2428&lv=6&r=4');t2428.add(t2454);var t2455=new WebFXTreeItem('Auto Color Management','cid=2455&cname=Auto%20Color%20Management&pid=2428&lv=6&r=4');t2428.add(t2455);var t2456=new WebFXTreeItem('Adaptive Refresh Rate','cid=2456&cname=Adaptive%20Refresh%20Rate&pid=2428&lv=6&r=4');t2428.add(t2456);var t2457=new WebFXTreeItem('Motion Estimate and Motion Compensation','cid=2457&cname=Motion%20Estimate%20and%20Motion%20Compensation&pid=2428&lv=6&r=4');t2428.add(t2457);var t2459=new WebFXTreeItem('Super Resolution','cid=2459&cname=Super%20Resolution&pid=2428&lv=6&r=4');t2428.add(t2459);var t2460=new WebFXTreeItem('Adaptive Contrast','cid=2460&cname=Adaptive%20Contrast&pid=2428&lv=6&r=4');t2428.add(t2460);var t2468=new WebFXTreeItem('Yoga&Idea Feature','cid=2468&cname=Yoga%26Idea%20Feature&pid=2302&lv=4&r=4');t2302.add(t2468);var t2488=new WebFXTreeItem('Accessories for Compatibility test','cid=2488&cname=Accessories%20for%20Compatibility%20test&pid=2468&lv=6&r=4');t2468.add(t2488);var t2489=new WebFXTreeItem('YogaBook solutions','cid=2489&cname=YogaBook%20solutions&pid=2468&lv=6&r=4');t2468.add(t2489);var t2490=new WebFXTreeItem('DCC','cid=2490&cname=DCC&pid=2468&lv=6&r=4');t2468.add(t2490);var t2491=new WebFXTreeItem('BIOS related','cid=2491&cname=BIOS%20related&pid=2468&lv=6&r=4');t2468.add(t2491);var t2492=new WebFXTreeItem('Smart Note 2.0&3.0','cid=2492&cname=Smart%20Note%202.0%263.0&pid=2468&lv=6&r=4');t2468.add(t2492);var t2493=new WebFXTreeItem('Lenovo Hotkey(custom keyboard)','cid=2493&cname=Lenovo%20Hotkey%28custom%20keyboard%29&pid=2468&lv=6&r=4');t2468.add(t2493);var t2469=new WebFXTreeItem('SMB Feature','cid=2469&cname=SMB%20Feature&pid=2302&lv=4&r=4');t2302.add(t2469);var t2616=new WebFXTreeItem('Commercial Vantage','cid=2616&cname=Commercial%20Vantage&pid=2469&lv=5&r=4');t2469.add(t2616);var t2619=new WebFXTreeItem('Oculink dock','cid=2619&cname=Oculink%20dock&pid=2469&lv=5&r=4');t2469.add(t2619);var t2478=new WebFXTreeItem('BIOS related','cid=2478&cname=BIOS%20related&pid=2469&lv=6&r=4');t2469.add(t2478);var t2479=new WebFXTreeItem('Accessories','cid=2479&cname=Accessories&pid=2469&lv=6&r=4');t2469.add(t2479);var t2480=new WebFXTreeItem('USB-C Dock','cid=2480&cname=USB-C%20Dock&pid=2479&lv=7&r=4');t2479.add(t2480);var t2481=new WebFXTreeItem('Wifi Dock','cid=2481&cname=Wifi%20Dock&pid=2479&lv=7&r=4');t2479.add(t2481);var t2482=new WebFXTreeItem('Thunderbolt Dock','cid=2482&cname=Thunderbolt%20Dock&pid=2479&lv=7&r=4');t2479.add(t2482);var t2483=new WebFXTreeItem('Hybrid USB-C to USB-A Dock','cid=2483&cname=Hybrid%20USB-C%20to%20USB-A%20Dock&pid=2479&lv=7&r=4');t2479.add(t2483);var t2484=new WebFXTreeItem('Power USB-C Travel Hub&USB Mini Dock&Dual Display Dock','cid=2484&cname=Power%20USB-C%20Travel%20Hub%26USB%20Mini%20Dock%26Dual%20Display%20Dock&pid=2479&lv=7&r=4');t2479.add(t2484);var t2485=new WebFXTreeItem('3-in-1/7-in-1/USB-C to 4 USB-A hub/Slim travel dock','cid=2485&cname=3-in-1%2F7-in-1%2FUSB-C%20to%204%20USB-A%20hub%2FSlim%20travel%20dock&pid=2479&lv=7&r=4');t2479.add(t2485);var t2486=new WebFXTreeItem('USB-C Travel Hub Gen Hub Gen2','cid=2486&cname=USB-C%20Travel%20Hub%20Gen%20Hub%20Gen2&pid=2479&lv=7&r=4');t2479.add(t2486);var t2487=new WebFXTreeItem('Accessories for Compatibility test','cid=2487&cname=Accessories%20for%20Compatibility%20test&pid=2479&lv=7&r=4');t2479.add(t2487);var t2595=new WebFXTreeItem('Magic-Bay','cid=2595&cname=Magic-Bay&pid=2479&lv=7&r=4');t2479.add(t2595);var t2609=new WebFXTreeItem('4-in-1 hub','cid=2609&cname=4-in-1%20hub&pid=2479&lv=7&r=4');t2479.add(t2609);var t2610=new WebFXTreeItem('Lenovo GaN Dock','cid=2610&cname=Lenovo%20GaN%20Dock&pid=2479&lv=7&r=4');t2479.add(t2610);var t2494=new WebFXTreeItem('Smart Storage','cid=2494&cname=Smart%20Storage&pid=2469&lv=6&r=4');t2469.add(t2494);var t2495=new WebFXTreeItem('Smart Note 1.0','cid=2495&cname=Smart%20Note%201.0&pid=2469&lv=6&r=4');t2469.add(t2495);var t2496=new WebFXTreeItem('Lenovo Baiying One','cid=2496&cname=Lenovo%20Baiying%20One&pid=2469&lv=6&r=4');t2469.add(t2496);var t2497=new WebFXTreeItem('Performance related','cid=2497&cname=Performance%20related&pid=2469&lv=6&r=4');t2469.add(t2497);var t2498=new WebFXTreeItem('Lenovo Smart Meeting','cid=2498&cname=Lenovo%20Smart%20Meeting&pid=2469&lv=6&r=4');t2469.add(t2498);var t2500=new WebFXTreeItem('Better Together','cid=2500&cname=Better%20Together&pid=2469&lv=6&r=4');t2469.add(t2500);var t2501=new WebFXTreeItem('Camera Image For Education','cid=2501&cname=Camera%20Image%20For%20Education&pid=2469&lv=6&r=4');t2469.add(t2501);var t2502=new WebFXTreeItem('ThinkBook Display Plus','cid=2502&cname=ThinkBook%20Display%20Plus&pid=2469&lv=6&r=4');t2469.add(t2502);var t2541=new WebFXTreeItem('Thinkbook plus Gen6 unique','cid=2541&cname=Thinkbook%20plus%20Gen6%20unique&pid=2469&lv=6&r=4');t2469.add(t2541);var t2506=new WebFXTreeItem('Unique Feature Test','cid=2506&cname=Unique%20Feature%20Test&pid=2288&lv=3&r=4');t2288.add(t2506);var t2519=new WebFXTreeItem('Win10 OS','cid=2519&cname=Win10%20OS&pid=2506&lv=4&r=4');t2506.add(t2519);var t2520=new WebFXTreeItem('Accessories For drop box device','cid=2520&cname=Accessories%20For%20drop%20box%20device&pid=2506&lv=4&r=4');t2506.add(t2520);var t2521=new WebFXTreeItem('WWAN','cid=2521&cname=WWAN&pid=2506&lv=4&r=4');t2506.add(t2521);var t2522=new WebFXTreeItem('GPS','cid=2522&cname=GPS&pid=2506&lv=4&r=4');t2506.add(t2522);var t2523=new WebFXTreeItem('Rear Camera','cid=2523&cname=Rear%20Camera&pid=2506&lv=4&r=4');t2506.add(t2523);var t2526=new WebFXTreeItem('Raid 0','cid=2526&cname=Raid%200&pid=2506&lv=4&r=4');t2506.add(t2526);var t2527=new WebFXTreeItem('Dolby vision','cid=2527&cname=Dolby%20vision&pid=2506&lv=4&r=4');t2506.add(t2527);var t2528=new WebFXTreeItem('Onekey Recovery','cid=2528&cname=Onekey%20Recovery&pid=2506&lv=4&r=4');t2506.add(t2528);var t2529=new WebFXTreeItem('Media Card','cid=2529&cname=Media%20Card&pid=2506&lv=4&r=4');t2506.add(t2529);var t2530=new WebFXTreeItem('P sensor','cid=2530&cname=P%20sensor&pid=2506&lv=4&r=4');t2506.add(t2530);var t2531=new WebFXTreeItem('Flip to start w/ hall sensor+TOF sensor solution','cid=2531&cname=Flip%20to%20start%20w%2F%20hall%20sensor%2BTOF%20sensor%20solution&pid=2506&lv=4&r=4');t2506.add(t2531);var t2532=new WebFXTreeItem('Connected Standby_Pre install APP compatibility test','cid=2532&cname=Connected%20Standby_Pre%20install%20APP%20compatibility%20test&pid=2506&lv=4&r=4');t2506.add(t2532);var t2534=new WebFXTreeItem('Adaptive Performance','cid=2534&cname=Adaptive%20Performance&pid=2506&lv=4&r=4');t2506.add(t2534);var t2573=new WebFXTreeItem('Lenovo Hybrid Workspace(联想云电脑)','cid=2573&cname=Lenovo%20Hybrid%20Workspace%28%E8%81%94%E6%83%B3%E4%BA%91%E7%94%B5%E8%84%91%29&pid=2506&lv=4&r=4');t2506.add(t2573);var t2580=new WebFXTreeItem('E-INK ','cid=2580&cname=E-INK%20&pid=2506&lv=4&r=4');t2506.add(t2580);var t2584=new WebFXTreeItem('D NPU','cid=2584&cname=D%20NPU&pid=2506&lv=4&r=4');t2506.add(t2584);var t2614=new WebFXTreeItem('Fuji only','cid=2614&cname=Fuji%20only&pid=2506&lv=4&r=4');t2506.add(t2614);var t2623=new WebFXTreeItem('Magicenter','cid=2623&cname=Magicenter&pid=2506&lv=4&r=4');t2506.add(t2623);var t2625=new WebFXTreeItem('Lenovo 3D studio test case','cid=2625&cname=Lenovo%203D%20studio%20test%20case&pid=2506&lv=4&r=4');t2506.add(t2625);var t2289=new WebFXTreeItem('Pre Delivery','cid=2289&cname=Pre%20Delivery&pid=1786&lv=2&r=4');t1786.add(t2289);var t1811=new WebFXTreeItem('NLS&RUSB','cid=1811&cname=NLS%26RUSB&pid=2289&lv=3&r=4');t2289.add(t1811);var t1812=new WebFXTreeItem('Web release & WU','cid=1812&cname=Web%20release%20%26%20WU&pid=2289&lv=3&r=4');t2289.add(t1812);var t1813=new WebFXTreeItem('Modern Preload','cid=1813&cname=Modern%20Preload&pid=2289&lv=3&r=4');t2289.add(t1813);var t1828=new WebFXTreeItem('GSKU','cid=1828&cname=GSKU&pid=2289&lv=3&r=4');t2289.add(t1828);var t1829=new WebFXTreeItem('SCCM','cid=1829&cname=SCCM&pid=2289&lv=3&r=4');t2289.add(t1829);var t1830=new WebFXTreeItem('Retail OS Installation','cid=1830&cname=Retail%20OS%20Installation&pid=2289&lv=3&r=4');t2289.add(t1830);var t1872=new WebFXTreeItem('Third_Party Applications','cid=1872&cname=Third_Party%20Applications&pid=2289&lv=3&r=4');t2289.add(t1872);var t1974=new WebFXTreeItem('Performance','cid=1974&cname=Performance&pid=2289&lv=3&r=4');t2289.add(t1974);var t2041=new WebFXTreeItem('Non-Windows','cid=2041&cname=Non-Windows&pid=2289&lv=3&r=4');t2289.add(t2041);var t2164=new WebFXTreeItem('Stability','cid=2164&cname=Stability&pid=2289&lv=3&r=4');t2289.add(t2164);var t2165=new WebFXTreeItem('Platform','cid=2165&cname=Platform&pid=2289&lv=3&r=4');t2289.add(t2165);var t2331=new WebFXTreeItem('System Test','cid=2331&cname=System%20Test&pid=2289&lv=3&r=4');t2289.add(t2331);var t2332=new WebFXTreeItem('Subsystem','cid=2332&cname=Subsystem&pid=2289&lv=3&r=4');t2289.add(t2332);var t2499=new WebFXTreeItem('Dispatcher','cid=2499&cname=Dispatcher&pid=2289&lv=3&r=4');t2289.add(t2499);$('div#category-tree').append(tree.toString());</script>
+			</div>
+			<div class="contentContainer">
+				<div style="margin-bottom: 20px;">
+					<span>Category folder : <span id="xtreeCrumbs"></span></span>
+				</div>
+				
+					
+
+
+<table id="caseList" class="list even-odd-table case-category-table" style="width:55%">
+	<thead>
+		<tr>						
+			<td width="100px" nowrap="nowrap">
+				Case ID
+			</td>
+			<td style="min-width:240px;" nowrap="nowrap">	
+				Case name
+			</td>
+			<td width="120px" nowrap="nowrap">
+				Version
+			</td>
+			<td width="200px" nowrap="nowrap">
+				Keywords
+			</td>
+			<td width="120px" nowrap="nowrap">
+				Auto type
+			</td>
+			<td width="100px" nowrap="nowrap">
+				Release date
+			</td>
+		</tr>
+	</thead>
+	<tbody>
+		
+		<tr>							
+			<td>
+				<a href="javascript:fxviewCase('30664')">SUBS101_Audio_EF_02</a>								
+			</td>
+			<td>
+				Internal Speaker Advance Function
+			</td>
+			<td>
+				V5.24.09.1
+			</td>
+			<td>
+				Audio playback
+			</td>
+			<td>
+				
+			</td>
+			<td>
+				2024-09-25
+			</td>
+		</tr>
+	
+		<tr>							
+			<td>
+				<a href="javascript:fxviewCase('29602')">SUBS102_Audio_EF_02</a>								
+			</td>
+			<td>
+				Internal Microphone Airtightness
+			</td>
+			<td>
+				V5.24.08.1
+			</td>
+			<td>
+				Microphone Airtightness
+			</td>
+			<td>
+				
+			</td>
+			<td>
+				2024-08-20
+			</td>
+		</tr>
+	
+		<tr>							
+			<td>
+				<a href="javascript:fxviewCase('36631')">SUBS102_Audio_EF_03</a>								
+			</td>
+			<td>
+				Internal Microphone Stress
+			</td>
+			<td>
+				V5.25.08.1
+			</td>
+			<td>
+				Audio recording;Stress
+			</td>
+			<td>
+				
+			</td>
+			<td>
+				2025-09-10
+			</td>
+		</tr>
+	
+		<tr>							
+			<td>
+				<a href="javascript:fxviewCase('33350')">SUBS106_Audio_EF_01</a>								
+			</td>
+			<td>
+				Dolby Access test(Dolby Atmos/ Dolby Atmos Speaker System)
+			</td>
+			<td>
+				V5.25.03.1
+			</td>
+			<td>
+				Dolby Access;Dolby Atmos;Dolby Atmos Speaker System
+			</td>
+			<td>
+				
+			</td>
+			<td>
+				2025-04-01
+			</td>
+		</tr>
+	
+		<tr>							
+			<td>
+				<a href="javascript:fxviewCase('36894')">SUBS106_Audio_EF_02</a>								
+			</td>
+			<td>
+				Dolby Access test(Dolby Audio)
+			</td>
+			<td>
+				V5.25.03.1
+			</td>
+			<td>
+				Dolby Access;Dolby Audio
+			</td>
+			<td>
+				
+			</td>
+			<td>
+				2025-09-10
+			</td>
+		</tr>
+	
+		<tr>							
+			<td>
+				<a href="javascript:fxviewCase('36829')">SUBS106_Audio_EF_03</a>								
+			</td>
+			<td>
+				Dolby Access test(Dolby Vision)
+			</td>
+			<td>
+				V5.25.07.1
+			</td>
+			<td>
+				Dolby Access;Dolby Vision
+			</td>
+			<td>
+				
+			</td>
+			<td>
+				2025-09-09
+			</td>
+		</tr>
+	
+		<tr>							
+			<td>
+				<a href="javascript:fxviewCase('36161')">SUBS106_Audio_EF_04</a>								
+			</td>
+			<td>
+				Dolby Settings test(Dolby Atoms)
+			</td>
+			<td>
+				V5.25.07.1
+			</td>
+			<td>
+				Dolby Settings;Dolby Atoms
+			</td>
+			<td>
+				
+			</td>
+			<td>
+				2025-08-04
+			</td>
+		</tr>
+	
+		<tr>							
+			<td>
+				<a href="javascript:fxviewCase('36162')">SUBS106_Audio_EF_05</a>								
+			</td>
+			<td>
+				Dolby Settings test(Dolby Audio)
+			</td>
+			<td>
+				V5.25.07.1
+			</td>
+			<td>
+				Dolby Settings;Dolby Audio
+			</td>
+			<td>
+				
+			</td>
+			<td>
+				2025-08-04
+			</td>
+		</tr>
+	
+		<tr>							
+			<td>
+				<a href="javascript:fxviewCase('36824')">SUBS106_Audio_EF_06</a>								
+			</td>
+			<td>
+				Dolby Settings(Dolby Vision)
+			</td>
+			<td>
+				V5.25.07.1
+			</td>
+			<td>
+				Dolby Settings/Dolby Vision
+			</td>
+			<td>
+				
+			</td>
+			<td>
+				2025-09-09
+			</td>
+		</tr>
+	
+		<tr>							
+			<td>
+				<a href="javascript:fxviewCase('33676')">SUBS108_Audio_EF_02</a>								
+			</td>
+			<td>
+				LPAP Advance Function
+			</td>
+			<td>
+				V5.25.03.1
+			</td>
+			<td>
+				Low Power Audio Playback
+			</td>
+			<td>
+				
+			</td>
+			<td>
+				2025-04-01
+			</td>
+		</tr>
+	
+		<tr>							
+			<td>
+				<a href="javascript:fxviewCase('29629')">SUBS108_Audio_EF_03</a>								
+			</td>
+			<td>
+				LPAP Battery Life
+			</td>
+			<td>
+				V5.24.08.1
+			</td>
+			<td>
+				Low Power Audio Playback
+			</td>
+			<td>
+				
+			</td>
+			<td>
+				2024-08-20
+			</td>
+		</tr>
+	
+		<tr>							
+			<td>
+				<a href="javascript:fxviewCase('33681')">SUBS108_Audio_EF_04</a>								
+			</td>
+			<td>
+				LPAP Stress
+			</td>
+			<td>
+				V5.25.03.1
+			</td>
+			<td>
+				Low Power Audio Playback
+			</td>
+			<td>
+				
+			</td>
+			<td>
+				2025-04-01
+			</td>
+		</tr>
+	
+		<tr>							
+			<td>
+				<a href="javascript:fxviewCase('29633')">SUBS109_Audio_EF_02</a>								
+			</td>
+			<td>
+				Intel ISST Advance Function
+			</td>
+			<td>
+				V5.24.08.1
+			</td>
+			<td>
+				ISST
+			</td>
+			<td>
+				
+			</td>
+			<td>
+				2024-08-20
+			</td>
+		</tr>
+	
+		<tr>							
+			<td>
+				<a href="javascript:fxviewCase('29634')">SUBS109_Audio_EF_03</a>								
+			</td>
+			<td>
+				Intel ISST Stress
+			</td>
+			<td>
+				V5.24.08.1
+			</td>
+			<td>
+				ISST
+			</td>
+			<td>
+				
+			</td>
+			<td>
+				2024-08-20
+			</td>
+		</tr>
+	
+		<tr>							
+			<td>
+				<a href="javascript:fxviewCase('29638')">SUBS110_Audio_EF</a>								
+			</td>
+			<td>
+				Sound quality test
+			</td>
+			<td>
+				V5.24.08.1
+			</td>
+			<td>
+				Speaker;Sound quality
+			</td>
+			<td>
+				
+			</td>
+			<td>
+				2024-08-20
+			</td>
+		</tr>
+	
+		<tr>							
+			<td>
+				<a href="javascript:fxviewCase('35135')">SUBS111_Audio_EF_05</a>								
+			</td>
+			<td>
+				Smart Noise Cancelling performance 4.0 for Elevoc
+			</td>
+			<td>
+				V5.25.05.1
+			</td>
+			<td>
+				Whispe Voice;Smart Noise Cancelling;Elevoc
+			</td>
+			<td>
+				
+			</td>
+			<td>
+				2025-07-02
+			</td>
+		</tr>
+	
+		<tr>							
+			<td>
+				<a href="javascript:fxviewCase('35134')">SUBS111_Audio_EF_06</a>								
+			</td>
+			<td>
+				Smart Noise Cancelling performance 4.0 for Fortemedia
+			</td>
+			<td>
+				V5.25.05.1
+			</td>
+			<td>
+				Whisper Voice;Smart Noise Cancelling;Fortemedia
+			</td>
+			<td>
+				
+			</td>
+			<td>
+				2025-07-02
+			</td>
+		</tr>
+	
+		<tr>							
+			<td>
+				<a href="javascript:fxviewCase('35133')">SUBS111_Audio_EF_07</a>								
+			</td>
+			<td>
+				Smart Noise Cancelling performance 4.0 for AISPEECH
+			</td>
+			<td>
+				V5.25.05.1
+			</td>
+			<td>
+				Smart Noise Cancelling, AISPEECH
+			</td>
+			<td>
+				
+			</td>
+			<td>
+				2025-07-02
+			</td>
+		</tr>
+	
+		<tr>							
+			<td>
+				<a href="javascript:fxviewCase('35130')">SUBS111_Audio_EF_08</a>								
+			</td>
+			<td>
+				Smart Noise Cancelling performance 5.0 for Elevoc
+			</td>
+			<td>
+				V5.25.05.1
+			</td>
+			<td>
+				Whispe Voice;Smart Noise Cancelling;Elevoc
+			</td>
+			<td>
+				
+			</td>
+			<td>
+				2025-07-02
+			</td>
+		</tr>
+	
+		<tr>							
+			<td>
+				<a href="javascript:fxviewCase('35129')">SUBS111_Audio_EF_09</a>								
+			</td>
+			<td>
+				Smart Noise Cancelling performance 5.0 for AISPEECH
+			</td>
+			<td>
+				V5.25.05.1
+			</td>
+			<td>
+				Whispe Voice;Smart Noise Cancelling;Elevoc
+			</td>
+			<td>
+				
+			</td>
+			<td>
+				2025-07-02
+			</td>
+		</tr>
+	
+		<tr>							
+			<td>
+				<a href="javascript:fxviewCase('36187')">SUBS111_Audio_EF_10</a>								
+			</td>
+			<td>
+				Pure Voice performance 3.0 for DNS
+			</td>
+			<td>
+				V5.25.07.1
+			</td>
+			<td>
+				Pure Voice;DNS
+			</td>
+			<td>
+				
+			</td>
+			<td>
+				2025-08-04
+			</td>
+		</tr>
+	
+		<tr>							
+			<td>
+				<a href="javascript:fxviewCase('36188')">SUBS111_Audio_EF_11</a>								
+			</td>
+			<td>
+				Pure Voice performance 3.0 for SNS
+			</td>
+			<td>
+				V5.25.07.1
+			</td>
+			<td>
+				Pure Voice;SNS
+			</td>
+			<td>
+				
+			</td>
+			<td>
+				2025-08-04
+			</td>
+		</tr>
+	
+		<tr>							
+			<td>
+				<a href="javascript:fxviewCase('36189')">SUBS111_Audio_EF_12</a>								
+			</td>
+			<td>
+				Pure Voice performance 3.0 for SNS PLUS
+			</td>
+			<td>
+				V5.25.07.1
+			</td>
+			<td>
+				Pure Voice;SNS PLUS
+			</td>
+			<td>
+				
+			</td>
+			<td>
+				2025-08-04
+			</td>
+		</tr>
+	
+		<tr>							
+			<td>
+				<a href="javascript:fxviewCase('36895')">SUBS115_Audio_EF</a>								
+			</td>
+			<td>
+				Voice Focus Audio Effects for MEP
+			</td>
+			<td>
+				V5.25.03.1
+			</td>
+			<td>
+				Voice Focus,MEP
+			</td>
+			<td>
+				
+			</td>
+			<td>
+				2025-09-10
+			</td>
+		</tr>
+	
+		<tr>							
+			<td>
+				<a href="javascript:fxviewCase('36136')">SUBS201_Camera_EF_03</a>								
+			</td>
+			<td>
+				Front RGB camera advanced function
+			</td>
+			<td>
+				V5.25.07.1
+			</td>
+			<td>
+				front camera
+			</td>
+			<td>
+				
+			</td>
+			<td>
+				2025-07-31
+			</td>
+		</tr>
+	
+		<tr>							
+			<td>
+				<a href="javascript:fxviewCase('36140')">SUBS201_Camera_EF_04</a>								
+			</td>
+			<td>
+				Front RGB-IR camera advanced function
+			</td>
+			<td>
+				V5.25.07.1
+			</td>
+			<td>
+				RGB-IR camera
+			</td>
+			<td>
+				
+			</td>
+			<td>
+				2025-07-31
+			</td>
+		</tr>
+	
+		<tr>							
+			<td>
+				<a href="javascript:fxviewCase('33554')">SUBS202_Camera_EF_02</a>								
+			</td>
+			<td>
+				Easycamera privacy advanced function
+			</td>
+			<td>
+				V5.25.03.1
+			</td>
+			<td>
+				shutter
+			</td>
+			<td>
+				
+			</td>
+			<td>
+				2025-03-31
+			</td>
+		</tr>
+	
+		<tr>							
+			<td>
+				<a href="javascript:fxviewCase('29582')">SUBS203_Camera_EF_01</a>								
+			</td>
+			<td>
+				Windows hello basic function
+			</td>
+			<td>
+				V5.24.08.1
+			</td>
+			<td>
+				windows hello
+			</td>
+			<td>
+				
+			</td>
+			<td>
+				2024-08-20
+			</td>
+		</tr>
+	
+		<tr>							
+			<td>
+				<a href="javascript:fxviewCase('29583')">SUBS203_Camera_EF_02</a>								
+			</td>
+			<td>
+				Windows hello advanced function
+			</td>
+			<td>
+				V5.24.08.1
+			</td>
+			<td>
+				windows hello
+			</td>
+			<td>
+				
+			</td>
+			<td>
+				2024-08-20
+			</td>
+		</tr>
+	
+		<tr>							
+			<td>
+				<a href="javascript:fxviewCase('30539')">SUBS204_Camera_EF_01</a>								
+			</td>
+			<td>
+				Microsoft Effect Pack(MEP) Basic function
+			</td>
+			<td>
+				V5.24.09.1
+			</td>
+			<td>
+				MEP
+			</td>
+			<td>
+				
+			</td>
+			<td>
+				2024-09-30
+			</td>
+		</tr>
+	
+		<tr>							
+			<td>
+				<a href="javascript:fxviewCase('30538')">SUBS204_Camera_EF_02</a>								
+			</td>
+			<td>
+				Microsoft Effect Pack(MEP) Advanced function
+			</td>
+			<td>
+				V5.24.09.1
+			</td>
+			<td>
+				MEP
+			</td>
+			<td>
+				
+			</td>
+			<td>
+				2024-09-30
+			</td>
+		</tr>
+	
+		<tr>							
+			<td>
+				<a href="javascript:fxviewCase('29603')">SUBS302_Touchpanel_EF_02</a>								
+			</td>
+			<td>
+				Touch Panel Advanced Function
+			</td>
+			<td>
+				V5.24.08.1
+			</td>
+			<td>
+				Touch Panel
+			</td>
+			<td>
+				
+			</td>
+			<td>
+				2024-08-20
+			</td>
+		</tr>
+	
+		<tr>							
+			<td>
+				<a href="javascript:fxviewCase('36497')">SUBS303_Pen_EF_02</a>								
+			</td>
+			<td>
+				Active Pen Advanced Function Test
+			</td>
+			<td>
+				V5.25.08.1
+			</td>
+			<td>
+				Pen
+			</td>
+			<td>
+				
+			</td>
+			<td>
+				2025-09-10
+			</td>
+		</tr>
+	
+		<tr>							
+			<td>
+				<a href="javascript:fxviewCase('36510')">SUBS303_Pen_EF_03</a>								
+			</td>
+			<td>
+				Lenovo Pen Settings UI Check
+			</td>
+			<td>
+				V5.25.08.1
+			</td>
+			<td>
+				Wacom Pen/Lenovo Pen
+			</td>
+			<td>
+				
+			</td>
+			<td>
+				2025-09-10
+			</td>
+		</tr>
+	
+		<tr>							
+			<td>
+				<a href="javascript:fxviewCase('29625')">SUBS303_Pen_EF_04</a>								
+			</td>
+			<td>
+				Active Pen Setting Test
+			</td>
+			<td>
+				V5.24.08.1
+			</td>
+			<td>
+				Pen
+			</td>
+			<td>
+				
+			</td>
+			<td>
+				2024-08-20
+			</td>
+		</tr>
+	
+		<tr>							
+			<td>
+				<a href="javascript:fxviewCase('29597')">SUBS401_TP_EF_02</a>								
+			</td>
+			<td>
+				PTP Advanced Function Test
+			</td>
+			<td>
+				V5.24.08.1
+			</td>
+			<td>
+				PTP
+			</td>
+			<td>
+				
+			</td>
+			<td>
+				2024-08-20
+			</td>
+		</tr>
+	
+		<tr>							
+			<td>
+				<a href="javascript:fxviewCase('29600')">SUBS401_TP_EF_03</a>								
+			</td>
+			<td>
+				PTP,Touch and Pen noise and compatibility test
+			</td>
+			<td>
+				V5.24.08.1
+			</td>
+			<td>
+				PTP,Touchpanel,Pen
+			</td>
+			<td>
+				
+			</td>
+			<td>
+				2024-08-20
+			</td>
+		</tr>
+	
+		<tr>							
+			<td>
+				<a href="javascript:fxviewCase('29622')">SUBS401_TP_EF_04</a>								
+			</td>
+			<td>
+				PTP Setting Test
+			</td>
+			<td>
+				V5.24.08.1
+			</td>
+			<td>
+				PTP
+			</td>
+			<td>
+				
+			</td>
+			<td>
+				2024-08-20
+			</td>
+		</tr>
+	
+		<tr>							
+			<td>
+				<a href="javascript:fxviewCase('29610')">SUBS501_KB_EF_02</a>								
+			</td>
+			<td>
+				Keyboard Advanced Function Test
+			</td>
+			<td>
+				V5.24.08.1
+			</td>
+			<td>
+				Keyboard
+			</td>
+			<td>
+				
+			</td>
+			<td>
+				2024-08-20
+			</td>
+		</tr>
+	
+		<tr>							
+			<td>
+				<a href="javascript:fxviewCase('36126')">SUBS501_KB_EF_03</a>								
+			</td>
+			<td>
+				Keyboard Backlight Function
+			</td>
+			<td>
+				V5.25.07.1
+			</td>
+			<td>
+				Keyboard
+			</td>
+			<td>
+				
+			</td>
+			<td>
+				2025-07-31
+			</td>
+		</tr>
+	
+		<tr>							
+			<td>
+				<a href="javascript:fxviewCase('35249')">SUBS502_LED_EF_02</a>								
+			</td>
+			<td>
+				Hot buttons UI and LEDs Stability Test
+			</td>
+			<td>
+				V5.25.06.1
+			</td>
+			<td>
+				LEDS,Hot buttons,UI
+			</td>
+			<td>
+				
+			</td>
+			<td>
+				2025-07-02
+			</td>
+		</tr>
+	
+		<tr>							
+			<td>
+				<a href="javascript:fxviewCase('30545')">SUBS503_FP_EF_02</a>								
+			</td>
+			<td>
+				Fingerprint Basic Function Scenario Test
+			</td>
+			<td>
+				V5.24.09.1
+			</td>
+			<td>
+				FPR
+			</td>
+			<td>
+				
+			</td>
+			<td>
+				2024-09-25
+			</td>
+		</tr>
+	
+		<tr>							
+			<td>
+				<a href="javascript:fxviewCase('29614')">SUBS503_FP_EF_03</a>								
+			</td>
+			<td>
+				FingerPrinter One-step login Basic Function Test
+			</td>
+			<td>
+				V5.24.08.1
+			</td>
+			<td>
+				FPR
+			</td>
+			<td>
+				
+			</td>
+			<td>
+				2024-08-20
+			</td>
+		</tr>
+	
+		<tr>							
+			<td>
+				<a href="javascript:fxviewCase('29617')">SUBS503_FP_EF_04</a>								
+			</td>
+			<td>
+				FingerPrinter One-step login Advanced Function Test
+			</td>
+			<td>
+				V5.24.08.1
+			</td>
+			<td>
+				FPR
+			</td>
+			<td>
+				
+			</td>
+			<td>
+				2024-08-20
+			</td>
+		</tr>
+	
+		<tr>							
+			<td>
+				<a href="javascript:fxviewCase('36063')">SUBS504_KB APP_EF_01</a>								
+			</td>
+			<td>
+				Lenovo Hotkey Basic function test case
+			</td>
+			<td>
+				V5.25.07.1
+			</td>
+			<td>
+				Lenovo Hotkeys, hotkeys, Smart Key 3.0
+			</td>
+			<td>
+				
+			</td>
+			<td>
+				2025-07-31
+			</td>
+		</tr>
+	
+		<tr>							
+			<td>
+				<a href="javascript:fxviewCase('36055')">SUBS504_KB APP_EF_04</a>								
+			</td>
+			<td>
+				Lenovo Hotkey Compatibility test case
+			</td>
+			<td>
+				V5.25.07.1
+			</td>
+			<td>
+				Hotkey
+			</td>
+			<td>
+				
+			</td>
+			<td>
+				2025-07-31
+			</td>
+		</tr>
+	
+		<tr>							
+			<td>
+				<a href="javascript:fxviewCase('30576')">SUBS504_KB APP_EF_05</a>								
+			</td>
+			<td>
+				Lenovo Custom Keyboard test (for Brazil special keyboard )
+			</td>
+			<td>
+				V5.24.09.1
+			</td>
+			<td>
+				Hotkey
+			</td>
+			<td>
+				
+			</td>
+			<td>
+				2024-09-25
+			</td>
+		</tr>
+	
+		<tr>							
+			<td>
+				<a href="javascript:fxviewCase('36058')">SUBS504_KB APP_EF_07</a>								
+			</td>
+			<td>
+				Lenovo Hotkeys basic function test for fuji
+			</td>
+			<td>
+				V5.25.07.1
+			</td>
+			<td>
+				Hotkey
+			</td>
+			<td>
+				
+			</td>
+			<td>
+				2025-07-31
+			</td>
+		</tr>
+	
+		<tr>							
+			<td>
+				<a href="javascript:fxviewCase('32299')">SUBS602_Sensor_EF_03</a>								
+			</td>
+			<td>
+				Adaptive Brightness Stability test
+			</td>
+			<td>
+				V5.25.01.1
+			</td>
+			<td>
+				ALS sensor
+			</td>
+			<td>
+				
+			</td>
+			<td>
+				2025-01-14
+			</td>
+		</tr>
+	
+		<tr>							
+			<td>
+				<a href="javascript:fxviewCase('29924')">SUBS602_Sensor_EF_06</a>								
+			</td>
+			<td>
+				Adaptive Brightness Stability test(Lenovo solution 2.0)
+			</td>
+			<td>
+				V5.24.08.2
+			</td>
+			<td>
+				ALS sensor
+			</td>
+			<td>
+				
+			</td>
+			<td>
+				2024-08-23
+			</td>
+		</tr>
+	
+		<tr>							
+			<td>
+				<a href="javascript:fxviewCase('32300')">SUBS602_Sensor_EF_09</a>								
+			</td>
+			<td>
+				Adaptive Brightness Stability test for CVDSP Camera Solution
+			</td>
+			<td>
+				V5.25.01.1
+			</td>
+			<td>
+				Camera
+			</td>
+			<td>
+				
+			</td>
+			<td>
+				2025-01-14
+			</td>
+		</tr>
+	
+		<tr>							
+			<td>
+				<a href="javascript:fxviewCase('35613')">SUBS603_Sensor_EF_02</a>								
+			</td>
+			<td>
+				Flip to Start with hall sensor compatibility test
+			</td>
+			<td>
+				V5.25.06.1
+			</td>
+			<td>
+				Hall sensor
+			</td>
+			<td>
+				
+			</td>
+			<td>
+				2025-07-08
+			</td>
+		</tr>
+	
+		<tr>							
+			<td>
+				<a href="javascript:fxviewCase('29925')">SUBS603_Sensor_EF_03</a>								
+			</td>
+			<td>
+				Flip to Start with hall sensor stability test
+			</td>
+			<td>
+				V5.24.08.2
+			</td>
+			<td>
+				stability test
+			</td>
+			<td>
+				
+			</td>
+			<td>
+				2024-08-23
+			</td>
+		</tr>
+	
+		<tr>							
+			<td>
+				<a href="javascript:fxviewCase('29429')">SUBS703_WLAN_EF</a>								
+			</td>
+			<td>
+				CPT for WIFI
+			</td>
+			<td>
+				V5.24.08.1
+			</td>
+			<td>
+				throughput
+			</td>
+			<td>
+				
+			</td>
+			<td>
+				2024-08-16
+			</td>
+		</tr>
+	
+		<tr>							
+			<td>
+				<a href="javascript:fxviewCase('35782')">SUBS704_WLAN_EF</a>								
+			</td>
+			<td>
+				WIFI Throughput test
+			</td>
+			<td>
+				V5.25.06.1
+			</td>
+			<td>
+				throughput
+			</td>
+			<td>
+				
+			</td>
+			<td>
+				2025-07-03
+			</td>
+		</tr>
+	
+		<tr>							
+			<td>
+				<a href="javascript:fxviewCase('36424')">SUBS705_WLAN_EF</a>								
+			</td>
+			<td>
+				WLAN advanced function test
+			</td>
+			<td>
+				V5.25.08.1
+			</td>
+			<td>
+				WLAN
+			</td>
+			<td>
+				
+			</td>
+			<td>
+				2025-09-05
+			</td>
+		</tr>
+	
+		<tr>							
+			<td>
+				<a href="javascript:fxviewCase('35785')">SUBS706_WLAN_EF</a>								
+			</td>
+			<td>
+				WLAN compatibility test
+			</td>
+			<td>
+				V5.25.06.1
+			</td>
+			<td>
+				WLAN
+			</td>
+			<td>
+				
+			</td>
+			<td>
+				2025-07-03
+			</td>
+		</tr>
+	
+		<tr>							
+			<td>
+				<a href="javascript:fxviewCase('35786')">SUBS707_WLAN_EF</a>								
+			</td>
+			<td>
+				WLAN speed check test
+			</td>
+			<td>
+				V5.25.06.1
+			</td>
+			<td>
+				WLAN
+			</td>
+			<td>
+				
+			</td>
+			<td>
+				2025-07-03
+			</td>
+		</tr>
+	
+		<tr>							
+			<td>
+				<a href="javascript:fxviewCase('35787')">SUBS708_WLAN_EF</a>								
+			</td>
+			<td>
+				WLAN stress test
+			</td>
+			<td>
+				V5.25.06.1
+			</td>
+			<td>
+				WLAN
+			</td>
+			<td>
+				
+			</td>
+			<td>
+				2025-07-03
+			</td>
+		</tr>
+	
+		<tr>							
+			<td>
+				<a href="javascript:fxviewCase('29441')">SUBS709_WLAN_EF</a>								
+			</td>
+			<td>
+				WIFI Security test
+			</td>
+			<td>
+				V5.24.08.1
+			</td>
+			<td>
+				WiFi security
+			</td>
+			<td>
+				
+			</td>
+			<td>
+				2024-08-16
+			</td>
+		</tr>
+	
+		<tr>							
+			<td>
+				<a href="javascript:fxviewCase('36423')">SUBS710_WLAN_EF</a>								
+			</td>
+			<td>
+				Miracast test case
+			</td>
+			<td>
+				V5.25.08.1
+			</td>
+			<td>
+				Miracast
+			</td>
+			<td>
+				
+			</td>
+			<td>
+				2025-09-05
+			</td>
+		</tr>
+	
+		<tr>							
+			<td>
+				<a href="javascript:fxviewCase('29439')">SUBS711_BT_EF</a>								
+			</td>
+			<td>
+				BT throughput performance test
+			</td>
+			<td>
+				V5.24.08.1
+			</td>
+			<td>
+				BT
+			</td>
+			<td>
+				
+			</td>
+			<td>
+				2024-08-16
+			</td>
+		</tr>
+	
+		<tr>							
+			<td>
+				<a href="javascript:fxviewCase('35765')">SUBS712_BT_EF</a>								
+			</td>
+			<td>
+				BT advanced function test
+			</td>
+			<td>
+				V5.25.06.1
+			</td>
+			<td>
+				Bluetooth
+			</td>
+			<td>
+				
+			</td>
+			<td>
+				2025-07-03
+			</td>
+		</tr>
+	
+		<tr>							
+			<td>
+				<a href="javascript:fxviewCase('35766')">SUBS713_BT_EF</a>								
+			</td>
+			<td>
+				BT Performance Test
+			</td>
+			<td>
+				V5.25.06.1
+			</td>
+			<td>
+				Bluetooth
+			</td>
+			<td>
+				
+			</td>
+			<td>
+				2025-07-03
+			</td>
+		</tr>
+	
+		<tr>							
+			<td>
+				<a href="javascript:fxviewCase('35767')">SUBS714_BT_EF</a>								
+			</td>
+			<td>
+				BT Compatibility Test
+			</td>
+			<td>
+				V5.25.06.1
+			</td>
+			<td>
+				Bluetooth
+			</td>
+			<td>
+				
+			</td>
+			<td>
+				2025-07-03
+			</td>
+		</tr>
+	
+		<tr>							
+			<td>
+				<a href="javascript:fxviewCase('35768')">SUBS715_BT_EF</a>								
+			</td>
+			<td>
+				BT Stress Test
+			</td>
+			<td>
+				V5.25.06.1
+			</td>
+			<td>
+				Bluetooth
+			</td>
+			<td>
+				
+			</td>
+			<td>
+				2025-07-03
+			</td>
+		</tr>
+	
+		<tr>							
+			<td>
+				<a href="javascript:fxviewCase('29453')">SUBS716_WLAN_EF</a>								
+			</td>
+			<td>
+				Phone impact UX test
+			</td>
+			<td>
+				V5.24.08.1
+			</td>
+			<td>
+				UX
+			</td>
+			<td>
+				
+			</td>
+			<td>
+				2024-08-19
+			</td>
+		</tr>
+	
+		<tr>							
+			<td>
+				<a href="javascript:fxviewCase('29520')">SUBS733_LAN_EF</a>								
+			</td>
+			<td>
+				LAN(USB-TypeA) Performance Test
+			</td>
+			<td>
+				V5.24.08.1
+			</td>
+			<td>
+				usb lan
+			</td>
+			<td>
+				
+			</td>
+			<td>
+				2024-08-20
+			</td>
+		</tr>
+	
+		<tr>							
+			<td>
+				<a href="javascript:fxviewCase('29523')">SUBS734_LAN_EF</a>								
+			</td>
+			<td>
+				LAN(USB-TypeA) Stress
+			</td>
+			<td>
+				V5.24.08.1
+			</td>
+			<td>
+				LAN
+			</td>
+			<td>
+				
+			</td>
+			<td>
+				2024-08-20
+			</td>
+		</tr>
+	
+		<tr>							
+			<td>
+				<a href="javascript:fxviewCase('29525')">SUBS735_LAN_EF</a>								
+			</td>
+			<td>
+				LAN(USB-TypeC) Performance
+			</td>
+			<td>
+				V5.24.08.1
+			</td>
+			<td>
+				Typec LAN
+			</td>
+			<td>
+				
+			</td>
+			<td>
+				2024-08-20
+			</td>
+		</tr>
+	
+		<tr>							
+			<td>
+				<a href="javascript:fxviewCase('29529')">SUBS736_LAN_EF</a>								
+			</td>
+			<td>
+				LAN(USB-TypeC) Stress
+			</td>
+			<td>
+				V5.24.08.1
+			</td>
+			<td>
+				TypeC LAN
+			</td>
+			<td>
+				
+			</td>
+			<td>
+				2024-08-20
+			</td>
+		</tr>
+	
+		<tr>							
+			<td>
+				<a href="javascript:fxviewCase('34544')">SUBS737_LAN_EF</a>								
+			</td>
+			<td>
+				NIC Performance Test
+			</td>
+			<td>
+				V5.25.04.1
+			</td>
+			<td>
+				LAN performance
+			</td>
+			<td>
+				
+			</td>
+			<td>
+				2025-04-30
+			</td>
+		</tr>
+	
+		<tr>							
+			<td>
+				<a href="javascript:fxviewCase('29555')">SUBS738_LAN_EF</a>								
+			</td>
+			<td>
+				NIC Stress Test
+			</td>
+			<td>
+				V5.24.08.1
+			</td>
+			<td>
+				NIC stress
+			</td>
+			<td>
+				
+			</td>
+			<td>
+				2024-08-20
+			</td>
+		</tr>
+	
+	</tbody>
+</table>
+
+				
+				
+			</div>
+		</div>
+	</form>
+</body>
+</html>
+
+
+			</td>
+		</tr>
+		<tr>
+			<td style="text-align:center;">
+				
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=8; IE=7; IE=EDGE" />
+<base href="https://tdms.lenovo.com:443/tdms/">
+<style>
+body{
+	background-color:#ffffff;
+	text-align:center;
+	font-size: 10px;
+	line-height: 12px;
+	font-family: Verdana, sans-serif;
+	margin: 0px;
+	color: #000;
+	height:12px;
+}
+</style>
+</head>
+<body>
+<table style="width:100%">
+	<tr>
+		<td style="padding-left:30px;padding-right:30px">
+			<hr>
+		</td>
+	</tr>	
+	<tr>
+		<td style="height:20px;text-align:center;font-size:12px;font-weight:700;color:#6699CC;">Copyright(c) 2010-2012 by Lenovo. All rights reserved</td>
+	</tr>
+</table>
+</body>
+</html>
+
+			</td>
+		</tr>		
+	</table>
+	</body>
+</html>
