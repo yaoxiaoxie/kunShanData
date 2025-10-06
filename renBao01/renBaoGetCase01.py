@@ -137,22 +137,26 @@ if __name__ == '__main__':
             max_attempts = 2  # 最多尝试两次
             processed = False
 
-            try:
-                request = create_request(caseTrueId)
-                content = get_content(request)
-                if not content:
-                    print("⚠️无法获取网页内容，跳过")
-                    fail_count += 1
-                    print(f"当前成功: {success_count}，当前失败: {fail_count}")
-                    continue
-                caseName = get_data_name(content)
-                if save_to_html(content, caseId, caseName):
-                    success_count += 1
-                else:
-                    fail_count += 1
+            while attempt < max_attempts and not processed:
+                attempt += 1
+                try:
+                    request = create_request(caseTrueId)
+                    content = get_content(request)
+                    if not content:
+                        print(f"⚠️ 第 {attempt} 次获取内容失败")
+                        continue
 
-            except Exception as e:
-                print(f"❌处理{caseId}出错:{e}")
+                    caseName = get_data_name(content)
+                    if save_to_html(content, caseId, caseName):
+                        success_count += 1
+                        processed = True
+                    else:
+                        print(f"⚠️ 第 {attempt} 次保存文件失败")
+                except Exception as e:
+                    print(f"❌ 第 {attempt} 次处理 {caseId} 出错: {e}")
+
+            if not processed:
+                fail_count += 1
 
             # 打印当前成功/失败计数
             print(f"当前成功: {success_count}，当前失败: {fail_count}")
