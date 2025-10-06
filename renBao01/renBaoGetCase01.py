@@ -60,7 +60,7 @@ def save_to_html(content, caseId,caseName):
     """将数据保存到JSON文件"""
     try:
         # 确保保存目录存在
-        save_dir = 'case_files/2025-EnhancedFunction-Subsystem'
+        save_dir = os.path.join("case_files", "2025-EnhancedFunction-Subsystem01")
         if not os.path.exists(save_dir):
             os.makedirs(save_dir)
 
@@ -113,22 +113,49 @@ def get_fromJson(jsonPath):
 
 if __name__ == '__main__':
 
-        jsonPath='renBaoCaseId.json'
+        # JSON 文件路径（支持子文件夹）
+        base_dir = os.path.dirname(os.path.abspath(__file__))
+        jsonPath = os.path.join(base_dir, "data_files", "renBaoCaseId.json")
+        if not os.path.exists(jsonPath):
+            print(f"❌未找到JSON文件:{jsonPath}")
+            exit(1)
+
         caseList = get_fromJson(jsonPath)
+        if not caseList:
+            print("⚠️没有有效用例，程序结束。")
+            exit(0)
+
+        success_count = 0
+        fail_count = 0
+
         for idx, case in enumerate(caseList, 1):
             caseTrueId = case["caseTrueId"]
             caseId = case["caseId"]
             print(f"\n[{idx}/{len(caseList)}]正在处理:{caseId}(ID={caseTrueId})")
+
+            attempt = 0
+            max_attempts = 2  # 最多尝试两次
+            processed = False
+
             try:
                 request = create_request(caseTrueId)
                 content = get_content(request)
                 if not content:
                     print("⚠️无法获取网页内容，跳过")
+                    fail_count += 1
+                    print(f"当前成功: {success_count}，当前失败: {fail_count}")
                     continue
                 caseName = get_data_name(content)
-                save_to_html(content,caseId,caseName)
+                if save_to_html(content, caseId, caseName):
+                    success_count += 1
+                else:
+                    fail_count += 1
+
             except Exception as e:
                 print(f"❌处理{caseId}出错:{e}")
 
-            print(f"\n🎉文件 {os.path.basename(jsonPath)}处理完成！")
-        print("\n✅所有JSON文件处理完毕！")
+            # 打印当前成功/失败计数
+            print(f"当前成功: {success_count}，当前失败: {fail_count}")
+
+        print(f"\n🎉 文件 {os.path.basename(jsonPath)} 处理完成！")
+        print(f"✅ 总成功: {success_count}，总失败: {fail_count}")

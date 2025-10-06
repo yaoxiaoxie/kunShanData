@@ -1,0 +1,3200 @@
+
+ 
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>
+		Welcome to TDMS --- Lenovo Test&Defect Management System
+		</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+	</head>
+	<script  language=javascript src="/tdms/js/common/dialog.js"></script>
+
+	<link href="/tdms/css/system/layout.css" rel="stylesheet" type="text/css" />
+<link href="/tdms/css/system/content.css" rel="stylesheet" type="text/css" />
+	
+	<body>
+	<table class="layout_table" style="height:100%">
+		<tr>
+			<td>
+				
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+  <head>
+    <base href="https://tdms.lenovo.com:443/tdms/"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=8; IE=7; IE=EDGE" />
+    <meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="expires" content="0">
+    <style type="text/css">
+    .quicklinkmenu {
+	    font-size: 0.9em;
+	    /* position: absolute;
+	    right:170px;
+	    top: 4px; */
+	    z-index: 10;
+	    display:inline-block;
+	}
+	ul.linkmenu {
+/* 	    float: left; */
+	    list-style: none outside none;
+	    margin: 0 1px 0 0;
+	    padding: 0;
+/*  	    width: 60px;  */
+	    
+	}
+	ul.linkmenu a {
+	    color: #FFFFFF;
+	    text-decoration: none;
+	}
+	ul.linkmenu li.linklist {
+/* 	    float: left; */
+/* 	    width: 250px; */
+	}
+	ul.linkmenu li.linklist a.linkcategory {
+	    background: none repeat scroll 0 0 transparent;
+	    color: #ffffff;
+ 	    display: block; 
+	   	font-family: Verdana, sans-serif; 
+	   	font-size:11px;
+/* 	    position: relative; */
+ 	    width: 40px;  
+	    z-index: 50;
+	    margin-top:0px;
+	}
+
+	ul.sublinkmenu {
+	    background-position: left top;
+	    background-repeat: no-repeat;
+	    font-size:11px;
+/* 	    float: left; */
+	    list-style: none outside none;
+	    margin: 0px 0 0 -14px;
+	    padding: 0px 0px; 
+	    position: absolute;
+	    width: 42px;  
+	    display: block;
+	}
+
+	ul.sublinkmenu li a {
+	    background: none repeat scroll 0 0 #6699CC;
+	    clear: left;
+	    float: left;
+	    padding: 4px 12px 0 6px;
+	 	width: 35px; 
+	}
+	ul.sublinkmenu a:hover, ul.sublinkmenu a:focus, ul.sublinkmenu a:active {
+	    background: none repeat scroll 0 0 #003366;
+	    margin-right: 1px;
+	}
+	ul.sublinkmenu li a span {
+	    color: #FFFFFF;
+/* 	    float: left; */
+	    padding-left: 8px;
+	}
+	li ul li span{
+		display:none;
+	}
+	li ul li:hover span{
+		display:block;
+		color: #FFFFFF;
+	}
+	ul li:hover ul li span{
+		display:block;
+	}
+	#logo_version {
+		position: relative;
+		top: 2px;
+		font-size: 22px;
+		font-style: italic;
+		color:#2e4e67;
+		font-weight: 900;
+	}
+    </style>
+  </head>
+  <link href="/tdms/css/system/jquery-ui.css" rel="stylesheet" type="text/css" />
+<link href="/tdms/css/menu/systemmenu.css" rel="stylesheet" type="text/css" />
+<link href="/tdms/css/system/common.css" rel="stylesheet" type="text/css" />
+<script  language=javascript src="/tdms/js/system/jquery.js"></script>
+<script  language=javascript src="/tdms/js/system/jquery-ui.js"></script>
+<script  language=javascript src="/tdms/js/common/dojo.js"></script>
+<script  language=javascript src="/tdms/js/common/init.js"></script>
+<script  language=javascript src="/tdms/js/common/common.js"></script>
+<script  language=javascript src="/tdms/js/common/utils.js"></script>
+<script  language=javascript src="/tdms/js/menu/systemmenu.js"></script>
+
+  
+  <body> 
+  <script>
+  $(function(){
+	  $(".quicklinkmenu").hover(function(){
+		  var $this = $(this);
+			var left = $this.offset().left;
+			var top = $this.offset().top + $this.height();
+			console.log(left + ":" + top + $(".sublinkmenu").css("position"));
+			$(".sublinkmenu").css("left" , left).css("top",top);
+	  });
+  });
+  </script>
+  
+				
+<form id="systemMenuForm" name="systemMenuForm" onsubmit="return true;" action="/tdms/homeAction.do" method="post">	
+    <table class="banner_frame" border=0>
+		<tr>
+			<td rowspan=3 class="system_banner">
+				<table class="banner_logo_table" border=0 >
+					<tr>
+						<td rowspan=4 class="logo_big" style="line-height:25px;">
+						 <img src="https://tdms.lenovo.com:443/tdms/images/lenovo_logo.png"/>
+						</td>
+						<td>	
+						</td>
+					</tr>
+					<tr><td class="logo_small">&nbsp;</td></tr>
+					<tr>
+						<!-- <td class="logo_small">&nbsp;&nbsp;Recommended Internet Browser is IE11.</td> -->
+						<td><div id="logo_version"></div></td>
+					</tr>
+					<tr>
+						<td  class="logo_small">
+						  &nbsp;
+						</td>
+					</tr>	
+				</table>
+			</td>
+			<td class="menu_top">
+				Welcome milly_gu@compal.com
+				<font color="#cccccc" style="font-weight:300">|</font>	 
+				<a class="menu_top_link" href="javascript:FxRefresh();FxPageSubmit('systemMenuForm','/tdms/homeAction','','sysPageId=page_common_home');"><img src="https://tdms.lenovo.com:443/tdms//images/home.png" class="icon_menu_top" alt="Home"/>Home</a>
+				<font color="#cccccc" style="font-weight:300">|</font> 	
+				<a class="menu_top_link" href="https://ipgpassport.lenovo.com/admin/toEditMyselfInfo.action"><img src="https://tdms.lenovo.com:443/tdms//images/personal_setting.png" class="icon_menu_top" alt="Personal setting"/>My Information</a>
+				<font color="#cccccc" style="font-weight:300">|</font>
+				<div class="quicklinkmenu">
+	 			<ul class="linkmenu">
+					<li class="linklist">
+						<a class="linkcategory" href="#" ><u>More</u> <small>▼</small></a>
+						<ul class="sublinkmenu">
+							<!--  <li><a href="http://ipgkms.lenovo.com"><span>KMS</span></a></li>-->
+							<li><a href="https://ngspms.lenovo.com/spms"><span>SPMS</span></a></li>
+							<li><a href="https://ipgpms.lenovo.com"><span>PMS</span></a></li>
+							<li><a href="https://mms.lenovo.com/index.aspx"><span>MMS</span></a></li>
+							<li><a href="https://ipgbi.lenovo.com/ims/"><span>IMS</span></a></li>
+						</ul>
+					</li>
+				</ul>
+			 	</div>
+				<font color="#cccccc" style="font-weight:300">|</font>	
+				<a class="menu_top_link" href="javascript:FxShowFreeWindow('manual/TDMS_User_Guide.html',1000,600);"><img src="https://tdms.lenovo.com:443/tdms//images/help.png" class="icon_menu_top" alt="Help"/>Help</a>
+				<font color="#cccccc" style="font-weight:300">|</font> 				
+				<a class="menu_top_link" href="javascript:top.location='https://tdms.lenovo.com:443/tdms/signoutAction!signout.do'"><img src="https://tdms.lenovo.com:443/tdms//images/sign_out.png" class="icon_menu_top" alt="Sign out"/>Log out</a>
+			</td> 
+		</tr>
+		<tr>
+			<td class="menu_blank">
+ 
+				<input type="hidden" id="showTab" value="menu_system_project,menu_system_defect,menu_system_test,menu_system_limitation,menu_system_Deviation,menu_system_dashboard" />
+				<input type="hidden" id="showSub" value="project_subsystem,defect_subsystem,test_subsystem,limitation_subsystem,deviation_subsystem,dashboard_subsystem" />
+				<input type="hidden" id="showMenu" value="project_menu_searchproject;defect_menu_myproject,defect_menu_quicksearch,defect_menu_myfavorite;test_menu_testcaselibrary,test_menu_managetestplan,test_menu_executetestplan;limitation_menu_limitationforapply,limitation_menu_limitationforapprove,limitation_menu_mylist,limitation_menu_finished;deviation_menu_deviationforapply,deviation_menu_mylist,deviation_menu_finished;menu_system_dashboard" />
+				<input type="hidden" id="curTab" name="curTab" value="menu_system_test"/>
+				<input type="hidden" id="curMenu" name="curMenu" value="test_menu_testcaselibrary"/>
+			</td>			
+		</tr>
+					 
+		<tr>
+			<td style="text-align:right;padding-right:0px">				
+				<table id = "tabTable" class="menu_system">
+					<tr>	
+						<td id="menu_system_dashboard" onclick="FxChangeMenuSystem(this);FxClickTab(this)" onmouseover="FxMouseOverMenuSystem(this)" onmouseout="FxMouseOutMenuSystem(this)" class="menu_system_inactive" style="display:none">My Page</td>
+						<td id="menu_system_admin" onclick="FxChangeMenuSystem(this);FxClickTab(this)" onmouseover="FxMouseOverMenuSystem(this)" onmouseout="FxMouseOutMenuSystem(this)" class="menu_system_inactive" style="display:none">Admin</td>
+						<td id="menu_system_project" onclick="FxChangeMenuSystem(this);FxClickTab(this)" onmouseover="FxMouseOverMenuSystem(this)" onmouseout="FxMouseOutMenuSystem(this)" class="menu_system_inactive" style="display:none">Project</td>
+						<td id="menu_system_test" onclick="FxChangeMenuSystem(this);FxClickTab(this)" onmouseover="FxMouseOverMenuSystem(this)" onmouseout="FxMouseOutMenuSystem(this)" class="menu_system_inactive" style="display:none">Test</td>
+						<td id="menu_system_defect" onclick="FxChangeMenuSystem(this);FxClickTab(this)" onmouseover="FxMouseOverMenuSystem(this)" onmouseout="FxMouseOutMenuSystem(this)" class="menu_system_inactive" style="display:none">Defect</td>
+						<td id="menu_system_limitation" onclick="FxChangeMenuSystem(this);FxClickTab(this)" onmouseover="FxMouseOverMenuSystem(this)" onmouseout="FxMouseOutMenuSystem(this)" class="menu_system_inactive" style="display:none">Limitation</td>
+						<td id="menu_system_Deviation" onclick="FxChangeMenuSystem(this);FxClickTab(this)" onmouseover="FxMouseOverMenuSystem(this)" onmouseout="FxMouseOutMenuSystem(this)" class="menu_system_inactive" style="display:none">Deviation</td>												
+					</tr>
+				</table>				
+			</td>
+		</tr>
+	</table>
+	
+	<!-- Module Menu -->
+	<table id="defect_subsystem" class="menu_module" style="display:none">
+		<tr>
+			
+			<td id="defect_menu_myproject" onclick="FxChangeMenuModule(this);FxClickMenu(this)" onmouseover="FxMouseOverMenuModule(this)" onmouseout="FxMouseOutMenuModule(this)" class="menu_module_inactive"  style="display:none">My project</td>
+			<td id="defect_menu_myfavorite" onclick="FxChangeMenuModule(this);FxClickMenu(this)" onmouseover="FxMouseOverMenuModule(this)" onmouseout="FxMouseOutMenuModule(this)" class="menu_module_inactive"  style="display:none;width:135px">My Favorite Defects</td>
+			<td id="defect_menu_mysearch" onclick="FxChangeMenuModule(this);FxClickMenu(this)" onmouseover="FxMouseOverMenuModule(this)" onmouseout="FxMouseOutMenuModule(this)" class="menu_module_inactive"  style="display:none;width:135px">Search in projects</td>
+			<td id="defect_menu_sharedefect" onclick="FxChangeMenuModule(this);FxClickMenu(this)" onmouseover="FxMouseOverMenuModule(this)" onmouseout="FxMouseOutMenuModule(this)" class="menu_module_inactive"  style="display:none">Share pool</td>
+			<td id="defect_menu_statistics" onclick="FxChangeMenuModule(this);FxClickMenu(this)" onmouseover="FxMouseOverMenuModule(this)" onmouseout="FxMouseOutMenuModule(this)" class="menu_module_inactive"  style="display:none">Statistics</td>
+			<td id="defect_menu_coordinator_releaseinfo" onclick="FxChangeMenuModule(this);FxClickMenu(this)" onmouseover="FxMouseOverMenuModule(this)" onmouseout="FxMouseOutMenuModule(this)" class="menu_module_inactive"  style="display:none">Release info</td>
+			<td id="defect_menu_quicksearch" class="menu_module_quick_search" style="display:none">
+			</td>
+			<td  class="menu_module_quick_search">				
+				<div style="width:20%;font-weight:normal;font-size:12px;font-weight:700;font-style:oblique;">
+					<div style="float:right">
+						Quick search
+						<input type="text" onfocus="FxChangeQuickSearch2Active(this)" id="quicksearchdefect" onblur="FxChangeQuickSearch2Inactive(this)" class="quicksearch_inactive" value="Input Defect ID" style="height:15px;background-color:#fcefc5;"/>
+						<input type="text" style="display:none;" />
+						<a id="a_quciksearch" href="javascript:quickSearch()"><img src="https://tdms.lenovo.com:443/tdms//images/quick_search.png" class="icon_quick_search" alt="Quick search"/></a>
+					</div>
+				</div>
+			</td>
+		</tr>
+	</table>
+	
+	<!-- Module Menu -->
+	<table id="project_subsystem" class="menu_module" style="display:none">
+		<tr>
+			
+			<td id="project_menu_searchproject" onclick="FxChangeMenuModule2(this);FxClickMenu(this)" onmouseover="FxMouseOverMenuModule(this)" onmouseout="FxMouseOutMenuModule(this)" class="menu_module_inactive"  style="display:none">Browse project</td>
+			<td id="project_menu_statistics" onclick="FxChangeMenuModule2(this);FxClickMenu(this)" onmouseover="FxMouseOverMenuModule(this)" onmouseout="FxMouseOutMenuModule(this)" class="menu_module_inactive"  style="display:none">Statistics</td>			
+			<td id="project_menu_workloadingexport" onclick="FxChangeMenuModule2(this);FxClickMenu(this)" onmouseover="FxMouseOverMenuModule(this)" onmouseout="FxMouseOutMenuModule(this)" class="menu_module_inactive"  style="display:none">Workload Tracking</td>
+			<td id="project_menu_aitracking" onclick="FxChangeMenuModule2(this);FxClickMenu(this)" onmouseover="FxMouseOverMenuModule(this)" onmouseout="FxMouseOutMenuModule(this)" class="menu_module_inactive"  style="display:none">AI Tracking</td>								
+			<td  class="menu_module_quick_search">						
+			</td>
+		</tr>
+	</table>
+	
+	<!-- Module Menu -->
+	<table id="admin_subsystem" class="menu_module" style="display:none">
+		<tr>
+			<td id="admin_menu_user" onclick="window.open('https://ipgpassport.lenovo.com/admin/listUser.action');" onmouseover="FxMouseOverMenuModule(this)" onmouseout="FxMouseOutMenuModule(this)" class="menu_module_inactive"  style="display:none">User</td>
+			<td id="admin_menu_department" onclick="FxChangeMenuModule3(this);FxClickMenu(this)" onmouseover="FxMouseOverMenuModule(this)" onmouseout="FxMouseOutMenuModule(this)" class="menu_module_inactive"  style="display:none">Department</td>
+			<td id="admin_menu_role" onclick="FxChangeMenuModule3(this);FxClickMenu(this)" onmouseover="FxMouseOverMenuModule(this)" onmouseout="FxMouseOutMenuModule(this)" class="menu_module_inactive"  style="display:none">Role</td>
+			<td id="admin_menu_workflow" onclick="FxChangeMenuModule3(this);FxClickMenu(this)" onmouseover="FxMouseOverMenuModule(this)" onmouseout="FxMouseOutMenuModule(this)" class="menu_module_inactive"  style="display:none">Workflow</td>
+			<td id="admin_menu_datasync" onclick="FxChangeMenuModule3(this);FxClickMenu(this)" onmouseover="FxMouseOverMenuModule(this)" onmouseout="FxMouseOutMenuModule(this)" class="menu_module_inactive"  style="display:none">Data Sync</td>
+			<td id="admin_menu_systemconst" onclick="FxChangeMenuModule3(this);FxClickMenu(this)" onmouseover="FxMouseOverMenuModule(this)" onmouseout="FxMouseOutMenuModule(this)" class="menu_module_inactive"  style="display:none">System const</td>
+			<td id="admin_menu_systeminfo"  onclick="FxChangeMenuModule3(this);FxClickMenu(this)" onmouseover="FxMouseOverMenuModule(this)" onmouseout="FxMouseOutMenuModule(this)" class="menu_module_inactive"  style="display:none">System information</td>
+			<!-- <td id="admin_menu_uploadavl" onclick="FxChangeMenuModule3(this);FxClickMenu(this)" onmouseover="FxMouseOverMenuModule(this)" onmouseout="FxMouseOutMenuModule(this)" class="menu_module_inactive">Upload AVL</td> -->
+			<td  class="menu_module_quick_search">				
+			</td>
+		</tr>
+	</table>
+	
+	<!-- baizhg modify start -->
+	<!-- Module Menu -->
+	<table id="test_subsystem" class="menu_module" style="display:none">
+		<tr>
+			
+			<td id="test_menu_feature" onclick="FxChangeMenuModule4(this);FxClickMenu(this)" onmouseover="FxMouseOverMenuModule(this)" onmouseout="FxMouseOutMenuModule(this)" class="menu_module_inactive" style = "width:150px;display:none" >Feature</td>
+			<td id="test_menu_testcaselibrary" onclick="FxChangeMenuModule4(this);FxClickMenu(this)" onmouseover="FxMouseOverMenuModule(this)" onmouseout="FxMouseOutMenuModule(this)" class="menu_module_inactive" style = "width:150px;display:none" >Test case DB</td>
+			<td id="test_menu_mvp" onclick="FxChangeMenuModule4(this);FxClickMenu(this)" onmouseover="FxMouseOverMenuModule(this)" onmouseout="FxMouseOutMenuModule(this)" class="menu_module_inactive" style = "width:150px;display:none" >MVP</td>
+			<td id="test_menu_managetestplan" onclick="FxChangeMenuModule4(this);FxClickMenu(this)" onmouseover="FxMouseOverMenuModule(this)" onmouseout="FxMouseOutMenuModule(this)" class="menu_module_inactive"  style = "width:150px;display:none">Manage test plan</td>
+			<td id="test_menu_executetestplan" onclick="FxChangeMenuModule4(this);FxClickMenu(this)" onmouseover="FxMouseOverMenuModule(this)" onmouseout="FxMouseOutMenuModule(this)" class="menu_module_inactive"  style = "width:150px;display:none">Test execution</td>
+			<td id="test_menu_testtools" onclick="FxChangeMenuModule4(this);FxClickMenu(this)" onmouseover="FxMouseOverMenuModule(this)" onmouseout="FxMouseOutMenuModule(this)" class="menu_module_inactive"  style = "width:150px;display:none">Test tool library</td>
+			<!-- <td id="test_menu_report" onclick="FxChangeMenuModule4(this);FxClickMenu(this)" onmouseover="FxMouseOverMenuModule(this)" onmouseout="FxMouseOutMenuModule(this)" class="menu_module_inactive" style = "width:150px;display:none">Report</td> -->
+			<td  class="menu_module_quick_search">				
+			</td>
+		</tr>
+	</table>
+	
+	<!-- Module Menu -->
+	<table id="limitation_subsystem" class="menu_module" style="display:none">
+		<tr>
+			<td id="limitation_menu_limitationforapply" onclick="FxChangeMenuModule5(this);FxClickMenu(this)" onmouseover="FxMouseOverMenuModule(this)" onmouseout="FxMouseOutMenuModule(this)" class="menu_module_inactive"  style = "width:170px;display:none">Apply limitation<br /></td>
+			<td id="limitation_menu_limitationforapprove" onclick="FxChangeMenuModule5(this);FxClickMenu(this)" onmouseover="FxMouseOverMenuModule(this)" onmouseout="FxMouseOutMenuModule(this)" class="menu_module_inactive"  style = "width:170px;display:none">Approve limitation<br /></td>
+			<td id="limitation_menu_mylist" onclick="FxChangeMenuModule5(this);FxClickMenu(this)" onmouseover="FxMouseOverMenuModule(this)" onmouseout="FxMouseOutMenuModule(this)" class="menu_module_inactive" style="width:200px;display:none">Limitation under process<br /></td>
+			<td id="limitation_menu_finished" onclick="FxChangeMenuModule5(this);FxClickMenu(this)" onmouseover="FxMouseOverMenuModule(this)" onmouseout="FxMouseOutMenuModule(this)" class="menu_module_inactive" style="width:170px;display:none">Limitation list<br /></td>
+			<td  class="menu_module_quick_search">			
+			<br /></td>
+		</tr>
+	</table>
+	
+	<!-- Module Menu -->
+	<table id="deviation_subsystem" class="menu_module" style="display:none">
+		<tr>
+			<td id="deviation_menu_deviationforapply" onclick="FxChangeMenuModule6(this);FxClickMenu(this)" onmouseover="FxMouseOverMenuModule(this)" onmouseout="FxMouseOutMenuModule(this)" class="menu_module_inactive"  style = "width:170px;display:none">Apply deviation<br /></td>
+			<td id="deviation_menu_deviationforapprove" onclick="FxChangeMenuModule6(this);FxClickMenu(this)" onmouseover="FxMouseOverMenuModule(this)" onmouseout="FxMouseOutMenuModule(this)" class="menu_module_inactive"  style = "width:170px;display:none">Approve deviation<br /></td>
+			<td id="deviation_menu_mylist" onclick="FxChangeMenuModule6(this);FxClickMenu(this)" onmouseover="FxMouseOverMenuModule(this)" onmouseout="FxMouseOutMenuModule(this)" class="menu_module_inactive" style="width:200px;display:none">Deviation under process<br /></td>
+			<td id="deviation_menu_finished" onclick="FxChangeMenuModule6(this);FxClickMenu(this)" onmouseover="FxMouseOverMenuModule(this)" onmouseout="FxMouseOutMenuModule(this)" class="menu_module_inactive" style="width:170px;display:none">Deviation list<br /></td>
+			<td  class="menu_module_quick_search">			
+			<br /></td>
+		</tr>
+	</table>
+	
+	<table id="dashboard_subsystem" class="menu_module" style="display:none">
+		<tr>
+			<td id="dashboard_menu" style="width:170px;display:none">&nbsp;<br /></td>
+			<td class="menu_module_quick_search"><br /></td>
+		</tr>
+	</table>
+</form>
+
+
+
+
+    
+    <script language="javaScript">
+		FxRefresh();
+    </script>
+  </body>
+
+</html>
+		
+			</td>
+		</tr>
+		<tr>
+			<td class="content" style="vertical-align:top;padding-top:0px;">
+					
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+	<head>
+		<link href="/tdms/css/system/common.css" rel="stylesheet" type="text/css" />
+<link href="/tdms/css/system/jquery-ui.css" rel="stylesheet" type="text/css" />
+<link href="/tdms/css/system/testsectiongroupitem.css" rel="stylesheet" type="text/css" />
+<script  language=javascript src="/tdms/js/common/dojo.js"></script>
+<script  language=javascript src="/tdms/js/common/utils.js"></script>
+<script  language=javascript src="/tdms/js/common/grid.js"></script>
+<script  language=javascript src="/tdms/js/common/common.js"></script>
+<script  language=javascript src="/tdms/js/common/validate.js"></script>
+<script  language=javascript src="/tdms/js/module/casemgt/testcaseapprove.js"></script>
+<script  language=javascript src="/tdms/js/
+			module/casemgt/testcasedebug.js"></script>
+<script  language=javascript src="/tdms/js/module/casemgt/testcaseutil.js"></script>
+<script  language=javascript src="/tdms/js/module/casemgt/testcasemgt.js"></script>
+<script  language=javascript src="/tdms/js/module/casemgt/sectiongroupitem.js"></script>
+<script  language=javascript src="/tdms/js/
+			module/casemgt/testcasebasic.js"></script>
+<script  language=javascript src="/tdms/js/system/jquery.js"></script>
+<script  language=javascript src="/tdms/js/system/jquery-ui.js"></script>
+<script  language=javascript src="/tdms/js/common/imgGallary.js"></script>
+
+		
+		<title>New/Edit test case</title>
+		<meta http-equiv="pragma" content="no-cache">
+		<meta http-equiv="cache-control" content="no-cache">
+		<meta http-equiv="expires" content="0">
+		<SCRIPT LANGUAGE="JavaScript">
+			$(document).ready(function() { 
+				document.oncontextmenu = function(){
+					return false;
+				}
+				
+				document.onselectstart = function(){
+					return false;
+				}
+				
+				document.onkeydown = function(){
+					if((event.ctrlKey) &&  window.event.keyCode == 67){
+						return false;
+					}
+				}
+				showInofs();
+				fxChangeCategory();
+				
+				// Set table rows color -- Add by WJC 2019/11/15
+				$("#course_in_case_tbody tr:odd").addClass("trOdd");
+				$("#course_in_case_tbody tr:even").addClass("trEven");
+			});
+			
+			function fxChangeCategory(){
+				var categoryId = $("#defaultCategoryId").val();
+				$.ajax({
+					type : "POST",
+					url : "caseSelectCategoryUser.action",
+	        		data: {
+	        			categoryId: categoryId
+	        		},
+					success : function(data) {
+						if(data == 1){
+							$("#multipleUsersStr").show();
+							$("#multipleUsersSel").show();							
+							
+						}else{
+						 	$("#multipleUsersStr").hide();
+							$("#multipleUsersSel").hide(); 
+							$("#multipleUsersSelect").val(0);
+						}							
+					}
+				});				
+			}
+			
+			//expand status:0 , enclose status:1
+			function fxPageCaseExpand(obj,divName)
+			{
+			    if(obj != null)
+				{
+					if(obj.src != null)
+					{
+						var content_div = document.getElementById(divName);
+						if(obj.src.indexOf('menu_minus') != -1 )
+						{
+							content_div.style.display = "none";
+							obj.src = "images/system/menu_plus.gif";
+						}
+						else 
+						{
+							content_div.style.display = "";
+							obj.src = "images/system/menu_minus.gif";
+						}
+					}
+				}
+			}
+			//added by Zolo on 2012/4/2. Image preview start.
+			function showPreviewImg(spec){
+				var len = $("input[id^='previewBtn_']").length;
+				if(len>1){
+					imgGal.preview(spec);
+					$("#previewDialog").dialog("open");
+				}else{
+					imgGal.preview(spec);
+					$("#previewOneDialog").dialog("open");
+				}
+			}
+			
+			
+			function imgZoom(obj){
+				var zoom=parseInt(obj.style.zoom, 10)||100;
+				zoom+=event.wheelDelta/12;
+				if (zoom>0)
+					obj.style.zoom=zoom+'%';
+			}
+			
+			// 删除"draft"状态的Case -- Add by WJC 2019/9/29 
+			function deleteDraftCase() {
+			  	var caseBOId = document.getElementById("caseBOId").value;
+			  	if (caseBOId !== null || caseBOId !== "") {
+			    	if (confirm("Are you sure to delete this test case?")) {
+			      		$.ajax({
+			        		type: "POST",
+			        		async: false,
+			        		contentType: "application/json;charset=UTF-8",
+			        		url: "testCaseAction!deleteDraft.do",
+			        		data: {
+			          			caseBOId: caseBOId
+			        		},
+			        		success: function (response) {
+			          			if (response === '"1"') {
+			          				alert("Delete successful!");
+			          				// 不显示关闭提示
+			          				window.opener = null;
+			          				window.open("","_self");
+		          				 	// 关闭当前窗口
+		          				 	window.close();
+			          			} else if (response === '"0"') {
+			          				alert("Delete failed!");
+			          			}
+			        		},
+			        		error: function(XMLHttpRequest, textStatus, errorThrown) {
+			          			alert("Delete failed!");
+			          			console.log("*****Delete failed!*****"
+			          				+ "\n\rdata: " + this.data
+			          				+ "\n\rstatus: " + XMLHttpRequest.status
+			          				+ "\n\rtextStatus: " + textStatus
+			          				+ "\n\rerrorThrown: " + errorThrown
+			          				+ "\n\r***************");
+			        		}
+			      		});
+			    	}
+			  } else {
+			  	alert("Delete failed!");
+			  	console.log("*****Delete failed!*****"
+			  		+ "\n\rNot found case table id"
+			  		+ "\n\r***************");
+			  }
+			}
+		</SCRIPT>
+		<STYLE type="text/css">
+			.doubleselect br {display: none;}
+			
+			.tableList {	
+				width:98%;	
+				margin: 0px 0px 0px 20px; 
+				padding: 8px 0px 12px;
+				cursor:default;		
+				/*for the table's border by baizhg*/
+				border-collapse:collapse;
+			}
+			.tableList table {	
+				cursor:default;
+				align:center;		
+				border: solid 1px #00FFFF;	
+			}
+			
+			.tableList thead {
+				border: solid 1px #ffffff;
+				font-size:14px;
+				font-weight:700;
+				line-height: 15px;
+				text-align:left;
+				font-family: verdana, sans-serif;
+				height:25px;
+				line-height:15px;
+				text-align:center;
+				color:#003366;
+				/*background-color:#eeeeee;*/
+				background-color:#dddddd;
+			}
+			
+			.tableList td {	
+				/*for the table's border by baizhg*/
+				border: solid 1px #AAAAAA;
+				font-size:11px;
+				line-height: 15px;
+				text-align:left;
+				font-family: verdana, sans-serif;
+				height:25px;
+				word-wrap:break-word;
+			}
+			
+			.tableList tr {
+				border: solid 1px #ffffff;
+				height:25px;
+				line-height:15px;
+			}
+			
+			.tableList thead tr th {	
+				/*for the table's border by baizhg*/
+				border: solid 1px #AAAAAA;
+				font-size:11px;
+				line-height: 15px;
+				text-align:center;
+				font-family: verdana, sans-serif;
+				height:25px;
+			}
+		</STYLE>
+	</head>
+	<body onload="setRowColorWithoutPage();">
+		<div id="monoabc" style="width:100%;height:1000%;position:absolute;top:0;left:0;background:#fff">
+		</div>
+				<noscript> 
+			<iframe scr="*.htm"></iframe£¾ 
+		</noscript>
+		<table class="content_navigation" border=0><tr><td>View case</td></tr></table>
+				
+		<table class="content_functionMenu" border=0>
+			<tr>
+				<td>
+					
+					<!-- 可以编辑"draft"状态Case的用户，就可以删除它 -->
+					
+					<!-- end -->
+					
+					<a class="menu_function_link" href="javascript:FxViewCaseHistoryt()"><img class="icon_menu_function" src="/tdms/images/history.png"/>History</a>
+					<font color='#cccccc' style='font-weight:300'>|</font>
+					<a class="menu_function_link" href="javascript:fxViewCaseGroup();"><img class="icon_menu_function" src="/tdms/images/version.png"/>Version list</a>
+					<font color='#cccccc' style='font-weight:300'>|</font>
+					<a class="menu_function_link" href="javascript:goLibrary()"><img class="icon_menu_function" src="/tdms/images/return.png"/>Return</a>
+				</td>
+			</tr>
+		</table>
+		
+					
+<form id="caseViewForm" name="caseForm" onsubmit="return true;" action="/tdms/testCaseAction.do" method="post">
+			<input type="hidden" name="oper" value="0" id="caseViewForm_oper"/>
+			<input type="hidden" name="caseBO.caseId" value="30539" id="caseBOId"/>
+			<input type="hidden" name="caseBO.status" value="2" id="caseStatus"/>
+			<input type="hidden" name="matrixes" value="" id="caseViewForm_matrixes"/>
+			<input type="hidden" name="toolids" value="" id="caseViewForm_toolids"/>
+			<input type="hidden" name="currentCategoryRole" value="4" id="caseViewForm_currentCategoryRole"/>
+			<input type="hidden" name="caseId" value="30539" id="caseViewForm_caseId"/>
+			<input type="hidden" name="caseType" value="1" id="caseType"/>
+			<input type="hidden" name="caseCopyFlag" value="" id="caseCopyFlag"/>
+			<input type="hidden" name="groupId" value="7040" id="caseViewForm_groupId"/>
+			<input type="hidden" name="draftId" value="" id="caseViewForm_draftId"/>
+			<input type="hidden" name="caseBO.groupId" value="7040" id="caseViewForm_caseBO_groupId"/>
+			<input type="hidden" name="entry" value="0" id="entry"/>
+			<input type="hidden" name="submiter" value="" id="caseViewForm_submiter"/>
+			<input type="hidden" name="approver" value="" id="caseViewForm_approver"/>
+			
+			<input type="hidden" name="cname" value="" id="caseViewForm_cname"/>
+			
+			<input type="hidden" name="fileName" value="" id="caseViewForm_fileName"/>
+			<input type="hidden" name="downloadFileName" value="" id="caseViewForm_downloadFileName"/>
+			
+			<input type="hidden" name="caseReturnFlag" value="" id="caseReturnFlag"/>
+			
+    		
+    		
+    			
+
+
+<table class="back_body" border=0>
+	<tr>
+		<td class="expandTitle">
+			<img src="images/system/menu_minus.gif"
+				onclick="fxPageCaseExpand(this,'basicdiv');" />
+			Basic
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<div id="basicdiv">
+				<table class="back_body2">
+					<tr>
+						<td class="atrName" nowrap="nowrap">
+							Case type :
+						</td>
+						<td>
+							<input type="text" name="caseBO.caseClassName" value="SW" disabled="disabled" id="caseViewForm_caseBO_caseClassName" class="txt"/>
+						</td>
+						<td width="50px"/>
+						<td width="56px"/>
+						<td class="atrName" nowrap="nowrap">
+							Case ID :
+						</td>
+						<td>
+							<input type="text" name="caseBO.caseAlias" value="SUBS204_Camera_EF_01" disabled="disabled" id="caseViewForm_caseBO_caseAlias" class="txt"/>
+						</td>
+					</tr>
+					<tr>
+						<td class="atrName" nowrap="nowrap">
+							Case name :
+						</td>
+						<td>										
+							<input type="text" name="caseBO.caseName" value="Microsoft Effect Pack(MEP) Basic function" disabled="disabled" id="caseViewForm_caseBO_caseName" class="txt"/>
+						</td>
+						<td width="50px"></td>
+						<td width="56px"></td>
+						<td class="atrName">
+							Category folder :
+						</td>
+						<td>
+							<input type="text" name="caseBO.categoryName" value="Subsystem" disabled="disabled" id="caseViewForm_caseBO_categoryName" class="txt"/>
+							<input type="hidden" name="cid" value="2309" id="caseViewForm_cid"/>
+							<input type="hidden" name="" value="2309" id="defaultCategoryId"/>
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td class="atrName" nowrap="nowrap">
+							Version :
+						</td>
+						<td>
+							<input type="text" name="caseBO.version" value="V5.24.09.1" disabled="disabled" id="caseViewForm_caseBO_version" class="txt"/>
+						</td>
+						<td></td>
+						<td></td>
+						<td class="atrName" nowrap="nowrap">
+							Execution type :
+						</td>
+						<td>
+							<input type="text" name="caseBO.caseType" value="Matrix" disabled="disabled" id="caseViewForm_caseBO_caseType" class="txt"/>
+						</td>
+					</tr>
+					<tr>
+						<td class="atrName" nowrap="nowrap">
+							Keywords :
+						</td>
+						<td>
+							<input type="text" name="caseBO.keyword" value="MEP" disabled="disabled" id="caseViewForm_caseBO_keyword" class="txt"/>
+						</td>
+						<td></td>
+						<td></td>
+						<td class="atrName">
+							Status :
+						</td>
+						<td>
+							<input type="text" name="caseBO.isactive" value="Active" disabled="disabled" id="caseViewForm_caseBO_isactive" class="txt"/>
+						</td>
+					</tr>
+					<tr>
+						<td class="atrName" nowrap="nowrap">
+						Auto type :
+					</td>
+					<td nowrap="nowrap">
+						<div class="doubleselect">
+							
+								<input type = "checkbox" id="checkIs" name="" style="margin-left:0px;margin-top:5px;margin-right:0px;margin-bottom:5px" disabled="true">
+								<select name="caseBO.autoTypeId" disabled="disabled" id="selautoType" class="selNew">
+    <option value="-100"
+    >--Select item--</option>
+    <option value="1">APP UI</option>
+    <option value="2">Battery Life</option>
+    <option value="6">Others</option>
+    <option value="3">Performance</option>
+    <option value="7">Performance-ITS</option>
+    <option value="4">Stress-AID</option>
+    <option value="5">Stress-Auto</option>
+
+
+</select>
+							
+							
+						</div>
+					</td>
+					</tr>
+					<tr>
+						<td class="atrName" nowrap="nowrap">
+							Workloading :
+						</td>
+						<td style = "font-size: 12px;font-family: verdana, sans-serif;font-weight: 700;color:black;word-wrap: normal;" nowrap="nowrap" colspan="2">
+							<input type="text" name="caseBO.workloading" value="135" disabled="disabled" id="caseViewForm_caseBO_workloading" class="txt"/>(Min)
+						</td>
+						<td></td>
+						<td class="atrName">
+							OS :
+						</td>
+						<td style = "height:58px">
+							<select name="osList" size="3" id="caseViewForm_osList" class="sel" multiple="multiple">
+    <option value="474">Win 11</option>
+
+
+</select>
+						</td>
+					</tr>
+					<tr>
+						<td class="atrName" nowrap="nowrap">
+							Priority :
+						</td>
+						<td>
+							<input type="text" name="caseBO.priorityName" value="High" disabled="disabled" id="caseViewForm_caseBO_priorityName" class="txt"/>
+						</td>
+						<td></td>
+						<td></td>
+						<td class="atrName" nowrap="nowrap">
+							Phase :
+						</td>
+						<td>
+							<input type="text" name="caseBO.selectedTags" value="FFRT,FVT,FVT 2,Lifecycle,SIT,SIT 2" disabled="disabled" id="caseViewForm_caseBO_selectedTags" class="txt"/>
+						</td>
+					</tr>
+					<tr>
+						<td class="atrName" nowrap="nowrap">
+							Creator :
+						</td>
+						<td>
+							<input type="text" name="caseBO.creator" value="maoyf3" disabled="disabled" id="caseViewForm_caseBO_creator" class="txt"/>
+						</td>
+						<td></td>
+						<td></td>
+						<td class="atrName" nowrap="nowrap">
+							Owner :
+						</td>
+						<td>
+							<input type="text" name="caseBO.owner" value="maoyf3" disabled="disabled" id="caseViewForm_caseBO_owner" class="txt"/>
+						</td>
+					</tr>
+					<tr>
+						<td hidden id="multipleUsersStr" class="atrName" nowrap="nowrap">
+							Multiple testers :
+						</td>
+						<td hidden id="multipleUsersSel">
+							
+							
+		 						<input type="text" name="" value="No" disabled="disabled" id="caseViewForm_" class="txt"/>
+							
+	 					</td>
+					</tr>
+
+					<!-- 
+						Description: Training Course
+						Add by WJC 2019/10/30 
+					-->
+					
+					<!-- Add end 2019/10/30 -->
+					<tr>
+						<td class="atrName" nowrap="nowrap">
+							Objective :
+						</td>
+						<td colspan="5" style = "height:82px">
+								 <div id="objectiveDiv"   class="testDiv"  style="height:150px;">
+								 	 <p>Check MEP function. Include preparation,basic function. <br />Trigger propose: To make sure MEP&nbsp; all feature is ready. <br />TC execute condition:New type MEP cut in/Any SW or HW modified relation with MEP.</p>
+                                          </div>
+						</td>
+						
+					</tr>
+					<tr>
+						<td class="atrName" nowrap="nowrap">
+							Release notes :
+						</td>
+						
+						<td colspan="5" style = "height:82px">
+						 <div id="descriptionDiv"   class="testDiv">
+						 	20240924<br />Updated naming for Eye Contact Enhanced (renamed to Eye Contact Teleprompter)
+                                  </div>
+						</td> 
+						
+					</tr>
+					
+						<tr id="matrix_tr_1" >
+							<td class="atrName" nowrap="nowrap">
+								Type matrix :
+							</td>
+							<td colspan="5" style = "height:58px">
+								<select name="caseMatrix" size="3" id="caseMatrix" class="sel" style="width:240px">
+    <option value="159127">Camera vender1-CN or EN</option>
+    <option value="159128">Camera vender2-CN or EN</option>
+    <option value="159129">...</option>
+
+
+</select>
+							</td>
+						</tr>
+					
+					<tr>
+						<td class="atrName" nowrap="nowrap">
+							Case tools :
+						</td>
+						<td colspan="5" style = "height:58px">
+							<select name="caseTool" size="3" id="caseTool" class="sel" style="width:240px">
+
+
+</select>
+							<!-- Download case tools 2022/07/04 -->
+							<span style="margin-left: 8px; vertical-align: top;">
+								<a 
+									onclick="openDownloadCaseToolsWindow('caseTool');"
+									style="cursor: pointer;"
+								>
+									Download Case Tools
+								</a>
+							</span>		
+							<!----- 2022/07/04 end ----->
+						</td>
+					</tr>
+					<tr>
+						<td class="atrName" nowrap="nowrap">
+							Attachment 
+
+							:
+						</td>
+						<td colspan="5">
+							<table  id="attachmentTbl">
+								
+							</table>
+						</td>
+					</tr>
+			</table>
+			</div>
+		</td>
+	</tr>
+</table>
+				<table class="section_back_body">
+					<tr>
+						<td class="expandTitle" nowrap="nowrap">
+							<img src="images/system/menu_minus.gif"
+								onclick="fxPageCaseExpand(this,'sectionTable');" />
+							Content
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<table id="testcase_tab_button" class="back_body2">
+								<tr>
+									<td>
+										
+
+
+<noscript> 
+	<iframe src="*.htm"></iframe>
+</noscript>
+<script>
+function initDownload(obj, sectionId) {
+	var currentCategoryRole = $("input[name='currentCategoryRole']").val() == undefined ? '2' : $("input[name='currentCategoryRole']").val();
+	var url = "testCaseAction!initDownload.action?section_id=" + sectionId + "&currentCategoryRole=" + currentCategoryRole + "&time=" + new Date() ;
+	var features = "dialogWidth=800px;dialogHeight=400px;";
+	
+	if(window.ActiveXObject){
+		var retValue = window.showModalDialog(url, "", features);
+		if (retValue!= undefined && retValue == 1) {
+			$(obj).remove();
+		}
+	} else {
+		var iWidth = 815;
+		var iHeight = 415;
+		var iTop = (window.screen.availHeight-30-iHeight)/2;
+		var iLeft = (window.screen.availWidth-10-iWidth)/2;
+		window.open(url, '','height='+iHeight+',width='+iWidth+',top='+ iTop +',left='+ iLeft +',toolbar=no,menubar=no,scrollbars=no,resizable=no,location=no,status=no'); 
+	}
+}
+</script>
+<!--=================== template start ===================-->
+<script id="sectionColumnTemplate" type="text/x-jquery-tmpl">
+	<tr class="sectionTrClass_${sectionId}_">
+		<td class="operationTdClass">
+			<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_${sectionId}_', ${sectionId}, 2)" class="imgButClass" title="Remove section" style="display:none"/>
+			<img src="images/section_edit.png" onclick="sectionDialog.openSection(${sectionId}, 1)" class="imgButClass" title="Update section" style="display:none"/>
+			<img src="images/section_insert.png" onclick="sectionDialog.openSection(${sectionId}, 2)" class="imgButClass" title="Insert section" style="display:none"/>
+			<img src="images/new.png" onclick="sectionDialog.openGroupItem(${sectionId}, -1, -1, -1, 0)" class="imgButClass" title="Add group/item" style="display:none"/>
+		</td>
+		<td><img onclick="extendNode('sectionTrClass_${sectionId}_')" class="blockClass" src="images/collapse.png"/></td>
+		<td></td>
+		<td colspan="6">
+			<table width="100%">
+				<tr>
+					<td colspan=3 width="80%"><strong>Section : </strong><span class="sectionSpanClass" {{if color}}style="color: #0782FC;"{{/if}}>${sectionName}</span></td>
+					<td width="20%"><strong>Attachment : </strong>
+						{{if attachmentId == 1}}
+							<img src="images/download.png" style="cursor: pointer;" onclick="initDownload(this, ${sectionId})" id="imgAttach_${sectionId}"/>
+						{{/if}}
+					</td>
+				</tr>
+				<tr>
+					<td width="30%"><strong>Workloading : </strong><span class="workloadSpanClass">${workloading}</span>(Min)</td>
+					<td width="30%"><strong>LeadingTime : </strong><span class="leadingTimeSpanClass">${leadingTime}</span>(Min)</td>
+					<td width="20%"><strong>Phase : </strong><span class="tagSpanClass">${selectedTags}</span></td>
+					<td width="20%">
+						<strong>Test Log Mandatory :</strong>
+						<span class="tagSpanClass">
+							{{if testLogMandatory == 1}}
+								Y
+							{{else}}
+								N
+							{{/if}}
+						</span>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</script>
+
+<script id="sectionItemColumnTemplate" type="text/x-jquery-tmpl">
+	<tr class="sectionTrClass_${sectionId}_${itemId}_">
+		<td class="operationTdClass">
+			<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_${sectionId}_${itemId}_', ${itemId}, 3)" class="imgButClass" title="Remove case item" style="display:none"/>
+			<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(${sectionId}, ${itemId}, -1, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+			<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(${sectionId}, ${itemId}, -1, 3, 2)" class="imgButClass" title="Insert item/group" style="display:none"/>
+		</td>
+		<td><img src="images/tree/T.png"/></td>
+		<td></td>
+		<td colspan=3 width="37%" class="sectionTdClass">
+			<div {{if itemColorLeft}}style="color: #0782FC;"{{/if}}>{{html caseItem}}</div>
+		</td>
+		<td colspan=3 width="35%" class="sectionTdClass">
+			<div {{if itemColorRight}}style="color: #0782FC;"{{/if}}>{{html expectedResult}}</div>
+		</td>
+		<td colspan=3 width="17%" class="sectionTdClass">
+           	<div style="text-align:center;">
+				{{if testLogMandatory == 1}}
+					Y
+				{{else}}
+					N
+				{{/if}}
+           	</div>
+		</td>
+	</tr>
+</script>
+
+<script id="sectionGroupColumnTemplate" type="text/x-jquery-tmpl">
+	<tr class="sectionTrClass_${sectionId}_group_${itemId}_">
+		<td class="operationTdClass">
+			<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_${sectionId}_group_${itemId}_', ${itemId}, 4)" class="imgButClass" title="Remove group" style="display:none"/>
+			<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(${sectionId}, ${itemId}, -1, 4, 1)" class="imgButClass" title="Edit group" style="display:none"/>
+			<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(${sectionId}, ${itemId}, -1, 4, 2)" class="imgButClass" title="Insert item/group" style="display:none"/>
+			<img src="images/new.png" onclick="sectionDialog.openGroupItem(${sectionId}, -1, ${itemId}, -1, 0)" class="imgButClass" title="Add case item" style="display:none"/>
+		</td>
+		<td><img src="images/tree/T.png"/></td><td><img onclick="extendNode('sectionTrClass_${sectionId}_group_${itemId}_')" class="blockClass" src="images/collapse.png"/></td>
+		<td colspan=9 bgcolor="#E6E6E6" class="sectionTdClass">
+			<span class="groupSpanClass" {{if groupColor}}style="color: #0782FC;"{{/if}}>${groupName}</span>
+		</td>
+	</tr>
+</script>
+
+<script id="sectionGroupItemColumnTemplate" type="text/x-jquery-tmpl">
+	<tr class="sectionTrClass_${sectionId}_group_${groupId}_${itemId}_">
+		<td class="operationTdClass">
+			<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_${sectionId}_group_${groupId}_${itemId}_', ${itemId}, 3)" class="imgButClass" title="Remove item" style="display:none"/>
+			<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(${sectionId}, ${itemId}, ${groupId}, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+			<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(${sectionId},${itemId}, ${groupId}, 3, 2)" class="imgButClass" title="Insert case item" style="display:none"/>
+		</td>
+		<td><img src="images/tree/T.png"/></td><td><img src="images/tree/T.png"/></td>
+		<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+			<div {{if itemColorLeft}}style="color: #0782FC;"{{/if}}>{{html caseItem}}</div>
+		</td>
+		<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+			<div {{if itemColorRight}}style="color: #0782FC;"{{/if}}>{{html expectedResult}}</div>
+		</td>
+		<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	         <div style="text-align:center;">
+				{{if testLogMandatory == 1}}
+					Y
+				{{else}}
+					N
+				{{/if}}		
+	         </div>
+	    </td>
+	</tr>
+</script>
+
+<table id="sectionTable" width="1350px">
+	<tbody>
+		<tr>
+			<td width=7%></td>
+			<td width=2%></td>
+			<td width=2%></td>
+			<td colspan=3 style="text-align:center;width:37%" class="sectionTdClass"><strong><font size="3">Test case item</font></strong></td>
+			<td colspan=3 style="text-align:center;width:35%" class="sectionTdClass"><strong><font size="3">Expected result</font></strong></td>
+			<td colspan=3 style="text-align:center;width:17%" class="sectionTdClass"><strong><font size="3">Test Log Mandatory</font></strong></td>
+		</tr>
+		
+			<tr class='sectionTrClass_141169_'>
+				<td class="operationTdClass">
+					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_141169_', 141169, 2)" class="imgButClass" title="Remove section" style="display:none"/>
+					<img src="images/section_edit.png" onclick="sectionDialog.openSection(141169, 1)" class="imgButClass" title="Update section" style="display:none"/>
+					<img src="images/section_insert.png" onclick="sectionDialog.openSection(141169, 2)" class="imgButClass" title="Insert section" style="display:none"/>
+					<img src="images/new.png" onclick="sectionDialog.openGroupItem(141169, -1, -1, -1, 0)" class="imgButClass" title="Add group/item" style="display:none"/>
+				</td>
+				<td><img onclick="extendNode('sectionTrClass_141169_')" class="blockClass" src="images/collapse.png"/></td>
+				<td></td>
+				<td colspan="6">
+					<table width="100%">
+						<tr>
+							<td colspan=3 width="80%"><strong>Section : </strong><span class="sectionSpanClass" >Preparation</span></td>							
+							<td width="20%"><strong>Attachment : </strong>
+							
+							
+							</td>
+						</tr>
+						<tr>
+							<td width="30%"><strong>Workloading : </strong><span class="workloadSpanClass">5</span>(Min)</td>
+							<td width="30%"><strong>LeadingTime : </strong><span class="leadingTimeSpanClass">5</span>(Min)</td>
+							<td width="20%"><strong>Phase : </strong><span class="tagSpanClass"></span></td>
+							<td width="20%">
+								<strong>Test Log Mandatory :</strong>
+								<span class="tagSpanClass">
+									
+									N
+								</span>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+            <!-- Display case item in section  -->
+							
+           		<!-- case item not in any group. -->
+           			<tr class="sectionTrClass_141169_2315623_">
+           				<td class="operationTdClass">
+           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_141169_2315623_', 2315623, 3)" class="imgButClass" title="Remove case item" style="display:none"/>
+           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(141169, 2315623, -1, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(141169, 2315623, -1, 3, 2)" class="imgButClass" title="Insert item/group" style="display:none"/>
+           				</td>
+           				<td><img src="images/tree/T.png"/></td>
+           				<td></td>
+           				<td colspan=3 width="37%" class="sectionTdClass">
+           					<div class="itemSpanClass" >Check Preload image and BIOS,ensure image and BIOS are appropriate.</div>
+           				</td>
+           				<td colspan=3 width="35%" class="sectionTdClass">
+           					<div class="expectedResultSpanClass" ></div>
+           				</td>
+           				<td colspan=3 width="17%" class="sectionTdClass">
+           					<div style="text-align:center;">
+           						
+								N
+           					</div>
+           				</td>
+           			</tr>
+           		
+           		
+            				
+           		<!-- case item not in any group. -->
+           			<tr class="sectionTrClass_141169_2315624_">
+           				<td class="operationTdClass">
+           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_141169_2315624_', 2315624, 3)" class="imgButClass" title="Remove case item" style="display:none"/>
+           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(141169, 2315624, -1, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(141169, 2315624, -1, 3, 2)" class="imgButClass" title="Insert item/group" style="display:none"/>
+           				</td>
+           				<td><img src="images/tree/T.png"/></td>
+           				<td></td>
+           				<td colspan=3 width="37%" class="sectionTdClass">
+           					<div class="itemSpanClass" >Ensure that the graphics driver version supports the Microsoft Effect Pack (MEP) feature</div>
+           				</td>
+           				<td colspan=3 width="35%" class="sectionTdClass">
+           					<div class="expectedResultSpanClass" ></div>
+           				</td>
+           				<td colspan=3 width="17%" class="sectionTdClass">
+           					<div style="text-align:center;">
+           						
+								N
+           					</div>
+           				</td>
+           			</tr>
+           		
+           		
+            				
+           		<!-- case item not in any group. -->
+           			<tr class="sectionTrClass_141169_2315625_">
+           				<td class="operationTdClass">
+           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_141169_2315625_', 2315625, 3)" class="imgButClass" title="Remove case item" style="display:none"/>
+           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(141169, 2315625, -1, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(141169, 2315625, -1, 3, 2)" class="imgButClass" title="Insert item/group" style="display:none"/>
+           				</td>
+           				<td><img src="images/tree/T.png"/></td>
+           				<td></td>
+           				<td colspan=3 width="37%" class="sectionTdClass">
+           					<div class="itemSpanClass" >Ensure camera FW is latest.</div>
+           				</td>
+           				<td colspan=3 width="35%" class="sectionTdClass">
+           					<div class="expectedResultSpanClass" ></div>
+           				</td>
+           				<td colspan=3 width="17%" class="sectionTdClass">
+           					<div style="text-align:center;">
+           						
+								N
+           					</div>
+           				</td>
+           			</tr>
+           		
+           		
+            				
+           		<!-- case item not in any group. -->
+           			<tr class="sectionTrClass_141169_2315626_">
+           				<td class="operationTdClass">
+           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_141169_2315626_', 2315626, 3)" class="imgButClass" title="Remove case item" style="display:none"/>
+           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(141169, 2315626, -1, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(141169, 2315626, -1, 3, 2)" class="imgButClass" title="Insert item/group" style="display:none"/>
+           				</td>
+           				<td><img src="images/tree/T.png"/></td>
+           				<td></td>
+           				<td colspan=3 width="37%" class="sectionTdClass">
+           					<div class="itemSpanClass" >Ensure the current used camera is build in camera.</div>
+           				</td>
+           				<td colspan=3 width="35%" class="sectionTdClass">
+           					<div class="expectedResultSpanClass" ></div>
+           				</td>
+           				<td colspan=3 width="17%" class="sectionTdClass">
+           					<div style="text-align:center;">
+           						
+								N
+           					</div>
+           				</td>
+           			</tr>
+           		
+           		
+            				
+           		<!-- case item not in any group. -->
+           			<tr class="sectionTrClass_141169_2315627_">
+           				<td class="operationTdClass">
+           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_141169_2315627_', 2315627, 3)" class="imgButClass" title="Remove case item" style="display:none"/>
+           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(141169, 2315627, -1, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(141169, 2315627, -1, 3, 2)" class="imgButClass" title="Insert item/group" style="display:none"/>
+           				</td>
+           				<td><img src="images/tree/T.png"/></td>
+           				<td></td>
+           				<td colspan=3 width="37%" class="sectionTdClass">
+           					<div class="itemSpanClass" >Requires Windows camera app version 2022.2210.9.0 or newer.</div>
+           				</td>
+           				<td colspan=3 width="35%" class="sectionTdClass">
+           					<div class="expectedResultSpanClass" ></div>
+           				</td>
+           				<td colspan=3 width="17%" class="sectionTdClass">
+           					<div style="text-align:center;">
+           						
+								N
+           					</div>
+           				</td>
+           			</tr>
+           		
+           		
+            				
+           		<!-- case item not in any group. -->
+           			<tr class="sectionTrClass_141169_2315628_">
+           				<td class="operationTdClass">
+           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_141169_2315628_', 2315628, 3)" class="imgButClass" title="Remove case item" style="display:none"/>
+           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(141169, 2315628, -1, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(141169, 2315628, -1, 3, 2)" class="imgButClass" title="Insert item/group" style="display:none"/>
+           				</td>
+           				<td><img src="images/tree/T.png"/></td>
+           				<td></td>
+           				<td colspan=3 width="37%" class="sectionTdClass">
+           					<div class="itemSpanClass" >Ensure OS version build SV2-22621.1344 or newer.</div>
+           				</td>
+           				<td colspan=3 width="35%" class="sectionTdClass">
+           					<div class="expectedResultSpanClass" ></div>
+           				</td>
+           				<td colspan=3 width="17%" class="sectionTdClass">
+           					<div style="text-align:center;">
+           						
+								N
+           					</div>
+           				</td>
+           			</tr>
+           		
+           		
+            				
+           		<!-- case item not in any group. -->
+           			<tr class="sectionTrClass_141169_2315629_">
+           				<td class="operationTdClass">
+           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_141169_2315629_', 2315629, 3)" class="imgButClass" title="Remove case item" style="display:none"/>
+           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(141169, 2315629, -1, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(141169, 2315629, -1, 3, 2)" class="imgButClass" title="Insert item/group" style="display:none"/>
+           				</td>
+           				<td><img src="images/tree/T.png"/></td>
+           				<td></td>
+           				<td colspan=3 width="37%" class="sectionTdClass">
+           					<div class="itemSpanClass" >Note: Please check the MEP function in the camera app on the &quot;Take video&quot; interface.</div>
+           				</td>
+           				<td colspan=3 width="35%" class="sectionTdClass">
+           					<div class="expectedResultSpanClass" ></div>
+           				</td>
+           				<td colspan=3 width="17%" class="sectionTdClass">
+           					<div style="text-align:center;">
+           						
+								N
+           					</div>
+           				</td>
+           			</tr>
+           		
+           		
+            				
+           		<!-- case item not in any group. -->
+           			<tr class="sectionTrClass_141169_2315630_">
+           				<td class="operationTdClass">
+           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_141169_2315630_', 2315630, 3)" class="imgButClass" title="Remove case item" style="display:none"/>
+           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(141169, 2315630, -1, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(141169, 2315630, -1, 3, 2)" class="imgButClass" title="Insert item/group" style="display:none"/>
+           				</td>
+           				<td><img src="images/tree/T.png"/></td>
+           				<td></td>
+           				<td colspan=3 width="37%" class="sectionTdClass">
+           					<div class="itemSpanClass" >For Intel platform: Before testing, please confirm with the project team whether all three drivers are included in the preload. The test should be conducted after all three drivers are installed ①Intel VPU extension driver ②MSFT MEP driver ③Camera MEP driver</div>
+           				</td>
+           				<td colspan=3 width="35%" class="sectionTdClass">
+           					<div class="expectedResultSpanClass" ></div>
+           				</td>
+           				<td colspan=3 width="17%" class="sectionTdClass">
+           					<div style="text-align:center;">
+           						
+								N
+           					</div>
+           				</td>
+           			</tr>
+           		
+           		
+            
+		
+			<tr class='sectionTrClass_141170_'>
+				<td class="operationTdClass">
+					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_141170_', 141170, 2)" class="imgButClass" title="Remove section" style="display:none"/>
+					<img src="images/section_edit.png" onclick="sectionDialog.openSection(141170, 1)" class="imgButClass" title="Update section" style="display:none"/>
+					<img src="images/section_insert.png" onclick="sectionDialog.openSection(141170, 2)" class="imgButClass" title="Insert section" style="display:none"/>
+					<img src="images/new.png" onclick="sectionDialog.openGroupItem(141170, -1, -1, -1, 0)" class="imgButClass" title="Add group/item" style="display:none"/>
+				</td>
+				<td><img onclick="extendNode('sectionTrClass_141170_')" class="blockClass" src="images/collapse.png"/></td>
+				<td></td>
+				<td colspan="6">
+					<table width="100%">
+						<tr>
+							<td colspan=3 width="80%"><strong>Section : </strong><span class="sectionSpanClass" >Basic function test</span></td>							
+							<td width="20%"><strong>Attachment : </strong>
+							
+							
+							</td>
+						</tr>
+						<tr>
+							<td width="30%"><strong>Workloading : </strong><span class="workloadSpanClass">130</span>(Min)</td>
+							<td width="30%"><strong>LeadingTime : </strong><span class="leadingTimeSpanClass">130</span>(Min)</td>
+							<td width="20%"><strong>Phase : </strong><span class="tagSpanClass"></span></td>
+							<td width="20%">
+								<strong>Test Log Mandatory :</strong>
+								<span class="tagSpanClass">
+									
+									N
+								</span>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+            <!-- Display case item in section  -->
+							
+           		<!-- case item not in any group. -->
+           			<tr class="sectionTrClass_141170_2315705_">
+           				<td class="operationTdClass">
+           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_141170_2315705_', 2315705, 3)" class="imgButClass" title="Remove case item" style="display:none"/>
+           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(141170, 2315705, -1, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(141170, 2315705, -1, 3, 2)" class="imgButClass" title="Insert item/group" style="display:none"/>
+           				</td>
+           				<td><img src="images/tree/T.png"/></td>
+           				<td></td>
+           				<td colspan=3 width="37%" class="sectionTdClass">
+           					<div class="itemSpanClass" ><p>Important: There are currently two versions of MEP: V1 and V2. <br />Before testing, please confirm with the project team the supported versions and all features</p></div>
+           				</td>
+           				<td colspan=3 width="35%" class="sectionTdClass">
+           					<div class="expectedResultSpanClass" style="color: #0782FC;"><p>The MEP V1 version features include:"Automatic framing""Eye contact""Background effects-a.Standard blur b.Portrait blur" <br />The MEP V2 version features include:"Automatic framing""Portrait Light""Eye contact-a.Standard b.Teleprompter""Background effects-a.Standard blur b.Portrait blur""Creative filters-a.lllustrated b.Animated c.Watercolor"</p></div>
+           				</td>
+           				<td colspan=3 width="17%" class="sectionTdClass">
+           					<div style="text-align:center;">
+           						
+								N
+           					</div>
+           				</td>
+           			</tr>
+           		
+           		
+            				
+           		
+           		
+           			<tr class="sectionTrClass_141170_group_2315631_"><!-- group -->
+           				<td class="operationTdClass">
+           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_141170_group_2315631_', 2315631, 4)" class="imgButClass" title="Remove group" style="display:none"/>
+           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(141170, 2315631, -1, 4, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(141170, 2315631, -1, 4, 2)" class="imgButClass" title="Insert item/group" style="display:none"/>
+           					<img src="images/new.png" onclick="sectionDialog.openGroupItem(141170, -1, 2315631, -1, 0)" class="imgButClass" title="Add case item" style="display:none"/>
+           				</td>
+           				<td><img src="images/tree/T.png"/></td><td><img onclick="extendNode('sectionTrClass_141170_group_2315631_')" class="blockClass" src="images/collapse.png"/></td>
+           				<td colspan=9 bgcolor="#E6E6E6" class="sectionTdClass"><span class="groupSpanClass" >Check in Windows camera app</span></td>
+           			</tr>
+           			<!-- case item in group -->
+	           			<tr class="sectionTrClass_141170_group_2315631_2315632_">
+	           				<td class="operationTdClass" >
+	           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_141170_group_2315631_2315632_', 2315632, 3)" class="imgButClass" title="Remove item" style="display:none"/>
+	           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(141170, 2315632, 2315631, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+	           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(141170, 2315632, 2315631, 3, 2)" class="imgButClass" title="Insert case item" style="display:none"/>
+	           				</td>
+	           				<td><img src="images/tree/T.png"/></td><td><img src="images/tree/T.png"/></td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="itemSpanClass" >Open Windows camera,Switch the preview screen to &quot;Take video&quot;.</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="expectedResultSpanClass" ></div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div style="text-align:center;">
+	           						
+									N
+	           					</div>
+	           				</td>
+	           			</tr>
+           			<!-- case item in group -->
+	           			<tr class="sectionTrClass_141170_group_2315631_2315633_">
+	           				<td class="operationTdClass" >
+	           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_141170_group_2315631_2315633_', 2315633, 3)" class="imgButClass" title="Remove item" style="display:none"/>
+	           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(141170, 2315633, 2315631, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+	           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(141170, 2315633, 2315631, 3, 2)" class="imgButClass" title="Insert case item" style="display:none"/>
+	           				</td>
+	           				<td><img src="images/tree/T.png"/></td><td><img src="images/tree/T.png"/></td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="itemSpanClass" >&quot;Camera settings&quot;--&gt;&quot;Default settings&quot;--&gt;Switch to &quot;Use system settings&quot;.</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="expectedResultSpanClass" ></div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div style="text-align:center;">
+	           						
+									N
+	           					</div>
+	           				</td>
+	           			</tr>
+           			<!-- case item in group -->
+	           			<tr class="sectionTrClass_141170_group_2315631_2315634_">
+	           				<td class="operationTdClass" >
+	           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_141170_group_2315631_2315634_', 2315634, 3)" class="imgButClass" title="Remove item" style="display:none"/>
+	           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(141170, 2315634, 2315631, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+	           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(141170, 2315634, 2315631, 3, 2)" class="imgButClass" title="Insert case item" style="display:none"/>
+	           				</td>
+	           				<td><img src="images/tree/T.png"/></td><td><img src="images/tree/T.png"/></td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="itemSpanClass" >Open Windows camera. Move a face to the front of the camera.After facing the camera, the tester moves back and forth within a distance of 0.5m-1.5m from the camera</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="expectedResultSpanClass" >Ensure the preview is displayed properly and without any extra effect.</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div style="text-align:center;">
+	           						
+									N
+	           					</div>
+	           				</td>
+	           			</tr>
+           			<!-- case item in group -->
+	           			<tr class="sectionTrClass_141170_group_2315631_2315635_">
+	           				<td class="operationTdClass" >
+	           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_141170_group_2315631_2315635_', 2315635, 3)" class="imgButClass" title="Remove item" style="display:none"/>
+	           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(141170, 2315635, 2315631, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+	           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(141170, 2315635, 2315631, 3, 2)" class="imgButClass" title="Insert case item" style="display:none"/>
+	           				</td>
+	           				<td><img src="images/tree/T.png"/></td><td><img src="images/tree/T.png"/></td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="itemSpanClass" >Open &quot;Windows Studio effects&quot; in the upper right corner</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="expectedResultSpanClass" >Ensure Automatic framing status is OFF. Ensure Eye contact is OFF. Ensure Background effects is OFF.</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div style="text-align:center;">
+	           						
+									N
+	           					</div>
+	           				</td>
+	           			</tr>
+           			<!-- case item in group -->
+	           			<tr class="sectionTrClass_141170_group_2315631_2315636_">
+	           				<td class="operationTdClass" >
+	           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_141170_group_2315631_2315636_', 2315636, 3)" class="imgButClass" title="Remove item" style="display:none"/>
+	           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(141170, 2315636, 2315631, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+	           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(141170, 2315636, 2315631, 3, 2)" class="imgButClass" title="Insert case item" style="display:none"/>
+	           				</td>
+	           				<td><img src="images/tree/T.png"/></td><td><img src="images/tree/T.png"/></td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="itemSpanClass" >Enable &quot;Automatic framing&quot;</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="expectedResultSpanClass" ></div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div style="text-align:center;">
+	           						
+									N
+	           					</div>
+	           				</td>
+	           			</tr>
+           			<!-- case item in group -->
+	           			<tr class="sectionTrClass_141170_group_2315631_2315637_">
+	           				<td class="operationTdClass" >
+	           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_141170_group_2315631_2315637_', 2315637, 3)" class="imgButClass" title="Remove item" style="display:none"/>
+	           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(141170, 2315637, 2315631, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+	           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(141170, 2315637, 2315631, 3, 2)" class="imgButClass" title="Insert case item" style="display:none"/>
+	           				</td>
+	           				<td><img src="images/tree/T.png"/></td><td><img src="images/tree/T.png"/></td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="itemSpanClass" >Move a face to the front of the camera.After facing the camera, the tester moves back and forth within a distance of 1~6 feet from the camera</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="expectedResultSpanClass" >Ensure the framing window will re-center around the face. The re-centering motion will be smooth.Ensure the size of face is suitable.</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div style="text-align:center;">
+	           						
+									N
+	           					</div>
+	           				</td>
+	           			</tr>
+           			<!-- case item in group -->
+	           			<tr class="sectionTrClass_141170_group_2315631_2315638_">
+	           				<td class="operationTdClass" >
+	           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_141170_group_2315631_2315638_', 2315638, 3)" class="imgButClass" title="Remove item" style="display:none"/>
+	           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(141170, 2315638, 2315631, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+	           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(141170, 2315638, 2315631, 3, 2)" class="imgButClass" title="Insert case item" style="display:none"/>
+	           				</td>
+	           				<td><img src="images/tree/T.png"/></td><td><img src="images/tree/T.png"/></td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="itemSpanClass" >The tester then moves left and right facing the camera, keeping at least half of the face in the preview while moving</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="expectedResultSpanClass" >Ensure the framing window will re-center around the face. The re-centering motion will be smooth.Ensure the size of face is suitable.</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div style="text-align:center;">
+	           						
+									N
+	           					</div>
+	           				</td>
+	           			</tr>
+           			<!-- case item in group -->
+	           			<tr class="sectionTrClass_141170_group_2315631_2315639_">
+	           				<td class="operationTdClass" >
+	           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_141170_group_2315631_2315639_', 2315639, 3)" class="imgButClass" title="Remove item" style="display:none"/>
+	           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(141170, 2315639, 2315631, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+	           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(141170, 2315639, 2315631, 3, 2)" class="imgButClass" title="Insert case item" style="display:none"/>
+	           				</td>
+	           				<td><img src="images/tree/T.png"/></td><td><img src="images/tree/T.png"/></td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="itemSpanClass" >Change different resolution to take video 15s.(Cover all supported resolution)(Cover all Framing grids) Move your face in four directions(front, back, left, and right).Do not move out of the preview screen.</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="expectedResultSpanClass" >Ensure recorded video has no lag and no flash.Recorded video has Automatic framing effect. Ensure Framing grids is displayed correctly.</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div style="text-align:center;">
+	           						
+									N
+	           					</div>
+	           				</td>
+	           			</tr>
+           			<!-- case item in group -->
+	           			<tr class="sectionTrClass_141170_group_2315631_2315640_">
+	           				<td class="operationTdClass" >
+	           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_141170_group_2315631_2315640_', 2315640, 3)" class="imgButClass" title="Remove item" style="display:none"/>
+	           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(141170, 2315640, 2315631, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+	           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(141170, 2315640, 2315631, 3, 2)" class="imgButClass" title="Insert case item" style="display:none"/>
+	           				</td>
+	           				<td><img src="images/tree/T.png"/></td><td><img src="images/tree/T.png"/></td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="itemSpanClass" >Move two faces to the front of the camera and move them back and forth and left and right. Notes:Both people should keep at least half of their faces in the preview picture and the forward and backward movement distance should be controlled within 1~6 feet.</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="expectedResultSpanClass" >Ensure camera preview will keep a full field of view. The re-centering motion will be smooth.</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div style="text-align:center;">
+	           						
+									N
+	           					</div>
+	           				</td>
+	           			</tr>
+           			<!-- case item in group -->
+	           			<tr class="sectionTrClass_141170_group_2315631_2315641_">
+	           				<td class="operationTdClass" >
+	           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_141170_group_2315631_2315641_', 2315641, 3)" class="imgButClass" title="Remove item" style="display:none"/>
+	           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(141170, 2315641, 2315631, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+	           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(141170, 2315641, 2315631, 3, 2)" class="imgButClass" title="Insert case item" style="display:none"/>
+	           				</td>
+	           				<td><img src="images/tree/T.png"/></td><td><img src="images/tree/T.png"/></td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="itemSpanClass" >Disable &quot;Automatic framing&quot; in the Windows camera.</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="expectedResultSpanClass" >Ensure the preview is displayed properly and without any extra effect.</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div style="text-align:center;">
+	           						
+									N
+	           					</div>
+	           				</td>
+	           			</tr>
+           			<!-- case item in group -->
+	           			<tr class="sectionTrClass_141170_group_2315631_2315642_">
+	           				<td class="operationTdClass" >
+	           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_141170_group_2315631_2315642_', 2315642, 3)" class="imgButClass" title="Remove item" style="display:none"/>
+	           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(141170, 2315642, 2315631, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+	           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(141170, 2315642, 2315631, 3, 2)" class="imgButClass" title="Insert case item" style="display:none"/>
+	           				</td>
+	           				<td><img src="images/tree/T.png"/></td><td><img src="images/tree/T.png"/></td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="itemSpanClass" ><p>Open "Windows Studio effects" in the upper right corner,enable "Eye Contact"</p></div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="expectedResultSpanClass" ><p>Note:<br />"Eye Contact" effective scope:<br />Previewer's distance from camera in a straight line: 1-6 feet(At least half of the face+at least one eye in frame);<br />Head movable range: X: -30 &deg;~30 &deg;; Y: -25 &deg;~25 &deg;; Z: -75 &deg;~75 &deg;<br />Range of visual activity: X: -20 &deg;~25 &deg;; Y: -25 &deg;~25 &deg;</p></div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div style="text-align:center;">
+	           						
+									N
+	           					</div>
+	           				</td>
+	           			</tr>
+           			<!-- case item in group -->
+	           			<tr class="sectionTrClass_141170_group_2315631_2315643_">
+	           				<td class="operationTdClass" >
+	           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_141170_group_2315631_2315643_', 2315643, 3)" class="imgButClass" title="Remove item" style="display:none"/>
+	           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(141170, 2315643, 2315631, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+	           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(141170, 2315643, 2315631, 3, 2)" class="imgButClass" title="Insert case item" style="display:none"/>
+	           				</td>
+	           				<td><img src="images/tree/T.png"/></td><td><img src="images/tree/T.png"/></td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="itemSpanClass" >Move a face to the front of the camera, keep the eye line down and centered.Switch on and off Eye Contact, and carefully observe the eyes.</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="expectedResultSpanClass" >Ensure Eye Contact adjusts the user's line of sight to rise.</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div style="text-align:center;">
+	           						
+									N
+	           					</div>
+	           				</td>
+	           			</tr>
+           			<!-- case item in group -->
+	           			<tr class="sectionTrClass_141170_group_2315631_2315644_">
+	           				<td class="operationTdClass" >
+	           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_141170_group_2315631_2315644_', 2315644, 3)" class="imgButClass" title="Remove item" style="display:none"/>
+	           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(141170, 2315644, 2315631, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+	           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(141170, 2315644, 2315631, 3, 2)" class="imgButClass" title="Insert case item" style="display:none"/>
+	           				</td>
+	           				<td><img src="images/tree/T.png"/></td><td><img src="images/tree/T.png"/></td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="itemSpanClass" >Change the direction of your eyes (for example, look to the left or right), but do not over-rotate your face.Switch on and off Eye Contact, and carefully observe the eyes.</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="expectedResultSpanClass" >Ensure the eye line of sight in the picture looks upward in the same direction.</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div style="text-align:center;">
+	           						
+									N
+	           					</div>
+	           				</td>
+	           			</tr>
+           			<!-- case item in group -->
+	           			<tr class="sectionTrClass_141170_group_2315631_2315645_">
+	           				<td class="operationTdClass" >
+	           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_141170_group_2315631_2315645_', 2315645, 3)" class="imgButClass" title="Remove item" style="display:none"/>
+	           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(141170, 2315645, 2315631, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+	           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(141170, 2315645, 2315631, 3, 2)" class="imgButClass" title="Insert case item" style="display:none"/>
+	           				</td>
+	           				<td><img src="images/tree/T.png"/></td><td><img src="images/tree/T.png"/></td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="itemSpanClass" >In adjust your sight line at will,change different resolution to take video 30s .(Cover all supported resolution)(Cover all Framing grids)</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="expectedResultSpanClass" >Ensure Eye Contact adjusts the user's line of sight to rise.</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div style="text-align:center;">
+	           						
+									N
+	           					</div>
+	           				</td>
+	           			</tr>
+           			<!-- case item in group -->
+	           			<tr class="sectionTrClass_141170_group_2315631_2315646_">
+	           				<td class="operationTdClass" >
+	           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_141170_group_2315631_2315646_', 2315646, 3)" class="imgButClass" title="Remove item" style="display:none"/>
+	           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(141170, 2315646, 2315631, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+	           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(141170, 2315646, 2315631, 3, 2)" class="imgButClass" title="Insert case item" style="display:none"/>
+	           				</td>
+	           				<td><img src="images/tree/T.png"/></td><td><img src="images/tree/T.png"/></td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="itemSpanClass" >Disable &quot;Eye contact&quot; in the Windows camera.</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="expectedResultSpanClass" >Ensure the preview is displayed properly and without any extra effect.</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div style="text-align:center;">
+	           						
+									N
+	           					</div>
+	           				</td>
+	           			</tr>
+           			<!-- case item in group -->
+	           			<tr class="sectionTrClass_141170_group_2315631_2315647_">
+	           				<td class="operationTdClass" >
+	           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_141170_group_2315631_2315647_', 2315647, 3)" class="imgButClass" title="Remove item" style="display:none"/>
+	           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(141170, 2315647, 2315631, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+	           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(141170, 2315647, 2315631, 3, 2)" class="imgButClass" title="Insert case item" style="display:none"/>
+	           				</td>
+	           				<td><img src="images/tree/T.png"/></td><td><img src="images/tree/T.png"/></td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="itemSpanClass" >Enable &quot;Background effects&quot;
+Notes:Objects 6 feet or more will be considered as background;</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="expectedResultSpanClass" >Ensure there are two modes options: a.Standard blur b.Portrait blur. Ensure the default mode is &quot;Standard blur&quot;. Ensure Background effects is ON. Ensure Standard blur is ON. Ensure Portrait blur is OFF.</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div style="text-align:center;">
+	           						
+									N
+	           					</div>
+	           				</td>
+	           			</tr>
+           			<!-- case item in group -->
+	           			<tr class="sectionTrClass_141170_group_2315631_2315648_">
+	           				<td class="operationTdClass" >
+	           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_141170_group_2315631_2315648_', 2315648, 3)" class="imgButClass" title="Remove item" style="display:none"/>
+	           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(141170, 2315648, 2315631, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+	           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(141170, 2315648, 2315631, 3, 2)" class="imgButClass" title="Insert case item" style="display:none"/>
+	           				</td>
+	           				<td><img src="images/tree/T.png"/></td><td><img src="images/tree/T.png"/></td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="itemSpanClass" >Back to preview a people.Check preview image.</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="expectedResultSpanClass" >Ensure the camera preview has Standard blur effect. Ensure the edge blur is acceptable.</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div style="text-align:center;">
+	           						
+									N
+	           					</div>
+	           				</td>
+	           			</tr>
+           			<!-- case item in group -->
+	           			<tr class="sectionTrClass_141170_group_2315631_2315649_">
+	           				<td class="operationTdClass" >
+	           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_141170_group_2315631_2315649_', 2315649, 3)" class="imgButClass" title="Remove item" style="display:none"/>
+	           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(141170, 2315649, 2315631, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+	           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(141170, 2315649, 2315631, 3, 2)" class="imgButClass" title="Insert case item" style="display:none"/>
+	           				</td>
+	           				<td><img src="images/tree/T.png"/></td><td><img src="images/tree/T.png"/></td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="itemSpanClass" >People leave the camera preview.</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="expectedResultSpanClass" >Ensure whole preivew shows Standard blur effect.</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div style="text-align:center;">
+	           						
+									N
+	           					</div>
+	           				</td>
+	           			</tr>
+           			<!-- case item in group -->
+	           			<tr class="sectionTrClass_141170_group_2315631_2315650_">
+	           				<td class="operationTdClass" >
+	           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_141170_group_2315631_2315650_', 2315650, 3)" class="imgButClass" title="Remove item" style="display:none"/>
+	           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(141170, 2315650, 2315631, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+	           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(141170, 2315650, 2315631, 3, 2)" class="imgButClass" title="Insert case item" style="display:none"/>
+	           				</td>
+	           				<td><img src="images/tree/T.png"/></td><td><img src="images/tree/T.png"/></td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="itemSpanClass" >Change to Portrait blur in Windows camera.And check preview image again.</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="expectedResultSpanClass" >Ensure the camera preview has Portrait blur effect. Ensure the edge blur is acceptable.</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div style="text-align:center;">
+	           						
+									N
+	           					</div>
+	           				</td>
+	           			</tr>
+           			<!-- case item in group -->
+	           			<tr class="sectionTrClass_141170_group_2315631_2315651_">
+	           				<td class="operationTdClass" >
+	           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_141170_group_2315631_2315651_', 2315651, 3)" class="imgButClass" title="Remove item" style="display:none"/>
+	           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(141170, 2315651, 2315631, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+	           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(141170, 2315651, 2315631, 3, 2)" class="imgButClass" title="Insert case item" style="display:none"/>
+	           				</td>
+	           				<td><img src="images/tree/T.png"/></td><td><img src="images/tree/T.png"/></td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="itemSpanClass" >People leave the camera preview.</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="expectedResultSpanClass" >Ensure whole preivew shows Portrait blur effect.</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div style="text-align:center;">
+	           						
+									N
+	           					</div>
+	           				</td>
+	           			</tr>
+           			<!-- case item in group -->
+	           			<tr class="sectionTrClass_141170_group_2315631_2315652_">
+	           				<td class="operationTdClass" >
+	           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_141170_group_2315631_2315652_', 2315652, 3)" class="imgButClass" title="Remove item" style="display:none"/>
+	           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(141170, 2315652, 2315631, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+	           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(141170, 2315652, 2315631, 3, 2)" class="imgButClass" title="Insert case item" style="display:none"/>
+	           				</td>
+	           				<td><img src="images/tree/T.png"/></td><td><img src="images/tree/T.png"/></td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="itemSpanClass" >Open windows camera and change different resolution to take video 15s.(Cover all supported resolution)(Cover all Framing grids)</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="expectedResultSpanClass" >Ensure the camera preview has Portrait blur effect. Ensure the edge blur is acceptable.</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div style="text-align:center;">
+	           						
+									N
+	           					</div>
+	           				</td>
+	           			</tr>
+           			<!-- case item in group -->
+	           			<tr class="sectionTrClass_141170_group_2315631_2315653_">
+	           				<td class="operationTdClass" >
+	           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_141170_group_2315631_2315653_', 2315653, 3)" class="imgButClass" title="Remove item" style="display:none"/>
+	           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(141170, 2315653, 2315631, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+	           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(141170, 2315653, 2315631, 3, 2)" class="imgButClass" title="Insert case item" style="display:none"/>
+	           				</td>
+	           				<td><img src="images/tree/T.png"/></td><td><img src="images/tree/T.png"/></td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="itemSpanClass" >Change to &quot;Standard blur&quot; again.</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="expectedResultSpanClass" ></div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div style="text-align:center;">
+	           						
+									N
+	           					</div>
+	           				</td>
+	           			</tr>
+           			<!-- case item in group -->
+	           			<tr class="sectionTrClass_141170_group_2315631_2315654_">
+	           				<td class="operationTdClass" >
+	           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_141170_group_2315631_2315654_', 2315654, 3)" class="imgButClass" title="Remove item" style="display:none"/>
+	           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(141170, 2315654, 2315631, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+	           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(141170, 2315654, 2315631, 3, 2)" class="imgButClass" title="Insert case item" style="display:none"/>
+	           				</td>
+	           				<td><img src="images/tree/T.png"/></td><td><img src="images/tree/T.png"/></td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="itemSpanClass" >Open windows camera and change different resolution to take video 15s.(Cover all supported resolution)(Cover all Framing grids)</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="expectedResultSpanClass" >Ensure the camera preview has Standard blur effect. Ensure the edge blur is acceptable.</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div style="text-align:center;">
+	           						
+									N
+	           					</div>
+	           				</td>
+	           			</tr>
+           			<!-- case item in group -->
+	           			<tr class="sectionTrClass_141170_group_2315631_2315655_">
+	           				<td class="operationTdClass" >
+	           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_141170_group_2315631_2315655_', 2315655, 3)" class="imgButClass" title="Remove item" style="display:none"/>
+	           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(141170, 2315655, 2315631, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+	           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(141170, 2315655, 2315631, 3, 2)" class="imgButClass" title="Insert case item" style="display:none"/>
+	           				</td>
+	           				<td><img src="images/tree/T.png"/></td><td><img src="images/tree/T.png"/></td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="itemSpanClass" ><p>Move two faces to the front of the camera(Cover Standard blur and Portrain blur)</p></div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="expectedResultSpanClass" ><p>Notes:<br />1.If the placement of the device makes most of the lower body (legs) visible, the subject may be recognized as the background;<br />2. Occasional flickering phenomena (as individuals switch between foreground and background) may be observed between 4-6 feet;</p></div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div style="text-align:center;">
+	           						
+									N
+	           					</div>
+	           				</td>
+	           			</tr>
+           			<!-- case item in group -->
+	           			<tr class="sectionTrClass_141170_group_2315631_2315656_">
+	           				<td class="operationTdClass" >
+	           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_141170_group_2315631_2315656_', 2315656, 3)" class="imgButClass" title="Remove item" style="display:none"/>
+	           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(141170, 2315656, 2315631, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+	           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(141170, 2315656, 2315631, 3, 2)" class="imgButClass" title="Insert case item" style="display:none"/>
+	           				</td>
+	           				<td><img src="images/tree/T.png"/></td><td><img src="images/tree/T.png"/></td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="itemSpanClass" >When two faces are the same distance from camera
+(Everyone is sitting, with a straight-line distance of 2-4 feet)</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="expectedResultSpanClass" >Neither of them will be taken as background, neither will be blurred</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div style="text-align:center;">
+	           						
+									N
+	           					</div>
+	           				</td>
+	           			</tr>
+           			<!-- case item in group -->
+	           			<tr class="sectionTrClass_141170_group_2315631_2315657_">
+	           				<td class="operationTdClass" >
+	           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_141170_group_2315631_2315657_', 2315657, 3)" class="imgButClass" title="Remove item" style="display:none"/>
+	           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(141170, 2315657, 2315631, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+	           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(141170, 2315657, 2315631, 3, 2)" class="imgButClass" title="Insert case item" style="display:none"/>
+	           				</td>
+	           				<td><img src="images/tree/T.png"/></td><td><img src="images/tree/T.png"/></td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="itemSpanClass" >When two faces are the same distance from camera
+(Everyone stands, with a straight-line distance of 4~6 feet)</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="expectedResultSpanClass" >If the distance between two people and the camera is similar, then neither will be blurred; If they are far apart, the people behind may be blurred</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div style="text-align:center;">
+	           						
+									N
+	           					</div>
+	           				</td>
+	           			</tr>
+           			<!-- case item in group -->
+	           			<tr class="sectionTrClass_141170_group_2315631_2315658_">
+	           				<td class="operationTdClass" >
+	           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_141170_group_2315631_2315658_', 2315658, 3)" class="imgButClass" title="Remove item" style="display:none"/>
+	           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(141170, 2315658, 2315631, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+	           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(141170, 2315658, 2315631, 3, 2)" class="imgButClass" title="Insert case item" style="display:none"/>
+	           				</td>
+	           				<td><img src="images/tree/T.png"/></td><td><img src="images/tree/T.png"/></td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="itemSpanClass" >Move the front face to the back and the back face to the front.(Exchange the positions of just two people)</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="expectedResultSpanClass" >If they are far apart, the people behind may be blurred</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div style="text-align:center;">
+	           						
+									N
+	           					</div>
+	           				</td>
+	           			</tr>
+           			<!-- case item in group -->
+	           			<tr class="sectionTrClass_141170_group_2315631_2315659_">
+	           				<td class="operationTdClass" >
+	           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_141170_group_2315631_2315659_', 2315659, 3)" class="imgButClass" title="Remove item" style="display:none"/>
+	           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(141170, 2315659, 2315631, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+	           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(141170, 2315659, 2315631, 3, 2)" class="imgButClass" title="Insert case item" style="display:none"/>
+	           				</td>
+	           				<td><img src="images/tree/T.png"/></td><td><img src="images/tree/T.png"/></td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="itemSpanClass" >Disable &quot;Background effects&quot; in the Windows camera.</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="expectedResultSpanClass" >Ensure the preview is displayed properly and without any extra effect. Ensure Automatic framing status is OFF. Ensure Eye contact is OFF. Ensure Background effects is OFF.</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div style="text-align:center;">
+	           						
+									N
+	           					</div>
+	           				</td>
+	           			</tr>
+           			<!-- case item in group -->
+	           			<tr class="sectionTrClass_141170_group_2315631_2315660_">
+	           				<td class="operationTdClass" >
+	           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_141170_group_2315631_2315660_', 2315660, 3)" class="imgButClass" title="Remove item" style="display:none"/>
+	           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(141170, 2315660, 2315631, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+	           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(141170, 2315660, 2315631, 3, 2)" class="imgButClass" title="Insert case item" style="display:none"/>
+	           				</td>
+	           				<td><img src="images/tree/T.png"/></td><td><img src="images/tree/T.png"/></td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="itemSpanClass" >Close Windows camera app.</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="expectedResultSpanClass" ></div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div style="text-align:center;">
+	           						
+									N
+	           					</div>
+	           				</td>
+	           			</tr>
+           			
+           		
+            				
+           		
+           		
+           			<tr class="sectionTrClass_141170_group_2315661_"><!-- group -->
+           				<td class="operationTdClass">
+           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_141170_group_2315661_', 2315661, 4)" class="imgButClass" title="Remove group" style="display:none"/>
+           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(141170, 2315661, -1, 4, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(141170, 2315661, -1, 4, 2)" class="imgButClass" title="Insert item/group" style="display:none"/>
+           					<img src="images/new.png" onclick="sectionDialog.openGroupItem(141170, -1, 2315661, -1, 0)" class="imgButClass" title="Add case item" style="display:none"/>
+           				</td>
+           				<td><img src="images/tree/T.png"/></td><td><img onclick="extendNode('sectionTrClass_141170_group_2315661_')" class="blockClass" src="images/collapse.png"/></td>
+           				<td colspan=9 bgcolor="#E6E6E6" class="sectionTdClass"><span class="groupSpanClass" >Check in OS Settings</span></td>
+           			</tr>
+           			<!-- case item in group -->
+	           			<tr class="sectionTrClass_141170_group_2315661_2315716_">
+	           				<td class="operationTdClass" >
+	           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_141170_group_2315661_2315716_', 2315716, 3)" class="imgButClass" title="Remove item" style="display:none"/>
+	           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(141170, 2315716, 2315661, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+	           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(141170, 2315716, 2315661, 3, 2)" class="imgButClass" title="Insert case item" style="display:none"/>
+	           				</td>
+	           				<td><img src="images/tree/T.png"/></td><td><img src="images/tree/T.png"/></td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="itemSpanClass" style="color: #0782FC;"><p>Note:For projects with "NPU computing power less than 40Tops", under 24H2 OS, "Portrait light" and "Creative filters" of MEP function are in ash state.</p></div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="expectedResultSpanClass" style="color: #0782FC;"><p>If "Portrait light" and "Creative filters" with MEP function are supported but displayed as ash, first confirm with the project team whether it is a project with "NPU power less than 40Tops".</p></div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div style="text-align:center;">
+	           						
+									N
+	           					</div>
+	           				</td>
+	           			</tr>
+           			<!-- case item in group -->
+	           			<tr class="sectionTrClass_141170_group_2315661_2315662_">
+	           				<td class="operationTdClass" >
+	           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_141170_group_2315661_2315662_', 2315662, 3)" class="imgButClass" title="Remove item" style="display:none"/>
+	           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(141170, 2315662, 2315661, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+	           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(141170, 2315662, 2315661, 3, 2)" class="imgButClass" title="Insert case item" style="display:none"/>
+	           				</td>
+	           				<td><img src="images/tree/T.png"/></td><td><img src="images/tree/T.png"/></td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="itemSpanClass" >Open Settings--&gt;Bluetooth &amp; devices--&gt;Cameras--&gt;Integrated Camera</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="expectedResultSpanClass" >Ensure all features in Windows Studio effects are turned off</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div style="text-align:center;">
+	           						
+									N
+	           					</div>
+	           				</td>
+	           			</tr>
+           			<!-- case item in group -->
+	           			<tr class="sectionTrClass_141170_group_2315661_2315663_">
+	           				<td class="operationTdClass" >
+	           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_141170_group_2315661_2315663_', 2315663, 3)" class="imgButClass" title="Remove item" style="display:none"/>
+	           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(141170, 2315663, 2315661, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+	           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(141170, 2315663, 2315661, 3, 2)" class="imgButClass" title="Insert case item" style="display:none"/>
+	           				</td>
+	           				<td><img src="images/tree/T.png"/></td><td><img src="images/tree/T.png"/></td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="itemSpanClass" >Move a face to the front of the camera.After facing the camera, the tester moves back and forth within a distance of 1~6 feet from the camera</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="expectedResultSpanClass" >Ensure the preview is displayed properly and without any extra effect.</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div style="text-align:center;">
+	           						
+									N
+	           					</div>
+	           				</td>
+	           			</tr>
+           			<!-- case item in group -->
+	           			<tr class="sectionTrClass_141170_group_2315661_2315664_">
+	           				<td class="operationTdClass" >
+	           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_141170_group_2315661_2315664_', 2315664, 3)" class="imgButClass" title="Remove item" style="display:none"/>
+	           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(141170, 2315664, 2315661, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+	           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(141170, 2315664, 2315661, 3, 2)" class="imgButClass" title="Insert case item" style="display:none"/>
+	           				</td>
+	           				<td><img src="images/tree/T.png"/></td><td><img src="images/tree/T.png"/></td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="itemSpanClass" >Enable &quot;Automatic framing&quot;.</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="expectedResultSpanClass" ></div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div style="text-align:center;">
+	           						
+									N
+	           					</div>
+	           				</td>
+	           			</tr>
+           			<!-- case item in group -->
+	           			<tr class="sectionTrClass_141170_group_2315661_2315665_">
+	           				<td class="operationTdClass" >
+	           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_141170_group_2315661_2315665_', 2315665, 3)" class="imgButClass" title="Remove item" style="display:none"/>
+	           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(141170, 2315665, 2315661, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+	           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(141170, 2315665, 2315661, 3, 2)" class="imgButClass" title="Insert case item" style="display:none"/>
+	           				</td>
+	           				<td><img src="images/tree/T.png"/></td><td><img src="images/tree/T.png"/></td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="itemSpanClass" >Move a face to the front of the camera.After facing the camera, the tester moves back and forth within a distance of 1~6 feet from the camera,check preview image in the Settings</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="expectedResultSpanClass" >Ensure the framing window will re-center around the face. The re-centering motion will be smooth.Ensure the size of face is suitable.</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div style="text-align:center;">
+	           						
+									N
+	           					</div>
+	           				</td>
+	           			</tr>
+           			<!-- case item in group -->
+	           			<tr class="sectionTrClass_141170_group_2315661_2315666_">
+	           				<td class="operationTdClass" >
+	           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_141170_group_2315661_2315666_', 2315666, 3)" class="imgButClass" title="Remove item" style="display:none"/>
+	           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(141170, 2315666, 2315661, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+	           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(141170, 2315666, 2315661, 3, 2)" class="imgButClass" title="Insert case item" style="display:none"/>
+	           				</td>
+	           				<td><img src="images/tree/T.png"/></td><td><img src="images/tree/T.png"/></td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="itemSpanClass" >The tester then moves left and right facing the camera, keeping at least half of the face in the preview while moving</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="expectedResultSpanClass" >Ensure the framing window will re-center around the face. The re-centering motion will be smooth.Ensure the size of face is suitable.</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div style="text-align:center;">
+	           						
+									N
+	           					</div>
+	           				</td>
+	           			</tr>
+           			<!-- case item in group -->
+	           			<tr class="sectionTrClass_141170_group_2315661_2315667_">
+	           				<td class="operationTdClass" >
+	           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_141170_group_2315661_2315667_', 2315667, 3)" class="imgButClass" title="Remove item" style="display:none"/>
+	           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(141170, 2315667, 2315661, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+	           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(141170, 2315667, 2315661, 3, 2)" class="imgButClass" title="Insert case item" style="display:none"/>
+	           				</td>
+	           				<td><img src="images/tree/T.png"/></td><td><img src="images/tree/T.png"/></td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="itemSpanClass" >Disable &quot;Automatic framing&quot;.</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="expectedResultSpanClass" ></div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div style="text-align:center;">
+	           						
+									N
+	           					</div>
+	           				</td>
+	           			</tr>
+           			<!-- case item in group -->
+	           			<tr class="sectionTrClass_141170_group_2315661_2315668_">
+	           				<td class="operationTdClass" >
+	           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_141170_group_2315661_2315668_', 2315668, 3)" class="imgButClass" title="Remove item" style="display:none"/>
+	           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(141170, 2315668, 2315661, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+	           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(141170, 2315668, 2315661, 3, 2)" class="imgButClass" title="Insert case item" style="display:none"/>
+	           				</td>
+	           				<td><img src="images/tree/T.png"/></td><td><img src="images/tree/T.png"/></td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="itemSpanClass" >Enable &quot;Portrait Light&quot;,check preview image in the Settings(If MEP is V1 version, please skip testing steps for this feature)</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="expectedResultSpanClass" >Ensure the preview screen remains almost unchanged in a normal office environment.</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div style="text-align:center;">
+	           						
+									N
+	           					</div>
+	           				</td>
+	           			</tr>
+           			<!-- case item in group -->
+	           			<tr class="sectionTrClass_141170_group_2315661_2315669_">
+	           				<td class="operationTdClass" >
+	           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_141170_group_2315661_2315669_', 2315669, 3)" class="imgButClass" title="Remove item" style="display:none"/>
+	           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(141170, 2315669, 2315661, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+	           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(141170, 2315669, 2315661, 3, 2)" class="imgButClass" title="Insert case item" style="display:none"/>
+	           				</td>
+	           				<td><img src="images/tree/T.png"/></td><td><img src="images/tree/T.png"/></td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="itemSpanClass" >Disable &quot;Portrait Light&quot;.</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="expectedResultSpanClass" ></div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div style="text-align:center;">
+	           						
+									N
+	           					</div>
+	           				</td>
+	           			</tr>
+           			<!-- case item in group -->
+	           			<tr class="sectionTrClass_141170_group_2315661_2315670_">
+	           				<td class="operationTdClass" >
+	           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_141170_group_2315661_2315670_', 2315670, 3)" class="imgButClass" title="Remove item" style="display:none"/>
+	           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(141170, 2315670, 2315661, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+	           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(141170, 2315670, 2315661, 3, 2)" class="imgButClass" title="Insert case item" style="display:none"/>
+	           				</td>
+	           				<td><img src="images/tree/T.png"/></td><td><img src="images/tree/T.png"/></td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="itemSpanClass" ><p>Enable "Eye contact" in Settings.</p></div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="expectedResultSpanClass" style="color: #0782FC;"><p>If the supported MEP is V1 version, then "Eye contact" only has a switch;<br />If the supported MEP is V2 version:Ensure there are two modes options: a.Standard b.Teleprompter.Ensure "Standard" is ON. Ensure "Teleprompter" is OFF.</p></div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div style="text-align:center;">
+	           						
+									N
+	           					</div>
+	           				</td>
+	           			</tr>
+           			<!-- case item in group -->
+	           			<tr class="sectionTrClass_141170_group_2315661_2315671_">
+	           				<td class="operationTdClass" >
+	           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_141170_group_2315661_2315671_', 2315671, 3)" class="imgButClass" title="Remove item" style="display:none"/>
+	           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(141170, 2315671, 2315661, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+	           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(141170, 2315671, 2315661, 3, 2)" class="imgButClass" title="Insert case item" style="display:none"/>
+	           				</td>
+	           				<td><img src="images/tree/T.png"/></td><td><img src="images/tree/T.png"/></td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="itemSpanClass" >Switch on and off &quot;Eye contact&quot;, and carefully observe the eyes.
+(If MEP is V2 version,please switch on and off &quot;Standard&quot;)</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="expectedResultSpanClass" >Ensure Eye Contact adjusts the user's line of sight to rise.</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div style="text-align:center;">
+	           						
+									N
+	           					</div>
+	           				</td>
+	           			</tr>
+           			<!-- case item in group -->
+	           			<tr class="sectionTrClass_141170_group_2315661_2315672_">
+	           				<td class="operationTdClass" >
+	           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_141170_group_2315661_2315672_', 2315672, 3)" class="imgButClass" title="Remove item" style="display:none"/>
+	           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(141170, 2315672, 2315661, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+	           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(141170, 2315672, 2315661, 3, 2)" class="imgButClass" title="Insert case item" style="display:none"/>
+	           				</td>
+	           				<td><img src="images/tree/T.png"/></td><td><img src="images/tree/T.png"/></td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="itemSpanClass" style="color: #0782FC;"><p>Switch to "Teleprompter".(If MEP is V1 version, please skip testing steps for this feature)</p></div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="expectedResultSpanClass" ></div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div style="text-align:center;">
+	           						
+									N
+	           					</div>
+	           				</td>
+	           			</tr>
+           			<!-- case item in group -->
+	           			<tr class="sectionTrClass_141170_group_2315661_2315673_">
+	           				<td class="operationTdClass" >
+	           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_141170_group_2315661_2315673_', 2315673, 3)" class="imgButClass" title="Remove item" style="display:none"/>
+	           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(141170, 2315673, 2315661, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+	           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(141170, 2315673, 2315661, 3, 2)" class="imgButClass" title="Insert case item" style="display:none"/>
+	           				</td>
+	           				<td><img src="images/tree/T.png"/></td><td><img src="images/tree/T.png"/></td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="itemSpanClass" style="color: #0782FC;"><p>Switch on and off "Teleprompter", and carefully observe the eyes.</p></div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="expectedResultSpanClass" ><p>Ensure Eye Contact adjusts the user's line of sight to rise. The effect is different from mode "Standard".</p></div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div style="text-align:center;">
+	           						
+									N
+	           					</div>
+	           				</td>
+	           			</tr>
+           			<!-- case item in group -->
+	           			<tr class="sectionTrClass_141170_group_2315661_2315674_">
+	           				<td class="operationTdClass" >
+	           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_141170_group_2315661_2315674_', 2315674, 3)" class="imgButClass" title="Remove item" style="display:none"/>
+	           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(141170, 2315674, 2315661, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+	           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(141170, 2315674, 2315661, 3, 2)" class="imgButClass" title="Insert case item" style="display:none"/>
+	           				</td>
+	           				<td><img src="images/tree/T.png"/></td><td><img src="images/tree/T.png"/></td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="itemSpanClass" >Disable &quot;Eye contact&quot; .</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="expectedResultSpanClass" ></div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div style="text-align:center;">
+	           						
+									N
+	           					</div>
+	           				</td>
+	           			</tr>
+           			<!-- case item in group -->
+	           			<tr class="sectionTrClass_141170_group_2315661_2315675_">
+	           				<td class="operationTdClass" >
+	           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_141170_group_2315661_2315675_', 2315675, 3)" class="imgButClass" title="Remove item" style="display:none"/>
+	           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(141170, 2315675, 2315661, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+	           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(141170, 2315675, 2315661, 3, 2)" class="imgButClass" title="Insert case item" style="display:none"/>
+	           				</td>
+	           				<td><img src="images/tree/T.png"/></td><td><img src="images/tree/T.png"/></td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="itemSpanClass" >Enable &quot;Background effects&quot; in Settings. Move a face to the front of the camera.Check preview image in the Settings</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="expectedResultSpanClass" >Ensure there are two modes options: a.Standard blur b.Portrait blur. Ensure Standard blur is ON. Ensure Portrait blur is OFF. Ensure the Standard blur has effect in the preview image.</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div style="text-align:center;">
+	           						
+									N
+	           					</div>
+	           				</td>
+	           			</tr>
+           			<!-- case item in group -->
+	           			<tr class="sectionTrClass_141170_group_2315661_2315676_">
+	           				<td class="operationTdClass" >
+	           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_141170_group_2315661_2315676_', 2315676, 3)" class="imgButClass" title="Remove item" style="display:none"/>
+	           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(141170, 2315676, 2315661, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+	           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(141170, 2315676, 2315661, 3, 2)" class="imgButClass" title="Insert case item" style="display:none"/>
+	           				</td>
+	           				<td><img src="images/tree/T.png"/></td><td><img src="images/tree/T.png"/></td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="itemSpanClass" >People leave the camera preview.</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="expectedResultSpanClass" >Ensure whole preivew shows Standard blur effect.</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div style="text-align:center;">
+	           						
+									N
+	           					</div>
+	           				</td>
+	           			</tr>
+           			<!-- case item in group -->
+	           			<tr class="sectionTrClass_141170_group_2315661_2315677_">
+	           				<td class="operationTdClass" >
+	           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_141170_group_2315661_2315677_', 2315677, 3)" class="imgButClass" title="Remove item" style="display:none"/>
+	           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(141170, 2315677, 2315661, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+	           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(141170, 2315677, 2315661, 3, 2)" class="imgButClass" title="Insert case item" style="display:none"/>
+	           				</td>
+	           				<td><img src="images/tree/T.png"/></td><td><img src="images/tree/T.png"/></td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="itemSpanClass" >Switch to &quot;Portrait blur&quot;,check preview image again.</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="expectedResultSpanClass" >Ensure the Portrait blur has effect. Ensure the effect has differeent with Standard blur,the Portrait blur should be softer blur.</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div style="text-align:center;">
+	           						
+									N
+	           					</div>
+	           				</td>
+	           			</tr>
+           			<!-- case item in group -->
+	           			<tr class="sectionTrClass_141170_group_2315661_2315678_">
+	           				<td class="operationTdClass" >
+	           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_141170_group_2315661_2315678_', 2315678, 3)" class="imgButClass" title="Remove item" style="display:none"/>
+	           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(141170, 2315678, 2315661, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+	           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(141170, 2315678, 2315661, 3, 2)" class="imgButClass" title="Insert case item" style="display:none"/>
+	           				</td>
+	           				<td><img src="images/tree/T.png"/></td><td><img src="images/tree/T.png"/></td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="itemSpanClass" >People leave the camera preview.</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="expectedResultSpanClass" >Ensure whole preivew shows Portrait blur effect.</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div style="text-align:center;">
+	           						
+									N
+	           					</div>
+	           				</td>
+	           			</tr>
+           			<!-- case item in group -->
+	           			<tr class="sectionTrClass_141170_group_2315661_2315679_">
+	           				<td class="operationTdClass" >
+	           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_141170_group_2315661_2315679_', 2315679, 3)" class="imgButClass" title="Remove item" style="display:none"/>
+	           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(141170, 2315679, 2315661, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+	           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(141170, 2315679, 2315661, 3, 2)" class="imgButClass" title="Insert case item" style="display:none"/>
+	           				</td>
+	           				<td><img src="images/tree/T.png"/></td><td><img src="images/tree/T.png"/></td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="itemSpanClass" >Disable &quot;Background effects&quot; .</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="expectedResultSpanClass" ></div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div style="text-align:center;">
+	           						
+									N
+	           					</div>
+	           				</td>
+	           			</tr>
+           			<!-- case item in group -->
+	           			<tr class="sectionTrClass_141170_group_2315661_2315680_">
+	           				<td class="operationTdClass" >
+	           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_141170_group_2315661_2315680_', 2315680, 3)" class="imgButClass" title="Remove item" style="display:none"/>
+	           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(141170, 2315680, 2315661, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+	           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(141170, 2315680, 2315661, 3, 2)" class="imgButClass" title="Insert case item" style="display:none"/>
+	           				</td>
+	           				<td><img src="images/tree/T.png"/></td><td><img src="images/tree/T.png"/></td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="itemSpanClass" >Enable &quot;Creative filters&quot; in Settings. (If MEP is V1 version, please skip testing steps for this feature)</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="expectedResultSpanClass" >Ensure there are three modes options: a.lllustrated b.Animated c.Watercolor. Ensure lllustrated is ON. Ensure Animated/Watercolor is OFF.</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div style="text-align:center;">
+	           						
+									N
+	           					</div>
+	           				</td>
+	           			</tr>
+           			<!-- case item in group -->
+	           			<tr class="sectionTrClass_141170_group_2315661_2315681_">
+	           				<td class="operationTdClass" >
+	           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_141170_group_2315661_2315681_', 2315681, 3)" class="imgButClass" title="Remove item" style="display:none"/>
+	           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(141170, 2315681, 2315661, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+	           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(141170, 2315681, 2315661, 3, 2)" class="imgButClass" title="Insert case item" style="display:none"/>
+	           				</td>
+	           				<td><img src="images/tree/T.png"/></td><td><img src="images/tree/T.png"/></td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="itemSpanClass" >Switch between three modes.
+Move a face to the front of the camera.Check preview image in the Settings</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="expectedResultSpanClass" >Ensure the effect changes after switching.
+The phenomenon is basically the same as the mode naming.</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div style="text-align:center;">
+	           						
+									N
+	           					</div>
+	           				</td>
+	           			</tr>
+           			<!-- case item in group -->
+	           			<tr class="sectionTrClass_141170_group_2315661_2315682_">
+	           				<td class="operationTdClass" >
+	           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_141170_group_2315661_2315682_', 2315682, 3)" class="imgButClass" title="Remove item" style="display:none"/>
+	           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(141170, 2315682, 2315661, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+	           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(141170, 2315682, 2315661, 3, 2)" class="imgButClass" title="Insert case item" style="display:none"/>
+	           				</td>
+	           				<td><img src="images/tree/T.png"/></td><td><img src="images/tree/T.png"/></td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="itemSpanClass" >Disable &quot;Creative filters&quot; .</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="expectedResultSpanClass" ></div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div style="text-align:center;">
+	           						
+									N
+	           					</div>
+	           				</td>
+	           			</tr>
+           			<!-- case item in group -->
+	           			<tr class="sectionTrClass_141170_group_2315661_2315683_">
+	           				<td class="operationTdClass" >
+	           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_141170_group_2315661_2315683_', 2315683, 3)" class="imgButClass" title="Remove item" style="display:none"/>
+	           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(141170, 2315683, 2315661, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+	           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(141170, 2315683, 2315661, 3, 2)" class="imgButClass" title="Insert case item" style="display:none"/>
+	           				</td>
+	           				<td><img src="images/tree/T.png"/></td><td><img src="images/tree/T.png"/></td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="itemSpanClass" >Check preview image in the Settings</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="expectedResultSpanClass" >Ensure the preview is displayed properly and without any extra effect.</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div style="text-align:center;">
+	           						
+									N
+	           					</div>
+	           				</td>
+	           			</tr>
+           			<!-- case item in group -->
+	           			<tr class="sectionTrClass_141170_group_2315661_2315684_">
+	           				<td class="operationTdClass" >
+	           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_141170_group_2315661_2315684_', 2315684, 3)" class="imgButClass" title="Remove item" style="display:none"/>
+	           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(141170, 2315684, 2315661, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+	           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(141170, 2315684, 2315661, 3, 2)" class="imgButClass" title="Insert case item" style="display:none"/>
+	           				</td>
+	           				<td><img src="images/tree/T.png"/></td><td><img src="images/tree/T.png"/></td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="itemSpanClass" >Don't close OS Settings.</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="expectedResultSpanClass" ></div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div style="text-align:center;">
+	           						
+									N
+	           					</div>
+	           				</td>
+	           			</tr>
+           			
+           		
+            				
+           		
+           		
+           			<tr class="sectionTrClass_141170_group_2315685_"><!-- group -->
+           				<td class="operationTdClass">
+           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_141170_group_2315685_', 2315685, 4)" class="imgButClass" title="Remove group" style="display:none"/>
+           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(141170, 2315685, -1, 4, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(141170, 2315685, -1, 4, 2)" class="imgButClass" title="Insert item/group" style="display:none"/>
+           					<img src="images/new.png" onclick="sectionDialog.openGroupItem(141170, -1, 2315685, -1, 0)" class="imgButClass" title="Add case item" style="display:none"/>
+           				</td>
+           				<td><img src="images/tree/T.png"/></td><td><img onclick="extendNode('sectionTrClass_141170_group_2315685_')" class="blockClass" src="images/collapse.png"/></td>
+           				<td colspan=9 bgcolor="#E6E6E6" class="sectionTdClass"><span class="groupSpanClass" >Check in Quick Settings</span></td>
+           			</tr>
+           			<!-- case item in group -->
+	           			<tr class="sectionTrClass_141170_group_2315685_2315686_">
+	           				<td class="operationTdClass" >
+	           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_141170_group_2315685_2315686_', 2315686, 3)" class="imgButClass" title="Remove item" style="display:none"/>
+	           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(141170, 2315686, 2315685, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+	           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(141170, 2315686, 2315685, 3, 2)" class="imgButClass" title="Insert case item" style="display:none"/>
+	           				</td>
+	           				<td><img src="images/tree/T.png"/></td><td><img src="images/tree/T.png"/></td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="itemSpanClass" >Open Quick Settings,</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="expectedResultSpanClass" ></div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div style="text-align:center;">
+	           						
+									N
+	           					</div>
+	           				</td>
+	           			</tr>
+           			<!-- case item in group -->
+	           			<tr class="sectionTrClass_141170_group_2315685_2315687_">
+	           				<td class="operationTdClass" >
+	           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_141170_group_2315685_2315687_', 2315687, 3)" class="imgButClass" title="Remove item" style="display:none"/>
+	           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(141170, 2315687, 2315685, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+	           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(141170, 2315687, 2315685, 3, 2)" class="imgButClass" title="Insert case item" style="display:none"/>
+	           				</td>
+	           				<td><img src="images/tree/T.png"/></td><td><img src="images/tree/T.png"/></td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="itemSpanClass" >Click Studio effects</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="expectedResultSpanClass" >Ensure there are no abnormal situations such as delays in the preview display.</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div style="text-align:center;">
+	           						
+									N
+	           					</div>
+	           				</td>
+	           			</tr>
+           			<!-- case item in group -->
+	           			<tr class="sectionTrClass_141170_group_2315685_2315688_">
+	           				<td class="operationTdClass" >
+	           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_141170_group_2315685_2315688_', 2315688, 3)" class="imgButClass" title="Remove item" style="display:none"/>
+	           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(141170, 2315688, 2315685, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+	           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(141170, 2315688, 2315685, 3, 2)" class="imgButClass" title="Insert case item" style="display:none"/>
+	           				</td>
+	           				<td><img src="images/tree/T.png"/></td><td><img src="images/tree/T.png"/></td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="itemSpanClass" ><p>Test all functions under the Quick Settings interface through the preview window of the Quick Settings interface</p></div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="expectedResultSpanClass" ><p>Ensure all functions are functioning properly.<br />(Suggest testing one function at a time to facilitate observation of whether the function is effective)<br />Ensure the switches for the same function in the settings interface of the OS are also turned on.</p></div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div style="text-align:center;">
+	           						
+									N
+	           					</div>
+	           				</td>
+	           			</tr>
+           			<!-- case item in group -->
+	           			<tr class="sectionTrClass_141170_group_2315685_2315689_">
+	           				<td class="operationTdClass" >
+	           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_141170_group_2315685_2315689_', 2315689, 3)" class="imgButClass" title="Remove item" style="display:none"/>
+	           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(141170, 2315689, 2315685, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+	           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(141170, 2315689, 2315685, 3, 2)" class="imgButClass" title="Insert case item" style="display:none"/>
+	           				</td>
+	           				<td><img src="images/tree/T.png"/></td><td><img src="images/tree/T.png"/></td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="itemSpanClass" >Close Quick Settings</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="expectedResultSpanClass" ></div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div style="text-align:center;">
+	           						
+									N
+	           					</div>
+	           				</td>
+	           			</tr>
+           			
+           		
+            				
+           		<!-- case item not in any group. -->
+           			<tr class="sectionTrClass_141170_2315706_">
+           				<td class="operationTdClass">
+           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_141170_2315706_', 2315706, 3)" class="imgButClass" title="Remove case item" style="display:none"/>
+           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(141170, 2315706, -1, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(141170, 2315706, -1, 3, 2)" class="imgButClass" title="Insert item/group" style="display:none"/>
+           				</td>
+           				<td><img src="images/tree/T.png"/></td>
+           				<td></td>
+           				<td colspan=3 width="37%" class="sectionTdClass">
+           					<div class="itemSpanClass" style="color: #0782FC;"><p>Back to the OS Settings interface and open multiple functions simultaneously. <br />eg:MEP V1:"Automatic framing""Eye contact""Background effects-Standard blur";<br />MEP V2:"Automatic framing""Eye contact-Teleprompter""Background effects-Standard blur""Creative filters-Watercolor"</p></div>
+           				</td>
+           				<td colspan=3 width="35%" class="sectionTdClass">
+           					<div class="expectedResultSpanClass" ><p>Ensure all functions are functioning properly. Ensure there are no abnormalities in the preview screen. Note:The combination of functions should cover all MEP functions in the interface</p></div>
+           				</td>
+           				<td colspan=3 width="17%" class="sectionTdClass">
+           					<div style="text-align:center;">
+           						
+								N
+           					</div>
+           				</td>
+           			</tr>
+           		
+           		
+            				
+           		<!-- case item not in any group. -->
+           			<tr class="sectionTrClass_141170_2315707_">
+           				<td class="operationTdClass">
+           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_141170_2315707_', 2315707, 3)" class="imgButClass" title="Remove case item" style="display:none"/>
+           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(141170, 2315707, -1, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(141170, 2315707, -1, 3, 2)" class="imgButClass" title="Insert item/group" style="display:none"/>
+           				</td>
+           				<td><img src="images/tree/T.png"/></td>
+           				<td></td>
+           				<td colspan=3 width="37%" class="sectionTdClass">
+           					<div class="itemSpanClass" >Open Quick Settings and check preview</div>
+           				</td>
+           				<td colspan=3 width="35%" class="sectionTdClass">
+           					<div class="expectedResultSpanClass" >Ensure all functions are functioning properly.
+Ensure there are no abnormalities in the preview screen.</div>
+           				</td>
+           				<td colspan=3 width="17%" class="sectionTdClass">
+           					<div style="text-align:center;">
+           						
+								N
+           					</div>
+           				</td>
+           			</tr>
+           		
+           		
+            				
+           		<!-- case item not in any group. -->
+           			<tr class="sectionTrClass_141170_2315708_">
+           				<td class="operationTdClass">
+           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_141170_2315708_', 2315708, 3)" class="imgButClass" title="Remove case item" style="display:none"/>
+           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(141170, 2315708, -1, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(141170, 2315708, -1, 3, 2)" class="imgButClass" title="Insert item/group" style="display:none"/>
+           				</td>
+           				<td><img src="images/tree/T.png"/></td>
+           				<td></td>
+           				<td colspan=3 width="37%" class="sectionTdClass">
+           					<div class="itemSpanClass" ><p>Open Windows camera app and check preview</p></div>
+           				</td>
+           				<td colspan=3 width="35%" class="sectionTdClass">
+           					<div class="expectedResultSpanClass" ><p>Ensure all functions are functioning properly. Ensure there are no abnormalities in the preview screen.</p></div>
+           				</td>
+           				<td colspan=3 width="17%" class="sectionTdClass">
+           					<div style="text-align:center;">
+           						
+								N
+           					</div>
+           				</td>
+           			</tr>
+           		
+           		
+            				
+           		<!-- case item not in any group. -->
+           			<tr class="sectionTrClass_141170_2315709_">
+           				<td class="operationTdClass">
+           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_141170_2315709_', 2315709, 3)" class="imgButClass" title="Remove case item" style="display:none"/>
+           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(141170, 2315709, -1, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(141170, 2315709, -1, 3, 2)" class="imgButClass" title="Insert item/group" style="display:none"/>
+           				</td>
+           				<td><img src="images/tree/T.png"/></td>
+           				<td></td>
+           				<td colspan=3 width="37%" class="sectionTdClass">
+           					<div class="itemSpanClass" ><p>Switch power mode, check the preview image in Windwos camera app(cover all power mode)</p><br><p>eg:Switching using hotkey Fn+Q</p></div>
+           				</td>
+           				<td colspan=3 width="35%" class="sectionTdClass">
+           					<div class="expectedResultSpanClass" ><p>Ensure the effectiveness of MEP functions is normal<br />Ensure there are no abnormalities in the system</p></div>
+           				</td>
+           				<td colspan=3 width="17%" class="sectionTdClass">
+           					<div style="text-align:center;">
+           						
+								N
+           					</div>
+           				</td>
+           			</tr>
+           		
+           		
+            				
+           		<!-- case item not in any group. -->
+           			<tr class="sectionTrClass_141170_2315710_">
+           				<td class="operationTdClass">
+           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_141170_2315710_', 2315710, 3)" class="imgButClass" title="Remove case item" style="display:none"/>
+           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(141170, 2315710, -1, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(141170, 2315710, -1, 3, 2)" class="imgButClass" title="Insert item/group" style="display:none"/>
+           				</td>
+           				<td><img src="images/tree/T.png"/></td>
+           				<td></td>
+           				<td colspan=3 width="37%" class="sectionTdClass">
+           					<div class="itemSpanClass" ><p>Switch power mode, check the preview image in OS Settings (cover all power mode)<br />eg:Switching using hotkey Fn+Q</p></div>
+           				</td>
+           				<td colspan=3 width="35%" class="sectionTdClass">
+           					<div class="expectedResultSpanClass" ><p>Ensure the effectiveness of MEP functions is normal<br />Ensure there are no abnormalities in the system</p></div>
+           				</td>
+           				<td colspan=3 width="17%" class="sectionTdClass">
+           					<div style="text-align:center;">
+           						
+								N
+           					</div>
+           				</td>
+           			</tr>
+           		
+           		
+            				
+           		<!-- case item not in any group. -->
+           			<tr class="sectionTrClass_141170_2315711_">
+           				<td class="operationTdClass">
+           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_141170_2315711_', 2315711, 3)" class="imgButClass" title="Remove case item" style="display:none"/>
+           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(141170, 2315711, -1, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(141170, 2315711, -1, 3, 2)" class="imgButClass" title="Insert item/group" style="display:none"/>
+           				</td>
+           				<td><img src="images/tree/T.png"/></td>
+           				<td></td>
+           				<td colspan=3 width="37%" class="sectionTdClass">
+           					<div class="itemSpanClass" ><p>Switch power mode, check the preview image in Quick Settings(cover all power mode)<br />eg:Switching using hotkey Fn+Q</p></div>
+           				</td>
+           				<td colspan=3 width="35%" class="sectionTdClass">
+           					<div class="expectedResultSpanClass" ><p>Ensure the effectiveness of MEP functions is normal<br />Ensure there are no abnormalities in the system</p></div>
+           				</td>
+           				<td colspan=3 width="17%" class="sectionTdClass">
+           					<div style="text-align:center;">
+           						
+								N
+           					</div>
+           				</td>
+           			</tr>
+           		
+           		
+            				
+           		<!-- case item not in any group. -->
+           			<tr class="sectionTrClass_141170_2315712_">
+           				<td class="operationTdClass">
+           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_141170_2315712_', 2315712, 3)" class="imgButClass" title="Remove case item" style="display:none"/>
+           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(141170, 2315712, -1, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(141170, 2315712, -1, 3, 2)" class="imgButClass" title="Insert item/group" style="display:none"/>
+           				</td>
+           				<td><img src="images/tree/T.png"/></td>
+           				<td></td>
+           				<td colspan=3 width="37%" class="sectionTdClass">
+           					<div class="itemSpanClass" ><p>Switch power mode,Record a video for 1 minute(cover all power mode)</p></div>
+           				</td>
+           				<td colspan=3 width="35%" class="sectionTdClass">
+           					<div class="expectedResultSpanClass" ><p>Ensure the MEP function is normal during video recording<br />Ensure there are no abnormalities during the recording process</p></div>
+           				</td>
+           				<td colspan=3 width="17%" class="sectionTdClass">
+           					<div style="text-align:center;">
+           						
+								N
+           					</div>
+           				</td>
+           			</tr>
+           		
+           		
+            				
+           		<!-- case item not in any group. -->
+           			<tr class="sectionTrClass_141170_2315713_">
+           				<td class="operationTdClass">
+           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_141170_2315713_', 2315713, 3)" class="imgButClass" title="Remove case item" style="display:none"/>
+           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(141170, 2315713, -1, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(141170, 2315713, -1, 3, 2)" class="imgButClass" title="Insert item/group" style="display:none"/>
+           				</td>
+           				<td><img src="images/tree/T.png"/></td>
+           				<td></td>
+           				<td colspan=3 width="37%" class="sectionTdClass">
+           					<div class="itemSpanClass" ><p>After recording the video, start playing</p></div>
+           				</td>
+           				<td colspan=3 width="35%" class="sectionTdClass">
+           					<div class="expectedResultSpanClass" ><p>Ensure the video can be played normally<br />Ensure the MEP function in the video is displayed correctly</p></div>
+           				</td>
+           				<td colspan=3 width="17%" class="sectionTdClass">
+           					<div style="text-align:center;">
+           						
+								N
+           					</div>
+           				</td>
+           			</tr>
+           		
+           		
+            				
+           		<!-- case item not in any group. -->
+           			<tr class="sectionTrClass_141170_2315714_">
+           				<td class="operationTdClass">
+           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_141170_2315714_', 2315714, 3)" class="imgButClass" title="Remove case item" style="display:none"/>
+           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(141170, 2315714, -1, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(141170, 2315714, -1, 3, 2)" class="imgButClass" title="Insert item/group" style="display:none"/>
+           				</td>
+           				<td><img src="images/tree/T.png"/></td>
+           				<td></td>
+           				<td colspan=3 width="37%" class="sectionTdClass">
+           					<div class="itemSpanClass" ><p>Reopen Windows camera app to preview,and check NPU usage from "Task Manager"-&gt;"Performance".</p><br><p>(If the MEP function isn't running on the NPU, please skip this step of testing.)</p></div>
+           				</td>
+           				<td colspan=3 width="35%" class="sectionTdClass">
+           					<div class="expectedResultSpanClass" ><p>Ensure NPU usage is higher than zero.</p></div>
+           				</td>
+           				<td colspan=3 width="17%" class="sectionTdClass">
+           					<div style="text-align:center;">
+           						
+								N
+           					</div>
+           				</td>
+           			</tr>
+           		
+           		
+            				
+           		
+           		
+           			<tr class="sectionTrClass_141170_group_2315690_"><!-- group -->
+           				<td class="operationTdClass">
+           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_141170_group_2315690_', 2315690, 4)" class="imgButClass" title="Remove group" style="display:none"/>
+           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(141170, 2315690, -1, 4, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(141170, 2315690, -1, 4, 2)" class="imgButClass" title="Insert item/group" style="display:none"/>
+           					<img src="images/new.png" onclick="sectionDialog.openGroupItem(141170, -1, 2315690, -1, 0)" class="imgButClass" title="Add case item" style="display:none"/>
+           				</td>
+           				<td><img src="images/tree/T.png"/></td><td><img onclick="extendNode('sectionTrClass_141170_group_2315690_')" class="blockClass" src="images/collapse.png"/></td>
+           				<td colspan=9 bgcolor="#E6E6E6" class="sectionTdClass"><span class="groupSpanClass" >Dark room test</span></td>
+           			</tr>
+           			<!-- case item in group -->
+	           			<tr class="sectionTrClass_141170_group_2315690_2315691_">
+	           				<td class="operationTdClass" >
+	           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_141170_group_2315690_2315691_', 2315691, 3)" class="imgButClass" title="Remove item" style="display:none"/>
+	           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(141170, 2315691, 2315690, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+	           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(141170, 2315691, 2315690, 3, 2)" class="imgButClass" title="Insert case item" style="display:none"/>
+	           				</td>
+	           				<td><img src="images/tree/T.png"/></td><td><img src="images/tree/T.png"/></td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="itemSpanClass" >Move the test equipment to a dark room to test functions. Notes:Using an illuminometer to test ambient brightness, the ambient brightness of the selected darkroom cannot be less than 50 Lux.</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="expectedResultSpanClass" ></div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div style="text-align:center;">
+	           						
+									N
+	           					</div>
+	           				</td>
+	           			</tr>
+           			<!-- case item in group -->
+	           			<tr class="sectionTrClass_141170_group_2315690_2315692_">
+	           				<td class="operationTdClass" >
+	           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_141170_group_2315690_2315692_', 2315692, 3)" class="imgButClass" title="Remove item" style="display:none"/>
+	           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(141170, 2315692, 2315690, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+	           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(141170, 2315692, 2315690, 3, 2)" class="imgButClass" title="Insert case item" style="display:none"/>
+	           				</td>
+	           				<td><img src="images/tree/T.png"/></td><td><img src="images/tree/T.png"/></td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="itemSpanClass" >Check preview image in Windows camera app(cover all functions in OS Settings)</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="expectedResultSpanClass" >Ensure all functions are functioning properly.
+Ensure there are no abnormalities in the preview screen.</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div style="text-align:center;">
+	           						
+									N
+	           					</div>
+	           				</td>
+	           			</tr>
+           			<!-- case item in group -->
+	           			<tr class="sectionTrClass_141170_group_2315690_2315693_">
+	           				<td class="operationTdClass" >
+	           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_141170_group_2315690_2315693_', 2315693, 3)" class="imgButClass" title="Remove item" style="display:none"/>
+	           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(141170, 2315693, 2315690, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+	           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(141170, 2315693, 2315690, 3, 2)" class="imgButClass" title="Insert case item" style="display:none"/>
+	           				</td>
+	           				<td><img src="images/tree/T.png"/></td><td><img src="images/tree/T.png"/></td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="itemSpanClass" >Check preview image in OS Settings(cover all functions in OS Settings)</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="expectedResultSpanClass" >Ensure all functions are functioning properly.
+Ensure there are no abnormalities in the preview screen.</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div style="text-align:center;">
+	           						
+									N
+	           					</div>
+	           				</td>
+	           			</tr>
+           			<!-- case item in group -->
+	           			<tr class="sectionTrClass_141170_group_2315690_2315694_">
+	           				<td class="operationTdClass" >
+	           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_141170_group_2315690_2315694_', 2315694, 3)" class="imgButClass" title="Remove item" style="display:none"/>
+	           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(141170, 2315694, 2315690, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+	           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(141170, 2315694, 2315690, 3, 2)" class="imgButClass" title="Insert case item" style="display:none"/>
+	           				</td>
+	           				<td><img src="images/tree/T.png"/></td><td><img src="images/tree/T.png"/></td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="itemSpanClass" >Check preview image in Quick Settings.(cover all functions in OS Settings)</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="expectedResultSpanClass" >Ensure all functions are functioning properly.
+Ensure there are no abnormalities in the preview screen.</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div style="text-align:center;">
+	           						
+									N
+	           					</div>
+	           				</td>
+	           			</tr>
+           			<!-- case item in group -->
+	           			<tr class="sectionTrClass_141170_group_2315690_2315695_">
+	           				<td class="operationTdClass" >
+	           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_141170_group_2315690_2315695_', 2315695, 3)" class="imgButClass" title="Remove item" style="display:none"/>
+	           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(141170, 2315695, 2315690, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+	           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(141170, 2315695, 2315690, 3, 2)" class="imgButClass" title="Insert case item" style="display:none"/>
+	           				</td>
+	           				<td><img src="images/tree/T.png"/></td><td><img src="images/tree/T.png"/></td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="itemSpanClass" >Back to OS Settings,Disable all funtions.</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="expectedResultSpanClass" >Ensure the preview is displayed properly and without any extra effect.</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div style="text-align:center;">
+	           						
+									N
+	           					</div>
+	           				</td>
+	           			</tr>
+           			<!-- case item in group -->
+	           			<tr class="sectionTrClass_141170_group_2315690_2315696_">
+	           				<td class="operationTdClass" >
+	           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_141170_group_2315690_2315696_', 2315696, 3)" class="imgButClass" title="Remove item" style="display:none"/>
+	           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(141170, 2315696, 2315690, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+	           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(141170, 2315696, 2315690, 3, 2)" class="imgButClass" title="Insert case item" style="display:none"/>
+	           				</td>
+	           				<td><img src="images/tree/T.png"/></td><td><img src="images/tree/T.png"/></td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="itemSpanClass" >Back to Windows camera app and check preview</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="expectedResultSpanClass" >Ensure the preview is displayed properly and without any extra effect.</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div style="text-align:center;">
+	           						
+									N
+	           					</div>
+	           				</td>
+	           			</tr>
+           			<!-- case item in group -->
+	           			<tr class="sectionTrClass_141170_group_2315690_2315697_">
+	           				<td class="operationTdClass" >
+	           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_141170_group_2315690_2315697_', 2315697, 3)" class="imgButClass" title="Remove item" style="display:none"/>
+	           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(141170, 2315697, 2315690, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+	           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(141170, 2315697, 2315690, 3, 2)" class="imgButClass" title="Insert case item" style="display:none"/>
+	           				</td>
+	           				<td><img src="images/tree/T.png"/></td><td><img src="images/tree/T.png"/></td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="itemSpanClass" >Back to  Quick Settings and check preview</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="expectedResultSpanClass" >Ensure the preview is displayed properly and without any extra effect.</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div style="text-align:center;">
+	           						
+									N
+	           					</div>
+	           				</td>
+	           			</tr>
+           			<!-- case item in group -->
+	           			<tr class="sectionTrClass_141170_group_2315690_2315698_">
+	           				<td class="operationTdClass" >
+	           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_141170_group_2315690_2315698_', 2315698, 3)" class="imgButClass" title="Remove item" style="display:none"/>
+	           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(141170, 2315698, 2315690, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+	           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(141170, 2315698, 2315690, 3, 2)" class="imgButClass" title="Insert case item" style="display:none"/>
+	           				</td>
+	           				<td><img src="images/tree/T.png"/></td><td><img src="images/tree/T.png"/></td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="itemSpanClass" >Adjust the ambient brightness to below 20lux</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="expectedResultSpanClass" ></div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div style="text-align:center;">
+	           						
+									N
+	           					</div>
+	           				</td>
+	           			</tr>
+           			<!-- case item in group -->
+	           			<tr class="sectionTrClass_141170_group_2315690_2315699_">
+	           				<td class="operationTdClass" >
+	           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_141170_group_2315690_2315699_', 2315699, 3)" class="imgButClass" title="Remove item" style="display:none"/>
+	           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(141170, 2315699, 2315690, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+	           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(141170, 2315699, 2315690, 3, 2)" class="imgButClass" title="Insert case item" style="display:none"/>
+	           				</td>
+	           				<td><img src="images/tree/T.png"/></td><td><img src="images/tree/T.png"/></td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="itemSpanClass" >In OS Settings,Switch on and off &quot;Portrait Light&quot;, and check preview image in the OS Settings(cover Windows camera app and Quick Settings)</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="expectedResultSpanClass" >Ensure the overall brightness of the subject in the preview screen is increased when Portrait Light is ON.</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div style="text-align:center;">
+	           						
+									N
+	           					</div>
+	           				</td>
+	           			</tr>
+           			<!-- case item in group -->
+	           			<tr class="sectionTrClass_141170_group_2315690_2315700_">
+	           				<td class="operationTdClass" >
+	           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_141170_group_2315690_2315700_', 2315700, 3)" class="imgButClass" title="Remove item" style="display:none"/>
+	           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(141170, 2315700, 2315690, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+	           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(141170, 2315700, 2315690, 3, 2)" class="imgButClass" title="Insert case item" style="display:none"/>
+	           				</td>
+	           				<td><img src="images/tree/T.png"/></td><td><img src="images/tree/T.png"/></td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="itemSpanClass" >Enable all functions in Windows Studio Effects in OS Settings.
+Check preview image in the OS Settings.
+(cover Windows camera app and Quick Settings)</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="expectedResultSpanClass" >Ensure all functions are functioning properly.
+Ensure there are no abnormalities in the preview screen.</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div style="text-align:center;">
+	           						
+									N
+	           					</div>
+	           				</td>
+	           			</tr>
+           			<!-- case item in group -->
+	           			<tr class="sectionTrClass_141170_group_2315690_2315701_">
+	           				<td class="operationTdClass" >
+	           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_141170_group_2315690_2315701_', 2315701, 3)" class="imgButClass" title="Remove item" style="display:none"/>
+	           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(141170, 2315701, 2315690, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+	           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(141170, 2315701, 2315690, 3, 2)" class="imgButClass" title="Insert case item" style="display:none"/>
+	           				</td>
+	           				<td><img src="images/tree/T.png"/></td><td><img src="images/tree/T.png"/></td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="itemSpanClass" >Adjust the ambient brightness to below 10lux</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="expectedResultSpanClass" ></div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div style="text-align:center;">
+	           						
+									N
+	           					</div>
+	           				</td>
+	           			</tr>
+           			<!-- case item in group -->
+	           			<tr class="sectionTrClass_141170_group_2315690_2315702_">
+	           				<td class="operationTdClass" >
+	           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_141170_group_2315690_2315702_', 2315702, 3)" class="imgButClass" title="Remove item" style="display:none"/>
+	           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(141170, 2315702, 2315690, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+	           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(141170, 2315702, 2315690, 3, 2)" class="imgButClass" title="Insert case item" style="display:none"/>
+	           				</td>
+	           				<td><img src="images/tree/T.png"/></td><td><img src="images/tree/T.png"/></td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="itemSpanClass" ><p>Switch on and off "Portrait Light", and check preview image in the OS Settings(cover Windows camera app and Quick Settings)</p></div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="expectedResultSpanClass" ><p>Ensure the overall brightness of the subject in the preview screen is increased when Portrait Light is ON.<br />Note:<br />1.The scenario will try to improve the overall illumination on the subject but might not succeed if there is extreme low lux environment/extreme low lux environment with a particular dominant light source.<br />2.For extreme low lux scenarios(&lt;= 5lux), in the effect might result in generation of slight halo on the subject</p></div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div style="text-align:center;">
+	           						
+									N
+	           					</div>
+	           				</td>
+	           			</tr>
+           			<!-- case item in group -->
+	           			<tr class="sectionTrClass_141170_group_2315690_2315703_">
+	           				<td class="operationTdClass" >
+	           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_141170_group_2315690_2315703_', 2315703, 3)" class="imgButClass" title="Remove item" style="display:none"/>
+	           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(141170, 2315703, 2315690, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+	           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(141170, 2315703, 2315690, 3, 2)" class="imgButClass" title="Insert case item" style="display:none"/>
+	           				</td>
+	           				<td><img src="images/tree/T.png"/></td><td><img src="images/tree/T.png"/></td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="itemSpanClass" >Enable all functions in Windows Studio Effects in OS Settings.
+Check preview image in the OS Settings.
+(cover Windows camera app and Quick Settings)</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="expectedResultSpanClass" >Ensure all functions are functioning properly.</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div style="text-align:center;">
+	           						
+									N
+	           					</div>
+	           				</td>
+	           			</tr>
+           			<!-- case item in group -->
+	           			<tr class="sectionTrClass_141170_group_2315690_2315704_">
+	           				<td class="operationTdClass" >
+	           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_141170_group_2315690_2315704_', 2315704, 3)" class="imgButClass" title="Remove item" style="display:none"/>
+	           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(141170, 2315704, 2315690, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+	           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(141170, 2315704, 2315690, 3, 2)" class="imgButClass" title="Insert case item" style="display:none"/>
+	           				</td>
+	           				<td><img src="images/tree/T.png"/></td><td><img src="images/tree/T.png"/></td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="itemSpanClass" >Disable all functions in OS Settings.</div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div class="expectedResultSpanClass" ></div>
+	           				</td>
+	           				<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	           					<div style="text-align:center;">
+	           						
+									N
+	           					</div>
+	           				</td>
+	           			</tr>
+           			
+           		
+            
+		
+	</tbody>
+</table>
+<table id="addSectionTable" style="display:none">
+	<tr id="addSectionBut">
+		<td><img src="images/new.png" onclick="sectionDialog.openSection(-1, 0);" title="Add section"/></td><td></td><td></td><td colspan=9></td>
+	</tr>
+</table>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+    		
+		</form>
+
+
+
+
+		<div id="previewDialog">
+
+	</div>
+	<div id="previewOneDialog">
+
+	</div>
+	</body>
+	<SCRIPT LANGUAGE="JavaScript">	
+// 	function fxdownload(id){
+// 		var url = "testCaseAction!initDownload.do?section_id="+id;
+// 		FxShowWindow(url,'700','280');
+// 	}
+</SCRIPT>
+</html>
+
+
+			</td>
+		</tr>
+		<tr>
+			<td style="text-align:center;">
+				
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=8; IE=7; IE=EDGE" />
+<base href="https://tdms.lenovo.com:443/tdms/">
+<style>
+body{
+	background-color:#ffffff;
+	text-align:center;
+	font-size: 10px;
+	line-height: 12px;
+	font-family: Verdana, sans-serif;
+	margin: 0px;
+	color: #000;
+	height:12px;
+}
+</style>
+</head>
+<body>
+<table style="width:100%">
+	<tr>
+		<td style="padding-left:30px;padding-right:30px">
+			<hr>
+		</td>
+	</tr>	
+	<tr>
+		<td style="height:20px;text-align:center;font-size:12px;font-weight:700;color:#6699CC;">Copyright(c) 2010-2012 by Lenovo. All rights reserved</td>
+	</tr>
+</table>
+</body>
+</html>
+
+			</td>
+		</tr>		
+	</table>
+	</body>
+</html>
