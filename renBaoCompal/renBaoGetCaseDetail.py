@@ -19,7 +19,7 @@ def create_request(caseTrueId):
     if(caseId == 1):
         url = 'https://tdms.lenovo.com/tdms/caseMgtAction!clickTree.do?cid=2309&cname=Subsystem&pid=2301&lv=4&r=4&sysPageId=page_test_caselibrary_view'
     else:
-        url = 'https://tdms.lenovo.com/tdms/testCaseAction!loadCase.do?sysPageId=page_test_case_view&oper=0&caseType=1&cid=&cname=&caseId='+str(caseTrueId)+'&currentCategoryRole=4&entry=0'
+        url = 'https://tdms.lenovo.com/tdms/executePlanCaseAction!doExecuteCaseInit.do?sysPageId=page_test_executetestplan_planexecute&caseId='+str(caseTrueId)+'#undefined '
 
     headers = {
         ##'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36',
@@ -28,7 +28,7 @@ def create_request(caseTrueId):
         # 'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6,zh-TW;q=0.5',
         # 'Cache-Control': 'max-age=0',
         # 'Connection': 'keep-alive',
-        'Cookie': '151=1; 152=0; 236=1; 237=1; blackbird={pos:1,size:0,load:null}; leid=1.xaRQszGnO68; JSESSIONID=89AC850AF9B11ED83F2C802FC67C2BD3',
+        'Cookie': 'blackbird={pos:1,size:0,load:null}; 151=1; 236=1; 244=1; 237=1; JSESSIONID=CAB702F6F05D9159981F2C3BA035B7DF',
         # 'Host': 'tdms.lenovo.com',
         # 'Referer': 'https://tdms.lenovo.com/tdms/caseMgtAction!clickTree.do?cid=1786&cname=Lenovo%20SW%20Test%20Case%202025%20Architecture&pid=1&lv=1&r=4&sysPageId=page_test_caselibrary_view',
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36',
@@ -60,7 +60,8 @@ def save_to_html(content, caseId,caseName):
     """将数据保存到JSON文件"""
     try:
         # 确保保存目录存在
-        save_dir = os.path.join("case_files", "2025-EnhancedFunction-Subsystem01")
+        base_dir = os.path.dirname(os.path.abspath(__file__))
+        save_dir = os.path.join(base_dir,"case_files", "Test_execution/LEGION5_GEN11-G/Legion_5_15AGP11_SIT-1_SW_CF_EF_PD_test_plan")
         if not os.path.exists(save_dir):
             os.makedirs(save_dir)
 
@@ -115,7 +116,7 @@ if __name__ == '__main__':
 
         # JSON 文件路径（支持子文件夹）
         base_dir = os.path.dirname(os.path.abspath(__file__))
-        jsonPath = os.path.join(base_dir, "data_files", "renBaoCaseId.json")
+        jsonPath = os.path.join(base_dir, "data_files", "renBaoCompalCaseTId.json")
         if not os.path.exists(jsonPath):
             print(f"❌未找到JSON文件:{jsonPath}")
             exit(1)

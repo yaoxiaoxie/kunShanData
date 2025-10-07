@@ -1,0 +1,1010 @@
+[
+  {
+    "caseTrueId": "1476419",
+    "caseId": "SMAT039_CF_01"
+  },
+  {
+    "caseTrueId": "1476415",
+    "caseId": "SMAT039_CF_04"
+  },
+  {
+    "caseTrueId": "1476575",
+    "caseId": "SMAT039_EF_01"
+  },
+  {
+    "caseTrueId": "1476648",
+    "caseId": "SMAT043_03"
+  },
+  {
+    "caseTrueId": "1476638",
+    "caseId": "PLAT101_BIOS_C_EF"
+  },
+  {
+    "caseTrueId": "1476445",
+    "caseId": "PLAT101_BIOS_G_CF"
+  },
+  {
+    "caseTrueId": "1476637",
+    "caseId": "PLAT107_BIOS_C_EF"
+  },
+  {
+    "caseTrueId": "1476423",
+    "caseId": "PLAT141_BIOS_CF"
+  },
+  {
+    "caseTrueId": "1476745",
+    "caseId": "TDAP004_EF"
+  },
+  {
+    "caseTrueId": "1476577",
+    "caseId": "SMAT02_EF_15"
+  },
+  {
+    "caseTrueId": "1476426",
+    "caseId": "SMAT028_CF_01"
+  },
+  {
+    "caseTrueId": "1476430",
+    "caseId": "SMAT035_CF"
+  },
+  {
+    "caseTrueId": "1476576",
+    "caseId": "SMAT035_EF"
+  },
+  {
+    "caseTrueId": "1476424",
+    "caseId": "SMAT005 FN+Q_CF"
+  },
+  {
+    "caseTrueId": "1476640",
+    "caseId": "SMAT005_EF_02"
+  },
+  {
+    "caseTrueId": "1476634",
+    "caseId": "SMAT005_EF_04"
+  },
+  {
+    "caseTrueId": "1476635",
+    "caseId": "SMAT005_EF_05"
+  },
+  {
+    "caseTrueId": "1476636",
+    "caseId": "SMAT005_EF_07"
+  },
+  {
+    "caseTrueId": "1476427",
+    "caseId": "SMAT005_FN+Q_CF"
+  },
+  {
+    "caseTrueId": "1476421",
+    "caseId": "SMAT005_FN+Q_CF_06"
+  },
+  {
+    "caseTrueId": "1476623",
+    "caseId": "PLAT121_BIOS_EF"
+  },
+  {
+    "caseTrueId": "1476624",
+    "caseId": "PLAT121_BIOS_EF"
+  },
+  {
+    "caseTrueId": "1476631",
+    "caseId": "PLAT542_Power_G_EF"
+  },
+  {
+    "caseTrueId": "1476630",
+    "caseId": "SMAT054_EF_01"
+  },
+  {
+    "caseTrueId": "1476641",
+    "caseId": "SUBS017_EF_04"
+  },
+  {
+    "caseTrueId": "1476632",
+    "caseId": "SUBS017_EF_05"
+  },
+  {
+    "caseTrueId": "1476519",
+    "caseId": "WHLK002_HLK_EF"
+  },
+  {
+    "caseTrueId": "1476639",
+    "caseId": "SMAT058_EF_09"
+  },
+  {
+    "caseTrueId": "1476438",
+    "caseId": "SMAT064_CF_01"
+  },
+  {
+    "caseTrueId": "1476439",
+    "caseId": "SMAT064_CF_02"
+  },
+  {
+    "caseTrueId": "1476440",
+    "caseId": "SMAT064_CF_04"
+  },
+  {
+    "caseTrueId": "1476644",
+    "caseId": "SMAT064_EF_03"
+  },
+  {
+    "caseTrueId": "1476645",
+    "caseId": "SMAT064_EF_05"
+  },
+  {
+    "caseTrueId": "1476441",
+    "caseId": "SMAT004_CF_06"
+  },
+  {
+    "caseTrueId": "1476420",
+    "caseId": "SMAT004_CF_07"
+  },
+  {
+    "caseTrueId": "1476442",
+    "caseId": "SMAT004_CF_10"
+  },
+  {
+    "caseTrueId": "1476444",
+    "caseId": "SMAT004_CF_12"
+  },
+  {
+    "caseTrueId": "1476443",
+    "caseId": "SMAT004_CF_14"
+  },
+  {
+    "caseTrueId": "1476646",
+    "caseId": "SMAT004_EF_08"
+  },
+  {
+    "caseTrueId": "1476649",
+    "caseId": "SMAT004_EF_09"
+  },
+  {
+    "caseTrueId": "1476647",
+    "caseId": "SMAT004_EF_11"
+  },
+  {
+    "caseTrueId": "1476633",
+    "caseId": "SMAT004_EF_13"
+  },
+  {
+    "caseTrueId": "1476433",
+    "caseId": "LAA201_CF_01"
+  },
+  {
+    "caseTrueId": "1476590",
+    "caseId": "LAA202_EF_02"
+  },
+  {
+    "caseTrueId": "1476591",
+    "caseId": "LAA202_EF_03"
+  },
+  {
+    "caseTrueId": "1476432",
+    "caseId": "LAA006_AIS_CF"
+  },
+  {
+    "caseTrueId": "1476435",
+    "caseId": "LAA304_CZ_CF"
+  },
+  {
+    "caseTrueId": "1476596",
+    "caseId": "LAA305_CZ_EF"
+  },
+  {
+    "caseTrueId": "1476597",
+    "caseId": "LAA306_CZ_EF"
+  },
+  {
+    "caseTrueId": "1476425",
+    "caseId": "LAA501_GZ_CF"
+  },
+  {
+    "caseTrueId": "1476578",
+    "caseId": "LAA502_GZ_EF"
+  },
+  {
+    "caseTrueId": "1476579",
+    "caseId": "LAA503_GZ_EF"
+  },
+  {
+    "caseTrueId": "1476436",
+    "caseId": "LAA701_FL_CF"
+  },
+  {
+    "caseTrueId": "1476598",
+    "caseId": "LAA702_FL_EF"
+  },
+  {
+    "caseTrueId": "1476434",
+    "caseId": "LAA101_CF_02"
+  },
+  {
+    "caseTrueId": "1476592",
+    "caseId": "LAA101_EF_03"
+  },
+  {
+    "caseTrueId": "1476589",
+    "caseId": "LAA101_EF_04"
+  },
+  {
+    "caseTrueId": "1476594",
+    "caseId": "LEAP027_EF"
+  },
+  {
+    "caseTrueId": "1476593",
+    "caseId": "LEAP021_EF"
+  },
+  {
+    "caseTrueId": "1481734",
+    "caseId": "LEAP008_CF_01"
+  },
+  {
+    "caseTrueId": "1476417",
+    "caseId": "LEAP053_CF_01"
+  },
+  {
+    "caseTrueId": "1476437",
+    "caseId": "LEAP053_CF_03"
+  },
+  {
+    "caseTrueId": "1476418",
+    "caseId": "LEAP053_CF_04"
+  },
+  {
+    "caseTrueId": "1476595",
+    "caseId": "LEAP041_EF"
+  },
+  {
+    "caseTrueId": "1476574",
+    "caseId": "LEAP038_EF"
+  },
+  {
+    "caseTrueId": "1476428",
+    "caseId": "LEAP002_CF_07"
+  },
+  {
+    "caseTrueId": "1476416",
+    "caseId": "LEAP002_CF_11"
+  },
+  {
+    "caseTrueId": "1476581",
+    "caseId": "LEAP002_EF_07"
+  },
+  {
+    "caseTrueId": "1476583",
+    "caseId": "LEAP002_EF_08"
+  },
+  {
+    "caseTrueId": "1476584",
+    "caseId": "LEAP002_EF_09"
+  },
+  {
+    "caseTrueId": "1476642",
+    "caseId": "SMAT014_EF_01"
+  },
+  {
+    "caseTrueId": "1476643",
+    "caseId": "SMAT014_EF_02"
+  },
+  {
+    "caseTrueId": "1476390",
+    "caseId": "PERF001_PRE"
+  },
+  {
+    "caseTrueId": "1476406",
+    "caseId": "PERF002_REPORT"
+  },
+  {
+    "caseTrueId": "1476395",
+    "caseId": "PERF003_MATRIX"
+  },
+  {
+    "caseTrueId": "1476387",
+    "caseId": "PERF101_CPU_CF"
+  },
+  {
+    "caseTrueId": "1476393",
+    "caseId": "PERF102_CPU_CF"
+  },
+  {
+    "caseTrueId": "1476388",
+    "caseId": "PERF103_CPU_CF"
+  },
+  {
+    "caseTrueId": "1476389",
+    "caseId": "PERF104_CPU_CF"
+  },
+  {
+    "caseTrueId": "1476394",
+    "caseId": "PERF106_NPU_CF"
+  },
+  {
+    "caseTrueId": "1476510",
+    "caseId": "PERF201_GPU_EF"
+  },
+  {
+    "caseTrueId": "1476534",
+    "caseId": "PERF202_GPU_EF"
+  },
+  {
+    "caseTrueId": "1476392",
+    "caseId": "PERF203_GPU_CF"
+  },
+  {
+    "caseTrueId": "1476396",
+    "caseId": "PERF204_GPU_CF"
+  },
+  {
+    "caseTrueId": "1476405",
+    "caseId": "PERF301_ROM_CF"
+  },
+  {
+    "caseTrueId": "1476383",
+    "caseId": "PERF302_RAM_CF"
+  },
+  {
+    "caseTrueId": "1476566",
+    "caseId": "PERF303_ROM_EF"
+  },
+  {
+    "caseTrueId": "1476563",
+    "caseId": "PERF401_SYSTEM_EF"
+  },
+  {
+    "caseTrueId": "1476565",
+    "caseId": "PERF405_SYSTEM_EF"
+  },
+  {
+    "caseTrueId": "1476568",
+    "caseId": "PERF406_SYSTEM_EF"
+  },
+  {
+    "caseTrueId": "1476557",
+    "caseId": "PERF407_SYSTEM_EF"
+  },
+  {
+    "caseTrueId": "1476494",
+    "caseId": "PERF502_BATLEAK_EF"
+  },
+  {
+    "caseTrueId": "1476384",
+    "caseId": "PERF502_BATLIFE_CF"
+  },
+  {
+    "caseTrueId": "1476492",
+    "caseId": "PERF503_CHARGE_EF"
+  },
+  {
+    "caseTrueId": "1476382",
+    "caseId": "PERF504_CHARGE_CF"
+  },
+  {
+    "caseTrueId": "1476493",
+    "caseId": "PERF504_CHARGE_EF"
+  },
+  {
+    "caseTrueId": "1476404",
+    "caseId": "PERF505_BATLIFE_CF"
+  },
+  {
+    "caseTrueId": "1476503",
+    "caseId": "PERF506_BATLIFE_EF"
+  },
+  {
+    "caseTrueId": "1476570",
+    "caseId": "PERF507_BATLIFE_EF"
+  },
+  {
+    "caseTrueId": "1476526",
+    "caseId": "PERF602_GAME_EF"
+  },
+  {
+    "caseTrueId": "1476402",
+    "caseId": "PLAT102_BIOS_CF"
+  },
+  {
+    "caseTrueId": "1476403",
+    "caseId": "PLAT103_BIOS_CF"
+  },
+  {
+    "caseTrueId": "1476525",
+    "caseId": "PLAT103_BIOS_EF"
+  },
+  {
+    "caseTrueId": "1476497",
+    "caseId": "PLAT104_BIOS_EF"
+  },
+  {
+    "caseTrueId": "1476504",
+    "caseId": "PLAT105_BIOS_EF"
+  },
+  {
+    "caseTrueId": "1476385",
+    "caseId": "PLAT106_BIOS_CF"
+  },
+  {
+    "caseTrueId": "1476732",
+    "caseId": "PLAT1102_BIOS_PD"
+  },
+  {
+    "caseTrueId": "1476550",
+    "caseId": "PLAT110_BIOS_EF_01"
+  },
+  {
+    "caseTrueId": "1476551",
+    "caseId": "PLAT110_BIOS_EF_02"
+  },
+  {
+    "caseTrueId": "1476455",
+    "caseId": "PLAT111_BIOS_EF"
+  },
+  {
+    "caseTrueId": "1476742",
+    "caseId": "PLAT112_BIOS_PD"
+  },
+  {
+    "caseTrueId": "1476531",
+    "caseId": "PLAT113_BIOS_EF"
+  },
+  {
+    "caseTrueId": "1476502",
+    "caseId": "PLAT114_BIOS_EF_02"
+  },
+  {
+    "caseTrueId": "1476735",
+    "caseId": "PLAT114_BIOS_PD_02"
+  },
+  {
+    "caseTrueId": "1476506",
+    "caseId": "PLAT117_BIOS_EF_01"
+  },
+  {
+    "caseTrueId": "1476458",
+    "caseId": "PLAT117_BIOS_EF_02"
+  },
+  {
+    "caseTrueId": "1476558",
+    "caseId": "PLAT118_BIOS_EF"
+  },
+  {
+    "caseTrueId": "1476399",
+    "caseId": "PLAT120_BIOS_CF_01"
+  },
+  {
+    "caseTrueId": "1476514",
+    "caseId": "PLAT120_BIOS_EF_01"
+  },
+  {
+    "caseTrueId": "1476386",
+    "caseId": "PLAT122_BIOS_CF"
+  },
+  {
+    "caseTrueId": "1476397",
+    "caseId": "PLAT122_BIOS_CF_02"
+  },
+  {
+    "caseTrueId": "1476546",
+    "caseId": "PLAT122_BIOS_EF"
+  },
+  {
+    "caseTrueId": "1476743",
+    "caseId": "PLAT122_BIOS_PD"
+  },
+  {
+    "caseTrueId": "1476457",
+    "caseId": "PLAT133_BIOS_EF"
+  },
+  {
+    "caseTrueId": "1476517",
+    "caseId": "PLAT134_BIOS_EF_02"
+  },
+  {
+    "caseTrueId": "1476518",
+    "caseId": "PLAT134_BIOS_EF_04"
+  },
+  {
+    "caseTrueId": "1476530",
+    "caseId": "PLAT146_BIOS_EF"
+  },
+  {
+    "caseTrueId": "1476400",
+    "caseId": "PLAT148_BIOS_CF"
+  },
+  {
+    "caseTrueId": "1476391",
+    "caseId": "PLAT183_BIOS_CF"
+  },
+  {
+    "caseTrueId": "1476459",
+    "caseId": "PLAT185_BIOS_EF_01"
+  },
+  {
+    "caseTrueId": "1476460",
+    "caseId": "PLAT185_BIOS_EF_02"
+  },
+  {
+    "caseTrueId": "1476509",
+    "caseId": "PLAT185_BIOS_EF_03"
+  },
+  {
+    "caseTrueId": "1476562",
+    "caseId": "PLAT186_ BIOS_EF"
+  },
+  {
+    "caseTrueId": "1476461",
+    "caseId": "PLAT202_CPU_EF"
+  },
+  {
+    "caseTrueId": "1476380",
+    "caseId": "PLAT204_CPU_CF"
+  },
+  {
+    "caseTrueId": "1476376",
+    "caseId": "PLAT301_GPU_CF"
+  },
+  {
+    "caseTrueId": "1476462",
+    "caseId": "PLAT301_GPU_EF"
+  },
+  {
+    "caseTrueId": "1476377",
+    "caseId": "PLAT305_GPU_CF"
+  },
+  {
+    "caseTrueId": "1476463",
+    "caseId": "PLAT306_GPU_EF"
+  },
+  {
+    "caseTrueId": "1476464",
+    "caseId": "PLAT307_GPU_EF"
+  },
+  {
+    "caseTrueId": "1476378",
+    "caseId": "PLAT308_GPU_CF"
+  },
+  {
+    "caseTrueId": "1476465",
+    "caseId": "PLAT308_GPU_EF"
+  },
+  {
+    "caseTrueId": "1476466",
+    "caseId": "PLAT309_GPU_EF"
+  },
+  {
+    "caseTrueId": "1476467",
+    "caseId": "PLAT310_GPU_EF"
+  },
+  {
+    "caseTrueId": "1476379",
+    "caseId": "PLAT311_GPU_CF"
+  },
+  {
+    "caseTrueId": "1476468",
+    "caseId": "PLAT313_GPU_EF"
+  },
+  {
+    "caseTrueId": "1476527",
+    "caseId": "PLAT316_GPU_EF"
+  },
+  {
+    "caseTrueId": "1476536",
+    "caseId": "PLAT317_GPU_EF"
+  },
+  {
+    "caseTrueId": "1476469",
+    "caseId": "PLAT424_Battery_EF"
+  },
+  {
+    "caseTrueId": "1476498",
+    "caseId": "PLAT425_Battery_EF"
+  },
+  {
+    "caseTrueId": "1476532",
+    "caseId": "PLAT426_Battery_EF"
+  },
+  {
+    "caseTrueId": "1476528",
+    "caseId": "PLAT432_Battery_EF"
+  },
+  {
+    "caseTrueId": "1476470",
+    "caseId": "PLAT438_Battery_EF"
+  },
+  {
+    "caseTrueId": "1476381",
+    "caseId": "PLAT439_Battery_CF"
+  },
+  {
+    "caseTrueId": "1476499",
+    "caseId": "PLAT439_Battery_EF"
+  },
+  {
+    "caseTrueId": "1476552",
+    "caseId": "PLAT444_Battery_EF"
+  },
+  {
+    "caseTrueId": "1476507",
+    "caseId": "PLAT486_Battery_EF"
+  },
+  {
+    "caseTrueId": "1476508",
+    "caseId": "PLAT531_Power_EF"
+  },
+  {
+    "caseTrueId": "1476567",
+    "caseId": "PLAT601_Storage_EF"
+  },
+  {
+    "caseTrueId": "1476739",
+    "caseId": "PLAT601_Storage_PD"
+  },
+  {
+    "caseTrueId": "1476490",
+    "caseId": "PLAT602_RAM_EF"
+  },
+  {
+    "caseTrueId": "1476740",
+    "caseId": "PLAT602_RAM_PD"
+  },
+  {
+    "caseTrueId": "1476491",
+    "caseId": "PLAT603_Storage_EF"
+  },
+  {
+    "caseTrueId": "1476451",
+    "caseId": "PLAT708_I/O_EF"
+  },
+  {
+    "caseTrueId": "1476452",
+    "caseId": "PLAT709_I/O_EF"
+  },
+  {
+    "caseTrueId": "1476453",
+    "caseId": "PLAT710_I/O_EF"
+  },
+  {
+    "caseTrueId": "1476537",
+    "caseId": "PLAT711_I/O_EF"
+  },
+  {
+    "caseTrueId": "1476454",
+    "caseId": "PLAT712_I/O_EF"
+  },
+  {
+    "caseTrueId": "1476456",
+    "caseId": "PLAT713_I/O_EF"
+  },
+  {
+    "caseTrueId": "1476505",
+    "caseId": "PLAT715_I/O_EF"
+  },
+  {
+    "caseTrueId": "1476516",
+    "caseId": "PLAT717_I/O_EF"
+  },
+  {
+    "caseTrueId": "1476549",
+    "caseId": "PLAT718_I/O_EF"
+  },
+  {
+    "caseTrueId": "1476559",
+    "caseId": "PLAT801_OS_EF"
+  },
+  {
+    "caseTrueId": "1476738",
+    "caseId": "USA005_PD_05"
+  },
+  {
+    "caseTrueId": "1476727",
+    "caseId": "PLAT861_OS_PD"
+  },
+  {
+    "caseTrueId": "1476429",
+    "caseId": "SMAT061_CF_01"
+  },
+  {
+    "caseTrueId": "1476585",
+    "caseId": "SMAT061_EF _02"
+  },
+  {
+    "caseTrueId": "1476586",
+    "caseId": "SMAT061_EF _03"
+  },
+  {
+    "caseTrueId": "1476587",
+    "caseId": "SMAT061_EF _04"
+  },
+  {
+    "caseTrueId": "1476422",
+    "caseId": "SMAT044_CF_01"
+  },
+  {
+    "caseTrueId": "1476582",
+    "caseId": "SMAT015_EF_01"
+  },
+  {
+    "caseTrueId": "1476483",
+    "caseId": "STAB101_EF"
+  },
+  {
+    "caseTrueId": "1476484",
+    "caseId": "STAB108_EF_02"
+  },
+  {
+    "caseTrueId": "1476524",
+    "caseId": "STAB111_EF"
+  },
+  {
+    "caseTrueId": "1476485",
+    "caseId": "STAB113_EF"
+  },
+  {
+    "caseTrueId": "1476486",
+    "caseId": "STAB114_EF"
+  },
+  {
+    "caseTrueId": "1476511",
+    "caseId": "STAB115_EF"
+  },
+  {
+    "caseTrueId": "1476487",
+    "caseId": "STAB118_EF"
+  },
+  {
+    "caseTrueId": "1476488",
+    "caseId": "STAB120_EF"
+  },
+  {
+    "caseTrueId": "1476513",
+    "caseId": "STAB121_EF"
+  },
+  {
+    "caseTrueId": "1476545",
+    "caseId": "STAB125_EF"
+  },
+  {
+    "caseTrueId": "1476512",
+    "caseId": "STAB126_EF"
+  },
+  {
+    "caseTrueId": "1476736",
+    "caseId": "STAB127_PD"
+  },
+  {
+    "caseTrueId": "1476737",
+    "caseId": "STAB128_PD"
+  },
+  {
+    "caseTrueId": "1476500",
+    "caseId": "SUBS101_Audio_EF_02"
+  },
+  {
+    "caseTrueId": "1476478",
+    "caseId": "SUBS102_Audio_EF_02"
+  },
+  {
+    "caseTrueId": "1476564",
+    "caseId": "SUBS102_Audio_EF_03"
+  },
+  {
+    "caseTrueId": "1476937",
+    "caseId": "SUBS108_Audio_CF_01"
+  },
+  {
+    "caseTrueId": "1476520",
+    "caseId": "SUBS108_Audio_EF_02"
+  },
+  {
+    "caseTrueId": "1476481",
+    "caseId": "SUBS108_Audio_EF_03"
+  },
+  {
+    "caseTrueId": "1476521",
+    "caseId": "SUBS108_Audio_EF_04"
+  },
+  {
+    "caseTrueId": "1476482",
+    "caseId": "SUBS110_Audio_EF"
+  },
+  {
+    "caseTrueId": "1476556",
+    "caseId": "SUBS111_Audio_EF_10"
+  },
+  {
+    "caseTrueId": "1476554",
+    "caseId": "SUBS201_Camera_EF_03"
+  },
+  {
+    "caseTrueId": "1476555",
+    "caseId": "SUBS201_Camera_EF_04"
+  },
+  {
+    "caseTrueId": "1476515",
+    "caseId": "SUBS202_Camera_EF_02"
+  },
+  {
+    "caseTrueId": "1476474",
+    "caseId": "SUBS203_Camera_EF_01"
+  },
+  {
+    "caseTrueId": "1476475",
+    "caseId": "SUBS203_Camera_EF_02"
+  },
+  {
+    "caseTrueId": "1476496",
+    "caseId": "SUBS204_Camera_EF_01"
+  },
+  {
+    "caseTrueId": "1476495",
+    "caseId": "SUBS204_Camera_EF_02"
+  },
+  {
+    "caseTrueId": "1476476",
+    "caseId": "SUBS401_TP_EF_02"
+  },
+  {
+    "caseTrueId": "1476477",
+    "caseId": "SUBS401_TP_EF_03"
+  },
+  {
+    "caseTrueId": "1476480",
+    "caseId": "SUBS401_TP_EF_04"
+  },
+  {
+    "caseTrueId": "1476479",
+    "caseId": "SUBS501_KB_EF_02"
+  },
+  {
+    "caseTrueId": "1476529",
+    "caseId": "SUBS502_LED_EF_02"
+  },
+  {
+    "caseTrueId": "1476548",
+    "caseId": "SUBS504_KB APP_EF_01"
+  },
+  {
+    "caseTrueId": "1476547",
+    "caseId": "SUBS504_KB APP_EF_04"
+  },
+  {
+    "caseTrueId": "1476535",
+    "caseId": "SUBS603_Sensor_EF_02"
+  },
+  {
+    "caseTrueId": "1476489",
+    "caseId": "SUBS603_Sensor_EF_03"
+  },
+  {
+    "caseTrueId": "1476938",
+    "caseId": "SUBS701_BT_CF_01"
+  },
+  {
+    "caseTrueId": "1481750",
+    "caseId": "SUBS703_WLAN_EF"
+  },
+  {
+    "caseTrueId": "1481815",
+    "caseId": "SUBS704_WLAN_EF"
+  },
+  {
+    "caseTrueId": "1476561",
+    "caseId": "SUBS705_WLAN_EF"
+  },
+  {
+    "caseTrueId": "1476542",
+    "caseId": "SUBS706_WLAN_EF"
+  },
+  {
+    "caseTrueId": "1476543",
+    "caseId": "SUBS707_WLAN_EF"
+  },
+  {
+    "caseTrueId": "1476544",
+    "caseId": "SUBS708_WLAN_EF"
+  },
+  {
+    "caseTrueId": "1476471",
+    "caseId": "SUBS709_WLAN_EF"
+  },
+  {
+    "caseTrueId": "1476560",
+    "caseId": "SUBS710_WLAN_EF"
+  },
+  {
+    "caseTrueId": "1481752",
+    "caseId": "SUBS711_BT_EF"
+  },
+  {
+    "caseTrueId": "1476538",
+    "caseId": "SUBS712_BT_EF"
+  },
+  {
+    "caseTrueId": "1476539",
+    "caseId": "SUBS713_BT_EF"
+  },
+  {
+    "caseTrueId": "1476540",
+    "caseId": "SUBS714_BT_EF"
+  },
+  {
+    "caseTrueId": "1476541",
+    "caseId": "SUBS715_BT_EF"
+  },
+  {
+    "caseTrueId": "1476472",
+    "caseId": "SUBS716_WLAN_EF"
+  },
+  {
+    "caseTrueId": "1476523",
+    "caseId": "SUBS737_LAN_EF"
+  },
+  {
+    "caseTrueId": "1476473",
+    "caseId": "SUBS738_LAN_EF"
+  },
+  {
+    "caseTrueId": "1476734",
+    "caseId": "TDAP005_PD_01"
+  },
+  {
+    "caseTrueId": "1476729",
+    "caseId": "TDAP037_PD_01"
+  },
+  {
+    "caseTrueId": "1476553",
+    "caseId": "USA000_EF_01"
+  },
+  {
+    "caseTrueId": "1476522",
+    "caseId": "USA000_EF_02"
+  },
+  {
+    "caseTrueId": "1476533",
+    "caseId": "USA000_EF_03"
+  },
+  {
+    "caseTrueId": "1476449",
+    "caseId": "USA000_EF_04"
+  },
+  {
+    "caseTrueId": "1476450",
+    "caseId": "USA000_EF_05"
+  },
+  {
+    "caseTrueId": "1476501",
+    "caseId": "USA005_EF_04"
+  },
+  {
+    "caseTrueId": "1476401",
+    "caseId": "USA0000_CF_06"
+  },
+  {
+    "caseTrueId": "1476741",
+    "caseId": "PLAT103_BIOS_PD"
+  },
+  {
+    "caseTrueId": "1476730",
+    "caseId": "PLAT110_BIOS_PD_03"
+  },
+  {
+    "caseTrueId": "1476731",
+    "caseId": "PLAT425_battery_PD"
+  },
+  {
+    "caseTrueId": "1476733",
+    "caseId": "SUBS401_TP_PD_05"
+  },
+  {
+    "caseTrueId": "1476728",
+    "caseId": "WHLK003_HLK_PD"
+  },
+  {
+    "caseTrueId": "1476588",
+    "caseId": "SMAT026_EF_01"
+  },
+  {
+    "caseTrueId": "1476580",
+    "caseId": "TDAP015_EF"
+  }
+]
