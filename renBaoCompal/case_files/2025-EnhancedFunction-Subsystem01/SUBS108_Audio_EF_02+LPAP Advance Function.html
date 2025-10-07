@@ -1,0 +1,2835 @@
+
+ 
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>
+		Welcome to TDMS --- Lenovo Test&Defect Management System
+		</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+	</head>
+	<script  language=javascript src="/tdms/js/common/dialog.js"></script>
+
+	<link href="/tdms/css/system/layout.css" rel="stylesheet" type="text/css" />
+<link href="/tdms/css/system/content.css" rel="stylesheet" type="text/css" />
+	
+	<body>
+	<table class="layout_table" style="height:100%">
+		<tr>
+			<td>
+				
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+  <head>
+    <base href="https://tdms.lenovo.com:443/tdms/"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=8; IE=7; IE=EDGE" />
+    <meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="expires" content="0">
+    <style type="text/css">
+    .quicklinkmenu {
+	    font-size: 0.9em;
+	    /* position: absolute;
+	    right:170px;
+	    top: 4px; */
+	    z-index: 10;
+	    display:inline-block;
+	}
+	ul.linkmenu {
+/* 	    float: left; */
+	    list-style: none outside none;
+	    margin: 0 1px 0 0;
+	    padding: 0;
+/*  	    width: 60px;  */
+	    
+	}
+	ul.linkmenu a {
+	    color: #FFFFFF;
+	    text-decoration: none;
+	}
+	ul.linkmenu li.linklist {
+/* 	    float: left; */
+/* 	    width: 250px; */
+	}
+	ul.linkmenu li.linklist a.linkcategory {
+	    background: none repeat scroll 0 0 transparent;
+	    color: #ffffff;
+ 	    display: block; 
+	   	font-family: Verdana, sans-serif; 
+	   	font-size:11px;
+/* 	    position: relative; */
+ 	    width: 40px;  
+	    z-index: 50;
+	    margin-top:0px;
+	}
+
+	ul.sublinkmenu {
+	    background-position: left top;
+	    background-repeat: no-repeat;
+	    font-size:11px;
+/* 	    float: left; */
+	    list-style: none outside none;
+	    margin: 0px 0 0 -14px;
+	    padding: 0px 0px; 
+	    position: absolute;
+	    width: 42px;  
+	    display: block;
+	}
+
+	ul.sublinkmenu li a {
+	    background: none repeat scroll 0 0 #6699CC;
+	    clear: left;
+	    float: left;
+	    padding: 4px 12px 0 6px;
+	 	width: 35px; 
+	}
+	ul.sublinkmenu a:hover, ul.sublinkmenu a:focus, ul.sublinkmenu a:active {
+	    background: none repeat scroll 0 0 #003366;
+	    margin-right: 1px;
+	}
+	ul.sublinkmenu li a span {
+	    color: #FFFFFF;
+/* 	    float: left; */
+	    padding-left: 8px;
+	}
+	li ul li span{
+		display:none;
+	}
+	li ul li:hover span{
+		display:block;
+		color: #FFFFFF;
+	}
+	ul li:hover ul li span{
+		display:block;
+	}
+	#logo_version {
+		position: relative;
+		top: 2px;
+		font-size: 22px;
+		font-style: italic;
+		color:#2e4e67;
+		font-weight: 900;
+	}
+    </style>
+  </head>
+  <link href="/tdms/css/system/jquery-ui.css" rel="stylesheet" type="text/css" />
+<link href="/tdms/css/menu/systemmenu.css" rel="stylesheet" type="text/css" />
+<link href="/tdms/css/system/common.css" rel="stylesheet" type="text/css" />
+<script  language=javascript src="/tdms/js/system/jquery.js"></script>
+<script  language=javascript src="/tdms/js/system/jquery-ui.js"></script>
+<script  language=javascript src="/tdms/js/common/dojo.js"></script>
+<script  language=javascript src="/tdms/js/common/init.js"></script>
+<script  language=javascript src="/tdms/js/common/common.js"></script>
+<script  language=javascript src="/tdms/js/common/utils.js"></script>
+<script  language=javascript src="/tdms/js/menu/systemmenu.js"></script>
+
+  
+  <body> 
+  <script>
+  $(function(){
+	  $(".quicklinkmenu").hover(function(){
+		  var $this = $(this);
+			var left = $this.offset().left;
+			var top = $this.offset().top + $this.height();
+			console.log(left + ":" + top + $(".sublinkmenu").css("position"));
+			$(".sublinkmenu").css("left" , left).css("top",top);
+	  });
+  });
+  </script>
+  
+				
+<form id="systemMenuForm" name="systemMenuForm" onsubmit="return true;" action="/tdms/homeAction.do" method="post">	
+    <table class="banner_frame" border=0>
+		<tr>
+			<td rowspan=3 class="system_banner">
+				<table class="banner_logo_table" border=0 >
+					<tr>
+						<td rowspan=4 class="logo_big" style="line-height:25px;">
+						 <img src="https://tdms.lenovo.com:443/tdms/images/lenovo_logo.png"/>
+						</td>
+						<td>	
+						</td>
+					</tr>
+					<tr><td class="logo_small">&nbsp;</td></tr>
+					<tr>
+						<!-- <td class="logo_small">&nbsp;&nbsp;Recommended Internet Browser is IE11.</td> -->
+						<td><div id="logo_version"></div></td>
+					</tr>
+					<tr>
+						<td  class="logo_small">
+						  &nbsp;
+						</td>
+					</tr>	
+				</table>
+			</td>
+			<td class="menu_top">
+				Welcome milly_gu@compal.com
+				<font color="#cccccc" style="font-weight:300">|</font>	 
+				<a class="menu_top_link" href="javascript:FxRefresh();FxPageSubmit('systemMenuForm','/tdms/homeAction','','sysPageId=page_common_home');"><img src="https://tdms.lenovo.com:443/tdms//images/home.png" class="icon_menu_top" alt="Home"/>Home</a>
+				<font color="#cccccc" style="font-weight:300">|</font> 	
+				<a class="menu_top_link" href="https://ipgpassport.lenovo.com/admin/toEditMyselfInfo.action"><img src="https://tdms.lenovo.com:443/tdms//images/personal_setting.png" class="icon_menu_top" alt="Personal setting"/>My Information</a>
+				<font color="#cccccc" style="font-weight:300">|</font>
+				<div class="quicklinkmenu">
+	 			<ul class="linkmenu">
+					<li class="linklist">
+						<a class="linkcategory" href="#" ><u>More</u> <small>▼</small></a>
+						<ul class="sublinkmenu">
+							<!--  <li><a href="http://ipgkms.lenovo.com"><span>KMS</span></a></li>-->
+							<li><a href="https://ngspms.lenovo.com/spms"><span>SPMS</span></a></li>
+							<li><a href="https://ipgpms.lenovo.com"><span>PMS</span></a></li>
+							<li><a href="https://mms.lenovo.com/index.aspx"><span>MMS</span></a></li>
+							<li><a href="https://ipgbi.lenovo.com/ims/"><span>IMS</span></a></li>
+						</ul>
+					</li>
+				</ul>
+			 	</div>
+				<font color="#cccccc" style="font-weight:300">|</font>	
+				<a class="menu_top_link" href="javascript:FxShowFreeWindow('manual/TDMS_User_Guide.html',1000,600);"><img src="https://tdms.lenovo.com:443/tdms//images/help.png" class="icon_menu_top" alt="Help"/>Help</a>
+				<font color="#cccccc" style="font-weight:300">|</font> 				
+				<a class="menu_top_link" href="javascript:top.location='https://tdms.lenovo.com:443/tdms/signoutAction!signout.do'"><img src="https://tdms.lenovo.com:443/tdms//images/sign_out.png" class="icon_menu_top" alt="Sign out"/>Log out</a>
+			</td> 
+		</tr>
+		<tr>
+			<td class="menu_blank">
+ 
+				<input type="hidden" id="showTab" value="menu_system_project,menu_system_defect,menu_system_test,menu_system_limitation,menu_system_Deviation,menu_system_dashboard" />
+				<input type="hidden" id="showSub" value="project_subsystem,defect_subsystem,test_subsystem,limitation_subsystem,deviation_subsystem,dashboard_subsystem" />
+				<input type="hidden" id="showMenu" value="project_menu_searchproject;defect_menu_myproject,defect_menu_quicksearch,defect_menu_myfavorite;test_menu_testcaselibrary,test_menu_managetestplan,test_menu_executetestplan;limitation_menu_limitationforapply,limitation_menu_limitationforapprove,limitation_menu_mylist,limitation_menu_finished;deviation_menu_deviationforapply,deviation_menu_mylist,deviation_menu_finished;menu_system_dashboard" />
+				<input type="hidden" id="curTab" name="curTab" value="menu_system_test"/>
+				<input type="hidden" id="curMenu" name="curMenu" value="test_menu_testcaselibrary"/>
+			</td>			
+		</tr>
+					 
+		<tr>
+			<td style="text-align:right;padding-right:0px">				
+				<table id = "tabTable" class="menu_system">
+					<tr>	
+						<td id="menu_system_dashboard" onclick="FxChangeMenuSystem(this);FxClickTab(this)" onmouseover="FxMouseOverMenuSystem(this)" onmouseout="FxMouseOutMenuSystem(this)" class="menu_system_inactive" style="display:none">My Page</td>
+						<td id="menu_system_admin" onclick="FxChangeMenuSystem(this);FxClickTab(this)" onmouseover="FxMouseOverMenuSystem(this)" onmouseout="FxMouseOutMenuSystem(this)" class="menu_system_inactive" style="display:none">Admin</td>
+						<td id="menu_system_project" onclick="FxChangeMenuSystem(this);FxClickTab(this)" onmouseover="FxMouseOverMenuSystem(this)" onmouseout="FxMouseOutMenuSystem(this)" class="menu_system_inactive" style="display:none">Project</td>
+						<td id="menu_system_test" onclick="FxChangeMenuSystem(this);FxClickTab(this)" onmouseover="FxMouseOverMenuSystem(this)" onmouseout="FxMouseOutMenuSystem(this)" class="menu_system_inactive" style="display:none">Test</td>
+						<td id="menu_system_defect" onclick="FxChangeMenuSystem(this);FxClickTab(this)" onmouseover="FxMouseOverMenuSystem(this)" onmouseout="FxMouseOutMenuSystem(this)" class="menu_system_inactive" style="display:none">Defect</td>
+						<td id="menu_system_limitation" onclick="FxChangeMenuSystem(this);FxClickTab(this)" onmouseover="FxMouseOverMenuSystem(this)" onmouseout="FxMouseOutMenuSystem(this)" class="menu_system_inactive" style="display:none">Limitation</td>
+						<td id="menu_system_Deviation" onclick="FxChangeMenuSystem(this);FxClickTab(this)" onmouseover="FxMouseOverMenuSystem(this)" onmouseout="FxMouseOutMenuSystem(this)" class="menu_system_inactive" style="display:none">Deviation</td>												
+					</tr>
+				</table>				
+			</td>
+		</tr>
+	</table>
+	
+	<!-- Module Menu -->
+	<table id="defect_subsystem" class="menu_module" style="display:none">
+		<tr>
+			
+			<td id="defect_menu_myproject" onclick="FxChangeMenuModule(this);FxClickMenu(this)" onmouseover="FxMouseOverMenuModule(this)" onmouseout="FxMouseOutMenuModule(this)" class="menu_module_inactive"  style="display:none">My project</td>
+			<td id="defect_menu_myfavorite" onclick="FxChangeMenuModule(this);FxClickMenu(this)" onmouseover="FxMouseOverMenuModule(this)" onmouseout="FxMouseOutMenuModule(this)" class="menu_module_inactive"  style="display:none;width:135px">My Favorite Defects</td>
+			<td id="defect_menu_mysearch" onclick="FxChangeMenuModule(this);FxClickMenu(this)" onmouseover="FxMouseOverMenuModule(this)" onmouseout="FxMouseOutMenuModule(this)" class="menu_module_inactive"  style="display:none;width:135px">Search in projects</td>
+			<td id="defect_menu_sharedefect" onclick="FxChangeMenuModule(this);FxClickMenu(this)" onmouseover="FxMouseOverMenuModule(this)" onmouseout="FxMouseOutMenuModule(this)" class="menu_module_inactive"  style="display:none">Share pool</td>
+			<td id="defect_menu_statistics" onclick="FxChangeMenuModule(this);FxClickMenu(this)" onmouseover="FxMouseOverMenuModule(this)" onmouseout="FxMouseOutMenuModule(this)" class="menu_module_inactive"  style="display:none">Statistics</td>
+			<td id="defect_menu_coordinator_releaseinfo" onclick="FxChangeMenuModule(this);FxClickMenu(this)" onmouseover="FxMouseOverMenuModule(this)" onmouseout="FxMouseOutMenuModule(this)" class="menu_module_inactive"  style="display:none">Release info</td>
+			<td id="defect_menu_quicksearch" class="menu_module_quick_search" style="display:none">
+			</td>
+			<td  class="menu_module_quick_search">				
+				<div style="width:20%;font-weight:normal;font-size:12px;font-weight:700;font-style:oblique;">
+					<div style="float:right">
+						Quick search
+						<input type="text" onfocus="FxChangeQuickSearch2Active(this)" id="quicksearchdefect" onblur="FxChangeQuickSearch2Inactive(this)" class="quicksearch_inactive" value="Input Defect ID" style="height:15px;background-color:#fcefc5;"/>
+						<input type="text" style="display:none;" />
+						<a id="a_quciksearch" href="javascript:quickSearch()"><img src="https://tdms.lenovo.com:443/tdms//images/quick_search.png" class="icon_quick_search" alt="Quick search"/></a>
+					</div>
+				</div>
+			</td>
+		</tr>
+	</table>
+	
+	<!-- Module Menu -->
+	<table id="project_subsystem" class="menu_module" style="display:none">
+		<tr>
+			
+			<td id="project_menu_searchproject" onclick="FxChangeMenuModule2(this);FxClickMenu(this)" onmouseover="FxMouseOverMenuModule(this)" onmouseout="FxMouseOutMenuModule(this)" class="menu_module_inactive"  style="display:none">Browse project</td>
+			<td id="project_menu_statistics" onclick="FxChangeMenuModule2(this);FxClickMenu(this)" onmouseover="FxMouseOverMenuModule(this)" onmouseout="FxMouseOutMenuModule(this)" class="menu_module_inactive"  style="display:none">Statistics</td>			
+			<td id="project_menu_workloadingexport" onclick="FxChangeMenuModule2(this);FxClickMenu(this)" onmouseover="FxMouseOverMenuModule(this)" onmouseout="FxMouseOutMenuModule(this)" class="menu_module_inactive"  style="display:none">Workload Tracking</td>
+			<td id="project_menu_aitracking" onclick="FxChangeMenuModule2(this);FxClickMenu(this)" onmouseover="FxMouseOverMenuModule(this)" onmouseout="FxMouseOutMenuModule(this)" class="menu_module_inactive"  style="display:none">AI Tracking</td>								
+			<td  class="menu_module_quick_search">						
+			</td>
+		</tr>
+	</table>
+	
+	<!-- Module Menu -->
+	<table id="admin_subsystem" class="menu_module" style="display:none">
+		<tr>
+			<td id="admin_menu_user" onclick="window.open('https://ipgpassport.lenovo.com/admin/listUser.action');" onmouseover="FxMouseOverMenuModule(this)" onmouseout="FxMouseOutMenuModule(this)" class="menu_module_inactive"  style="display:none">User</td>
+			<td id="admin_menu_department" onclick="FxChangeMenuModule3(this);FxClickMenu(this)" onmouseover="FxMouseOverMenuModule(this)" onmouseout="FxMouseOutMenuModule(this)" class="menu_module_inactive"  style="display:none">Department</td>
+			<td id="admin_menu_role" onclick="FxChangeMenuModule3(this);FxClickMenu(this)" onmouseover="FxMouseOverMenuModule(this)" onmouseout="FxMouseOutMenuModule(this)" class="menu_module_inactive"  style="display:none">Role</td>
+			<td id="admin_menu_workflow" onclick="FxChangeMenuModule3(this);FxClickMenu(this)" onmouseover="FxMouseOverMenuModule(this)" onmouseout="FxMouseOutMenuModule(this)" class="menu_module_inactive"  style="display:none">Workflow</td>
+			<td id="admin_menu_datasync" onclick="FxChangeMenuModule3(this);FxClickMenu(this)" onmouseover="FxMouseOverMenuModule(this)" onmouseout="FxMouseOutMenuModule(this)" class="menu_module_inactive"  style="display:none">Data Sync</td>
+			<td id="admin_menu_systemconst" onclick="FxChangeMenuModule3(this);FxClickMenu(this)" onmouseover="FxMouseOverMenuModule(this)" onmouseout="FxMouseOutMenuModule(this)" class="menu_module_inactive"  style="display:none">System const</td>
+			<td id="admin_menu_systeminfo"  onclick="FxChangeMenuModule3(this);FxClickMenu(this)" onmouseover="FxMouseOverMenuModule(this)" onmouseout="FxMouseOutMenuModule(this)" class="menu_module_inactive"  style="display:none">System information</td>
+			<!-- <td id="admin_menu_uploadavl" onclick="FxChangeMenuModule3(this);FxClickMenu(this)" onmouseover="FxMouseOverMenuModule(this)" onmouseout="FxMouseOutMenuModule(this)" class="menu_module_inactive">Upload AVL</td> -->
+			<td  class="menu_module_quick_search">				
+			</td>
+		</tr>
+	</table>
+	
+	<!-- baizhg modify start -->
+	<!-- Module Menu -->
+	<table id="test_subsystem" class="menu_module" style="display:none">
+		<tr>
+			
+			<td id="test_menu_feature" onclick="FxChangeMenuModule4(this);FxClickMenu(this)" onmouseover="FxMouseOverMenuModule(this)" onmouseout="FxMouseOutMenuModule(this)" class="menu_module_inactive" style = "width:150px;display:none" >Feature</td>
+			<td id="test_menu_testcaselibrary" onclick="FxChangeMenuModule4(this);FxClickMenu(this)" onmouseover="FxMouseOverMenuModule(this)" onmouseout="FxMouseOutMenuModule(this)" class="menu_module_inactive" style = "width:150px;display:none" >Test case DB</td>
+			<td id="test_menu_mvp" onclick="FxChangeMenuModule4(this);FxClickMenu(this)" onmouseover="FxMouseOverMenuModule(this)" onmouseout="FxMouseOutMenuModule(this)" class="menu_module_inactive" style = "width:150px;display:none" >MVP</td>
+			<td id="test_menu_managetestplan" onclick="FxChangeMenuModule4(this);FxClickMenu(this)" onmouseover="FxMouseOverMenuModule(this)" onmouseout="FxMouseOutMenuModule(this)" class="menu_module_inactive"  style = "width:150px;display:none">Manage test plan</td>
+			<td id="test_menu_executetestplan" onclick="FxChangeMenuModule4(this);FxClickMenu(this)" onmouseover="FxMouseOverMenuModule(this)" onmouseout="FxMouseOutMenuModule(this)" class="menu_module_inactive"  style = "width:150px;display:none">Test execution</td>
+			<td id="test_menu_testtools" onclick="FxChangeMenuModule4(this);FxClickMenu(this)" onmouseover="FxMouseOverMenuModule(this)" onmouseout="FxMouseOutMenuModule(this)" class="menu_module_inactive"  style = "width:150px;display:none">Test tool library</td>
+			<!-- <td id="test_menu_report" onclick="FxChangeMenuModule4(this);FxClickMenu(this)" onmouseover="FxMouseOverMenuModule(this)" onmouseout="FxMouseOutMenuModule(this)" class="menu_module_inactive" style = "width:150px;display:none">Report</td> -->
+			<td  class="menu_module_quick_search">				
+			</td>
+		</tr>
+	</table>
+	
+	<!-- Module Menu -->
+	<table id="limitation_subsystem" class="menu_module" style="display:none">
+		<tr>
+			<td id="limitation_menu_limitationforapply" onclick="FxChangeMenuModule5(this);FxClickMenu(this)" onmouseover="FxMouseOverMenuModule(this)" onmouseout="FxMouseOutMenuModule(this)" class="menu_module_inactive"  style = "width:170px;display:none">Apply limitation<br /></td>
+			<td id="limitation_menu_limitationforapprove" onclick="FxChangeMenuModule5(this);FxClickMenu(this)" onmouseover="FxMouseOverMenuModule(this)" onmouseout="FxMouseOutMenuModule(this)" class="menu_module_inactive"  style = "width:170px;display:none">Approve limitation<br /></td>
+			<td id="limitation_menu_mylist" onclick="FxChangeMenuModule5(this);FxClickMenu(this)" onmouseover="FxMouseOverMenuModule(this)" onmouseout="FxMouseOutMenuModule(this)" class="menu_module_inactive" style="width:200px;display:none">Limitation under process<br /></td>
+			<td id="limitation_menu_finished" onclick="FxChangeMenuModule5(this);FxClickMenu(this)" onmouseover="FxMouseOverMenuModule(this)" onmouseout="FxMouseOutMenuModule(this)" class="menu_module_inactive" style="width:170px;display:none">Limitation list<br /></td>
+			<td  class="menu_module_quick_search">			
+			<br /></td>
+		</tr>
+	</table>
+	
+	<!-- Module Menu -->
+	<table id="deviation_subsystem" class="menu_module" style="display:none">
+		<tr>
+			<td id="deviation_menu_deviationforapply" onclick="FxChangeMenuModule6(this);FxClickMenu(this)" onmouseover="FxMouseOverMenuModule(this)" onmouseout="FxMouseOutMenuModule(this)" class="menu_module_inactive"  style = "width:170px;display:none">Apply deviation<br /></td>
+			<td id="deviation_menu_deviationforapprove" onclick="FxChangeMenuModule6(this);FxClickMenu(this)" onmouseover="FxMouseOverMenuModule(this)" onmouseout="FxMouseOutMenuModule(this)" class="menu_module_inactive"  style = "width:170px;display:none">Approve deviation<br /></td>
+			<td id="deviation_menu_mylist" onclick="FxChangeMenuModule6(this);FxClickMenu(this)" onmouseover="FxMouseOverMenuModule(this)" onmouseout="FxMouseOutMenuModule(this)" class="menu_module_inactive" style="width:200px;display:none">Deviation under process<br /></td>
+			<td id="deviation_menu_finished" onclick="FxChangeMenuModule6(this);FxClickMenu(this)" onmouseover="FxMouseOverMenuModule(this)" onmouseout="FxMouseOutMenuModule(this)" class="menu_module_inactive" style="width:170px;display:none">Deviation list<br /></td>
+			<td  class="menu_module_quick_search">			
+			<br /></td>
+		</tr>
+	</table>
+	
+	<table id="dashboard_subsystem" class="menu_module" style="display:none">
+		<tr>
+			<td id="dashboard_menu" style="width:170px;display:none">&nbsp;<br /></td>
+			<td class="menu_module_quick_search"><br /></td>
+		</tr>
+	</table>
+</form>
+
+
+
+
+    
+    <script language="javaScript">
+		FxRefresh();
+    </script>
+  </body>
+
+</html>
+		
+			</td>
+		</tr>
+		<tr>
+			<td class="content" style="vertical-align:top;padding-top:0px;">
+					
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+	<head>
+		<link href="/tdms/css/system/common.css" rel="stylesheet" type="text/css" />
+<link href="/tdms/css/system/jquery-ui.css" rel="stylesheet" type="text/css" />
+<link href="/tdms/css/system/testsectiongroupitem.css" rel="stylesheet" type="text/css" />
+<script  language=javascript src="/tdms/js/common/dojo.js"></script>
+<script  language=javascript src="/tdms/js/common/utils.js"></script>
+<script  language=javascript src="/tdms/js/common/grid.js"></script>
+<script  language=javascript src="/tdms/js/common/common.js"></script>
+<script  language=javascript src="/tdms/js/common/validate.js"></script>
+<script  language=javascript src="/tdms/js/module/casemgt/testcaseapprove.js"></script>
+<script  language=javascript src="/tdms/js/
+			module/casemgt/testcasedebug.js"></script>
+<script  language=javascript src="/tdms/js/module/casemgt/testcaseutil.js"></script>
+<script  language=javascript src="/tdms/js/module/casemgt/testcasemgt.js"></script>
+<script  language=javascript src="/tdms/js/module/casemgt/sectiongroupitem.js"></script>
+<script  language=javascript src="/tdms/js/
+			module/casemgt/testcasebasic.js"></script>
+<script  language=javascript src="/tdms/js/system/jquery.js"></script>
+<script  language=javascript src="/tdms/js/system/jquery-ui.js"></script>
+<script  language=javascript src="/tdms/js/common/imgGallary.js"></script>
+
+		
+		<title>New/Edit test case</title>
+		<meta http-equiv="pragma" content="no-cache">
+		<meta http-equiv="cache-control" content="no-cache">
+		<meta http-equiv="expires" content="0">
+		<SCRIPT LANGUAGE="JavaScript">
+			$(document).ready(function() { 
+				document.oncontextmenu = function(){
+					return false;
+				}
+				
+				document.onselectstart = function(){
+					return false;
+				}
+				
+				document.onkeydown = function(){
+					if((event.ctrlKey) &&  window.event.keyCode == 67){
+						return false;
+					}
+				}
+				showInofs();
+				fxChangeCategory();
+				
+				// Set table rows color -- Add by WJC 2019/11/15
+				$("#course_in_case_tbody tr:odd").addClass("trOdd");
+				$("#course_in_case_tbody tr:even").addClass("trEven");
+			});
+			
+			function fxChangeCategory(){
+				var categoryId = $("#defaultCategoryId").val();
+				$.ajax({
+					type : "POST",
+					url : "caseSelectCategoryUser.action",
+	        		data: {
+	        			categoryId: categoryId
+	        		},
+					success : function(data) {
+						if(data == 1){
+							$("#multipleUsersStr").show();
+							$("#multipleUsersSel").show();							
+							
+						}else{
+						 	$("#multipleUsersStr").hide();
+							$("#multipleUsersSel").hide(); 
+							$("#multipleUsersSelect").val(0);
+						}							
+					}
+				});				
+			}
+			
+			//expand status:0 , enclose status:1
+			function fxPageCaseExpand(obj,divName)
+			{
+			    if(obj != null)
+				{
+					if(obj.src != null)
+					{
+						var content_div = document.getElementById(divName);
+						if(obj.src.indexOf('menu_minus') != -1 )
+						{
+							content_div.style.display = "none";
+							obj.src = "images/system/menu_plus.gif";
+						}
+						else 
+						{
+							content_div.style.display = "";
+							obj.src = "images/system/menu_minus.gif";
+						}
+					}
+				}
+			}
+			//added by Zolo on 2012/4/2. Image preview start.
+			function showPreviewImg(spec){
+				var len = $("input[id^='previewBtn_']").length;
+				if(len>1){
+					imgGal.preview(spec);
+					$("#previewDialog").dialog("open");
+				}else{
+					imgGal.preview(spec);
+					$("#previewOneDialog").dialog("open");
+				}
+			}
+			
+			
+			function imgZoom(obj){
+				var zoom=parseInt(obj.style.zoom, 10)||100;
+				zoom+=event.wheelDelta/12;
+				if (zoom>0)
+					obj.style.zoom=zoom+'%';
+			}
+			
+			// 删除"draft"状态的Case -- Add by WJC 2019/9/29 
+			function deleteDraftCase() {
+			  	var caseBOId = document.getElementById("caseBOId").value;
+			  	if (caseBOId !== null || caseBOId !== "") {
+			    	if (confirm("Are you sure to delete this test case?")) {
+			      		$.ajax({
+			        		type: "POST",
+			        		async: false,
+			        		contentType: "application/json;charset=UTF-8",
+			        		url: "testCaseAction!deleteDraft.do",
+			        		data: {
+			          			caseBOId: caseBOId
+			        		},
+			        		success: function (response) {
+			          			if (response === '"1"') {
+			          				alert("Delete successful!");
+			          				// 不显示关闭提示
+			          				window.opener = null;
+			          				window.open("","_self");
+		          				 	// 关闭当前窗口
+		          				 	window.close();
+			          			} else if (response === '"0"') {
+			          				alert("Delete failed!");
+			          			}
+			        		},
+			        		error: function(XMLHttpRequest, textStatus, errorThrown) {
+			          			alert("Delete failed!");
+			          			console.log("*****Delete failed!*****"
+			          				+ "\n\rdata: " + this.data
+			          				+ "\n\rstatus: " + XMLHttpRequest.status
+			          				+ "\n\rtextStatus: " + textStatus
+			          				+ "\n\rerrorThrown: " + errorThrown
+			          				+ "\n\r***************");
+			        		}
+			      		});
+			    	}
+			  } else {
+			  	alert("Delete failed!");
+			  	console.log("*****Delete failed!*****"
+			  		+ "\n\rNot found case table id"
+			  		+ "\n\r***************");
+			  }
+			}
+		</SCRIPT>
+		<STYLE type="text/css">
+			.doubleselect br {display: none;}
+			
+			.tableList {	
+				width:98%;	
+				margin: 0px 0px 0px 20px; 
+				padding: 8px 0px 12px;
+				cursor:default;		
+				/*for the table's border by baizhg*/
+				border-collapse:collapse;
+			}
+			.tableList table {	
+				cursor:default;
+				align:center;		
+				border: solid 1px #00FFFF;	
+			}
+			
+			.tableList thead {
+				border: solid 1px #ffffff;
+				font-size:14px;
+				font-weight:700;
+				line-height: 15px;
+				text-align:left;
+				font-family: verdana, sans-serif;
+				height:25px;
+				line-height:15px;
+				text-align:center;
+				color:#003366;
+				/*background-color:#eeeeee;*/
+				background-color:#dddddd;
+			}
+			
+			.tableList td {	
+				/*for the table's border by baizhg*/
+				border: solid 1px #AAAAAA;
+				font-size:11px;
+				line-height: 15px;
+				text-align:left;
+				font-family: verdana, sans-serif;
+				height:25px;
+				word-wrap:break-word;
+			}
+			
+			.tableList tr {
+				border: solid 1px #ffffff;
+				height:25px;
+				line-height:15px;
+			}
+			
+			.tableList thead tr th {	
+				/*for the table's border by baizhg*/
+				border: solid 1px #AAAAAA;
+				font-size:11px;
+				line-height: 15px;
+				text-align:center;
+				font-family: verdana, sans-serif;
+				height:25px;
+			}
+		</STYLE>
+	</head>
+	<body onload="setRowColorWithoutPage();">
+		<div id="monoabc" style="width:100%;height:1000%;position:absolute;top:0;left:0;background:#fff">
+		</div>
+				<noscript> 
+			<iframe scr="*.htm"></iframe£¾ 
+		</noscript>
+		<table class="content_navigation" border=0><tr><td>View case</td></tr></table>
+				
+		<table class="content_functionMenu" border=0>
+			<tr>
+				<td>
+					
+					<!-- 可以编辑"draft"状态Case的用户，就可以删除它 -->
+					
+					<!-- end -->
+					
+					<a class="menu_function_link" href="javascript:FxViewCaseHistoryt()"><img class="icon_menu_function" src="/tdms/images/history.png"/>History</a>
+					<font color='#cccccc' style='font-weight:300'>|</font>
+					<a class="menu_function_link" href="javascript:fxViewCaseGroup();"><img class="icon_menu_function" src="/tdms/images/version.png"/>Version list</a>
+					<font color='#cccccc' style='font-weight:300'>|</font>
+					<a class="menu_function_link" href="javascript:goLibrary()"><img class="icon_menu_function" src="/tdms/images/return.png"/>Return</a>
+				</td>
+			</tr>
+		</table>
+		
+					
+<form id="caseViewForm" name="caseForm" onsubmit="return true;" action="/tdms/testCaseAction.do" method="post">
+			<input type="hidden" name="oper" value="0" id="caseViewForm_oper"/>
+			<input type="hidden" name="caseBO.caseId" value="33676" id="caseBOId"/>
+			<input type="hidden" name="caseBO.status" value="2" id="caseStatus"/>
+			<input type="hidden" name="matrixes" value="" id="caseViewForm_matrixes"/>
+			<input type="hidden" name="toolids" value="" id="caseViewForm_toolids"/>
+			<input type="hidden" name="currentCategoryRole" value="4" id="caseViewForm_currentCategoryRole"/>
+			<input type="hidden" name="caseId" value="33676" id="caseViewForm_caseId"/>
+			<input type="hidden" name="caseType" value="1" id="caseType"/>
+			<input type="hidden" name="caseCopyFlag" value="" id="caseCopyFlag"/>
+			<input type="hidden" name="groupId" value="6902" id="caseViewForm_groupId"/>
+			<input type="hidden" name="draftId" value="" id="caseViewForm_draftId"/>
+			<input type="hidden" name="caseBO.groupId" value="6902" id="caseViewForm_caseBO_groupId"/>
+			<input type="hidden" name="entry" value="0" id="entry"/>
+			<input type="hidden" name="submiter" value="" id="caseViewForm_submiter"/>
+			<input type="hidden" name="approver" value="" id="caseViewForm_approver"/>
+			
+			<input type="hidden" name="cname" value="" id="caseViewForm_cname"/>
+			
+			<input type="hidden" name="fileName" value="" id="caseViewForm_fileName"/>
+			<input type="hidden" name="downloadFileName" value="" id="caseViewForm_downloadFileName"/>
+			
+			<input type="hidden" name="caseReturnFlag" value="" id="caseReturnFlag"/>
+			
+    		
+    		
+    			
+
+
+<table class="back_body" border=0>
+	<tr>
+		<td class="expandTitle">
+			<img src="images/system/menu_minus.gif"
+				onclick="fxPageCaseExpand(this,'basicdiv');" />
+			Basic
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<div id="basicdiv">
+				<table class="back_body2">
+					<tr>
+						<td class="atrName" nowrap="nowrap">
+							Case type :
+						</td>
+						<td>
+							<input type="text" name="caseBO.caseClassName" value="SW" disabled="disabled" id="caseViewForm_caseBO_caseClassName" class="txt"/>
+						</td>
+						<td width="50px"/>
+						<td width="56px"/>
+						<td class="atrName" nowrap="nowrap">
+							Case ID :
+						</td>
+						<td>
+							<input type="text" name="caseBO.caseAlias" value="SUBS108_Audio_EF_02" disabled="disabled" id="caseViewForm_caseBO_caseAlias" class="txt"/>
+						</td>
+					</tr>
+					<tr>
+						<td class="atrName" nowrap="nowrap">
+							Case name :
+						</td>
+						<td>										
+							<input type="text" name="caseBO.caseName" value="LPAP Advance Function" disabled="disabled" id="caseViewForm_caseBO_caseName" class="txt"/>
+						</td>
+						<td width="50px"></td>
+						<td width="56px"></td>
+						<td class="atrName">
+							Category folder :
+						</td>
+						<td>
+							<input type="text" name="caseBO.categoryName" value="Subsystem" disabled="disabled" id="caseViewForm_caseBO_categoryName" class="txt"/>
+							<input type="hidden" name="cid" value="2309" id="caseViewForm_cid"/>
+							<input type="hidden" name="" value="2309" id="defaultCategoryId"/>
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td class="atrName" nowrap="nowrap">
+							Version :
+						</td>
+						<td>
+							<input type="text" name="caseBO.version" value="V5.25.03.1" disabled="disabled" id="caseViewForm_caseBO_version" class="txt"/>
+						</td>
+						<td></td>
+						<td></td>
+						<td class="atrName" nowrap="nowrap">
+							Execution type :
+						</td>
+						<td>
+							<input type="text" name="caseBO.caseType" value="Matrix" disabled="disabled" id="caseViewForm_caseBO_caseType" class="txt"/>
+						</td>
+					</tr>
+					<tr>
+						<td class="atrName" nowrap="nowrap">
+							Keywords :
+						</td>
+						<td>
+							<input type="text" name="caseBO.keyword" value="Low Power Audio Playback" disabled="disabled" id="caseViewForm_caseBO_keyword" class="txt"/>
+						</td>
+						<td></td>
+						<td></td>
+						<td class="atrName">
+							Status :
+						</td>
+						<td>
+							<input type="text" name="caseBO.isactive" value="Active" disabled="disabled" id="caseViewForm_caseBO_isactive" class="txt"/>
+						</td>
+					</tr>
+					<tr>
+						<td class="atrName" nowrap="nowrap">
+						Auto type :
+					</td>
+					<td nowrap="nowrap">
+						<div class="doubleselect">
+							
+								<input type = "checkbox" id="checkIs" name="" style="margin-left:0px;margin-top:5px;margin-right:0px;margin-bottom:5px" disabled="true">
+								<select name="caseBO.autoTypeId" disabled="disabled" id="selautoType" class="selNew">
+    <option value="-100"
+    >--Select item--</option>
+    <option value="1">APP UI</option>
+    <option value="2">Battery Life</option>
+    <option value="6">Others</option>
+    <option value="3">Performance</option>
+    <option value="7">Performance-ITS</option>
+    <option value="4">Stress-AID</option>
+    <option value="5">Stress-Auto</option>
+
+
+</select>
+							
+							
+						</div>
+					</td>
+					</tr>
+					<tr>
+						<td class="atrName" nowrap="nowrap">
+							Workloading :
+						</td>
+						<td style = "font-size: 12px;font-family: verdana, sans-serif;font-weight: 700;color:black;word-wrap: normal;" nowrap="nowrap" colspan="2">
+							<input type="text" name="caseBO.workloading" value="145" disabled="disabled" id="caseViewForm_caseBO_workloading" class="txt"/>(Min)
+						</td>
+						<td></td>
+						<td class="atrName">
+							OS :
+						</td>
+						<td style = "height:58px">
+							<select name="osList" size="3" id="caseViewForm_osList" class="sel" multiple="multiple">
+    <option value="2">Win 10</option>
+    <option value="474">Win 11</option>
+
+
+</select>
+						</td>
+					</tr>
+					<tr>
+						<td class="atrName" nowrap="nowrap">
+							Priority :
+						</td>
+						<td>
+							<input type="text" name="caseBO.priorityName" value="Middle" disabled="disabled" id="caseViewForm_caseBO_priorityName" class="txt"/>
+						</td>
+						<td></td>
+						<td></td>
+						<td class="atrName" nowrap="nowrap">
+							Phase :
+						</td>
+						<td>
+							<input type="text" name="caseBO.selectedTags" value="EVT,FVT,FVT 2,Lifecycle,SIT,SIT 2" disabled="disabled" id="caseViewForm_caseBO_selectedTags" class="txt"/>
+						</td>
+					</tr>
+					<tr>
+						<td class="atrName" nowrap="nowrap">
+							Creator :
+						</td>
+						<td>
+							<input type="text" name="caseBO.creator" value="yinzp" disabled="disabled" id="caseViewForm_caseBO_creator" class="txt"/>
+						</td>
+						<td></td>
+						<td></td>
+						<td class="atrName" nowrap="nowrap">
+							Owner :
+						</td>
+						<td>
+							<input type="text" name="caseBO.owner" value="yinzp" disabled="disabled" id="caseViewForm_caseBO_owner" class="txt"/>
+						</td>
+					</tr>
+					<tr>
+						<td hidden id="multipleUsersStr" class="atrName" nowrap="nowrap">
+							Multiple testers :
+						</td>
+						<td hidden id="multipleUsersSel">
+							
+							
+		 						<input type="text" name="" value="No" disabled="disabled" id="caseViewForm_" class="txt"/>
+							
+	 					</td>
+					</tr>
+
+					<!-- 
+						Description: Training Course
+						Add by WJC 2019/10/30 
+					-->
+					
+					<!-- Add end 2019/10/30 -->
+					<tr>
+						<td class="atrName" nowrap="nowrap">
+							Objective :
+						</td>
+						<td colspan="5" style = "height:82px">
+								 <div id="objectiveDiv"   class="testDiv"  style="height:150px;">
+								 	 <p>Objective: Ensure the advance function of LPAP is ok, each supported module need run this test.</p>
+<p><br />Trigger propose: To make sure LPAP all features and system compatibility or stability is ready.</p>
+<p><br />TC execute condition: Any SW or HW modified relation with LPAP functions.</p>
+                                          </div>
+						</td>
+						
+					</tr>
+					<tr>
+						<td class="atrName" nowrap="nowrap">
+							Release notes :
+						</td>
+						
+						<td colspan="5" style = "height:82px">
+						 <div id="descriptionDiv"   class="testDiv">
+						 	<p>Spec change:<br />Note: Extra interrupts might be expected if ISV SW components(APOs/services/applications) are available on OEM platforms.</p>
+                                  </div>
+						</td> 
+						
+					</tr>
+					
+						<tr id="matrix_tr_1" >
+							<td class="atrName" nowrap="nowrap">
+								Type matrix :
+							</td>
+							<td colspan="5" style = "height:58px">
+								<select name="caseMatrix" size="3" id="caseMatrix" class="sel" style="width:240px">
+    <option value="172111">Audio codec vender1</option>
+    <option value="172112">Audio codec vender2</option>
+    <option value="172113">...</option>
+
+
+</select>
+							</td>
+						</tr>
+					
+					<tr>
+						<td class="atrName" nowrap="nowrap">
+							Case tools :
+						</td>
+						<td colspan="5" style = "height:58px">
+							<select name="caseTool" size="3" id="caseTool" class="sel" style="width:240px">
+    <option value="282">LPAP</option>
+
+
+</select>
+							<!-- Download case tools 2022/07/04 -->
+							<span style="margin-left: 8px; vertical-align: top;">
+								<a 
+									onclick="openDownloadCaseToolsWindow('caseTool');"
+									style="cursor: pointer;"
+								>
+									Download Case Tools
+								</a>
+							</span>		
+							<!----- 2022/07/04 end ----->
+						</td>
+					</tr>
+					<tr>
+						<td class="atrName" nowrap="nowrap">
+							Attachment 
+
+							:
+						</td>
+						<td colspan="5">
+							<table  id="attachmentTbl">
+								
+									<tr  id='944061' class="attachment">
+										<td><a href="javascript:fxAttachFiledownload('944061')">2Ch_8bit_8k_Sweep.wav</a>
+										</td>
+										
+										<td>
+										
+										</td>
+									</tr>
+								
+							</table>
+						</td>
+					</tr>
+			</table>
+			</div>
+		</td>
+	</tr>
+</table>
+				<table class="section_back_body">
+					<tr>
+						<td class="expandTitle" nowrap="nowrap">
+							<img src="images/system/menu_minus.gif"
+								onclick="fxPageCaseExpand(this,'sectionTable');" />
+							Content
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<table id="testcase_tab_button" class="back_body2">
+								<tr>
+									<td>
+										
+
+
+<noscript> 
+	<iframe src="*.htm"></iframe>
+</noscript>
+<script>
+function initDownload(obj, sectionId) {
+	var currentCategoryRole = $("input[name='currentCategoryRole']").val() == undefined ? '2' : $("input[name='currentCategoryRole']").val();
+	var url = "testCaseAction!initDownload.action?section_id=" + sectionId + "&currentCategoryRole=" + currentCategoryRole + "&time=" + new Date() ;
+	var features = "dialogWidth=800px;dialogHeight=400px;";
+	
+	if(window.ActiveXObject){
+		var retValue = window.showModalDialog(url, "", features);
+		if (retValue!= undefined && retValue == 1) {
+			$(obj).remove();
+		}
+	} else {
+		var iWidth = 815;
+		var iHeight = 415;
+		var iTop = (window.screen.availHeight-30-iHeight)/2;
+		var iLeft = (window.screen.availWidth-10-iWidth)/2;
+		window.open(url, '','height='+iHeight+',width='+iWidth+',top='+ iTop +',left='+ iLeft +',toolbar=no,menubar=no,scrollbars=no,resizable=no,location=no,status=no'); 
+	}
+}
+</script>
+<!--=================== template start ===================-->
+<script id="sectionColumnTemplate" type="text/x-jquery-tmpl">
+	<tr class="sectionTrClass_${sectionId}_">
+		<td class="operationTdClass">
+			<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_${sectionId}_', ${sectionId}, 2)" class="imgButClass" title="Remove section" style="display:none"/>
+			<img src="images/section_edit.png" onclick="sectionDialog.openSection(${sectionId}, 1)" class="imgButClass" title="Update section" style="display:none"/>
+			<img src="images/section_insert.png" onclick="sectionDialog.openSection(${sectionId}, 2)" class="imgButClass" title="Insert section" style="display:none"/>
+			<img src="images/new.png" onclick="sectionDialog.openGroupItem(${sectionId}, -1, -1, -1, 0)" class="imgButClass" title="Add group/item" style="display:none"/>
+		</td>
+		<td><img onclick="extendNode('sectionTrClass_${sectionId}_')" class="blockClass" src="images/collapse.png"/></td>
+		<td></td>
+		<td colspan="6">
+			<table width="100%">
+				<tr>
+					<td colspan=3 width="80%"><strong>Section : </strong><span class="sectionSpanClass" {{if color}}style="color: #0782FC;"{{/if}}>${sectionName}</span></td>
+					<td width="20%"><strong>Attachment : </strong>
+						{{if attachmentId == 1}}
+							<img src="images/download.png" style="cursor: pointer;" onclick="initDownload(this, ${sectionId})" id="imgAttach_${sectionId}"/>
+						{{/if}}
+					</td>
+				</tr>
+				<tr>
+					<td width="30%"><strong>Workloading : </strong><span class="workloadSpanClass">${workloading}</span>(Min)</td>
+					<td width="30%"><strong>LeadingTime : </strong><span class="leadingTimeSpanClass">${leadingTime}</span>(Min)</td>
+					<td width="20%"><strong>Phase : </strong><span class="tagSpanClass">${selectedTags}</span></td>
+					<td width="20%">
+						<strong>Test Log Mandatory :</strong>
+						<span class="tagSpanClass">
+							{{if testLogMandatory == 1}}
+								Y
+							{{else}}
+								N
+							{{/if}}
+						</span>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</script>
+
+<script id="sectionItemColumnTemplate" type="text/x-jquery-tmpl">
+	<tr class="sectionTrClass_${sectionId}_${itemId}_">
+		<td class="operationTdClass">
+			<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_${sectionId}_${itemId}_', ${itemId}, 3)" class="imgButClass" title="Remove case item" style="display:none"/>
+			<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(${sectionId}, ${itemId}, -1, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+			<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(${sectionId}, ${itemId}, -1, 3, 2)" class="imgButClass" title="Insert item/group" style="display:none"/>
+		</td>
+		<td><img src="images/tree/T.png"/></td>
+		<td></td>
+		<td colspan=3 width="37%" class="sectionTdClass">
+			<div {{if itemColorLeft}}style="color: #0782FC;"{{/if}}>{{html caseItem}}</div>
+		</td>
+		<td colspan=3 width="35%" class="sectionTdClass">
+			<div {{if itemColorRight}}style="color: #0782FC;"{{/if}}>{{html expectedResult}}</div>
+		</td>
+		<td colspan=3 width="17%" class="sectionTdClass">
+           	<div style="text-align:center;">
+				{{if testLogMandatory == 1}}
+					Y
+				{{else}}
+					N
+				{{/if}}
+           	</div>
+		</td>
+	</tr>
+</script>
+
+<script id="sectionGroupColumnTemplate" type="text/x-jquery-tmpl">
+	<tr class="sectionTrClass_${sectionId}_group_${itemId}_">
+		<td class="operationTdClass">
+			<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_${sectionId}_group_${itemId}_', ${itemId}, 4)" class="imgButClass" title="Remove group" style="display:none"/>
+			<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(${sectionId}, ${itemId}, -1, 4, 1)" class="imgButClass" title="Edit group" style="display:none"/>
+			<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(${sectionId}, ${itemId}, -1, 4, 2)" class="imgButClass" title="Insert item/group" style="display:none"/>
+			<img src="images/new.png" onclick="sectionDialog.openGroupItem(${sectionId}, -1, ${itemId}, -1, 0)" class="imgButClass" title="Add case item" style="display:none"/>
+		</td>
+		<td><img src="images/tree/T.png"/></td><td><img onclick="extendNode('sectionTrClass_${sectionId}_group_${itemId}_')" class="blockClass" src="images/collapse.png"/></td>
+		<td colspan=9 bgcolor="#E6E6E6" class="sectionTdClass">
+			<span class="groupSpanClass" {{if groupColor}}style="color: #0782FC;"{{/if}}>${groupName}</span>
+		</td>
+	</tr>
+</script>
+
+<script id="sectionGroupItemColumnTemplate" type="text/x-jquery-tmpl">
+	<tr class="sectionTrClass_${sectionId}_group_${groupId}_${itemId}_">
+		<td class="operationTdClass">
+			<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_${sectionId}_group_${groupId}_${itemId}_', ${itemId}, 3)" class="imgButClass" title="Remove item" style="display:none"/>
+			<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(${sectionId}, ${itemId}, ${groupId}, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+			<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(${sectionId},${itemId}, ${groupId}, 3, 2)" class="imgButClass" title="Insert case item" style="display:none"/>
+		</td>
+		<td><img src="images/tree/T.png"/></td><td><img src="images/tree/T.png"/></td>
+		<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+			<div {{if itemColorLeft}}style="color: #0782FC;"{{/if}}>{{html caseItem}}</div>
+		</td>
+		<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+			<div {{if itemColorRight}}style="color: #0782FC;"{{/if}}>{{html expectedResult}}</div>
+		</td>
+		<td colspan=3 bgcolor="#F0F0F0" class="sectionTdClass">
+	         <div style="text-align:center;">
+				{{if testLogMandatory == 1}}
+					Y
+				{{else}}
+					N
+				{{/if}}		
+	         </div>
+	    </td>
+	</tr>
+</script>
+
+<table id="sectionTable" width="1350px">
+	<tbody>
+		<tr>
+			<td width=7%></td>
+			<td width=2%></td>
+			<td width=2%></td>
+			<td colspan=3 style="text-align:center;width:37%" class="sectionTdClass"><strong><font size="3">Test case item</font></strong></td>
+			<td colspan=3 style="text-align:center;width:35%" class="sectionTdClass"><strong><font size="3">Expected result</font></strong></td>
+			<td colspan=3 style="text-align:center;width:17%" class="sectionTdClass"><strong><font size="3">Test Log Mandatory</font></strong></td>
+		</tr>
+		
+			<tr class='sectionTrClass_159626_'>
+				<td class="operationTdClass">
+					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_159626_', 159626, 2)" class="imgButClass" title="Remove section" style="display:none"/>
+					<img src="images/section_edit.png" onclick="sectionDialog.openSection(159626, 1)" class="imgButClass" title="Update section" style="display:none"/>
+					<img src="images/section_insert.png" onclick="sectionDialog.openSection(159626, 2)" class="imgButClass" title="Insert section" style="display:none"/>
+					<img src="images/new.png" onclick="sectionDialog.openGroupItem(159626, -1, -1, -1, 0)" class="imgButClass" title="Add group/item" style="display:none"/>
+				</td>
+				<td><img onclick="extendNode('sectionTrClass_159626_')" class="blockClass" src="images/collapse.png"/></td>
+				<td></td>
+				<td colspan="6">
+					<table width="100%">
+						<tr>
+							<td colspan=3 width="80%"><strong>Section : </strong><span class="sectionSpanClass" >Preparation</span></td>							
+							<td width="20%"><strong>Attachment : </strong>
+							
+							
+							</td>
+						</tr>
+						<tr>
+							<td width="30%"><strong>Workloading : </strong><span class="workloadSpanClass">5</span>(Min)</td>
+							<td width="30%"><strong>LeadingTime : </strong><span class="leadingTimeSpanClass">35</span>(Min)</td>
+							<td width="20%"><strong>Phase : </strong><span class="tagSpanClass"></span></td>
+							<td width="20%">
+								<strong>Test Log Mandatory :</strong>
+								<span class="tagSpanClass">
+									
+									N
+								</span>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+            <!-- Display case item in section  -->
+							
+           		<!-- case item not in any group. -->
+           			<tr class="sectionTrClass_159626_2627817_">
+           				<td class="operationTdClass">
+           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_159626_2627817_', 2627817, 3)" class="imgButClass" title="Remove case item" style="display:none"/>
+           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(159626, 2627817, -1, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(159626, 2627817, -1, 3, 2)" class="imgButClass" title="Insert item/group" style="display:none"/>
+           				</td>
+           				<td><img src="images/tree/T.png"/></td>
+           				<td></td>
+           				<td colspan=3 width="37%" class="sectionTdClass">
+           					<div class="itemSpanClass" >Ensure image， BIOS and drivers are appropriate.</div>
+           				</td>
+           				<td colspan=3 width="35%" class="sectionTdClass">
+           					<div class="expectedResultSpanClass" ></div>
+           				</td>
+           				<td colspan=3 width="17%" class="sectionTdClass">
+           					<div style="text-align:center;">
+           						
+								N
+           					</div>
+           				</td>
+           			</tr>
+           		
+           		
+            				
+           		<!-- case item not in any group. -->
+           			<tr class="sectionTrClass_159626_2627818_">
+           				<td class="operationTdClass">
+           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_159626_2627818_', 2627818, 3)" class="imgButClass" title="Remove case item" style="display:none"/>
+           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(159626, 2627818, -1, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(159626, 2627818, -1, 3, 2)" class="imgButClass" title="Insert item/group" style="display:none"/>
+           				</td>
+           				<td><img src="images/tree/T.png"/></td>
+           				<td></td>
+           				<td colspan=3 width="37%" class="sectionTdClass">
+           					<div class="itemSpanClass" >Ensure Hibernate function is enabled. Method: Control Panel-&gt;Power Options-&gt;Choose what the power button does-&gt;Change settings that are currently unavailable-&gt;Check Hibernate-&gt;Save Changes.</div>
+           				</td>
+           				<td colspan=3 width="35%" class="sectionTdClass">
+           					<div class="expectedResultSpanClass" ></div>
+           				</td>
+           				<td colspan=3 width="17%" class="sectionTdClass">
+           					<div style="text-align:center;">
+           						
+								N
+           					</div>
+           				</td>
+           			</tr>
+           		
+           		
+            				
+           		<!-- case item not in any group. -->
+           			<tr class="sectionTrClass_159626_2627819_">
+           				<td class="operationTdClass">
+           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_159626_2627819_', 2627819, 3)" class="imgButClass" title="Remove case item" style="display:none"/>
+           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(159626, 2627819, -1, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(159626, 2627819, -1, 3, 2)" class="imgButClass" title="Insert item/group" style="display:none"/>
+           				</td>
+           				<td><img src="images/tree/T.png"/></td>
+           				<td></td>
+           				<td colspan=3 width="37%" class="sectionTdClass">
+           					<div class="itemSpanClass" >Test audio file -Sampling rates 8 kHz, 11.025 kHz, 16 kHz, 22.050 kHz, 32 kHz, 44.1kHz, 48 kHz, -Bit Depths: 8-bit, 16-bit, 24-bit -Channel configurations of Mono, 2ch, 3ch, 4ch, 6ch, 8ch, ther audio file: 2Ch_8bit_8k_Sweep.wav, tester can download them from lenovo PA tools website.</div>
+           				</td>
+           				<td colspan=3 width="35%" class="sectionTdClass">
+           					<div class="expectedResultSpanClass" ></div>
+           				</td>
+           				<td colspan=3 width="17%" class="sectionTdClass">
+           					<div style="text-align:center;">
+           						
+								N
+           					</div>
+           				</td>
+           			</tr>
+           		
+           		
+            				
+           		<!-- case item not in any group. -->
+           			<tr class="sectionTrClass_159626_2627820_">
+           				<td class="operationTdClass">
+           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_159626_2627820_', 2627820, 3)" class="imgButClass" title="Remove case item" style="display:none"/>
+           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(159626, 2627820, -1, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(159626, 2627820, -1, 3, 2)" class="imgButClass" title="Insert item/group" style="display:none"/>
+           				</td>
+           				<td><img src="images/tree/T.png"/></td>
+           				<td></td>
+           				<td colspan=3 width="37%" class="sectionTdClass">
+           					<div class="itemSpanClass" ><p>Install Test tool: Audacity(It's an audio recording tool,tester can download from internet), Windows Performance Analyzer(Install from Microsoft store), Windows ADK(Download from FTP or internet,when in installation,please ensure Deployment Tools and Windows Reinstallation Environment is selected )</p></div>
+           				</td>
+           				<td colspan=3 width="35%" class="sectionTdClass">
+           					<div class="expectedResultSpanClass" style="color: #0782FC;"><p>Extra interrupts might be expected if ISV SW components(APOs/services/applications) are available on OEM platforms.Please filter the points without audiodg.exe in the ETL log.</p></div>
+           				</td>
+           				<td colspan=3 width="17%" class="sectionTdClass">
+           					<div style="text-align:center;">
+           						
+								N
+           					</div>
+           				</td>
+           			</tr>
+           		
+           		
+            				
+           		<!-- case item not in any group. -->
+           			<tr class="sectionTrClass_159626_2627821_">
+           				<td class="operationTdClass">
+           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_159626_2627821_', 2627821, 3)" class="imgButClass" title="Remove case item" style="display:none"/>
+           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(159626, 2627821, -1, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(159626, 2627821, -1, 3, 2)" class="imgButClass" title="Insert item/group" style="display:none"/>
+           				</td>
+           				<td><img src="images/tree/T.png"/></td>
+           				<td></td>
+           				<td colspan=3 width="37%" class="sectionTdClass">
+           					<div class="itemSpanClass" >Download Longrun test batch files from from lenovo PA tools website.</div>
+           				</td>
+           				<td colspan=3 width="35%" class="sectionTdClass">
+           					<div class="expectedResultSpanClass" ></div>
+           				</td>
+           				<td colspan=3 width="17%" class="sectionTdClass">
+           					<div style="text-align:center;">
+           						
+								N
+           					</div>
+           				</td>
+           			</tr>
+           		
+           		
+            				
+           		<!-- case item not in any group. -->
+           			<tr class="sectionTrClass_159626_2627822_">
+           				<td class="operationTdClass">
+           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_159626_2627822_', 2627822, 3)" class="imgButClass" title="Remove case item" style="display:none"/>
+           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(159626, 2627822, -1, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(159626, 2627822, -1, 3, 2)" class="imgButClass" title="Insert item/group" style="display:none"/>
+           				</td>
+           				<td><img src="images/tree/T.png"/></td>
+           				<td></td>
+           				<td colspan=3 width="37%" class="sectionTdClass">
+           					<div class="itemSpanClass" >Some words are strange for tester,  tester can refer to attached excel file to see Sheet: Definitions and Abbreviations</div>
+           				</td>
+           				<td colspan=3 width="35%" class="sectionTdClass">
+           					<div class="expectedResultSpanClass" ></div>
+           				</td>
+           				<td colspan=3 width="17%" class="sectionTdClass">
+           					<div style="text-align:center;">
+           						
+								N
+           					</div>
+           				</td>
+           			</tr>
+           		
+           		
+            				
+           		<!-- case item not in any group. -->
+           			<tr class="sectionTrClass_159626_2627823_">
+           				<td class="operationTdClass">
+           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_159626_2627823_', 2627823, 3)" class="imgButClass" title="Remove case item" style="display:none"/>
+           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(159626, 2627823, -1, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(159626, 2627823, -1, 3, 2)" class="imgButClass" title="Insert item/group" style="display:none"/>
+           				</td>
+           				<td><img src="images/tree/T.png"/></td>
+           				<td></td>
+           				<td colspan=3 width="37%" class="sectionTdClass">
+           					<div class="itemSpanClass" ><p>For Win11 SV2, Media Player will replace Groove Music/Movies &amp; TV, Windows media player name will be changed to Windows media player legacy.</p></div>
+           				</td>
+           				<td colspan=3 width="35%" class="sectionTdClass">
+           					<div class="expectedResultSpanClass" ></div>
+           				</td>
+           				<td colspan=3 width="17%" class="sectionTdClass">
+           					<div style="text-align:center;">
+           						
+								N
+           					</div>
+           				</td>
+           			</tr>
+           		
+           		
+            				
+           		<!-- case item not in any group. -->
+           			<tr class="sectionTrClass_159626_2627824_">
+           				<td class="operationTdClass">
+           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_159626_2627824_', 2627824, 3)" class="imgButClass" title="Remove case item" style="display:none"/>
+           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(159626, 2627824, -1, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(159626, 2627824, -1, 3, 2)" class="imgButClass" title="Insert item/group" style="display:none"/>
+           				</td>
+           				<td><img src="images/tree/T.png"/></td>
+           				<td></td>
+           				<td colspan=3 width="37%" class="sectionTdClass">
+           					<div class="itemSpanClass" >Please cover LPAP Function supported endpoint(Internal speaker&amp;headphone&amp;USB headset), confirm with Audio Engineer.</div>
+           				</td>
+           				<td colspan=3 width="35%" class="sectionTdClass">
+           					<div class="expectedResultSpanClass" ></div>
+           				</td>
+           				<td colspan=3 width="17%" class="sectionTdClass">
+           					<div style="text-align:center;">
+           						
+								N
+           					</div>
+           				</td>
+           			</tr>
+           		
+           		
+            
+		
+			<tr class='sectionTrClass_159627_'>
+				<td class="operationTdClass">
+					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_159627_', 159627, 2)" class="imgButClass" title="Remove section" style="display:none"/>
+					<img src="images/section_edit.png" onclick="sectionDialog.openSection(159627, 1)" class="imgButClass" title="Update section" style="display:none"/>
+					<img src="images/section_insert.png" onclick="sectionDialog.openSection(159627, 2)" class="imgButClass" title="Insert section" style="display:none"/>
+					<img src="images/new.png" onclick="sectionDialog.openGroupItem(159627, -1, -1, -1, 0)" class="imgButClass" title="Add group/item" style="display:none"/>
+				</td>
+				<td><img onclick="extendNode('sectionTrClass_159627_')" class="blockClass" src="images/collapse.png"/></td>
+				<td></td>
+				<td colspan="6">
+					<table width="100%">
+						<tr>
+							<td colspan=3 width="80%"><strong>Section : </strong><span class="sectionSpanClass" >One Offload+One host</span></td>							
+							<td width="20%"><strong>Attachment : </strong>
+							
+							
+							</td>
+						</tr>
+						<tr>
+							<td width="30%"><strong>Workloading : </strong><span class="workloadSpanClass">5</span>(Min)</td>
+							<td width="30%"><strong>LeadingTime : </strong><span class="leadingTimeSpanClass">5</span>(Min)</td>
+							<td width="20%"><strong>Phase : </strong><span class="tagSpanClass"></span></td>
+							<td width="20%">
+								<strong>Test Log Mandatory :</strong>
+								<span class="tagSpanClass">
+									
+									N
+								</span>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+            <!-- Display case item in section  -->
+							
+           		<!-- case item not in any group. -->
+           			<tr class="sectionTrClass_159627_2627825_">
+           				<td class="operationTdClass">
+           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_159627_2627825_', 2627825, 3)" class="imgButClass" title="Remove case item" style="display:none"/>
+           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(159627, 2627825, -1, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(159627, 2627825, -1, 3, 2)" class="imgButClass" title="Insert item/group" style="display:none"/>
+           				</td>
+           				<td><img src="images/tree/T.png"/></td>
+           				<td></td>
+           				<td colspan=3 width="37%" class="sectionTdClass">
+           					<div class="itemSpanClass" ><p>1. Open *.wav/*.MP3 file with&nbsp;Media player &amp; another stream opened with WMP player as Host</p></div>
+           				</td>
+           				<td colspan=3 width="35%" class="sectionTdClass">
+           					<div class="expectedResultSpanClass" ><p>Verify the combined sound, it should be audible with no glitches.</p></div>
+           				</td>
+           				<td colspan=3 width="17%" class="sectionTdClass">
+           					<div style="text-align:center;">
+           						
+								N
+           					</div>
+           				</td>
+           			</tr>
+           		
+           		
+            				
+           		<!-- case item not in any group. -->
+           			<tr class="sectionTrClass_159627_2627826_">
+           				<td class="operationTdClass">
+           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_159627_2627826_', 2627826, 3)" class="imgButClass" title="Remove case item" style="display:none"/>
+           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(159627, 2627826, -1, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(159627, 2627826, -1, 3, 2)" class="imgButClass" title="Insert item/group" style="display:none"/>
+           				</td>
+           				<td><img src="images/tree/T.png"/></td>
+           				<td></td>
+           				<td colspan=3 width="37%" class="sectionTdClass">
+           					<div class="itemSpanClass" >2. Close and open the players when streams are active and running</div>
+           				</td>
+           				<td colspan=3 width="35%" class="sectionTdClass">
+           					<div class="expectedResultSpanClass" >Verify the sound, it should be audible with no glitches</div>
+           				</td>
+           				<td colspan=3 width="17%" class="sectionTdClass">
+           					<div style="text-align:center;">
+           						
+								N
+           					</div>
+           				</td>
+           			</tr>
+           		
+           		
+            				
+           		<!-- case item not in any group. -->
+           			<tr class="sectionTrClass_159627_2627827_">
+           				<td class="operationTdClass">
+           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_159627_2627827_', 2627827, 3)" class="imgButClass" title="Remove case item" style="display:none"/>
+           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(159627, 2627827, -1, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(159627, 2627827, -1, 3, 2)" class="imgButClass" title="Insert item/group" style="display:none"/>
+           				</td>
+           				<td><img src="images/tree/T.png"/></td>
+           				<td></td>
+           				<td colspan=3 width="37%" class="sectionTdClass">
+           					<div class="itemSpanClass" >3. Check the peak meter in Playback Devices &amp; Volume Mixer</div>
+           				</td>
+           				<td colspan=3 width="35%" class="sectionTdClass">
+           					<div class="expectedResultSpanClass" >Peak Meter levels should be updated properly on both Sound Device &amp; Volume mixer.</div>
+           				</td>
+           				<td colspan=3 width="17%" class="sectionTdClass">
+           					<div style="text-align:center;">
+           						
+								N
+           					</div>
+           				</td>
+           			</tr>
+           		
+           		
+            
+		
+			<tr class='sectionTrClass_159628_'>
+				<td class="operationTdClass">
+					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_159628_', 159628, 2)" class="imgButClass" title="Remove section" style="display:none"/>
+					<img src="images/section_edit.png" onclick="sectionDialog.openSection(159628, 1)" class="imgButClass" title="Update section" style="display:none"/>
+					<img src="images/section_insert.png" onclick="sectionDialog.openSection(159628, 2)" class="imgButClass" title="Insert section" style="display:none"/>
+					<img src="images/new.png" onclick="sectionDialog.openGroupItem(159628, -1, -1, -1, 0)" class="imgButClass" title="Add group/item" style="display:none"/>
+				</td>
+				<td><img onclick="extendNode('sectionTrClass_159628_')" class="blockClass" src="images/collapse.png"/></td>
+				<td></td>
+				<td colspan="6">
+					<table width="100%">
+						<tr>
+							<td colspan=3 width="80%"><strong>Section : </strong><span class="sectionSpanClass" >Offload stream playback</span></td>							
+							<td width="20%"><strong>Attachment : </strong>
+							
+							
+							</td>
+						</tr>
+						<tr>
+							<td width="30%"><strong>Workloading : </strong><span class="workloadSpanClass">100</span>(Min)</td>
+							<td width="30%"><strong>LeadingTime : </strong><span class="leadingTimeSpanClass">100</span>(Min)</td>
+							<td width="20%"><strong>Phase : </strong><span class="tagSpanClass"></span></td>
+							<td width="20%">
+								<strong>Test Log Mandatory :</strong>
+								<span class="tagSpanClass">
+									
+									N
+								</span>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+            <!-- Display case item in section  -->
+							
+           		<!-- case item not in any group. -->
+           			<tr class="sectionTrClass_159628_2627828_">
+           				<td class="operationTdClass">
+           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_159628_2627828_', 2627828, 3)" class="imgButClass" title="Remove case item" style="display:none"/>
+           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(159628, 2627828, -1, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(159628, 2627828, -1, 3, 2)" class="imgButClass" title="Insert item/group" style="display:none"/>
+           				</td>
+           				<td><img src="images/tree/T.png"/></td>
+           				<td></td>
+           				<td colspan=3 width="37%" class="sectionTdClass">
+           					<div class="itemSpanClass" ><p>1. Open *.wav/.MP3 file with Media player</p></div>
+           				</td>
+           				<td colspan=3 width="35%" class="sectionTdClass">
+           					<div class="expectedResultSpanClass" ></div>
+           				</td>
+           				<td colspan=3 width="17%" class="sectionTdClass">
+           					<div style="text-align:center;">
+           						
+								N
+           					</div>
+           				</td>
+           			</tr>
+           		
+           		
+            				
+           		<!-- case item not in any group. -->
+           			<tr class="sectionTrClass_159628_2627829_">
+           				<td class="operationTdClass">
+           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_159628_2627829_', 2627829, 3)" class="imgButClass" title="Remove case item" style="display:none"/>
+           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(159628, 2627829, -1, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(159628, 2627829, -1, 3, 2)" class="imgButClass" title="Insert item/group" style="display:none"/>
+           				</td>
+           				<td><img src="images/tree/T.png"/></td>
+           				<td></td>
+           				<td colspan=3 width="37%" class="sectionTdClass">
+           					<div class="itemSpanClass" >2. Click on Pause while stream is playing</div>
+           				</td>
+           				<td colspan=3 width="35%" class="sectionTdClass">
+           					<div class="expectedResultSpanClass" >Stream should pause</div>
+           				</td>
+           				<td colspan=3 width="17%" class="sectionTdClass">
+           					<div style="text-align:center;">
+           						
+								N
+           					</div>
+           				</td>
+           			</tr>
+           		
+           		
+            				
+           		<!-- case item not in any group. -->
+           			<tr class="sectionTrClass_159628_2627830_">
+           				<td class="operationTdClass">
+           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_159628_2627830_', 2627830, 3)" class="imgButClass" title="Remove case item" style="display:none"/>
+           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(159628, 2627830, -1, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(159628, 2627830, -1, 3, 2)" class="imgButClass" title="Insert item/group" style="display:none"/>
+           				</td>
+           				<td><img src="images/tree/T.png"/></td>
+           				<td></td>
+           				<td colspan=3 width="37%" class="sectionTdClass">
+           					<div class="itemSpanClass" >3. Click on play</div>
+           				</td>
+           				<td colspan=3 width="35%" class="sectionTdClass">
+           					<div class="expectedResultSpanClass" >Stream should continue to play and there should not be any glitches. Note: Progress bar will stop when it is Paused.</div>
+           				</td>
+           				<td colspan=3 width="17%" class="sectionTdClass">
+           					<div style="text-align:center;">
+           						
+								N
+           					</div>
+           				</td>
+           			</tr>
+           		
+           		
+            				
+           		<!-- case item not in any group. -->
+           			<tr class="sectionTrClass_159628_2627831_">
+           				<td class="operationTdClass">
+           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_159628_2627831_', 2627831, 3)" class="imgButClass" title="Remove case item" style="display:none"/>
+           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(159628, 2627831, -1, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(159628, 2627831, -1, 3, 2)" class="imgButClass" title="Insert item/group" style="display:none"/>
+           				</td>
+           				<td><img src="images/tree/T.png"/></td>
+           				<td></td>
+           				<td colspan=3 width="37%" class="sectionTdClass">
+           					<div class="itemSpanClass" >4. While stream is playing change the player volume</div>
+           				</td>
+           				<td colspan=3 width="35%" class="sectionTdClass">
+           					<div class="expectedResultSpanClass" >Volume change should effect to the stream</div>
+           				</td>
+           				<td colspan=3 width="17%" class="sectionTdClass">
+           					<div style="text-align:center;">
+           						
+								N
+           					</div>
+           				</td>
+           			</tr>
+           		
+           		
+            				
+           		<!-- case item not in any group. -->
+           			<tr class="sectionTrClass_159628_2627832_">
+           				<td class="operationTdClass">
+           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_159628_2627832_', 2627832, 3)" class="imgButClass" title="Remove case item" style="display:none"/>
+           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(159628, 2627832, -1, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(159628, 2627832, -1, 3, 2)" class="imgButClass" title="Insert item/group" style="display:none"/>
+           				</td>
+           				<td><img src="images/tree/T.png"/></td>
+           				<td></td>
+           				<td colspan=3 width="37%" class="sectionTdClass">
+           					<div class="itemSpanClass" >5. Mute/Unmute the player when stream is active</div>
+           				</td>
+           				<td colspan=3 width="35%" class="sectionTdClass">
+           					<div class="expectedResultSpanClass" >Silent data when Player is Muted. Audio should come when Player is Unmuted and there are no glitches Note: Progress bar of music player is still moving when it is muted</div>
+           				</td>
+           				<td colspan=3 width="17%" class="sectionTdClass">
+           					<div style="text-align:center;">
+           						
+								N
+           					</div>
+           				</td>
+           			</tr>
+           		
+           		
+            				
+           		<!-- case item not in any group. -->
+           			<tr class="sectionTrClass_159628_2627833_">
+           				<td class="operationTdClass">
+           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_159628_2627833_', 2627833, 3)" class="imgButClass" title="Remove case item" style="display:none"/>
+           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(159628, 2627833, -1, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(159628, 2627833, -1, 3, 2)" class="imgButClass" title="Insert item/group" style="display:none"/>
+           				</td>
+           				<td><img src="images/tree/T.png"/></td>
+           				<td></td>
+           				<td colspan=3 width="37%" class="sectionTdClass">
+           					<div class="itemSpanClass" >6. Perform System Mute/Unmute when stream is active</div>
+           				</td>
+           				<td colspan=3 width="35%" class="sectionTdClass">
+           					<div class="expectedResultSpanClass" >Silent data when system is Muted. audio should resume when system is Unmuted and there are no glitches Note: Progress bar of music player is still moving when system is muted</div>
+           				</td>
+           				<td colspan=3 width="17%" class="sectionTdClass">
+           					<div style="text-align:center;">
+           						
+								N
+           					</div>
+           				</td>
+           			</tr>
+           		
+           		
+            				
+           		<!-- case item not in any group. -->
+           			<tr class="sectionTrClass_159628_2627834_">
+           				<td class="operationTdClass">
+           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_159628_2627834_', 2627834, 3)" class="imgButClass" title="Remove case item" style="display:none"/>
+           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(159628, 2627834, -1, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(159628, 2627834, -1, 3, 2)" class="imgButClass" title="Insert item/group" style="display:none"/>
+           				</td>
+           				<td><img src="images/tree/T.png"/></td>
+           				<td></td>
+           				<td colspan=3 width="37%" class="sectionTdClass">
+           					<div class="itemSpanClass" >7. While stream is playing change the system volume</div>
+           				</td>
+           				<td colspan=3 width="35%" class="sectionTdClass">
+           					<div class="expectedResultSpanClass" >Volume change should effect to the stream and there are no glitches</div>
+           				</td>
+           				<td colspan=3 width="17%" class="sectionTdClass">
+           					<div style="text-align:center;">
+           						
+								N
+           					</div>
+           				</td>
+           			</tr>
+           		
+           		
+            				
+           		<!-- case item not in any group. -->
+           			<tr class="sectionTrClass_159628_2627835_">
+           				<td class="operationTdClass">
+           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_159628_2627835_', 2627835, 3)" class="imgButClass" title="Remove case item" style="display:none"/>
+           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(159628, 2627835, -1, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(159628, 2627835, -1, 3, 2)" class="imgButClass" title="Insert item/group" style="display:none"/>
+           				</td>
+           				<td><img src="images/tree/T.png"/></td>
+           				<td></td>
+           				<td colspan=3 width="37%" class="sectionTdClass">
+           					<div class="itemSpanClass" >8. Change the resolution ,right click on the desktop--&gt;Display Settings--&gt;Resolution</div>
+           				</td>
+           				<td colspan=3 width="35%" class="sectionTdClass">
+           					<div class="expectedResultSpanClass" >No effect should be there in Audio playback when Screen Resolution changes</div>
+           				</td>
+           				<td colspan=3 width="17%" class="sectionTdClass">
+           					<div style="text-align:center;">
+           						
+								N
+           					</div>
+           				</td>
+           			</tr>
+           		
+           		
+            				
+           		<!-- case item not in any group. -->
+           			<tr class="sectionTrClass_159628_2627836_">
+           				<td class="operationTdClass">
+           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_159628_2627836_', 2627836, 3)" class="imgButClass" title="Remove case item" style="display:none"/>
+           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(159628, 2627836, -1, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(159628, 2627836, -1, 3, 2)" class="imgButClass" title="Insert item/group" style="display:none"/>
+           				</td>
+           				<td><img src="images/tree/T.png"/></td>
+           				<td></td>
+           				<td colspan=3 width="37%" class="sectionTdClass">
+           					<div class="itemSpanClass" >9. Restore to default resolution</div>
+           				</td>
+           				<td colspan=3 width="35%" class="sectionTdClass">
+           					<div class="expectedResultSpanClass" ></div>
+           				</td>
+           				<td colspan=3 width="17%" class="sectionTdClass">
+           					<div style="text-align:center;">
+           						
+								N
+           					</div>
+           				</td>
+           			</tr>
+           		
+           		
+            				
+           		<!-- case item not in any group. -->
+           			<tr class="sectionTrClass_159628_2627837_">
+           				<td class="operationTdClass">
+           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_159628_2627837_', 2627837, 3)" class="imgButClass" title="Remove case item" style="display:none"/>
+           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(159628, 2627837, -1, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(159628, 2627837, -1, 3, 2)" class="imgButClass" title="Insert item/group" style="display:none"/>
+           				</td>
+           				<td><img src="images/tree/T.png"/></td>
+           				<td></td>
+           				<td colspan=3 width="37%" class="sectionTdClass">
+           					<div class="itemSpanClass" ><p>Method1 Time out: Control panel-&gt;hardware and sound-&gt;power options-&gt;change when the computer sleeps-&gt;set &lsquo;turn off the display&rsquo; time</p></div>
+           				</td>
+           				<td colspan=3 width="35%" class="sectionTdClass">
+           					<div class="expectedResultSpanClass" ></div>
+           				</td>
+           				<td colspan=3 width="17%" class="sectionTdClass">
+           					<div style="text-align:center;">
+           						
+								N
+           					</div>
+           				</td>
+           			</tr>
+           		
+           		
+            				
+           		<!-- case item not in any group. -->
+           			<tr class="sectionTrClass_159628_2627838_">
+           				<td class="operationTdClass">
+           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_159628_2627838_', 2627838, 3)" class="imgButClass" title="Remove case item" style="display:none"/>
+           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(159628, 2627838, -1, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(159628, 2627838, -1, 3, 2)" class="imgButClass" title="Insert item/group" style="display:none"/>
+           				</td>
+           				<td><img src="images/tree/T.png"/></td>
+           				<td></td>
+           				<td colspan=3 width="37%" class="sectionTdClass">
+           					<div class="itemSpanClass" ><p>Method2 Close lid: Control panel-&gt;hardware and sound-&gt;power options-&gt;choose what closing the lid does-&gt;set &lsquo;when I close lid&rsquo; to do nothing</p></div>
+           				</td>
+           				<td colspan=3 width="35%" class="sectionTdClass">
+           					<div class="expectedResultSpanClass" ></div>
+           				</td>
+           				<td colspan=3 width="17%" class="sectionTdClass">
+           					<div style="text-align:center;">
+           						
+								N
+           					</div>
+           				</td>
+           			</tr>
+           		
+           		
+            				
+           		<!-- case item not in any group. -->
+           			<tr class="sectionTrClass_159628_2627839_">
+           				<td class="operationTdClass">
+           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_159628_2627839_', 2627839, 3)" class="imgButClass" title="Remove case item" style="display:none"/>
+           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(159628, 2627839, -1, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(159628, 2627839, -1, 3, 2)" class="imgButClass" title="Insert item/group" style="display:none"/>
+           				</td>
+           				<td><img src="images/tree/T.png"/></td>
+           				<td></td>
+           				<td colspan=3 width="37%" class="sectionTdClass">
+           					<div class="itemSpanClass" >10. While playing turn off the display if support.</div>
+           				</td>
+           				<td colspan=3 width="35%" class="sectionTdClass">
+           					<div class="expectedResultSpanClass" >Audio should continue without any delay</div>
+           				</td>
+           				<td colspan=3 width="17%" class="sectionTdClass">
+           					<div style="text-align:center;">
+           						
+								N
+           					</div>
+           				</td>
+           			</tr>
+           		
+           		
+            				
+           		<!-- case item not in any group. -->
+           			<tr class="sectionTrClass_159628_2627840_">
+           				<td class="operationTdClass">
+           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_159628_2627840_', 2627840, 3)" class="imgButClass" title="Remove case item" style="display:none"/>
+           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(159628, 2627840, -1, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(159628, 2627840, -1, 3, 2)" class="imgButClass" title="Insert item/group" style="display:none"/>
+           				</td>
+           				<td><img src="images/tree/T.png"/></td>
+           				<td></td>
+           				<td colspan=3 width="37%" class="sectionTdClass">
+           					<div class="itemSpanClass" >11. Turn on display</div>
+           				</td>
+           				<td colspan=3 width="35%" class="sectionTdClass">
+           					<div class="expectedResultSpanClass" >Audio should continue without any delay</div>
+           				</td>
+           				<td colspan=3 width="17%" class="sectionTdClass">
+           					<div style="text-align:center;">
+           						
+								N
+           					</div>
+           				</td>
+           			</tr>
+           		
+           		
+            				
+           		<!-- case item not in any group. -->
+           			<tr class="sectionTrClass_159628_2627841_">
+           				<td class="operationTdClass">
+           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_159628_2627841_', 2627841, 3)" class="imgButClass" title="Remove case item" style="display:none"/>
+           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(159628, 2627841, -1, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(159628, 2627841, -1, 3, 2)" class="imgButClass" title="Insert item/group" style="display:none"/>
+           				</td>
+           				<td><img src="images/tree/T.png"/></td>
+           				<td></td>
+           				<td colspan=3 width="37%" class="sectionTdClass">
+           					<div class="itemSpanClass" >12. While streams are playing, seek to forward and backward</div>
+           				</td>
+           				<td colspan=3 width="35%" class="sectionTdClass">
+           					<div class="expectedResultSpanClass" >There should not be any glitches when doing seek. Playback should be smooth</div>
+           				</td>
+           				<td colspan=3 width="17%" class="sectionTdClass">
+           					<div style="text-align:center;">
+           						
+								N
+           					</div>
+           				</td>
+           			</tr>
+           		
+           		
+            				
+           		<!-- case item not in any group. -->
+           			<tr class="sectionTrClass_159628_2627842_">
+           				<td class="operationTdClass">
+           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_159628_2627842_', 2627842, 3)" class="imgButClass" title="Remove case item" style="display:none"/>
+           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(159628, 2627842, -1, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(159628, 2627842, -1, 3, 2)" class="imgButClass" title="Insert item/group" style="display:none"/>
+           				</td>
+           				<td><img src="images/tree/T.png"/></td>
+           				<td></td>
+           				<td colspan=3 width="37%" class="sectionTdClass">
+           					<div class="itemSpanClass" >13. Enable repeat option for the Player</div>
+           				</td>
+           				<td colspan=3 width="35%" class="sectionTdClass">
+           					<div class="expectedResultSpanClass" >While repeating there should not be any glitches and repeat should be successful</div>
+           				</td>
+           				<td colspan=3 width="17%" class="sectionTdClass">
+           					<div style="text-align:center;">
+           						
+								N
+           					</div>
+           				</td>
+           			</tr>
+           		
+           		
+            				
+           		<!-- case item not in any group. -->
+           			<tr class="sectionTrClass_159628_2627843_">
+           				<td class="operationTdClass">
+           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_159628_2627843_', 2627843, 3)" class="imgButClass" title="Remove case item" style="display:none"/>
+           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(159628, 2627843, -1, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(159628, 2627843, -1, 3, 2)" class="imgButClass" title="Insert item/group" style="display:none"/>
+           				</td>
+           				<td><img src="images/tree/T.png"/></td>
+           				<td></td>
+           				<td colspan=3 width="37%" class="sectionTdClass">
+           					<div class="itemSpanClass" >14. Perform Seek backward and forward again</div>
+           				</td>
+           				<td colspan=3 width="35%" class="sectionTdClass">
+           					<div class="expectedResultSpanClass" >No glitches when seek is performed</div>
+           				</td>
+           				<td colspan=3 width="17%" class="sectionTdClass">
+           					<div style="text-align:center;">
+           						
+								N
+           					</div>
+           				</td>
+           			</tr>
+           		
+           		
+            				
+           		<!-- case item not in any group. -->
+           			<tr class="sectionTrClass_159628_2627844_">
+           				<td class="operationTdClass">
+           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_159628_2627844_', 2627844, 3)" class="imgButClass" title="Remove case item" style="display:none"/>
+           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(159628, 2627844, -1, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(159628, 2627844, -1, 3, 2)" class="imgButClass" title="Insert item/group" style="display:none"/>
+           				</td>
+           				<td><img src="images/tree/T.png"/></td>
+           				<td></td>
+           				<td colspan=3 width="37%" class="sectionTdClass">
+           					<div class="itemSpanClass" >15. Perform Seek till the EOF</div>
+           				</td>
+           				<td colspan=3 width="35%" class="sectionTdClass">
+           					<div class="expectedResultSpanClass" >No glitches when seek is performed</div>
+           				</td>
+           				<td colspan=3 width="17%" class="sectionTdClass">
+           					<div style="text-align:center;">
+           						
+								N
+           					</div>
+           				</td>
+           			</tr>
+           		
+           		
+            				
+           		<!-- case item not in any group. -->
+           			<tr class="sectionTrClass_159628_2627845_">
+           				<td class="operationTdClass">
+           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_159628_2627845_', 2627845, 3)" class="imgButClass" title="Remove case item" style="display:none"/>
+           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(159628, 2627845, -1, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(159628, 2627845, -1, 3, 2)" class="imgButClass" title="Insert item/group" style="display:none"/>
+           				</td>
+           				<td><img src="images/tree/T.png"/></td>
+           				<td></td>
+           				<td colspan=3 width="37%" class="sectionTdClass">
+           					<div class="itemSpanClass" >16. Close and open the players when streams are active and running</div>
+           				</td>
+           				<td colspan=3 width="35%" class="sectionTdClass">
+           					<div class="expectedResultSpanClass" >Verify the sound, it should be audible with no glitches</div>
+           				</td>
+           				<td colspan=3 width="17%" class="sectionTdClass">
+           					<div style="text-align:center;">
+           						
+								N
+           					</div>
+           				</td>
+           			</tr>
+           		
+           		
+            				
+           		<!-- case item not in any group. -->
+           			<tr class="sectionTrClass_159628_2627846_">
+           				<td class="operationTdClass">
+           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_159628_2627846_', 2627846, 3)" class="imgButClass" title="Remove case item" style="display:none"/>
+           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(159628, 2627846, -1, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(159628, 2627846, -1, 3, 2)" class="imgButClass" title="Insert item/group" style="display:none"/>
+           				</td>
+           				<td><img src="images/tree/T.png"/></td>
+           				<td></td>
+           				<td colspan=3 width="37%" class="sectionTdClass">
+           					<div class="itemSpanClass" >17. During playback,plug out/in AC several times.</div>
+           				</td>
+           				<td colspan=3 width="35%" class="sectionTdClass">
+           					<div class="expectedResultSpanClass" >Audio should continue without glitches</div>
+           				</td>
+           				<td colspan=3 width="17%" class="sectionTdClass">
+           					<div style="text-align:center;">
+           						
+								N
+           					</div>
+           				</td>
+           			</tr>
+           		
+           		
+            				
+           		<!-- case item not in any group. -->
+           			<tr class="sectionTrClass_159628_2627847_">
+           				<td class="operationTdClass">
+           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_159628_2627847_', 2627847, 3)" class="imgButClass" title="Remove case item" style="display:none"/>
+           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(159628, 2627847, -1, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(159628, 2627847, -1, 3, 2)" class="imgButClass" title="Insert item/group" style="display:none"/>
+           				</td>
+           				<td><img src="images/tree/T.png"/></td>
+           				<td></td>
+           				<td colspan=3 width="37%" class="sectionTdClass">
+           					<div class="itemSpanClass" >18. Put the system to Sleep(MS/S3)(Please cover lid close and start menu) &amp; Hibernate &amp; WarmBoot &amp; ColdBoot and resume, playback audio</div>
+           				</td>
+           				<td colspan=3 width="35%" class="sectionTdClass">
+           					<div class="expectedResultSpanClass" >Audio can playback without glitches</div>
+           				</td>
+           				<td colspan=3 width="17%" class="sectionTdClass">
+           					<div style="text-align:center;">
+           						
+								N
+           					</div>
+           				</td>
+           			</tr>
+           		
+           		
+            				
+           		<!-- case item not in any group. -->
+           			<tr class="sectionTrClass_159628_2627848_">
+           				<td class="operationTdClass">
+           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_159628_2627848_', 2627848, 3)" class="imgButClass" title="Remove case item" style="display:none"/>
+           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(159628, 2627848, -1, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(159628, 2627848, -1, 3, 2)" class="imgButClass" title="Insert item/group" style="display:none"/>
+           				</td>
+           				<td><img src="images/tree/T.png"/></td>
+           				<td></td>
+           				<td colspan=3 width="37%" class="sectionTdClass">
+           					<div class="itemSpanClass" >19. Repeat the setp 18 , 5 times</div>
+           				</td>
+           				<td colspan=3 width="35%" class="sectionTdClass">
+           					<div class="expectedResultSpanClass" >Audio can playback without glitches</div>
+           				</td>
+           				<td colspan=3 width="17%" class="sectionTdClass">
+           					<div style="text-align:center;">
+           						
+								N
+           					</div>
+           				</td>
+           			</tr>
+           		
+           		
+            				
+           		<!-- case item not in any group. -->
+           			<tr class="sectionTrClass_159628_2627849_">
+           				<td class="operationTdClass">
+           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_159628_2627849_', 2627849, 3)" class="imgButClass" title="Remove case item" style="display:none"/>
+           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(159628, 2627849, -1, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(159628, 2627849, -1, 3, 2)" class="imgButClass" title="Insert item/group" style="display:none"/>
+           				</td>
+           				<td><img src="images/tree/T.png"/></td>
+           				<td></td>
+           				<td colspan=3 width="37%" class="sectionTdClass">
+           					<div class="itemSpanClass" >20. Play the music again , Please cover different audio formats,as below, Channels: mono, 2ch, 3ch, 4ch, 6ch, 8ch. Frequency: 8k to 192 kHz. Bit depth: 8, 16 &amp; 24</div>
+           				</td>
+           				<td colspan=3 width="35%" class="sectionTdClass">
+           					<div class="expectedResultSpanClass" >Verify the sound, it should be audible with no glitches Note: Audio effects such as Channel Converter will be used if the stream format is different with endpoint format. Ex: 5.1Ch ,8 bit, 44.1K stream is played on the 2ch,16bit, 48K endpoint default format.</div>
+           				</td>
+           				<td colspan=3 width="17%" class="sectionTdClass">
+           					<div style="text-align:center;">
+           						
+								N
+           					</div>
+           				</td>
+           			</tr>
+           		
+           		
+            
+		
+			<tr class='sectionTrClass_159629_'>
+				<td class="operationTdClass">
+					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_159629_', 159629, 2)" class="imgButClass" title="Remove section" style="display:none"/>
+					<img src="images/section_edit.png" onclick="sectionDialog.openSection(159629, 1)" class="imgButClass" title="Update section" style="display:none"/>
+					<img src="images/section_insert.png" onclick="sectionDialog.openSection(159629, 2)" class="imgButClass" title="Insert section" style="display:none"/>
+					<img src="images/new.png" onclick="sectionDialog.openGroupItem(159629, -1, -1, -1, 0)" class="imgButClass" title="Add group/item" style="display:none"/>
+				</td>
+				<td><img onclick="extendNode('sectionTrClass_159629_')" class="blockClass" src="images/collapse.png"/></td>
+				<td></td>
+				<td colspan="6">
+					<table width="100%">
+						<tr>
+							<td colspan=3 width="80%"><strong>Section : </strong><span class="sectionSpanClass" >Browser streaming(Edge) check</span></td>							
+							<td width="20%"><strong>Attachment : </strong>
+							
+							
+							</td>
+						</tr>
+						<tr>
+							<td width="30%"><strong>Workloading : </strong><span class="workloadSpanClass">5</span>(Min)</td>
+							<td width="30%"><strong>LeadingTime : </strong><span class="leadingTimeSpanClass">5</span>(Min)</td>
+							<td width="20%"><strong>Phase : </strong><span class="tagSpanClass"></span></td>
+							<td width="20%">
+								<strong>Test Log Mandatory :</strong>
+								<span class="tagSpanClass">
+									
+									N
+								</span>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+            <!-- Display case item in section  -->
+							
+           		<!-- case item not in any group. -->
+           			<tr class="sectionTrClass_159629_2627850_">
+           				<td class="operationTdClass">
+           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_159629_2627850_', 2627850, 3)" class="imgButClass" title="Remove case item" style="display:none"/>
+           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(159629, 2627850, -1, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(159629, 2627850, -1, 3, 2)" class="imgButClass" title="Insert item/group" style="display:none"/>
+           				</td>
+           				<td><img src="images/tree/T.png"/></td>
+           				<td></td>
+           				<td colspan=3 width="37%" class="sectionTdClass">
+           					<div class="itemSpanClass" >Notes:You can check the Edge browser kernel in Edge settings(About Microsoft Edge)</div>
+           				</td>
+           				<td colspan=3 width="35%" class="sectionTdClass">
+           					<div class="expectedResultSpanClass" ></div>
+           				</td>
+           				<td colspan=3 width="17%" class="sectionTdClass">
+           					<div style="text-align:center;">
+           						
+								N
+           					</div>
+           				</td>
+           			</tr>
+           		
+           		
+            				
+           		<!-- case item not in any group. -->
+           			<tr class="sectionTrClass_159629_2627851_">
+           				<td class="operationTdClass">
+           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_159629_2627851_', 2627851, 3)" class="imgButClass" title="Remove case item" style="display:none"/>
+           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(159629, 2627851, -1, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(159629, 2627851, -1, 3, 2)" class="imgButClass" title="Insert item/group" style="display:none"/>
+           				</td>
+           				<td><img src="images/tree/T.png"/></td>
+           				<td></td>
+           				<td colspan=3 width="37%" class="sectionTdClass">
+           					<div class="itemSpanClass" >1. Open Edge browser, open music/video website to playback online music/video.</div>
+           				</td>
+           				<td colspan=3 width="35%" class="sectionTdClass">
+           					<div class="expectedResultSpanClass" >Verify the sound, sound should be audible with no glitches</div>
+           				</td>
+           				<td colspan=3 width="17%" class="sectionTdClass">
+           					<div style="text-align:center;">
+           						
+								N
+           					</div>
+           				</td>
+           			</tr>
+           		
+           		
+            				
+           		<!-- case item not in any group. -->
+           			<tr class="sectionTrClass_159629_2627852_">
+           				<td class="operationTdClass">
+           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_159629_2627852_', 2627852, 3)" class="imgButClass" title="Remove case item" style="display:none"/>
+           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(159629, 2627852, -1, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(159629, 2627852, -1, 3, 2)" class="imgButClass" title="Insert item/group" style="display:none"/>
+           				</td>
+           				<td><img src="images/tree/T.png"/></td>
+           				<td></td>
+           				<td colspan=3 width="37%" class="sectionTdClass">
+           					<div class="itemSpanClass" >2. If edge browser is made possible by Edgehtml</div>
+           				</td>
+           				<td colspan=3 width="35%" class="sectionTdClass">
+           					<div class="expectedResultSpanClass" >The audio stream should be offload</div>
+           				</td>
+           				<td colspan=3 width="17%" class="sectionTdClass">
+           					<div style="text-align:center;">
+           						
+								N
+           					</div>
+           				</td>
+           			</tr>
+           		
+           		
+            				
+           		<!-- case item not in any group. -->
+           			<tr class="sectionTrClass_159629_2627853_">
+           				<td class="operationTdClass">
+           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_159629_2627853_', 2627853, 3)" class="imgButClass" title="Remove case item" style="display:none"/>
+           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(159629, 2627853, -1, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(159629, 2627853, -1, 3, 2)" class="imgButClass" title="Insert item/group" style="display:none"/>
+           				</td>
+           				<td><img src="images/tree/T.png"/></td>
+           				<td></td>
+           				<td colspan=3 width="37%" class="sectionTdClass">
+           					<div class="itemSpanClass" >3. If edge browser is made possible by Chromium</div>
+           				</td>
+           				<td colspan=3 width="35%" class="sectionTdClass">
+           					<div class="expectedResultSpanClass" >The audio stream should be host</div>
+           				</td>
+           				<td colspan=3 width="17%" class="sectionTdClass">
+           					<div style="text-align:center;">
+           						
+								N
+           					</div>
+           				</td>
+           			</tr>
+           		
+           		
+            
+		
+			<tr class='sectionTrClass_159630_'>
+				<td class="operationTdClass">
+					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_159630_', 159630, 2)" class="imgButClass" title="Remove section" style="display:none"/>
+					<img src="images/section_edit.png" onclick="sectionDialog.openSection(159630, 1)" class="imgButClass" title="Update section" style="display:none"/>
+					<img src="images/section_insert.png" onclick="sectionDialog.openSection(159630, 2)" class="imgButClass" title="Insert section" style="display:none"/>
+					<img src="images/new.png" onclick="sectionDialog.openGroupItem(159630, -1, -1, -1, 0)" class="imgButClass" title="Add group/item" style="display:none"/>
+				</td>
+				<td><img onclick="extendNode('sectionTrClass_159630_')" class="blockClass" src="images/collapse.png"/></td>
+				<td></td>
+				<td colspan="6">
+					<table width="100%">
+						<tr>
+							<td colspan=3 width="80%"><strong>Section : </strong><span class="sectionSpanClass" >Audio Delay(Lip-sync) check</span></td>							
+							<td width="20%"><strong>Attachment : </strong>
+							
+							
+							</td>
+						</tr>
+						<tr>
+							<td width="30%"><strong>Workloading : </strong><span class="workloadSpanClass">5</span>(Min)</td>
+							<td width="30%"><strong>LeadingTime : </strong><span class="leadingTimeSpanClass">5</span>(Min)</td>
+							<td width="20%"><strong>Phase : </strong><span class="tagSpanClass"></span></td>
+							<td width="20%">
+								<strong>Test Log Mandatory :</strong>
+								<span class="tagSpanClass">
+									
+									N
+								</span>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+            <!-- Display case item in section  -->
+							
+           		<!-- case item not in any group. -->
+           			<tr class="sectionTrClass_159630_2627854_">
+           				<td class="operationTdClass">
+           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_159630_2627854_', 2627854, 3)" class="imgButClass" title="Remove case item" style="display:none"/>
+           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(159630, 2627854, -1, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(159630, 2627854, -1, 3, 2)" class="imgButClass" title="Insert item/group" style="display:none"/>
+           				</td>
+           				<td><img src="images/tree/T.png"/></td>
+           				<td></td>
+           				<td colspan=3 width="37%" class="sectionTdClass">
+           					<div class="itemSpanClass" >1. Playback video with Movies&amp;TV.</div>
+           				</td>
+           				<td colspan=3 width="35%" class="sectionTdClass">
+           					<div class="expectedResultSpanClass" >There should not be any audio delay during video playback.</div>
+           				</td>
+           				<td colspan=3 width="17%" class="sectionTdClass">
+           					<div style="text-align:center;">
+           						
+								N
+           					</div>
+           				</td>
+           			</tr>
+           		
+           		
+            				
+           		<!-- case item not in any group. -->
+           			<tr class="sectionTrClass_159630_2627855_">
+           				<td class="operationTdClass">
+           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_159630_2627855_', 2627855, 3)" class="imgButClass" title="Remove case item" style="display:none"/>
+           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(159630, 2627855, -1, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(159630, 2627855, -1, 3, 2)" class="imgButClass" title="Insert item/group" style="display:none"/>
+           				</td>
+           				<td><img src="images/tree/T.png"/></td>
+           				<td></td>
+           				<td colspan=3 width="37%" class="sectionTdClass">
+           					<div class="itemSpanClass" >2. Play online video with Edge browser.</div>
+           				</td>
+           				<td colspan=3 width="35%" class="sectionTdClass">
+           					<div class="expectedResultSpanClass" >There should not be any delay during online video playback.</div>
+           				</td>
+           				<td colspan=3 width="17%" class="sectionTdClass">
+           					<div style="text-align:center;">
+           						
+								N
+           					</div>
+           				</td>
+           			</tr>
+           		
+           		
+            
+		
+			<tr class='sectionTrClass_159631_'>
+				<td class="operationTdClass">
+					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_159631_', 159631, 2)" class="imgButClass" title="Remove section" style="display:none"/>
+					<img src="images/section_edit.png" onclick="sectionDialog.openSection(159631, 1)" class="imgButClass" title="Update section" style="display:none"/>
+					<img src="images/section_insert.png" onclick="sectionDialog.openSection(159631, 2)" class="imgButClass" title="Insert section" style="display:none"/>
+					<img src="images/new.png" onclick="sectionDialog.openGroupItem(159631, -1, -1, -1, 0)" class="imgButClass" title="Add group/item" style="display:none"/>
+				</td>
+				<td><img onclick="extendNode('sectionTrClass_159631_')" class="blockClass" src="images/collapse.png"/></td>
+				<td></td>
+				<td colspan="6">
+					<table width="100%">
+						<tr>
+							<td colspan=3 width="80%"><strong>Section : </strong><span class="sectionSpanClass" >Loopback</span></td>							
+							<td width="20%"><strong>Attachment : </strong>
+							
+							
+							</td>
+						</tr>
+						<tr>
+							<td width="30%"><strong>Workloading : </strong><span class="workloadSpanClass">5</span>(Min)</td>
+							<td width="30%"><strong>LeadingTime : </strong><span class="leadingTimeSpanClass">5</span>(Min)</td>
+							<td width="20%"><strong>Phase : </strong><span class="tagSpanClass"></span></td>
+							<td width="20%">
+								<strong>Test Log Mandatory :</strong>
+								<span class="tagSpanClass">
+									
+									N
+								</span>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+            <!-- Display case item in section  -->
+							
+           		<!-- case item not in any group. -->
+           			<tr class="sectionTrClass_159631_2627856_">
+           				<td class="operationTdClass">
+           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_159631_2627856_', 2627856, 3)" class="imgButClass" title="Remove case item" style="display:none"/>
+           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(159631, 2627856, -1, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(159631, 2627856, -1, 3, 2)" class="imgButClass" title="Insert item/group" style="display:none"/>
+           				</td>
+           				<td><img src="images/tree/T.png"/></td>
+           				<td></td>
+           				<td colspan=3 width="37%" class="sectionTdClass">
+           					<div class="itemSpanClass" >Please cover LPAP Function supported endpoint(Internal speaker&amp;headphone&amp;USB headset).</div>
+           				</td>
+           				<td colspan=3 width="35%" class="sectionTdClass">
+           					<div class="expectedResultSpanClass" ></div>
+           				</td>
+           				<td colspan=3 width="17%" class="sectionTdClass">
+           					<div style="text-align:center;">
+           						
+								N
+           					</div>
+           				</td>
+           			</tr>
+           		
+           		
+            				
+           		<!-- case item not in any group. -->
+           			<tr class="sectionTrClass_159631_2627857_">
+           				<td class="operationTdClass">
+           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_159631_2627857_', 2627857, 3)" class="imgButClass" title="Remove case item" style="display:none"/>
+           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(159631, 2627857, -1, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(159631, 2627857, -1, 3, 2)" class="imgButClass" title="Insert item/group" style="display:none"/>
+           				</td>
+           				<td><img src="images/tree/T.png"/></td>
+           				<td></td>
+           				<td colspan=3 width="37%" class="sectionTdClass">
+           					<div class="itemSpanClass" >1. Disable Microphone Effect</div>
+           				</td>
+           				<td colspan=3 width="35%" class="sectionTdClass">
+           					<div class="expectedResultSpanClass" ></div>
+           				</td>
+           				<td colspan=3 width="17%" class="sectionTdClass">
+           					<div style="text-align:center;">
+           						
+								N
+           					</div>
+           				</td>
+           			</tr>
+           		
+           		
+            				
+           		<!-- case item not in any group. -->
+           			<tr class="sectionTrClass_159631_2627858_">
+           				<td class="operationTdClass">
+           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_159631_2627858_', 2627858, 3)" class="imgButClass" title="Remove case item" style="display:none"/>
+           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(159631, 2627858, -1, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(159631, 2627858, -1, 3, 2)" class="imgButClass" title="Insert item/group" style="display:none"/>
+           				</td>
+           				<td><img src="images/tree/T.png"/></td>
+           				<td></td>
+           				<td colspan=3 width="37%" class="sectionTdClass">
+           					<div class="itemSpanClass" >2. Open Audacity-&gt;Edit-&gt;Preferences-&gt;Devices-&gt; Host: Windows WASAPI, Playback Device:internal Speaker, Recording Device:internal speaker-&gt;Click OK</div>
+           				</td>
+           				<td colspan=3 width="35%" class="sectionTdClass">
+           					<div class="expectedResultSpanClass" ></div>
+           				</td>
+           				<td colspan=3 width="17%" class="sectionTdClass">
+           					<div style="text-align:center;">
+           						
+								N
+           					</div>
+           				</td>
+           			</tr>
+           		
+           		
+            				
+           		<!-- case item not in any group. -->
+           			<tr class="sectionTrClass_159631_2627859_">
+           				<td class="operationTdClass">
+           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_159631_2627859_', 2627859, 3)" class="imgButClass" title="Remove case item" style="display:none"/>
+           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(159631, 2627859, -1, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(159631, 2627859, -1, 3, 2)" class="imgButClass" title="Insert item/group" style="display:none"/>
+           				</td>
+           				<td><img src="images/tree/T.png"/></td>
+           				<td></td>
+           				<td colspan=3 width="37%" class="sectionTdClass">
+           					<div class="itemSpanClass" >3. Playback music with Groove Music, then use Audacity to record for a while</div>
+           				</td>
+           				<td colspan=3 width="35%" class="sectionTdClass">
+           					<div class="expectedResultSpanClass" >While recording there should not be any crashes and recorded audio should be smooth when playback it</div>
+           				</td>
+           				<td colspan=3 width="17%" class="sectionTdClass">
+           					<div style="text-align:center;">
+           						
+								N
+           					</div>
+           				</td>
+           			</tr>
+           		
+           		
+            
+		
+			<tr class='sectionTrClass_159632_'>
+				<td class="operationTdClass">
+					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_159632_', 159632, 2)" class="imgButClass" title="Remove section" style="display:none"/>
+					<img src="images/section_edit.png" onclick="sectionDialog.openSection(159632, 1)" class="imgButClass" title="Update section" style="display:none"/>
+					<img src="images/section_insert.png" onclick="sectionDialog.openSection(159632, 2)" class="imgButClass" title="Insert section" style="display:none"/>
+					<img src="images/new.png" onclick="sectionDialog.openGroupItem(159632, -1, -1, -1, 0)" class="imgButClass" title="Add group/item" style="display:none"/>
+				</td>
+				<td><img onclick="extendNode('sectionTrClass_159632_')" class="blockClass" src="images/collapse.png"/></td>
+				<td></td>
+				<td colspan="6">
+					<table width="100%">
+						<tr>
+							<td colspan=3 width="80%"><strong>Section : </strong><span class="sectionSpanClass" >Sine/Sweep test with spectrogram for Offload</span></td>							
+							<td width="20%"><strong>Attachment : </strong>
+							
+							
+							</td>
+						</tr>
+						<tr>
+							<td width="30%"><strong>Workloading : </strong><span class="workloadSpanClass">5</span>(Min)</td>
+							<td width="30%"><strong>LeadingTime : </strong><span class="leadingTimeSpanClass">5</span>(Min)</td>
+							<td width="20%"><strong>Phase : </strong><span class="tagSpanClass"></span></td>
+							<td width="20%">
+								<strong>Test Log Mandatory :</strong>
+								<span class="tagSpanClass">
+									
+									N
+								</span>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+            <!-- Display case item in section  -->
+							
+           		<!-- case item not in any group. -->
+           			<tr class="sectionTrClass_159632_2627860_">
+           				<td class="operationTdClass">
+           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_159632_2627860_', 2627860, 3)" class="imgButClass" title="Remove case item" style="display:none"/>
+           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(159632, 2627860, -1, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(159632, 2627860, -1, 3, 2)" class="imgButClass" title="Insert item/group" style="display:none"/>
+           				</td>
+           				<td><img src="images/tree/T.png"/></td>
+           				<td></td>
+           				<td colspan=3 width="37%" class="sectionTdClass">
+           					<div class="itemSpanClass" >1. Disable Microphone Effect</div>
+           				</td>
+           				<td colspan=3 width="35%" class="sectionTdClass">
+           					<div class="expectedResultSpanClass" ></div>
+           				</td>
+           				<td colspan=3 width="17%" class="sectionTdClass">
+           					<div style="text-align:center;">
+           						
+								N
+           					</div>
+           				</td>
+           			</tr>
+           		
+           		
+            				
+           		<!-- case item not in any group. -->
+           			<tr class="sectionTrClass_159632_2627861_">
+           				<td class="operationTdClass">
+           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_159632_2627861_', 2627861, 3)" class="imgButClass" title="Remove case item" style="display:none"/>
+           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(159632, 2627861, -1, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(159632, 2627861, -1, 3, 2)" class="imgButClass" title="Insert item/group" style="display:none"/>
+           				</td>
+           				<td><img src="images/tree/T.png"/></td>
+           				<td></td>
+           				<td colspan=3 width="37%" class="sectionTdClass">
+           					<div class="itemSpanClass" >2. Open Audacity-&gt;Edit-&gt;Preferences-&gt;Devices-&gt; Host: Windows WASAPI, Playback Device:internal Speaker, Recording Device:internal speaker-&gt;Click OK</div>
+           				</td>
+           				<td colspan=3 width="35%" class="sectionTdClass">
+           					<div class="expectedResultSpanClass" ></div>
+           				</td>
+           				<td colspan=3 width="17%" class="sectionTdClass">
+           					<div style="text-align:center;">
+           						
+								N
+           					</div>
+           				</td>
+           			</tr>
+           		
+           		
+            				
+           		<!-- case item not in any group. -->
+           			<tr class="sectionTrClass_159632_2627862_">
+           				<td class="operationTdClass">
+           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_159632_2627862_', 2627862, 3)" class="imgButClass" title="Remove case item" style="display:none"/>
+           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(159632, 2627862, -1, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(159632, 2627862, -1, 3, 2)" class="imgButClass" title="Insert item/group" style="display:none"/>
+           				</td>
+           				<td><img src="images/tree/T.png"/></td>
+           				<td></td>
+           				<td colspan=3 width="37%" class="sectionTdClass">
+           					<div class="itemSpanClass" >3. Open Audacity-&gt;Edit-&gt;Preference-&gt;Tracks-&gt;Spectrograms-&gt;Set Max Frequency to 20000 and set Window size to 1024.</div>
+           				</td>
+           				<td colspan=3 width="35%" class="sectionTdClass">
+           					<div class="expectedResultSpanClass" ></div>
+           				</td>
+           				<td colspan=3 width="17%" class="sectionTdClass">
+           					<div style="text-align:center;">
+           						
+								N
+           					</div>
+           				</td>
+           			</tr>
+           		
+           		
+            				
+           		<!-- case item not in any group. -->
+           			<tr class="sectionTrClass_159632_2627863_">
+           				<td class="operationTdClass">
+           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_159632_2627863_', 2627863, 3)" class="imgButClass" title="Remove case item" style="display:none"/>
+           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(159632, 2627863, -1, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(159632, 2627863, -1, 3, 2)" class="imgButClass" title="Insert item/group" style="display:none"/>
+           				</td>
+           				<td><img src="images/tree/T.png"/></td>
+           				<td></td>
+           				<td colspan=3 width="37%" class="sectionTdClass">
+           					<div class="itemSpanClass" >4. In Audacity, start Recording, then playback 2Ch_8bit_8k_Sweep with Groove Music, stop recording.</div>
+           				</td>
+           				<td colspan=3 width="35%" class="sectionTdClass">
+           					<div class="expectedResultSpanClass" ></div>
+           				</td>
+           				<td colspan=3 width="17%" class="sectionTdClass">
+           					<div style="text-align:center;">
+           						
+								N
+           					</div>
+           				</td>
+           			</tr>
+           		
+           		
+            				
+           		<!-- case item not in any group. -->
+           			<tr class="sectionTrClass_159632_2627864_">
+           				<td class="operationTdClass">
+           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_159632_2627864_', 2627864, 3)" class="imgButClass" title="Remove case item" style="display:none"/>
+           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(159632, 2627864, -1, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(159632, 2627864, -1, 3, 2)" class="imgButClass" title="Insert item/group" style="display:none"/>
+           				</td>
+           				<td><img src="images/tree/T.png"/></td>
+           				<td></td>
+           				<td colspan=3 width="37%" class="sectionTdClass">
+           					<div class="itemSpanClass" >5. Click on &quot;Audio Track&quot;(Left side of Audacity window) then select &quot;Spectrogram&quot;, check the spectrogram of the recording audio</div>
+           				</td>
+           				<td colspan=3 width="35%" class="sectionTdClass">
+           					<div class="expectedResultSpanClass" >No distortion should be observed in Audacity spectrogram Notes: If observed spectrogram is a diagonal line, no distortion. Tester can also compare the spectrograms of 2Ch_8bit_8k_Sweep.wav and the recording audio to check</div>
+           				</td>
+           				<td colspan=3 width="17%" class="sectionTdClass">
+           					<div style="text-align:center;">
+           						
+								N
+           					</div>
+           				</td>
+           			</tr>
+           		
+           		
+            
+		
+			<tr class='sectionTrClass_159633_'>
+				<td class="operationTdClass">
+					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_159633_', 159633, 2)" class="imgButClass" title="Remove section" style="display:none"/>
+					<img src="images/section_edit.png" onclick="sectionDialog.openSection(159633, 1)" class="imgButClass" title="Update section" style="display:none"/>
+					<img src="images/section_insert.png" onclick="sectionDialog.openSection(159633, 2)" class="imgButClass" title="Insert section" style="display:none"/>
+					<img src="images/new.png" onclick="sectionDialog.openGroupItem(159633, -1, -1, -1, 0)" class="imgButClass" title="Add group/item" style="display:none"/>
+				</td>
+				<td><img onclick="extendNode('sectionTrClass_159633_')" class="blockClass" src="images/collapse.png"/></td>
+				<td></td>
+				<td colspan="6">
+					<table width="100%">
+						<tr>
+							<td colspan=3 width="80%"><strong>Section : </strong><span class="sectionSpanClass" >Disable/Enable the Audio Driver</span></td>							
+							<td width="20%"><strong>Attachment : </strong>
+							
+							
+							</td>
+						</tr>
+						<tr>
+							<td width="30%"><strong>Workloading : </strong><span class="workloadSpanClass">5</span>(Min)</td>
+							<td width="30%"><strong>LeadingTime : </strong><span class="leadingTimeSpanClass">5</span>(Min)</td>
+							<td width="20%"><strong>Phase : </strong><span class="tagSpanClass"></span></td>
+							<td width="20%">
+								<strong>Test Log Mandatory :</strong>
+								<span class="tagSpanClass">
+									
+									N
+								</span>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+            <!-- Display case item in section  -->
+							
+           		<!-- case item not in any group. -->
+           			<tr class="sectionTrClass_159633_2627865_">
+           				<td class="operationTdClass">
+           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_159633_2627865_', 2627865, 3)" class="imgButClass" title="Remove case item" style="display:none"/>
+           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(159633, 2627865, -1, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(159633, 2627865, -1, 3, 2)" class="imgButClass" title="Insert item/group" style="display:none"/>
+           				</td>
+           				<td><img src="images/tree/T.png"/></td>
+           				<td></td>
+           				<td colspan=3 width="37%" class="sectionTdClass">
+           					<div class="itemSpanClass" >1. Open device manager</div>
+           				</td>
+           				<td colspan=3 width="35%" class="sectionTdClass">
+           					<div class="expectedResultSpanClass" ></div>
+           				</td>
+           				<td colspan=3 width="17%" class="sectionTdClass">
+           					<div style="text-align:center;">
+           						
+								N
+           					</div>
+           				</td>
+           			</tr>
+           		
+           		
+            				
+           		<!-- case item not in any group. -->
+           			<tr class="sectionTrClass_159633_2627866_">
+           				<td class="operationTdClass">
+           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_159633_2627866_', 2627866, 3)" class="imgButClass" title="Remove case item" style="display:none"/>
+           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(159633, 2627866, -1, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(159633, 2627866, -1, 3, 2)" class="imgButClass" title="Insert item/group" style="display:none"/>
+           				</td>
+           				<td><img src="images/tree/T.png"/></td>
+           				<td></td>
+           				<td colspan=3 width="37%" class="sectionTdClass">
+           					<div class="itemSpanClass" >2. Disable/Enable the Audio codec driver(Such as Realtek Audio,Synaptics Audio)</div>
+           				</td>
+           				<td colspan=3 width="35%" class="sectionTdClass">
+           					<div class="expectedResultSpanClass" >No Blue screen of death (BSOD) &amp; Audio should switch to another endpoint if available.</div>
+           				</td>
+           				<td colspan=3 width="17%" class="sectionTdClass">
+           					<div style="text-align:center;">
+           						
+								N
+           					</div>
+           				</td>
+           			</tr>
+           		
+           		
+            
+		
+			<tr class='sectionTrClass_159634_'>
+				<td class="operationTdClass">
+					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_159634_', 159634, 2)" class="imgButClass" title="Remove section" style="display:none"/>
+					<img src="images/section_edit.png" onclick="sectionDialog.openSection(159634, 1)" class="imgButClass" title="Update section" style="display:none"/>
+					<img src="images/section_insert.png" onclick="sectionDialog.openSection(159634, 2)" class="imgButClass" title="Insert section" style="display:none"/>
+					<img src="images/new.png" onclick="sectionDialog.openGroupItem(159634, -1, -1, -1, 0)" class="imgButClass" title="Add group/item" style="display:none"/>
+				</td>
+				<td><img onclick="extendNode('sectionTrClass_159634_')" class="blockClass" src="images/collapse.png"/></td>
+				<td></td>
+				<td colspan="6">
+					<table width="100%">
+						<tr>
+							<td colspan=3 width="80%"><strong>Section : </strong><span class="sectionSpanClass" >Disable/Enable the Speakers</span></td>							
+							<td width="20%"><strong>Attachment : </strong>
+							
+							
+							</td>
+						</tr>
+						<tr>
+							<td width="30%"><strong>Workloading : </strong><span class="workloadSpanClass">5</span>(Min)</td>
+							<td width="30%"><strong>LeadingTime : </strong><span class="leadingTimeSpanClass">5</span>(Min)</td>
+							<td width="20%"><strong>Phase : </strong><span class="tagSpanClass"></span></td>
+							<td width="20%">
+								<strong>Test Log Mandatory :</strong>
+								<span class="tagSpanClass">
+									
+									N
+								</span>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+            <!-- Display case item in section  -->
+							
+           		<!-- case item not in any group. -->
+           			<tr class="sectionTrClass_159634_2627867_">
+           				<td class="operationTdClass">
+           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_159634_2627867_', 2627867, 3)" class="imgButClass" title="Remove case item" style="display:none"/>
+           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(159634, 2627867, -1, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(159634, 2627867, -1, 3, 2)" class="imgButClass" title="Insert item/group" style="display:none"/>
+           				</td>
+           				<td><img src="images/tree/T.png"/></td>
+           				<td></td>
+           				<td colspan=3 width="37%" class="sectionTdClass">
+           					<div class="itemSpanClass" >1. Go to audio playback devices Sound panel by running command “mmsys.cpl”</div>
+           				</td>
+           				<td colspan=3 width="35%" class="sectionTdClass">
+           					<div class="expectedResultSpanClass" ></div>
+           				</td>
+           				<td colspan=3 width="17%" class="sectionTdClass">
+           					<div style="text-align:center;">
+           						
+								N
+           					</div>
+           				</td>
+           			</tr>
+           		
+           		
+            				
+           		<!-- case item not in any group. -->
+           			<tr class="sectionTrClass_159634_2627868_">
+           				<td class="operationTdClass">
+           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_159634_2627868_', 2627868, 3)" class="imgButClass" title="Remove case item" style="display:none"/>
+           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(159634, 2627868, -1, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(159634, 2627868, -1, 3, 2)" class="imgButClass" title="Insert item/group" style="display:none"/>
+           				</td>
+           				<td><img src="images/tree/T.png"/></td>
+           				<td></td>
+           				<td colspan=3 width="37%" class="sectionTdClass">
+           					<div class="itemSpanClass" >2. Disable/Enable the speaker’s endpoint from playback devices</div>
+           				</td>
+           				<td colspan=3 width="35%" class="sectionTdClass">
+           					<div class="expectedResultSpanClass" >Audio should switch to another endpoint if available.</div>
+           				</td>
+           				<td colspan=3 width="17%" class="sectionTdClass">
+           					<div style="text-align:center;">
+           						
+								N
+           					</div>
+           				</td>
+           			</tr>
+           		
+           		
+            
+		
+			<tr class='sectionTrClass_159635_'>
+				<td class="operationTdClass">
+					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_159635_', 159635, 2)" class="imgButClass" title="Remove section" style="display:none"/>
+					<img src="images/section_edit.png" onclick="sectionDialog.openSection(159635, 1)" class="imgButClass" title="Update section" style="display:none"/>
+					<img src="images/section_insert.png" onclick="sectionDialog.openSection(159635, 2)" class="imgButClass" title="Insert section" style="display:none"/>
+					<img src="images/new.png" onclick="sectionDialog.openGroupItem(159635, -1, -1, -1, 0)" class="imgButClass" title="Add group/item" style="display:none"/>
+				</td>
+				<td><img onclick="extendNode('sectionTrClass_159635_')" class="blockClass" src="images/collapse.png"/></td>
+				<td></td>
+				<td colspan="6">
+					<table width="100%">
+						<tr>
+							<td colspan=3 width="80%"><strong>Section : </strong><span class="sectionSpanClass" >Uncheck/Check of HAP Capability from Speakers</span></td>							
+							<td width="20%"><strong>Attachment : </strong>
+							
+							
+							</td>
+						</tr>
+						<tr>
+							<td width="30%"><strong>Workloading : </strong><span class="workloadSpanClass">5</span>(Min)</td>
+							<td width="30%"><strong>LeadingTime : </strong><span class="leadingTimeSpanClass">5</span>(Min)</td>
+							<td width="20%"><strong>Phase : </strong><span class="tagSpanClass"></span></td>
+							<td width="20%">
+								<strong>Test Log Mandatory :</strong>
+								<span class="tagSpanClass">
+									
+									N
+								</span>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+            <!-- Display case item in section  -->
+							
+           		<!-- case item not in any group. -->
+           			<tr class="sectionTrClass_159635_2627869_">
+           				<td class="operationTdClass">
+           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_159635_2627869_', 2627869, 3)" class="imgButClass" title="Remove case item" style="display:none"/>
+           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(159635, 2627869, -1, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(159635, 2627869, -1, 3, 2)" class="imgButClass" title="Insert item/group" style="display:none"/>
+           				</td>
+           				<td><img src="images/tree/T.png"/></td>
+           				<td></td>
+           				<td colspan=3 width="37%" class="sectionTdClass">
+           					<div class="itemSpanClass" >1. Open *.wav/*.MP3 file with Groove Music.</div>
+           				</td>
+           				<td colspan=3 width="35%" class="sectionTdClass">
+           					<div class="expectedResultSpanClass" ></div>
+           				</td>
+           				<td colspan=3 width="17%" class="sectionTdClass">
+           					<div style="text-align:center;">
+           						
+								N
+           					</div>
+           				</td>
+           			</tr>
+           		
+           		
+            				
+           		<!-- case item not in any group. -->
+           			<tr class="sectionTrClass_159635_2627870_">
+           				<td class="operationTdClass">
+           					<img src="images/section_delete.png" onclick="delCaseSectionItem('sectionTrClass_159635_2627870_', 2627870, 3)" class="imgButClass" title="Remove case item" style="display:none"/>
+           					<img src="images/section_edit.png" onclick="sectionDialog.openGroupItem(159635, 2627870, -1, 3, 1)" class="imgButClass" title="Edit case item" style="display:none"/>
+           					<img src="images/section_insert.png" onclick="sectionDialog.openGroupItem(159635, 2627870, -1, 3, 2)" class="imgButClass" title="Insert item/group" style="display:none"/>
+           				</td>
+           				<td><img src="images/tree/T.png"/></td>
+           				<td></td>
+           				<td colspan=3 width="37%" class="sectionTdClass">
+           					<div class="itemSpanClass" >2.While playing Uncheck/Check HAP capability from playback devices-&gt;Speaker properties-&gt;Advanced tab.</div>
+           				</td>
+           				<td colspan=3 width="35%" class="sectionTdClass">
+           					<div class="expectedResultSpanClass" >Stream should properly switch from HAP to non-HAP and vice-versa, and no glitches.</div>
+           				</td>
+           				<td colspan=3 width="17%" class="sectionTdClass">
+           					<div style="text-align:center;">
+           						
+								N
+           					</div>
+           				</td>
+           			</tr>
+           		
+           		
+            
+		
+	</tbody>
+</table>
+<table id="addSectionTable" style="display:none">
+	<tr id="addSectionBut">
+		<td><img src="images/new.png" onclick="sectionDialog.openSection(-1, 0);" title="Add section"/></td><td></td><td></td><td colspan=9></td>
+	</tr>
+</table>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+    		
+		</form>
+
+
+
+
+		<div id="previewDialog">
+
+	</div>
+	<div id="previewOneDialog">
+
+	</div>
+	</body>
+	<SCRIPT LANGUAGE="JavaScript">	
+// 	function fxdownload(id){
+// 		var url = "testCaseAction!initDownload.do?section_id="+id;
+// 		FxShowWindow(url,'700','280');
+// 	}
+</SCRIPT>
+</html>
+
+
+			</td>
+		</tr>
+		<tr>
+			<td style="text-align:center;">
+				
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=8; IE=7; IE=EDGE" />
+<base href="https://tdms.lenovo.com:443/tdms/">
+<style>
+body{
+	background-color:#ffffff;
+	text-align:center;
+	font-size: 10px;
+	line-height: 12px;
+	font-family: Verdana, sans-serif;
+	margin: 0px;
+	color: #000;
+	height:12px;
+}
+</style>
+</head>
+<body>
+<table style="width:100%">
+	<tr>
+		<td style="padding-left:30px;padding-right:30px">
+			<hr>
+		</td>
+	</tr>	
+	<tr>
+		<td style="height:20px;text-align:center;font-size:12px;font-weight:700;color:#6699CC;">Copyright(c) 2010-2012 by Lenovo. All rights reserved</td>
+	</tr>
+</table>
+</body>
+</html>
+
+			</td>
+		</tr>		
+	</table>
+	</body>
+</html>
